@@ -1,0 +1,110 @@
+{
+  "fleetScore": 91,
+  "metrics": [
+    {
+      "id": "usage",
+      "label": "Memory usage",
+      "value": 68,
+      "max": 100,
+      "unit": "%",
+      "hint": "Working set vs allocated context windows",
+      "tone": "brand"
+    },
+    {
+      "id": "stale",
+      "label": "Stale memory entries",
+      "value": 12,
+      "max": 100,
+      "unit": "%",
+      "hint": "Entries unused in the last 7 days",
+      "tone": "warning"
+    },
+    {
+      "id": "retrieval",
+      "label": "Retrieval quality score",
+      "value": 88,
+      "max": 100,
+      "unit": "",
+      "hint": "Grounded hit rate on eval set",
+      "tone": "success"
+    },
+    {
+      "id": "saturation",
+      "label": "Context saturation risk",
+      "value": 24,
+      "max": 100,
+      "unit": "%",
+      "hint": "Share of agents above 80% window fill",
+      "tone": "info"
+    }
+  ],
+  "trend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "Health score", "color": "#1a9b95", "values": [96, 95, 94, 94, 93, 92, 91] },
+      { "name": "Retrieval quality", "color": "#175cd3", "values": [92, 91, 91, 90, 89, 89, 88] }
+    ]
+  },
+  "agents": [
+    {
+      "id": "agt-atlas",
+      "name": "Atlas Research",
+      "status": "healthy",
+      "usage": 61,
+      "staleEntries": 8,
+      "retrievalQuality": 93,
+      "saturationRisk": 18,
+      "tokens": "412k / 800k"
+    },
+    {
+      "id": "agt-sentinel",
+      "name": "Sentinel Ops",
+      "status": "degraded",
+      "usage": 79,
+      "staleEntries": 14,
+      "retrievalQuality": 84,
+      "saturationRisk": 41,
+      "tokens": "633k / 800k"
+    },
+    {
+      "id": "agt-nova",
+      "name": "Nova Support",
+      "status": "healthy",
+      "usage": 54,
+      "staleEntries": 6,
+      "retrievalQuality": 95,
+      "saturationRisk": 11,
+      "tokens": "288k / 600k"
+    },
+    {
+      "id": "agt-helix",
+      "name": "Helix Data",
+      "status": "critical",
+      "usage": 91,
+      "staleEntries": 18,
+      "retrievalQuality": 71,
+      "saturationRisk": 86,
+      "tokens": "910k / 1.0M"
+    },
+    {
+      "id": "agt-prism",
+      "name": "Prism Content",
+      "status": "healthy",
+      "usage": 48,
+      "staleEntries": 9,
+      "retrievalQuality": 90,
+      "saturationRisk": 9,
+      "tokens": "192k / 500k"
+    },
+    {
+      "id": "agt-quill",
+      "name": "Quill Legal",
+      "status": "watch",
+      "usage": 72,
+      "staleEntries": 11,
+      "retrievalQuality": 87,
+      "saturationRisk": 33,
+      "tokens": "504k / 700k"
+    }
+  ]
+}

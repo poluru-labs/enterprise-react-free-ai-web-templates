@@ -1,0 +1,40 @@
+{
+  "agents": [
+    {
+      "id": "agt-atlas",
+      "name": "Atlas Research",
+      "role": "Research",
+      "status": "healthy"
+    },
+    {
+      "id": "agt-sentinel",
+      "name": "Sentinel Ops",
+      "role": "Operations",
+      "status": "degraded"
+    },
+    {
+      "id": "agt-nova",
+      "name": "Nova Support",
+      "role": "Support",
+      "status": "healthy"
+    },
+    {
+      "id": "agt-helix",
+      "name": "Helix Data",
+      "role": "Analytics",
+      "status": "degraded"
+    },
+    {
+      "id": "agt-prism",
+      "name": "Prism Content",
+      "role": "Content",
+      "status": "healthy"
+    },
+    {
+      "id": "agt-quill",
+      "name": "Quill Legal",
+      "role": "Legal",
+      "status": "healthy"
+    }
+  ]
+}

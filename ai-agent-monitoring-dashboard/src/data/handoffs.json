@@ -1,0 +1,98 @@
+{
+  "kpis": {
+    "totalHandoffs": 80,
+    "handoffRate": 6.2,
+    "avgResolutionMinutes": 41,
+    "openCases": 18,
+    "slaBreaches": 3
+  },
+  "reasonBreakdown": [
+    { "name": "Low confidence", "value": 24, "color": "#175cd3" },
+    { "name": "Restricted action", "value": 18, "color": "#0f6e6a" },
+    { "name": "Customer escalation", "value": 16, "color": "#9a6700" },
+    { "name": "Tool failure cascade", "value": 12, "color": "#b42318" },
+    { "name": "Ambiguous policy", "value": 10, "color": "#5b6b7c" }
+  ],
+  "cases": [
+    {
+      "id": "HO-7721",
+      "agentName": "Quill Legal",
+      "taskId": "TSK-18388",
+      "reason": "Restricted action",
+      "assignedHuman": "Priya Poluru",
+      "status": "assigned",
+      "createdAt": "2026-08-24T18:14:19.000Z",
+      "priority": "high"
+    },
+    {
+      "id": "HO-7716",
+      "agentName": "Nova Support",
+      "taskId": "TSK-18421",
+      "reason": "Customer escalation",
+      "assignedHuman": "Marcus Poluru",
+      "status": "resolved",
+      "createdAt": "2026-08-24T17:02:40.000Z",
+      "priority": "medium"
+    },
+    {
+      "id": "HO-7711",
+      "agentName": "Sentinel Ops",
+      "taskId": "TSK-18418",
+      "reason": "Tool failure cascade",
+      "assignedHuman": "Elena Poluru",
+      "status": "pending",
+      "createdAt": "2026-08-24T18:35:00.000Z",
+      "priority": "critical"
+    },
+    {
+      "id": "HO-7704",
+      "agentName": "Helix Data",
+      "taskId": "TSK-18397",
+      "reason": "Low confidence",
+      "assignedHuman": "Jonah Poluru",
+      "status": "assigned",
+      "createdAt": "2026-08-24T17:59:10.000Z",
+      "priority": "high"
+    },
+    {
+      "id": "HO-7698",
+      "agentName": "Atlas Research",
+      "taskId": "TSK-18408",
+      "reason": "Ambiguous policy",
+      "assignedHuman": "Sofia Poluru",
+      "status": "pending",
+      "createdAt": "2026-08-24T18:29:44.000Z",
+      "priority": "low"
+    },
+    {
+      "id": "HO-7688",
+      "agentName": "Prism Content",
+      "taskId": "TSK-18311",
+      "reason": "Low confidence",
+      "assignedHuman": "Marcus Poluru",
+      "status": "resolved",
+      "createdAt": "2026-08-24T14:30:02.000Z",
+      "priority": "medium"
+    },
+    {
+      "id": "HO-7679",
+      "agentName": "Nova Support",
+      "taskId": "TSK-18354",
+      "reason": "Customer escalation",
+      "assignedHuman": "Priya Poluru",
+      "status": "assigned",
+      "createdAt": "2026-08-24T16:44:18.000Z",
+      "priority": "high"
+    },
+    {
+      "id": "HO-7664",
+      "agentName": "Quill Legal",
+      "taskId": "TSK-18340",
+      "reason": "Restricted action",
+      "assignedHuman": "Elena Poluru",
+      "status": "resolved",
+      "createdAt": "2026-08-23T21:55:00.000Z",
+      "priority": "medium"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "summary": {
+    "activeLoops": 4,
+    "severeLoops": 2,
+    "avgLoopScore": 71,
+    "mitigatedToday": 6
+  },
+  "loops": [
+    {
+      "id": "LOOP-2204",
+      "agentId": "agt-sentinel",
+      "agentName": "Sentinel Ops",
+      "taskId": "TSK-18418",
+      "loopScore": 92,
+      "repeatedStepCount": 14,
+      "repeatedStep": "check_canary_health",
+      "firstDetected": "2026-08-24T18:28:10.000Z",
+      "status": "active",
+      "severity": "severe",
+      "pattern": "think-act cycle",
+      "trace": [
+        { "time": "18:28:10", "role": "planner", "detail": "Need additional health signal before rollback." },
+        { "time": "18:28:12", "role": "tool", "detail": "code_exec → check_canary_health()" },
+        { "time": "18:28:14", "role": "observe", "detail": "Error rate 2.1% · no new evidence." },
+        { "time": "18:28:16", "role": "planner", "detail": "Need additional health signal before rollback." },
+        { "time": "18:28:17", "role": "tool", "detail": "code_exec → check_canary_health()" },
+        { "time": "18:33:40", "role": "planner", "detail": "Cycle continues; loop detector raised severity." }
+      ]
+    },
+    {
+      "id": "LOOP-2198",
+      "agentId": "agt-helix",
+      "agentName": "Helix Data",
+      "taskId": "TSK-18397",
+      "loopScore": 81,
+      "repeatedStepCount": 9,
+      "repeatedStep": "retry_join_events",
+      "firstDetected": "2026-08-24T17:49:22.000Z",
+      "status": "active",
+      "severity": "severe",
+      "pattern": "repeated tool call",
+      "trace": [
+        { "time": "17:49:22", "role": "tool", "detail": "code_exec → retry_join_events(window=14m)" },
+        { "time": "17:50:01", "role": "observe", "detail": "OOM: memory overflow in shuffle stage." },
+        { "time": "17:50:04", "role": "planner", "detail": "Retry with same window." },
+        { "time": "17:50:05", "role": "tool", "detail": "code_exec → retry_join_events(window=14m)" }
+      ]
+    },
+    {
+      "id": "LOOP-2186",
+      "agentId": "agt-atlas",
+      "agentName": "Atlas Research",
+      "taskId": "TSK-18408",
+      "loopScore": 64,
+      "repeatedStepCount": 5,
+      "repeatedStep": "web_search: poluru pricing",
+      "firstDetected": "2026-08-24T18:26:40.000Z",
+      "status": "watching",
+      "severity": "medium",
+      "pattern": "planner oscillation",
+      "trace": [
+        { "time": "18:26:40", "role": "tool", "detail": "web_search → poluru enterprise pricing" },
+        { "time": "18:26:48", "role": "planner", "detail": "Result insufficient; search again with synonyms." },
+        { "time": "18:26:49", "role": "tool", "detail": "web_search → poluru pricing page" }
+      ]
+    },
+    {
+      "id": "LOOP-2172",
+      "agentId": "agt-nova",
+      "agentName": "Nova Support",
+      "taskId": "TSK-18354",
+      "loopScore": 48,
+      "repeatedStepCount": 3,
+      "repeatedStep": "ticket_lookup",
+      "firstDetected": "2026-08-24T16:12:08.000Z",
+      "status": "mitigated",
+      "severity": "low",
+      "pattern": "repeated tool call",
+      "trace": [
+        { "time": "16:12:08", "role": "tool", "detail": "ticket_lookup → VIP-441" },
+        { "time": "16:12:11", "role": "observe", "detail": "Empty payload during CRM sync." },
+        { "time": "16:14:20", "role": "system", "detail": "Guardrail paused retries after 3 identical calls." }
+      ]
+    },
+    {
+      "id": "LOOP-2164",
+      "agentId": "agt-prism",
+      "agentName": "Prism Content",
+      "taskId": "TSK-18376",
+      "loopScore": 33,
+      "repeatedStepCount": 2,
+      "repeatedStep": "rewrite_intro",
+      "firstDetected": "2026-08-24T15:40:00.000Z",
+      "status": "mitigated",
+      "severity": "low",
+      "pattern": "think-act cycle",
+      "trace": [
+        { "time": "15:40:00", "role": "planner", "detail": "Intro still too promotional." },
+        { "time": "15:40:08", "role": "act", "detail": "rewrite_intro()" },
+        { "time": "15:41:12", "role": "system", "detail": "Editor accepted revision; loop closed." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "summary": {
+    "totalCallsToday": 8922,
+    "avgSuccessRate": 97.1,
+    "avgLatencyMs": 640,
+    "slowTools": 2,
+    "failingTools": 1
+  },
+  "tools": [
+    {
+      "id": "web_search",
+      "name": "web_search",
+      "ownerAgent": "Atlas Research",
+      "totalCalls": 3120,
+      "successRate": 96.4,
+      "avgLatencyMs": 2410,
+      "p95LatencyMs": 3180,
+      "lastUsed": "2026-08-24T18:41:12.000Z",
+      "status": "slow",
+      "errorBudgetUsed": 42
+    },
+    {
+      "id": "code_exec",
+      "name": "code_exec",
+      "ownerAgent": "Helix Data",
+      "totalCalls": 1844,
+      "successRate": 94.1,
+      "avgLatencyMs": 1180,
+      "p95LatencyMs": 2100,
+      "lastUsed": "2026-08-24T18:40:02.000Z",
+      "status": "watch",
+      "errorBudgetUsed": 61
+    },
+    {
+      "id": "ticket_lookup",
+      "name": "ticket_lookup",
+      "ownerAgent": "Nova Support",
+      "totalCalls": 1510,
+      "successRate": 99.2,
+      "avgLatencyMs": 210,
+      "p95LatencyMs": 340,
+      "lastUsed": "2026-08-24T18:39:40.000Z",
+      "status": "healthy",
+      "errorBudgetUsed": 8
+    },
+    {
+      "id": "doc_retrieve",
+      "name": "doc_retrieve",
+      "ownerAgent": "Quill Legal",
+      "totalCalls": 1288,
+      "successRate": 98.6,
+      "avgLatencyMs": 430,
+      "p95LatencyMs": 720,
+      "lastUsed": "2026-08-24T18:35:18.000Z",
+      "status": "healthy",
+      "errorBudgetUsed": 11
+    },
+    {
+      "id": "crm_update",
+      "name": "crm_update",
+      "ownerAgent": "Nova Support",
+      "totalCalls": 742,
+      "successRate": 91.8,
+      "avgLatencyMs": 860,
+      "p95LatencyMs": 1540,
+      "lastUsed": "2026-08-24T18:38:51.000Z",
+      "status": "failing",
+      "errorBudgetUsed": 84
+    },
+    {
+      "id": "email_send",
+      "name": "email_send",
+      "ownerAgent": "Prism Content",
+      "totalCalls": 418,
+      "successRate": 99.0,
+      "avgLatencyMs": 540,
+      "p95LatencyMs": 890,
+      "lastUsed": "2026-08-24T17:58:22.000Z",
+      "status": "healthy",
+      "errorBudgetUsed": 6
+    }
+  ],
+  "usageTrend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "web_search", "color": "#0f6e6a", "values": [410, 428, 451, 439, 480, 502, 520] },
+      { "name": "code_exec", "color": "#175cd3", "values": [210, 232, 248, 240, 268, 274, 290] },
+      { "name": "ticket_lookup", "color": "#3db5af", "values": [180, 188, 196, 201, 210, 218, 230] }
+    ]
+  }
+}

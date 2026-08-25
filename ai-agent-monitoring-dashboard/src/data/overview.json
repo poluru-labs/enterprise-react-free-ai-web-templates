@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "kpis": [
+    {
+      "id": "active-agents",
+      "label": "Active agents",
+      "value": 18,
+      "hint": "6 production workspaces",
+      "trend": "up",
+      "trendValue": "+2",
+      "icon": "bi-cpu",
+      "tone": "brand",
+      "sparkline": [11, 12, 13, 14, 16, 17, 18]
+    },
+    {
+      "id": "tasks-started",
+      "label": "Tasks started today",
+      "value": 1284,
+      "hint": "vs 1,102 yesterday",
+      "trend": "up",
+      "trendValue": "+16.5%",
+      "icon": "bi-play-circle",
+      "tone": "info",
+      "sparkline": [820, 910, 980, 1040, 1112, 1204, 1284]
+    },
+    {
+      "id": "tasks-completed",
+      "label": "Tasks completed today",
+      "value": 1147,
+      "hint": "89.3% completion ratio",
+      "trend": "up",
+      "trendValue": "+9.1%",
+      "icon": "bi-check2-circle",
+      "tone": "success",
+      "sparkline": [740, 810, 870, 940, 1010, 1088, 1147]
+    },
+    {
+      "id": "failure-rate",
+      "label": "Failure rate",
+      "value": "4.8%",
+      "hint": "target < 5.0%",
+      "trend": "down",
+      "trendValue": "-0.6 pts",
+      "icon": "bi-exclamation-octagon",
+      "tone": "danger",
+      "sparkline": [6.4, 6.1, 5.8, 5.4, 5.1, 5.0, 4.8]
+    },
+    {
+      "id": "handoff-rate",
+      "label": "Human handoff rate",
+      "value": "6.2%",
+      "hint": "80 cases in queue",
+      "trend": "up",
+      "trendValue": "+0.8 pts",
+      "icon": "bi-people",
+      "tone": "warning",
+      "sparkline": [4.8, 5.0, 5.2, 5.4, 5.7, 5.9, 6.2]
+    },
+    {
+      "id": "memory-health",
+      "label": "Memory health score",
+      "value": 91,
+      "hint": "retrieval quality stable",
+      "trend": "down",
+      "trendValue": "-3",
+      "icon": "bi-heart-pulse",
+      "tone": "brand",
+      "sparkline": [96, 95, 94, 94, 93, 92, 91]
+    }
+  ],
+  "taskTrend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      {
+        "name": "Started",
+        "color": "#175cd3",
+        "values": [980, 1042, 1118, 1094, 1206, 1240, 1284]
+      },
+      {
+        "name": "Completed",
+        "color": "#1a9b95",
+        "values": [862, 931, 1004, 988, 1088, 1116, 1147]
+      }
+    ]
+  },
+  "toolUsage": [
+    { "name": "web_search", "value": 3120, "color": "#0f6e6a" },
+    { "name": "code_exec", "value": 1844, "color": "#175cd3" },
+    { "name": "ticket_lookup", "value": 1510, "color": "#3db5af" },
+    { "name": "doc_retrieve", "value": 1288, "color": "#1f7a4d" },
+    { "name": "crm_update", "value": 742, "color": "#9a6700" },
+    { "name": "email_send", "value": 418, "color": "#7a8b9c" }
+  ],
+  "failureReasons": [
+    { "name": "Timeout", "value": 38, "color": "#9a6700" },
+    { "name": "Tool error", "value": 29, "color": "#b42318" },
+    { "name": "Validation error", "value": 17, "color": "#175cd3" },
+    { "name": "Hallucinated action", "value": 11, "color": "#0f6e6a" },
+    { "name": "Memory overflow", "value": 7, "color": "#5b6b7c" }
+  ],
+  "recentActivity": [
+    {
+      "id": "act-1042",
+      "time": "2026-08-24T18:39:12.000Z",
+      "agent": "Nova Support",
+      "event": "Completed refund eligibility review",
+      "type": "success",
+      "ref": "TSK-18421"
+    },
+    {
+      "id": "act-1041",
+      "time": "2026-08-24T18:36:44.000Z",
+      "agent": "Sentinel Ops",
+      "event": "Loop score crossed 86 on deploy rollback planner",
+      "type": "danger",
+      "ref": "LOOP-2204"
+    },
+    {
+      "id": "act-1040",
+      "time": "2026-08-24T18:31:08.000Z",
+      "agent": "Helix Data",
+      "event": "Memory retrieval quality dropped to 71",
+      "type": "warning",
+      "ref": "MEM-HEL-12"
+    },
+    {
+      "id": "act-1039",
+      "time": "2026-08-24T18:22:51.000Z",
+      "agent": "Atlas Research",
+      "event": "Started competitive brief for Poluru Q3",
+      "type": "info",
+      "ref": "TSK-18408"
+    },
+    {
+      "id": "act-1038",
+      "time": "2026-08-24T18:14:19.000Z",
+      "agent": "Quill Legal",
+      "event": "Handed off clause redline to human counsel",
+      "type": "warning",
+      "ref": "HO-7721"
+    },
+    {
+      "id": "act-1037",
+      "time": "2026-08-24T18:05:02.000Z",
+      "agent": "Prism Content",
+      "event": "web_search latency exceeded 2.4s p95",
+      "type": "danger",
+      "ref": "TOOL-web_search"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "danger",
+      "title": "High loop rate on Sentinel Ops",
+      "message": "3 active loops above score 80 in the last 30 minutes. Planner is repeating rollback checks.",
+      "href": "/agent-monitoring/loops"
+    },
+    {
+      "id": "al-02",
+      "variant": "warning",
+      "title": "Memory degradation on Helix Data",
+      "message": "Stale entries rose to 18% and context saturation is at 86%. Retrieval quality is trending down.",
+      "href": "/agent-monitoring/memory-health"
+    },
+    {
+      "id": "al-03",
+      "variant": "info",
+      "title": "Tool latency spike",
+      "message": "web_search p95 is 2.41s (budget 1.20s). Success rate remains 96.4%.",
+      "href": "/agent-monitoring/tool-calls"
+    }
+  ]
+}

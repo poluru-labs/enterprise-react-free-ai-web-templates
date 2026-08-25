@@ -1,0 +1,95 @@
+{
+  "summary": {
+    "failuresToday": 102,
+    "failureRate": 4.8,
+    "topReason": "timeout",
+    "mttrMinutes": 18
+  },
+  "reasons": [
+    { "id": "timeout", "name": "Timeout", "count": 38, "share": 37.3, "severity": "high", "color": "#9a6700" },
+    { "id": "tool_error", "name": "Tool error", "count": 29, "share": 28.4, "severity": "critical", "color": "#b42318" },
+    { "id": "validation_error", "name": "Validation error", "count": 17, "share": 16.7, "severity": "medium", "color": "#175cd3" },
+    { "id": "hallucinated_action", "name": "Hallucinated action", "count": 11, "share": 10.8, "severity": "high", "color": "#0f6e6a" },
+    { "id": "memory_overflow", "name": "Memory overflow", "count": 7, "share": 6.9, "severity": "critical", "color": "#5b6b7c" }
+  ],
+  "trend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "Failures", "color": "#b42318", "values": [88, 92, 97, 90, 110, 108, 102] }
+    ]
+  },
+  "logs": [
+    {
+      "id": "FAIL-9104",
+      "taskId": "TSK-18397",
+      "agentName": "Helix Data",
+      "reason": "memory_overflow",
+      "severity": "critical",
+      "message": "Shuffle stage exceeded 8 GB working set while joining 14-month events.",
+      "occurredAt": "2026-08-24T17:58:22.000Z"
+    },
+    {
+      "id": "FAIL-9098",
+      "taskId": "TSK-18311",
+      "agentName": "Prism Content",
+      "reason": "hallucinated_action",
+      "severity": "high",
+      "message": "Draft included a 30% launch discount that is not in the catalog.",
+      "occurredAt": "2026-08-24T14:29:18.000Z"
+    },
+    {
+      "id": "FAIL-9091",
+      "taskId": "TSK-18418",
+      "agentName": "Sentinel Ops",
+      "reason": "timeout",
+      "severity": "high",
+      "message": "code_exec health probe exceeded 30s budget.",
+      "occurredAt": "2026-08-24T18:34:09.000Z"
+    },
+    {
+      "id": "FAIL-9084",
+      "taskId": "TSK-18388",
+      "agentName": "Quill Legal",
+      "reason": "validation_error",
+      "severity": "medium",
+      "message": "Proposed indemnity clause failed schema check for governing law.",
+      "occurredAt": "2026-08-24T17:12:44.000Z"
+    },
+    {
+      "id": "FAIL-9077",
+      "taskId": "TSK-18421",
+      "agentName": "Nova Support",
+      "reason": "tool_error",
+      "severity": "critical",
+      "message": "crm_update returned 502 from billing adapter.",
+      "occurredAt": "2026-08-24T18:18:55.000Z"
+    },
+    {
+      "id": "FAIL-9068",
+      "taskId": "TSK-18329",
+      "agentName": "Helix Data",
+      "reason": "timeout",
+      "severity": "medium",
+      "message": "Warehouse watermark query timed out after 45s.",
+      "occurredAt": "2026-08-24T18:01:12.000Z"
+    },
+    {
+      "id": "FAIL-9059",
+      "taskId": "TSK-18408",
+      "agentName": "Atlas Research",
+      "reason": "tool_error",
+      "severity": "medium",
+      "message": "web_search provider rate-limited the session.",
+      "occurredAt": "2026-08-24T18:27:03.000Z"
+    },
+    {
+      "id": "FAIL-9051",
+      "taskId": "TSK-18298",
+      "agentName": "Atlas Research",
+      "reason": "validation_error",
+      "severity": "low",
+      "message": "Extracted term length failed ISO-duration parse on 2 NDAs.",
+      "occurredAt": "2026-08-23T20:11:20.000Z"
+    }
+  ]
+}
