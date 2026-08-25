@@ -1,6 +1,6 @@
 {
   "summary": {
-    "totalCallsToday": 8922,
+    "totalCallsToday": 9462,
     "avgSuccessRate": 97.1,
     "avgLatencyMs": 640,
     "slowTools": 2,
@@ -68,6 +68,18 @@
       "errorBudgetUsed": 84
     },
     {
+      "id": "invoice_match",
+      "name": "invoice_match",
+      "ownerAgent": "Orchid Finance",
+      "totalCalls": 540,
+      "successRate": 98.3,
+      "avgLatencyMs": 380,
+      "p95LatencyMs": 640,
+      "lastUsed": "2026-08-24T16:48:22.000Z",
+      "status": "healthy",
+      "errorBudgetUsed": 9
+    },
+    {
       "id": "email_send",
       "name": "email_send",
       "ownerAgent": "Prism Content",
@@ -83,9 +95,9 @@
   "usageTrend": {
     "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
     "series": [
-      { "name": "web_search", "color": "#0f6e6a", "values": [410, 428, 451, 439, 480, 502, 520] },
+      { "name": "web_search", "color": "#003161", "values": [410, 428, 451, 439, 480, 502, 520] },
       { "name": "code_exec", "color": "#175cd3", "values": [210, 232, 248, 240, 268, 274, 290] },
-      { "name": "ticket_lookup", "color": "#3db5af", "values": [180, 188, 196, 201, 210, 218, 230] }
+      { "name": "ticket_lookup", "color": "#2a6eaf", "values": [180, 188, 196, 201, 210, 218, 230] }
     ]
   }
 }

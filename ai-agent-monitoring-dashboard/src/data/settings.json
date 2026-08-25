@@ -1,0 +1,23 @@
+{
+  "workspace": {
+    "name": "Poluru Labs · Production",
+    "slug": "poluru-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 30,
+    "dailyBudgetUsd": 1200,
+    "brandColor": "#003161"
+  },
+  "oncall": [
+    { "name": "Avery Poluru", "role": "Ops lead", "shift": "Primary · Mon–Thu" },
+    { "name": "Jonah Poluru", "role": "SRE", "shift": "Secondary · loops & deploys" },
+    { "name": "Elena Poluru", "role": "Data", "shift": "Helix Data owner" },
+    { "name": "Priya Poluru", "role": "Counsel", "shift": "Legal handoffs" }
+  ],
+  "channels": [
+    { "id": "pager", "label": "Pager for critical loops and guardrail blocks", "enabled": true },
+    { "id": "slack", "label": "Slack #agent-ops for warnings", "enabled": true },
+    { "id": "email", "label": "Daily cost and eval digest", "enabled": true },
+    { "id": "webhook", "label": "Webhook to incident.io", "enabled": false }
+  ]
+}

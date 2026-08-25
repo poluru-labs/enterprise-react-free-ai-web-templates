@@ -1,4 +1,4 @@
-export function Sparkline({ values = [], color = '#1a9b95', width = 88, height = 28 }) {
+export function Sparkline({ values = [], color = '#003161', width = 88, height = 28 }) {
   if (!values.length) return null;
 
   const min = Math.min(...values);

@@ -8,7 +8,7 @@
   },
   "reasonBreakdown": [
     { "name": "Low confidence", "value": 24, "color": "#175cd3" },
-    { "name": "Restricted action", "value": 18, "color": "#0f6e6a" },
+    { "name": "Restricted action", "value": 18, "color": "#003161" },
     { "name": "Customer escalation", "value": 16, "color": "#9a6700" },
     { "name": "Tool failure cascade", "value": 12, "color": "#b42318" },
     { "name": "Ambiguous policy", "value": 10, "color": "#5b6b7c" }
@@ -93,6 +93,26 @@
       "status": "resolved",
       "createdAt": "2026-08-23T21:55:00.000Z",
       "priority": "medium"
+    },
+    {
+      "id": "HO-7658",
+      "agentName": "Prism Content",
+      "taskId": "TSK-18412",
+      "reason": "Low confidence",
+      "assignedHuman": "Elena Poluru",
+      "status": "pending",
+      "createdAt": "2026-08-24T17:55:00.000Z",
+      "priority": "medium"
+    },
+    {
+      "id": "HO-7651",
+      "agentName": "Orchid Finance",
+      "taskId": "TSK-18440",
+      "reason": "Ambiguous policy",
+      "assignedHuman": "Marcus Poluru",
+      "status": "resolved",
+      "createdAt": "2026-08-24T16:46:00.000Z",
+      "priority": "low"
     }
   ]
 }

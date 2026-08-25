@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "spendToday": 741.1,
+    "spendYesterday": 682.4,
+    "tokensIn": 2140000,
+    "tokensOut": 1280000,
+    "budgetUsed": 62,
+    "budgetUsd": 1200,
+    "costPerTask": 0.58
+  },
+  "trend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "Spend (USD)", "color": "#003161", "values": [510, 548, 602, 588, 640, 682, 741] },
+      { "name": "Budget", "color": "#9aa8b6", "values": [800, 800, 800, 800, 800, 800, 800] }
+    ]
+  },
+  "byAgent": [
+    { "name": "Helix Data", "value": 188.6, "color": "#b42318" },
+    { "name": "Quill Legal", "value": 176.4, "color": "#003161" },
+    { "name": "Sentinel Ops", "value": 142.1, "color": "#9a6700" },
+    { "name": "Atlas Research", "value": 86.4, "color": "#175cd3" },
+    { "name": "Orchid Finance", "value": 52.8, "color": "#2a6eaf" },
+    { "name": "Nova Support", "value": 41.2, "color": "#1f7a4d" },
+    { "name": "Prism Content", "value": 38.9, "color": "#5b6b7c" },
+    { "name": "Beacon QA", "value": 14.7, "color": "#0d4d8c" }
+  ],
+  "byModel": [
+    { "name": "claude-sonnet-4", "value": 274.9, "share": 37.1, "color": "#003161" },
+    { "name": "claude-opus-4", "value": 176.4, "share": 23.8, "color": "#00264d" },
+    { "name": "gpt-4.1", "value": 233.8, "share": 31.5, "color": "#175cd3" },
+    { "name": "gpt-4.1-mini", "value": 55.9, "share": 7.5, "color": "#2a6eaf" }
+  ],
+  "invoices": [
+    {
+      "id": "INV-8841",
+      "vendor": "Anthropic",
+      "window": "Aug 18–24",
+      "tokens": "1.62M",
+      "amount": 451.3,
+      "status": "accrued"
+    },
+    {
+      "id": "INV-8836",
+      "vendor": "OpenAI",
+      "window": "Aug 18–24",
+      "tokens": "1.80M",
+      "amount": 289.8,
+      "status": "accrued"
+    },
+    {
+      "id": "INV-8829",
+      "vendor": "Internal GPU burst",
+      "window": "Aug 22–24",
+      "tokens": "0.18M",
+      "amount": 41.6,
+      "status": "draft"
+    }
+  ]
+}

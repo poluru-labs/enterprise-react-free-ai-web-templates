@@ -41,7 +41,7 @@
   "trend": {
     "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
     "series": [
-      { "name": "Health score", "color": "#1a9b95", "values": [96, 95, 94, 94, 93, 92, 91] },
+      { "name": "Health score", "color": "#003161", "values": [96, 95, 94, 94, 93, 92, 91] },
       { "name": "Retrieval quality", "color": "#175cd3", "values": [92, 91, 91, 90, 89, 89, 88] }
     ]
   },
@@ -105,6 +105,26 @@
       "retrievalQuality": 87,
       "saturationRisk": 33,
       "tokens": "504k / 700k"
+    },
+    {
+      "id": "agt-orchid",
+      "name": "Orchid Finance",
+      "status": "healthy",
+      "usage": 44,
+      "staleEntries": 5,
+      "retrievalQuality": 94,
+      "saturationRisk": 8,
+      "tokens": "221k / 500k"
+    },
+    {
+      "id": "agt-beacon",
+      "name": "Beacon QA",
+      "status": "healthy",
+      "usage": 31,
+      "staleEntries": 3,
+      "retrievalQuality": 97,
+      "saturationRisk": 4,
+      "tokens": "118k / 400k"
     }
   ]
 }

@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "tracesToday": 1284,
+    "avgSteps": 7.4,
+    "p95LatencyMs": 4120,
+    "errorRate": 4.8,
+    "tokensToday": 3278000
+  },
+  "traces": [
+    {
+      "id": "TRC-18421",
+      "taskId": "TSK-18421",
+      "agentName": "Nova Support",
+      "agentId": "agt-nova",
+      "status": "completed",
+      "startedAt": "2026-08-24T18:12:04.000Z",
+      "durationMs": 1628000,
+      "tokens": 18420,
+      "costUsd": 0.41,
+      "model": "gpt-4.1-mini",
+      "outcome": "Partial refund recommended and ticket closed.",
+      "steps": [
+        { "role": "planner", "time": "18:12:06", "detail": "Classified ticket as refund eligibility." },
+        { "role": "tool", "time": "18:12:11", "detail": "ticket_lookup · order 9921 · 210ms" },
+        { "role": "tool", "time": "18:18:40", "detail": "crm_update · retry after 502 · 860ms" },
+        { "role": "guardrail", "time": "18:19:02", "detail": "Spend cap check passed ($48 < $200)." },
+        { "role": "agent", "time": "18:39:08", "detail": "Wrote refund recommendation with policy citation." }
+      ]
+    },
+    {
+      "id": "TRC-18418",
+      "taskId": "TSK-18418",
+      "agentName": "Sentinel Ops",
+      "agentId": "agt-sentinel",
+      "status": "looping",
+      "startedAt": "2026-08-24T18:20:11.000Z",
+      "durationMs": 1320000,
+      "tokens": 41200,
+      "costUsd": 3.18,
+      "model": "gpt-4.1",
+      "outcome": "Repeating canary health checks. LOOP-2204 armed.",
+      "steps": [
+        { "role": "planner", "time": "18:20:14", "detail": "Plan rollback for payments-api canary." },
+        { "role": "tool", "time": "18:20:22", "detail": "code_exec · error-budget probe" },
+        { "role": "tool", "time": "18:26:08", "detail": "code_exec · identical health check #9" },
+        { "role": "tool", "time": "18:32:44", "detail": "code_exec · identical health check #14" },
+        { "role": "guardrail", "time": "18:36:44", "detail": "Loop detector score 92 · auto-pause at 16." }
+      ]
+    },
+    {
+      "id": "TRC-18397",
+      "taskId": "TSK-18397",
+      "agentName": "Helix Data",
+      "agentId": "agt-helix",
+      "status": "failed",
+      "startedAt": "2026-08-24T17:41:00.000Z",
+      "durationMs": 1042000,
+      "tokens": 88040,
+      "costUsd": 6.22,
+      "model": "claude-sonnet-4",
+      "outcome": "Aborted on memory overflow during 14-month join.",
+      "steps": [
+        { "role": "planner", "time": "17:41:04", "detail": "Weekly cohort retention digest." },
+        { "role": "tool", "time": "17:41:18", "detail": "code_exec · warehouse watermark" },
+        { "role": "tool", "time": "17:52:11", "detail": "code_exec · 14-month events join" },
+        { "role": "guardrail", "time": "17:58:18", "detail": "Context window 91% · saturation risk." },
+        { "role": "agent", "time": "17:58:22", "detail": "Failed: shuffle stage exceeded 8 GB working set." }
+      ]
+    },
+    {
+      "id": "TRC-18388",
+      "taskId": "TSK-18388",
+      "agentName": "Quill Legal",
+      "agentId": "agt-quill",
+      "status": "handed_off",
+      "startedAt": "2026-08-24T16:50:10.000Z",
+      "durationMs": 5040000,
+      "tokens": 61200,
+      "costUsd": 8.14,
+      "model": "claude-opus-4",
+      "outcome": "Liability cap language routed to counsel.",
+      "steps": [
+        { "role": "planner", "time": "16:50:14", "detail": "MSA clause redline for Poluru Labs renewal." },
+        { "role": "tool", "time": "16:51:02", "detail": "doc_retrieve · prior MSA + playbook" },
+        { "role": "agent", "time": "17:08:40", "detail": "Drafted indemnity and liability cap edits." },
+        { "role": "guardrail", "time": "17:12:20", "detail": "Restricted action · confidence 0.41." },
+        { "role": "agent", "time": "17:14:19", "detail": "Handoff HO-7721 created for Priya Poluru." }
+      ]
+    },
+    {
+      "id": "TRC-18440",
+      "taskId": "TSK-18440",
+      "agentName": "Orchid Finance",
+      "agentId": "agt-orchid",
+      "status": "completed",
+      "startedAt": "2026-08-24T16:10:00.000Z",
+      "durationMs": 2302000,
+      "tokens": 22140,
+      "costUsd": 1.08,
+      "model": "gpt-4.1",
+      "outcome": "211 of 214 invoices matched; 3 exceptions queued.",
+      "steps": [
+        { "role": "planner", "time": "16:10:04", "detail": "AP match for 214 invoices." },
+        { "role": "tool", "time": "16:10:18", "detail": "invoice_match · batch 1 of 4" },
+        { "role": "tool", "time": "16:28:40", "detail": "doc_retrieve · PO 8841–8860" },
+        { "role": "guardrail", "time": "16:44:10", "detail": "PII redaction on vendor bank details." },
+        { "role": "agent", "time": "16:48:22", "detail": "Wrote exception list for AP clerks." }
+      ]
+    },
+    {
+      "id": "TRC-18408",
+      "taskId": "TSK-18408",
+      "agentName": "Atlas Research",
+      "agentId": "agt-atlas",
+      "status": "running",
+      "startedAt": "2026-08-24T18:22:51.000Z",
+      "durationMs": 1140000,
+      "tokens": 26880,
+      "costUsd": 1.94,
+      "model": "claude-sonnet-4",
+      "outcome": "Collecting public filings for Poluru Q3 brief.",
+      "steps": [
+        { "role": "planner", "time": "18:22:54", "detail": "Outline competitive brief sections." },
+        { "role": "tool", "time": "18:23:08", "detail": "web_search · Poluru Q3 filings · 2.41s" },
+        { "role": "tool", "time": "18:31:40", "detail": "doc_retrieve · prior Q2 brief" },
+        { "role": "agent", "time": "18:38:12", "detail": "Drafting market-share section." }
+      ]
+    },
+    {
+      "id": "TRC-18436",
+      "taskId": "TSK-18436",
+      "agentName": "Beacon QA",
+      "agentId": "agt-beacon",
+      "status": "completed",
+      "startedAt": "2026-08-24T11:40:00.000Z",
+      "durationMs": 1818000,
+      "tokens": 44120,
+      "costUsd": 0.62,
+      "model": "gpt-4.1-mini",
+      "outcome": "80 golden cases; one flaky retrieval fixture isolated.",
+      "steps": [
+        { "role": "planner", "time": "11:40:04", "detail": "Nightly groundedness suite." },
+        { "role": "tool", "time": "11:40:18", "detail": "code_exec · eval harness 80 cases" },
+        { "role": "agent", "time": "12:04:40", "detail": "Flagged fixture RET- hel-12 as flaky." },
+        { "role": "agent", "time": "12:10:18", "detail": "Published EVAL-2204 score 99." }
+      ]
+    },
+    {
+      "id": "TRC-18311",
+      "taskId": "TSK-18311",
+      "agentName": "Prism Content",
+      "agentId": "agt-prism",
+      "status": "blocked",
+      "startedAt": "2026-08-24T14:22:00.000Z",
+      "durationMs": 438000,
+      "tokens": 9200,
+      "costUsd": 0.38,
+      "model": "gpt-4.1",
+      "outcome": "Blocked: 30% discount claim not in catalog.",
+      "steps": [
+        { "role": "planner", "time": "14:22:04", "detail": "Pricing page experiment copy." },
+        { "role": "tool", "time": "14:22:16", "detail": "web_search · competitor pricing" },
+        { "role": "agent", "time": "14:26:40", "detail": "Drafted hero with 30% launch discount." },
+        { "role": "guardrail", "time": "14:29:10", "detail": "Claims policy blocked uncatalogued discount." }
+      ]
+    }
+  ]
+}

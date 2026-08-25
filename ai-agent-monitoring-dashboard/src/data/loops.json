@@ -28,6 +28,24 @@
       ]
     },
     {
+      "id": "LOOP-2201",
+      "agentId": "agt-helix",
+      "agentName": "Helix Data",
+      "taskId": "TSK-18329",
+      "loopScore": 61,
+      "repeatedStepCount": 6,
+      "repeatedStep": "warehouse_watermark",
+      "firstDetected": "2026-08-24T18:12:08.000Z",
+      "status": "active",
+      "severity": "medium",
+      "pattern": "repeated tool call",
+      "trace": [
+        { "time": "18:12:08", "role": "tool", "detail": "code_exec → warehouse_watermark()" },
+        { "time": "18:12:44", "role": "observe", "detail": "SLA still stale; retry." },
+        { "time": "18:12:46", "role": "tool", "detail": "code_exec → warehouse_watermark()" }
+      ]
+    },
+    {
       "id": "LOOP-2198",
       "agentId": "agt-helix",
       "agentName": "Helix Data",

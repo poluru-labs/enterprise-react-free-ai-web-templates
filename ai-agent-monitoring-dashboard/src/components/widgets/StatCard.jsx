@@ -1,7 +1,7 @@
 import { Sparkline } from '../charts/Sparkline.jsx';
 
 const TONE_COLOR = {
-  brand: '#1a9b95',
+  brand: '#003161',
   info: '#175cd3',
   success: '#1f7a4d',
   warning: '#9a6700',
@@ -9,7 +9,7 @@ const TONE_COLOR = {
 };
 
 const TONE_SURFACE = {
-  brand: '#eef9f8',
+  brand: '#eaf1f8',
   info: '#e0ecff',
   success: '#d9f2e5',
   warning: '#fff1cc',

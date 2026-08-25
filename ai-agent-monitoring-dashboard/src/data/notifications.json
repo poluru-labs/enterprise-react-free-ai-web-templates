@@ -1,0 +1,45 @@
+{
+  "unread": 5,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "danger",
+      "title": "Sentinel Ops loop score 92",
+      "body": "LOOP-2204 is repeating canary health checks. Auto-pause arms at 16 repeats.",
+      "time": "2026-08-24T18:36:44.000Z",
+      "href": "/agent-monitoring/loops"
+    },
+    {
+      "id": "n-02",
+      "tone": "warning",
+      "title": "Helix Data memory saturation 86%",
+      "body": "Stale entries at 18%. Retrieval quality dropped to 71 on MEM-HEL-12.",
+      "time": "2026-08-24T18:31:08.000Z",
+      "href": "/agent-monitoring/memory-health"
+    },
+    {
+      "id": "n-03",
+      "tone": "warning",
+      "title": "web_search p95 3.18s",
+      "body": "Latency budget is 1.20s. Success rate is still 96.4%.",
+      "time": "2026-08-24T18:14:19.000Z",
+      "href": "/agent-monitoring/tool-calls"
+    },
+    {
+      "id": "n-04",
+      "tone": "info",
+      "title": "Eval regression on Analytics SQL",
+      "body": "EVAL-2209 scored 71 with 11 failed cases on Helix Data.",
+      "time": "2026-08-24T17:12:00.000Z",
+      "href": "/agent-monitoring/evaluations"
+    },
+    {
+      "id": "n-05",
+      "tone": "danger",
+      "title": "Jailbreak blocked on Nova Support",
+      "body": "GRD-4381 stopped a ticket that asked Nova to dump its system prompt.",
+      "time": "2026-08-24T18:41:18.000Z",
+      "href": "/agent-monitoring/guardrails"
+    }
+  ]
+}

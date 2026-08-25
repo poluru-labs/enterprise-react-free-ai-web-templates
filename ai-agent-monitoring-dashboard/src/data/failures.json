@@ -9,7 +9,7 @@
     { "id": "timeout", "name": "Timeout", "count": 38, "share": 37.3, "severity": "high", "color": "#9a6700" },
     { "id": "tool_error", "name": "Tool error", "count": 29, "share": 28.4, "severity": "critical", "color": "#b42318" },
     { "id": "validation_error", "name": "Validation error", "count": 17, "share": 16.7, "severity": "medium", "color": "#175cd3" },
-    { "id": "hallucinated_action", "name": "Hallucinated action", "count": 11, "share": 10.8, "severity": "high", "color": "#0f6e6a" },
+    { "id": "hallucinated_action", "name": "Hallucinated action", "count": 11, "share": 10.8, "severity": "high", "color": "#003161" },
     { "id": "memory_overflow", "name": "Memory overflow", "count": 7, "share": 6.9, "severity": "critical", "color": "#5b6b7c" }
   ],
   "trend": {
@@ -90,6 +90,15 @@
       "severity": "low",
       "message": "Extracted term length failed ISO-duration parse on 2 NDAs.",
       "occurredAt": "2026-08-23T20:11:20.000Z"
+    },
+    {
+      "id": "FAIL-9044",
+      "taskId": "TSK-18412",
+      "agentName": "Prism Content",
+      "reason": "validation_error",
+      "severity": "medium",
+      "message": "Runbook draft cited a 1.2M token cap that Helix Data no longer publishes.",
+      "occurredAt": "2026-08-24T17:48:00.000Z"
     }
   ]
 }

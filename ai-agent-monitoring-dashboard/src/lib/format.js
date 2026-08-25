@@ -52,6 +52,15 @@ export function formatPercent(value, digits = 1) {
   return `${Number(value).toFixed(digits)}%`;
 }
 
+export function formatCurrency(value, digits = 0) {
+  if (value == null || Number.isNaN(Number(value))) return '—';
+  return Number(value).toLocaleString('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: digits,
+  });
+}
+
 export function formatNumber(value) {
   if (value == null || Number.isNaN(Number(value))) return '—';
   return Number(value).toLocaleString('en-US');

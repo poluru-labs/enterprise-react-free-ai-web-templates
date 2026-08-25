@@ -9,7 +9,7 @@ export function AlertPanel({ alerts = [], title = 'Anomaly alerts' }) {
       <header className="amd-panel-header">
         <div>
           <h2>{title}</h2>
-          <p>Live guardrails for loops, memory, and tool regressions.</p>
+          <p>Live guardrails for loops, memory, tools, and eval regressions.</p>
         </div>
       </header>
       <div className="amd-alert-list">

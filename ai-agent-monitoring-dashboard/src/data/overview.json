@@ -4,13 +4,13 @@
     {
       "id": "active-agents",
       "label": "Active agents",
-      "value": 18,
+      "value": 8,
       "hint": "6 production workspaces",
       "trend": "up",
       "trendValue": "+2",
       "icon": "bi-cpu",
       "tone": "brand",
-      "sparkline": [11, 12, 13, 14, 16, 17, 18]
+      "sparkline": [5, 5, 6, 6, 7, 7, 8]
     },
     {
       "id": "tasks-started",
@@ -78,24 +78,25 @@
       },
       {
         "name": "Completed",
-        "color": "#1a9b95",
+        "color": "#003161",
         "values": [862, 931, 1004, 988, 1088, 1116, 1147]
       }
     ]
   },
   "toolUsage": [
-    { "name": "web_search", "value": 3120, "color": "#0f6e6a" },
+    { "name": "web_search", "value": 3120, "color": "#003161" },
     { "name": "code_exec", "value": 1844, "color": "#175cd3" },
-    { "name": "ticket_lookup", "value": 1510, "color": "#3db5af" },
+    { "name": "ticket_lookup", "value": 1510, "color": "#2a6eaf" },
     { "name": "doc_retrieve", "value": 1288, "color": "#1f7a4d" },
     { "name": "crm_update", "value": 742, "color": "#9a6700" },
-    { "name": "email_send", "value": 418, "color": "#7a8b9c" }
+    { "name": "email_send", "value": 418, "color": "#7a8b9c" },
+    { "name": "invoice_match", "value": 540, "color": "#001c38" }
   ],
   "failureReasons": [
     { "name": "Timeout", "value": 38, "color": "#9a6700" },
     { "name": "Tool error", "value": 29, "color": "#b42318" },
     { "name": "Validation error", "value": 17, "color": "#175cd3" },
-    { "name": "Hallucinated action", "value": 11, "color": "#0f6e6a" },
+    { "name": "Hallucinated action", "value": 11, "color": "#003161" },
     { "name": "Memory overflow", "value": 7, "color": "#5b6b7c" }
   ],
   "recentActivity": [
@@ -106,6 +107,30 @@
       "event": "Completed refund eligibility review",
       "type": "success",
       "ref": "TSK-18421"
+    },
+    {
+      "id": "act-1043",
+      "time": "2026-08-24T18:41:02.000Z",
+      "agent": "Orchid Finance",
+      "event": "Matched 211 of 214 AP invoices",
+      "type": "success",
+      "ref": "TSK-18440"
+    },
+    {
+      "id": "act-1045",
+      "time": "2026-08-24T18:41:18.000Z",
+      "agent": "Nova Support",
+      "event": "Guardrail blocked a jailbreak attempt in a VIP ticket",
+      "type": "danger",
+      "ref": "GRD-4381"
+    },
+    {
+      "id": "act-1044",
+      "time": "2026-08-24T18:40:40.000Z",
+      "agent": "Beacon QA",
+      "event": "Queued regression pack after Sentinel pause logic",
+      "type": "info",
+      "ref": "TSK-18427"
     },
     {
       "id": "act-1041",
@@ -164,10 +189,17 @@
       "href": "/agent-monitoring/memory-health"
     },
     {
+      "id": "al-04",
+      "variant": "warning",
+      "title": "Eval regression on Analytics SQL",
+      "message": "EVAL-2209 scored 71 on Helix Data with 11 failed cases. Groundedness is 88.2 fleet-wide.",
+      "href": "/agent-monitoring/evaluations"
+    },
+    {
       "id": "al-03",
-      "variant": "info",
-      "title": "Tool latency spike",
-      "message": "web_search p95 is 2.41s (budget 1.20s). Success rate remains 96.4%.",
+      "variant": "danger",
+      "title": "crm_update is burning error budget",
+      "message": "Success rate 91.8% with 84% of the daily error budget used. Nova Support refunds are retrying.",
       "href": "/agent-monitoring/tool-calls"
     }
   ]

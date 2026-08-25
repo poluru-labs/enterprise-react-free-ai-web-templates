@@ -1,0 +1,103 @@
+{
+  "summary": {
+    "passRate": 91.4,
+    "groundedness": 88.2,
+    "hallucinationRate": 2.1,
+    "evalRunsToday": 46,
+    "regressions": 3
+  },
+  "trend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "Pass rate", "color": "#003161", "values": [93.1, 92.8, 92.4, 92.0, 91.8, 91.6, 91.4] },
+      { "name": "Groundedness", "color": "#175cd3", "values": [91.0, 90.4, 90.1, 89.6, 89.0, 88.6, 88.2] }
+    ]
+  },
+  "suites": [
+    { "name": "Support policy", "pass": 96, "fail": 4, "color": "#1f7a4d" },
+    { "name": "Ops runbooks", "pass": 88, "fail": 12, "color": "#9a6700" },
+    { "name": "Legal clauses", "pass": 92, "fail": 8, "color": "#003161" },
+    { "name": "Analytics SQL", "pass": 81, "fail": 19, "color": "#b42318" },
+    { "name": "Content claims", "pass": 90, "fail": 10, "color": "#175cd3" },
+    { "name": "Finance policy", "pass": 95, "fail": 5, "color": "#0d4d8c" }
+  ],
+  "runs": [
+    {
+      "id": "EVAL-2209",
+      "suite": "Analytics SQL",
+      "agentName": "Helix Data",
+      "score": 71,
+      "status": "failed",
+      "cases": 40,
+      "failedCases": 11,
+      "ranAt": "2026-08-24T17:12:00.000Z",
+      "note": "Join hallucinations on 14-month event tables."
+    },
+    {
+      "id": "EVAL-2208",
+      "suite": "Ops runbooks",
+      "agentName": "Sentinel Ops",
+      "score": 84,
+      "status": "watching",
+      "cases": 32,
+      "failedCases": 5,
+      "ranAt": "2026-08-24T16:44:00.000Z",
+      "note": "Repeated health-check planner steps flagged as loops."
+    },
+    {
+      "id": "EVAL-2207",
+      "suite": "Support policy",
+      "agentName": "Nova Support",
+      "score": 97,
+      "status": "completed",
+      "cases": 60,
+      "failedCases": 2,
+      "ranAt": "2026-08-24T15:20:00.000Z",
+      "note": "Refund policy answers remain within approved ranges."
+    },
+    {
+      "id": "EVAL-2206",
+      "suite": "Legal clauses",
+      "agentName": "Quill Legal",
+      "score": 91,
+      "status": "completed",
+      "cases": 28,
+      "failedCases": 2,
+      "ranAt": "2026-08-24T14:08:00.000Z",
+      "note": "Liability cap still routes to human counsel."
+    },
+    {
+      "id": "EVAL-2205",
+      "suite": "Content claims",
+      "agentName": "Prism Content",
+      "score": 78,
+      "status": "failed",
+      "cases": 24,
+      "failedCases": 6,
+      "ranAt": "2026-08-24T13:51:00.000Z",
+      "note": "Discount claims not present in catalog."
+    },
+    {
+      "id": "EVAL-2204",
+      "suite": "Support policy",
+      "agentName": "Beacon QA",
+      "score": 99,
+      "status": "completed",
+      "cases": 80,
+      "failedCases": 1,
+      "ranAt": "2026-08-24T12:10:00.000Z",
+      "note": "Nightly golden set; one flaky retrieval fixture."
+    },
+    {
+      "id": "EVAL-2203",
+      "suite": "Finance policy",
+      "agentName": "Orchid Finance",
+      "score": 95,
+      "status": "completed",
+      "cases": 22,
+      "failedCases": 1,
+      "ranAt": "2026-08-24T11:02:00.000Z",
+      "note": "Expense-limit edge case on international per-diem."
+    }
+  ]
+}

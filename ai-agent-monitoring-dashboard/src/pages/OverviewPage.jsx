@@ -48,8 +48,8 @@ export default function OverviewPage() {
           <p className="amd-kicker">Monday · 24 Aug 2026 · last sync 12s ago</p>
           <h2>Fleet is productive, with two reliability hotspots.</h2>
           <p>
-            Completion is tracking ahead of last week, but Sentinel Ops loop rate and Helix Data memory
-            saturation need operator attention.
+            Completion is tracking ahead of last week, but Sentinel Ops loop rate, Helix Data memory
+            saturation, an Analytics SQL eval regression, and a crm_update error-budget burn need operator attention.
           </p>
         </div>
         <div className="amd-hero-meta">
@@ -59,7 +59,7 @@ export default function OverviewPage() {
           </div>
           <div>
             <span>Open alerts</span>
-            <strong>3</strong>
+            <strong>4</strong>
           </div>
           <div>
             <span>MTTR</span>
@@ -113,8 +113,8 @@ export default function OverviewPage() {
         title="Recent agent activity"
         subtitle="Newest events across the production fleet"
         action={
-          <Link className="amd-text-link" to={`${BASE_PATH}/tasks`}>
-            View tasks
+          <Link className="amd-text-link" to={`${BASE_PATH}/traces`}>
+            View traces
           </Link>
         }
       >

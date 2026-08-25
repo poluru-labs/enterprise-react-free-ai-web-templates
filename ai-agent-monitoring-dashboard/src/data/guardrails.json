@@ -1,0 +1,180 @@
+{
+  "summary": {
+    "eventsToday": 128,
+    "blocksToday": 47,
+    "blockRate": 3.7,
+    "topPolicy": "restricted_action",
+    "falsePositives": 4
+  },
+  "trend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "Blocks", "color": "#b42318", "values": [31, 34, 38, 36, 42, 44, 47] },
+      { "name": "Allowed with warn", "color": "#9a6700", "values": [48, 51, 55, 52, 61, 70, 81] }
+    ]
+  },
+  "policies": [
+    {
+      "id": "restricted_action",
+      "name": "Restricted action",
+      "status": "enforcing",
+      "hits": 18,
+      "blocks": 14,
+      "severity": "critical",
+      "color": "#b42318",
+      "description": "Legal, finance, and prod-deploy tools require human confirmation below confidence 0.72."
+    },
+    {
+      "id": "pii_redaction",
+      "name": "PII redaction",
+      "status": "enforcing",
+      "hits": 29,
+      "blocks": 6,
+      "severity": "high",
+      "color": "#003161",
+      "description": "Strips account numbers, SSNs, and vendor bank details from traces and prompts."
+    },
+    {
+      "id": "spend_cap",
+      "name": "Spend cap",
+      "status": "enforcing",
+      "hits": 22,
+      "blocks": 3,
+      "severity": "medium",
+      "color": "#9a6700",
+      "description": "Per-task $12 and daily $1,200 workspace budget."
+    },
+    {
+      "id": "claims_policy",
+      "name": "Claims policy",
+      "status": "enforcing",
+      "hits": 21,
+      "blocks": 11,
+      "severity": "high",
+      "color": "#175cd3",
+      "description": "Marketing copy must cite an approved catalog or knowledge article."
+    },
+    {
+      "id": "jailbreak",
+      "name": "Jailbreak / injection",
+      "status": "enforcing",
+      "hits": 17,
+      "blocks": 9,
+      "severity": "critical",
+      "color": "#7a2e0e",
+      "description": "Prompt-injection and system-prompt extraction attempts."
+    },
+    {
+      "id": "loop_breaker",
+      "name": "Loop breaker",
+      "status": "watching",
+      "hits": 21,
+      "blocks": 4,
+      "severity": "high",
+      "color": "#2a6eaf",
+      "description": "Pauses an agent after 16 identical planner or tool steps."
+    }
+  ],
+  "events": [
+    {
+      "id": "GRD-4412",
+      "policy": "loop_breaker",
+      "agentName": "Sentinel Ops",
+      "taskId": "TSK-18418",
+      "action": "blocked",
+      "severity": "critical",
+      "detail": "LOOP-2204 score 92. Auto-pause armed at 16 repeats.",
+      "occurredAt": "2026-08-24T18:36:44.000Z"
+    },
+    {
+      "id": "GRD-4408",
+      "policy": "restricted_action",
+      "agentName": "Quill Legal",
+      "taskId": "TSK-18388",
+      "action": "blocked",
+      "severity": "high",
+      "detail": "Liability cap edit below confidence 0.41. Routed to counsel.",
+      "occurredAt": "2026-08-24T17:12:20.000Z"
+    },
+    {
+      "id": "GRD-4401",
+      "policy": "claims_policy",
+      "agentName": "Prism Content",
+      "taskId": "TSK-18311",
+      "action": "blocked",
+      "severity": "high",
+      "detail": "Uncatalogued 30% launch discount removed from draft.",
+      "occurredAt": "2026-08-24T14:29:10.000Z"
+    },
+    {
+      "id": "GRD-4394",
+      "policy": "pii_redaction",
+      "agentName": "Orchid Finance",
+      "taskId": "TSK-18440",
+      "action": "redacted",
+      "severity": "medium",
+      "detail": "Vendor routing numbers stripped from trace TRC-18440.",
+      "occurredAt": "2026-08-24T16:44:10.000Z"
+    },
+    {
+      "id": "GRD-4388",
+      "policy": "spend_cap",
+      "agentName": "Helix Data",
+      "taskId": "TSK-18397",
+      "action": "warned",
+      "severity": "medium",
+      "detail": "Task cost $6.22 vs $12 cap. Allowed; daily burn 62%.",
+      "occurredAt": "2026-08-24T17:55:02.000Z"
+    },
+    {
+      "id": "GRD-4381",
+      "policy": "jailbreak",
+      "agentName": "Nova Support",
+      "taskId": "TSK-18354",
+      "action": "blocked",
+      "severity": "critical",
+      "detail": "Ticket body asked the agent to ignore refund policy and dump system prompt.",
+      "occurredAt": "2026-08-24T18:41:18.000Z"
+    },
+    {
+      "id": "GRD-4372",
+      "policy": "restricted_action",
+      "agentName": "Sentinel Ops",
+      "taskId": "TSK-18418",
+      "action": "blocked",
+      "severity": "critical",
+      "detail": "Production rollback requires two-person approval.",
+      "occurredAt": "2026-08-24T18:28:11.000Z"
+    },
+    {
+      "id": "GRD-4366",
+      "policy": "claims_policy",
+      "agentName": "Atlas Research",
+      "taskId": "TSK-18408",
+      "action": "warned",
+      "severity": "low",
+      "detail": "Market-share figure cited a blog, not a filing. Kept with footnote.",
+      "occurredAt": "2026-08-24T18:38:40.000Z"
+    },
+    {
+      "id": "GRD-4359",
+      "policy": "pii_redaction",
+      "agentName": "Nova Support",
+      "taskId": "TSK-18421",
+      "action": "redacted",
+      "severity": "low",
+      "detail": "Customer card last-4 removed from CRM note.",
+      "occurredAt": "2026-08-24T18:19:40.000Z"
+    },
+    {
+      "id": "GRD-4351",
+      "policy": "loop_breaker",
+      "agentName": "Helix Data",
+      "taskId": "TSK-18329",
+      "action": "warned",
+      "severity": "medium",
+      "detail": "Repeated watermark query 6 times. Score 61, under pause threshold.",
+      "occurredAt": "2026-08-24T18:12:08.000Z"
+    }
+  ]
+}

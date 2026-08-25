@@ -1,3 +1,29 @@
+:root {
+  --amd-brand: #003161;
+  --amd-brand-800: #001c38;
+  --amd-brand-700: #00264d;
+  --amd-brand-600: #003161;
+  --amd-brand-500: #0d4d8c;
+  --amd-brand-400: #2a6eaf;
+  --amd-brand-100: #d0e0ee;
+  --amd-brand-50: #eaf1f8;
+
+  --eds-color-brand-900: #001428;
+  --eds-color-brand-800: #001c38;
+  --eds-color-brand-700: #00264d;
+  --eds-color-brand-600: #003161;
+  --eds-color-brand-500: #0d4d8c;
+  --eds-color-brand-400: #2a6eaf;
+  --eds-color-brand-300: #5b94c9;
+  --eds-color-brand-200: #9bbcdc;
+  --eds-color-brand-100: #d0e0ee;
+  --eds-color-brand-50: #eaf1f8;
+  --eds-color-primary: #003161;
+  --eds-color-primary-hover: #00264d;
+  --eds-color-primary-active: #001c38;
+  --eds-color-focus: #003161;
+}
+
 html,
 body,
 #root {
@@ -27,6 +53,7 @@ body {
   background: var(--eds-color-white, #ffffff);
   border-right: 1px solid var(--eds-color-border, #d7dee7);
   box-shadow: 12px 0 32px rgb(15 23 32 / 0.03);
+  overflow-y: auto;
 }
 
 .amd-brand {
@@ -48,7 +75,7 @@ body {
   flex-shrink: 0;
   border-radius: 8px;
   color: #ffffff;
-  background: #0f6e6a;
+  background: var(--amd-brand-600, #003161);
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -124,14 +151,14 @@ body {
 }
 
 .amd-nav-link:hover {
-  background: var(--eds-color-brand-50, #eef9f8);
-  color: var(--eds-color-brand-800, #0b5a56);
+  background: var(--eds-color-brand-50, #eaf1f8);
+  color: var(--eds-color-brand-800, #001c38);
 }
 
 .amd-nav-link.is-active {
-  background: var(--eds-color-brand-50, #eef9f8);
-  color: var(--eds-color-brand-800, #0b5a56);
-  box-shadow: inset 0 0 0 1px rgb(15 110 106 / 0.16);
+  background: var(--eds-color-brand-50, #eaf1f8);
+  color: var(--eds-color-brand-800, #001c38);
+  box-shadow: inset 0 0 0 1px rgb(0 49 97 / 0.18);
 }
 
 .amd-sidebar-foot {
@@ -232,8 +259,8 @@ body {
   gap: 0.4rem;
   padding: 0.18rem 0.55rem;
   border-radius: 999px;
-  background: #e8f8f4;
-  color: #0f6e6a;
+  background: var(--amd-brand-50, #eaf1f8);
+  color: var(--amd-brand-600, #003161);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -315,7 +342,7 @@ body {
 }
 
 .amd-breadcrumb a {
-  color: var(--eds-color-brand-700, #0f6e6a);
+  color: var(--eds-color-brand-700, #00264d);
   text-decoration: none;
   font-weight: 600;
 }
@@ -446,7 +473,7 @@ body {
   position: absolute;
   inset: 0 0 auto;
   height: 3px;
-  background: var(--eds-color-brand-500, #1a9b95);
+  background: var(--eds-color-brand-600, #003161);
 }
 
 .amd-stat-card.tone-info::before { background: var(--eds-color-info-600, #175cd3); }
@@ -597,7 +624,7 @@ body {
 }
 
 .amd-table tbody tr:hover {
-  background: var(--eds-color-brand-50, #eef9f8);
+  background: var(--eds-color-brand-50, #eaf1f8);
 }
 
 .amd-table tr.is-clickable {
@@ -614,7 +641,7 @@ body {
 }
 
 .amd-table tr.is-selected {
-  background: var(--eds-color-brand-50, #eef9f8);
+  background: var(--eds-color-brand-50, #eaf1f8);
 }
 
 .amd-mono {
@@ -821,7 +848,7 @@ body {
 }
 
 .amd-reason-card.is-active {
-  box-shadow: inset 0 0 0 1px var(--eds-color-brand-400, #3db5af);
+  box-shadow: inset 0 0 0 1px var(--eds-color-brand-400, #2a6eaf);
 }
 
 .amd-score {
@@ -886,7 +913,7 @@ body {
 }
 
 .amd-note-list i {
-  color: var(--eds-color-brand-700, #0f6e6a);
+  color: var(--eds-color-brand-700, #00264d);
 }
 
 .amd-agent-card {
@@ -954,7 +981,7 @@ body {
 }
 
 .amd-text-link {
-  color: var(--eds-color-brand-700, #0f6e6a);
+  color: var(--eds-color-brand-700, #00264d);
   font-weight: 650;
   text-decoration: none;
   font-size: 0.85rem;
@@ -1080,5 +1107,194 @@ body {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--eds-color-text-subtle, #7a8b9c);
+  }
+}
+
+.amd-notify-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.amd-notify-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--eds-color-border, #d7dee7);
+  border-radius: 12px;
+  background: var(--eds-color-white, #fff);
+  cursor: pointer;
+}
+
+.amd-notify-item strong,
+.amd-notify-item p,
+.amd-notify-item span {
+  display: block;
+}
+
+.amd-notify-item p {
+  margin: 0.3rem 0 0.45rem;
+  color: var(--eds-color-text-muted, #5b6b7c);
+  font-size: 0.85rem;
+}
+
+.amd-notify-item span {
+  font-size: 0.72rem;
+  color: var(--eds-color-text-subtle, #7a8b9c);
+}
+
+.amd-notify-item.tone-danger {
+  box-shadow: inset 3px 0 0 var(--eds-color-danger-600, #b42318);
+}
+
+.amd-notify-item.tone-warning {
+  box-shadow: inset 3px 0 0 var(--eds-color-warning-600, #9a6700);
+}
+
+.amd-notify-item.tone-info {
+  box-shadow: inset 3px 0 0 var(--amd-brand-600, #003161);
+}
+
+.amd-search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.amd-search-hit {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--eds-color-border, #d7dee7);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--eds-color-white, #fff);
+}
+
+.amd-search-hit:hover {
+  background: var(--amd-brand-50, #eaf1f8);
+}
+
+.amd-search-hit small,
+.amd-search-hit strong,
+.amd-search-hit span {
+  display: block;
+}
+
+.amd-search-hit small {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--amd-brand-600, #003161);
+  font-weight: 700;
+}
+
+.amd-search-hit span {
+  margin-top: 0.15rem;
+  color: var(--eds-color-text-muted, #5b6b7c);
+  font-size: 0.8rem;
+}
+
+html.eds-theme-dark body {
+  background: var(--eds-color-bg, #0c1219) !important;
+}
+
+html.eds-theme-dark .amd-sidebar,
+html.eds-theme-dark .amd-navbar,
+html.eds-theme-dark .amd-hero,
+html.eds-theme-dark .amd-stat-card,
+html.eds-theme-dark .amd-panel,
+html.eds-theme-dark .amd-filter-bar,
+html.eds-theme-dark .amd-mini-stat,
+html.eds-theme-dark .amd-metric-card,
+html.eds-theme-dark .amd-score-card,
+html.eds-theme-dark .amd-agent-card,
+html.eds-theme-dark .amd-reason-card,
+html.eds-theme-dark .amd-search-hit,
+html.eds-theme-dark .amd-notify-item,
+html.eds-theme-dark .amd-brand,
+html.eds-theme-dark .amd-profile {
+  background: var(--eds-color-surface, #151d27);
+  border-color: var(--eds-color-border, #2a3746);
+}
+
+.amd-notify-wrap {
+  position: relative;
+}
+
+.amd-notify-count {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  min-width: 1.05rem;
+  height: 1.05rem;
+  padding: 0 0.28rem;
+  border-radius: 999px;
+  background: #b42318;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.amd-trace-meta-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.amd-settings-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.25rem;
+  margin: 0;
+}
+
+.amd-settings-list dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--eds-color-text-subtle, #7a8b9c);
+}
+
+.amd-settings-list dd {
+  margin: 0.2rem 0 0;
+  font-weight: 650;
+}
+
+.amd-brand-swatch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.amd-brand-swatch i {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.amd-settings-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+@media (max-width: 767.98px) {
+  .amd-settings-list,
+  .amd-trace-meta-grid {
+    grid-template-columns: 1fr;
   }
 }
