@@ -1,61 +1,16 @@
+import { useState } from 'react';
 import { ThemeProvider, ToastProvider } from '@poluru-labs/enterprise-design-system-react';
 
+const navigation = [['Overview', 'bi-grid-1x2'], ['Knowledge base', 'bi-database'], ['Search & test', 'bi-search'], ['Conversations', 'bi-chat-square-text'], ['Evaluations', 'bi-clipboard2-check']];
+const activity = [['Maya Poluru', 'Uploaded', 'Q3 Research Brief.pdf', '8 min ago', 'bi-file-earmark-arrow-up'], ['Aarav Poluru', 'Updated', 'Support Playbook', '31 min ago', 'bi-pencil-square'], ['Isha Poluru', 'Tested', 'Employee onboarding query', '1 hr ago', 'bi-check2-circle']];
+
+function Sidebar({ active, onNavigate }) {
+  return <aside className="sidebar"><div className="brand"><div className="brand-mark"><i className="bi bi-stars"></i></div><span>Contextly</span></div><nav className="side-nav" aria-label="Main navigation"><p className="nav-label">Workspace</p>{navigation.map(([label, icon]) => <button className={`side-link ${active === label ? 'is-active' : ''}`} key={label} onClick={() => onNavigate(label)} type="button"><i className={`bi ${icon}`}></i><span>{label}</span></button>)}<p className="nav-label nav-label-lower">Manage</p><button className="side-link" type="button"><i className="bi bi-sliders"></i><span>Settings</span></button></nav><div className="sidebar-footer"><div className="usage-card"><div className="usage-copy"><span>Storage</span><strong>72%</strong></div><div className="progress-track"><span></span></div><small>7.2 GB of 10 GB used</small></div><button className="account" type="button"><span className="avatar">MP</span><span><strong>Maya Poluru</strong><small>Admin</small></span><i className="bi bi-three-dots"></i></button></div></aside>;
+}
+
 export default function App() {
-  return (
-    <ThemeProvider defaultTheme="light">
-      <ToastProvider>
-        <div className="d-flex vh-100 bg-white">
-          <aside className="border-end p-3" style={{ width: 260 }}>
-            <div className="d-flex align-items-center gap-2 mb-4">
-              <i className="bi bi-grid-1x2-fill fs-4"></i>
-              <span className="fw-semibold">AI Document RAG Dashboard</span>
-            </div>
-            <nav className="nav flex-column gap-1">
-              <a className="nav-link active" href="#">
-                <i className="bi bi-speedometer2 me-2"></i>Overview
-              </a>
-              <a className="nav-link text-body" href="#">
-                <i className="bi bi-graph-up me-2"></i>Analytics
-              </a>
-              <a className="nav-link text-body" href="#">
-                <i className="bi bi-gear me-2"></i>Settings
-              </a>
-            </nav>
-          </aside>
-          <main className="flex-grow-1 p-4 overflow-auto">
-            <header className="d-flex justify-content-between align-items-center mb-4">
-              <h1 className="h4 mb-0">AI Document RAG Dashboard</h1>
-              <i className="bi bi-bell fs-5"></i>
-            </header>
-            <div className="row g-3">
-              <div className="col-12 col-md-4">
-                <div className="card border h-100">
-                  <div className="card-body">
-                    <h2 className="h6 text-muted mb-2">Metric One</h2>
-                    <p className="h3 mb-0">--</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-4">
-                <div className="card border h-100">
-                  <div className="card-body">
-                    <h2 className="h6 text-muted mb-2">Metric Two</h2>
-                    <p className="h3 mb-0">--</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-4">
-                <div className="card border h-100">
-                  <div className="card-body">
-                    <h2 className="h6 text-muted mb-2">Metric Three</h2>
-                    <p className="h3 mb-0">--</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
-        </div>
-      </ToastProvider>
-    </ThemeProvider>
-  );
+  const [active, setActive] = useState('Overview');
+  const [notice, setNotice] = useState('');
+  const showNotice = (message) => { setNotice(message); window.setTimeout(() => setNotice(''), 2600); };
+  return <ThemeProvider defaultTheme="light"><ToastProvider><div className="app-shell"><Sidebar active={active} onNavigate={setActive} /><main className="main-content"><header className="topbar"><div><p className="eyebrow">Good morning, Maya</p><h1>{active}</h1></div><div className="topbar-actions"><button className="icon-button" type="button" aria-label="Notifications"><i className="bi bi-bell"></i><span></span></button><button className="primary-button" type="button" onClick={() => showNotice('Upload panel opened')}><i className="bi bi-plus-lg"></i> Add documents</button></div></header><section className="welcome-banner"><div><span className="banner-icon"><i className="bi bi-lightning-charge-fill"></i></span><div><p>Retrieval is looking healthy</p><h2>Your knowledge base is ready to answer.</h2></div></div><button type="button" onClick={() => showNotice('Opening search tester')}><i className="bi bi-arrow-up-right"></i> Test a query</button></section><section className="metric-grid" aria-label="Workspace metrics">{[['Indexed documents', 'bi-files', '1,284', '+12.5%', 'from last month'], ['Queries this week', 'bi-activity', '8,946', '+18.2%', 'from last week'], ['Answer accuracy', 'bi-bullseye', '94.8%', '+2.1%', 'from last week'], ['Avg. response time', 'bi-stopwatch', '1.2s', '0.3s faster', 'than last week']].map(([label, icon, value, trend, suffix]) => <article className="metric-card" key={label}><div className="metric-heading"><span>{label}</span><i className={`bi ${icon}`}></i></div><strong>{value}</strong><p><b>{trend}</b> {suffix}</p></article>)}</section><section className="content-grid"><article className="panel search-panel"><div className="panel-heading"><div><h2>Ask your knowledge base</h2><p>Run a quick retrieval test across every source.</p></div><button className="text-button" type="button" onClick={() => setActive('Search & test')}>Open tester <i className="bi bi-arrow-right"></i></button></div><div className="query-box"><i className="bi bi-search"></i><input aria-label="Search knowledge base" placeholder="What would you like to find?" /><button type="button" onClick={() => showNotice('Searching your knowledge base')}><i className="bi bi-arrow-up"></i></button></div><div className="suggestions"><span>Try asking:</span><button type="button">What is our return policy?</button><button type="button">Summarize Q3 results</button></div></article><article className="panel sources-panel"><div className="panel-heading"><div><h2>Source health</h2><p>All systems operational</p></div><button className="icon-button subtle" aria-label="More source options" type="button"><i className="bi bi-three-dots"></i></button></div>{[['drive', 'bi-folder', 'Google Drive', '842 documents'], ['notion', 'bi-journal-richtext', 'Notion', '316 documents'], ['upload', 'bi-cloud-arrow-up', 'Direct uploads', '126 documents']].map(([kind, icon, label, detail]) => <div className="source-row" key={label}><span className={`source-icon ${kind}`}><i className={`bi ${icon}`}></i></span><span><strong>{label}</strong><small>{detail}</small></span><span className="status-dot">Synced</span></div>)}</article></section><section className="panel activity-panel"><div className="panel-heading"><div><h2>Recent activity</h2><p>Changes made across your workspace.</p></div><button className="text-button" type="button" onClick={() => setActive('Conversations')}>View all <i className="bi bi-arrow-right"></i></button></div><div className="activity-list">{activity.map(([name, action, item, time, icon]) => <div className="activity-row" key={`${name}-${item}`}><span className="activity-icon"><i className={`bi ${icon}`}></i></span><span className="person-avatar">{name.split(' ').map((part) => part[0]).join('')}</span><p><strong>{name}</strong> {action.toLowerCase()} <b>{item}</b></p><time>{time}</time></div>)}</div></section></main>{notice && <div className="notice"><i className="bi bi-check-circle-fill"></i>{notice}</div>}</div></ToastProvider></ThemeProvider>;
 }
