@@ -1,0 +1,5 @@
+import { Button, Card, Input, Select } from '@poluru-labs/enterprise-design-system-react';
+
+export default function SettingsPage() {
+  return <div className="llm-settings-grid"><Card padded><div className="llm-card-heading"><div><h2>Workspace settings</h2><p>Manage your default monitoring preferences</p></div></div><div className="llm-form-stack"><Input label="Workspace name" defaultValue="Poluru LLM Ops" /><Input label="Alert email" defaultValue="ops@poluru.dev" /><Select label="Default environment" options={[{ value: 'production', label: 'Production' }, { value: 'staging', label: 'Staging' }]} /><Button variant="primary">Save changes</Button></div></Card><Card padded><div className="llm-card-heading"><div><h2>Team access</h2><p>People with access to this workspace</p></div><Button variant="tertiary" size="sm" icon="person-plus">Invite</Button></div><div className="llm-member"><strong>Subrahmanyam Poluru</strong><span>Owner</span></div><div className="llm-member"><strong>Kavya Poluru</strong><span>Editor</span></div><div className="llm-member"><strong>Harini Poluru</strong><span>Viewer</span></div></Card></div>;
+}

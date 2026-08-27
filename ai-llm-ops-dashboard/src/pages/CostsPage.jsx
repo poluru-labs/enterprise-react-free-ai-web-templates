@@ -1,0 +1,7 @@
+import { Badge, Button, Card } from '@poluru-labs/enterprise-design-system-react';
+
+const spend = [['Aurora Chat', '$1,086', '45%'], ['Atlas Summarizer', '$734', '30%'], ['Lens Extractor', '$392', '16%'], ['Nova Classifier', '$206', '9%']];
+
+export default function CostsPage() {
+  return <div className="llm-page-grid"><Card padded><p className="llm-kpi-label">Current period spend</p><strong className="llm-kpi-value">$2,418</strong><p className="llm-kpi-foot">$342 remaining from monthly budget</p><div className="llm-page-progress"><div style={{ width: '87%' }} /></div><Badge variant="warning" soft>87% of budget used</Badge></Card><Card padded><p className="llm-kpi-label">Projected month-end</p><strong className="llm-kpi-value">$2,774</strong><p className="llm-kpi-foot">Within the $2,760 forecast threshold</p><Button variant="tertiary" size="sm" icon="download">Export report</Button></Card><Card padded={false}><div className="llm-card-heading"><div><h2>Spend by model</h2><p>Usage allocation for the selected period</p></div><Button variant="tertiary" size="sm" icon="sliders2">Adjust budget</Button></div><div className="llm-table-wrap"><table className="llm-table"><thead><tr><th>Model</th><th>Spend</th><th>Share</th></tr></thead><tbody>{spend.map(([name, cost, share]) => <tr key={name}><td><strong>{name}</strong></td><td>{cost}</td><td>{share}</td></tr>)}</tbody></table></div></Card></div>;
+}
