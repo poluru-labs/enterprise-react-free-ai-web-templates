@@ -10,7 +10,7 @@ A curated collection of free React templates for AI dashboards, SaaS products, a
 | [AI Computer Vision Dashboard](ai-computer-vision-dashboard/README.md) | Computer vision operations and model insights. |
 | [AI Content Moderation Dashboard](ai-content-moderation-dashboard/) | Content review and moderation workflows. |
 | [AI Document RAG Dashboard](ai-document-rag-dashboard/) | Document ingestion, retrieval, and question answering. |
-| [AI LLM Ops Dashboard](ai-llm-ops-dashboard/) | Large language model operations and observability. |
+| [AI LLM Ops Dashboard](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops — traces, playground, evals, and cost. Theme `#F13E93`. |
 | [AI ML Training Dashboard](ai-ml-training-dashboard/README.md) | Kiln — training runs, datasets, and GPU clusters. Theme `#DE3E3E`. |
 | [AI Model Evaluation Dashboard](ai-model-evaluation-dashboard/) | Evaluation results and model quality comparisons. |
 | [AI Prompt Management Dashboard](ai-prompt-management-dashboard/) | Prompt versions, testing, and deployment management. |
