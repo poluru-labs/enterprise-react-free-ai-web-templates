@@ -12,7 +12,7 @@ A curated collection of free React templates for AI dashboards, SaaS products, a
 | [AI Document RAG Dashboard](ai-document-rag-dashboard/) | Document ingestion, retrieval, and question answering. |
 | [AI LLM Ops Dashboard](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops — traces, playground, evals, and cost. Theme `#F13E93`. |
 | [AI ML Training Dashboard](ai-ml-training-dashboard/README.md) | Kiln — training runs, datasets, and GPU clusters. Theme `#DE3E3E`. |
-| [AI Model Evaluation Dashboard](ai-model-evaluation-dashboard/) | Evaluation results and model quality comparisons. |
+| [AI Model Evaluation Dashboard](ai-model-evaluation-dashboard/README.md) | Prism — eval suites, leaderboards, and human review. Theme `#FF8383`. |
 | [AI Prompt Management Dashboard](ai-prompt-management-dashboard/) | Prompt versions, testing, and deployment management. |
 | [AI SaaS Admin Dashboard](ai-saas-admin-dashboard/) | Administration for AI-powered SaaS products. |
 | [AI Support Helpdesk Dashboard](ai-support-helpdesk-dashboard/) | Support queues, conversations, and agent productivity. |
