@@ -1,7 +1,8 @@
 {
   "name": "ai-ml-training-dashboard",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "description": "Kiln Training — React ML training workspace with @poluru-labs/enterprise-design-system-react.",
   "type": "module",
   "scripts": {
     "dev": "vite",
