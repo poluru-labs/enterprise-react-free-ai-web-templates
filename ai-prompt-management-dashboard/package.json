@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "description": "Prompt Bureau — prompt management dashboard. Corporate navy #162E93, simple sidebar.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
