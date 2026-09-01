@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "summary": {
+    "sets": 3,
+    "images": 184920,
+    "labeled": 151440,
+    "unlabeled": 33480
+  },
+  "datasets": [
+    {
+      "id": "ds-night",
+      "name": "night-shift-aug",
+      "purpose": "Low-light warehouse augmentation",
+      "status": "ready",
+      "images": 12480,
+      "labeled": 9800,
+      "classes": ["person", "forklift", "pallet", "ppe"],
+      "split": "train 80 / val 10 / test 10",
+      "owner": "Maya Poluru",
+      "updatedAt": "2026-08-24T16:44:00.000Z",
+      "source": "Austin DC mezzanine + Chicago yard"
+    },
+    {
+      "id": "ds-defect",
+      "name": "defect-v3",
+      "purpose": "PCB surface defects for AOI",
+      "status": "training",
+      "images": 42880,
+      "labeled": 36120,
+      "classes": ["solder-bridge", "tombstone", "scratch", "ok"],
+      "split": "train 70 / val 15 / test 15",
+      "owner": "Priya Poluru",
+      "updatedAt": "2026-08-23T21:18:00.000Z",
+      "source": "Hyderabad fab AOI cells 3–7"
+    },
+    {
+      "id": "ds-ppe",
+      "name": "ppe-q3",
+      "purpose": "Helmet, vest, and glasses gold set",
+      "status": "ready",
+      "images": 18640,
+      "labeled": 17440,
+      "classes": ["helmet", "vest", "glasses", "person"],
+      "split": "train 75 / val 15 / test 10",
+      "owner": "Jonah Poluru",
+      "updatedAt": "2026-08-20T13:05:00.000Z",
+      "source": "Chicago dock + Austin pack-out"
+    }
+  ]
+}

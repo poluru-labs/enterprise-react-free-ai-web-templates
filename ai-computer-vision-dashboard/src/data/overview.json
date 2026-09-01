@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "kicker": "Monday · 24 Aug 2026 · last sync 12s ago",
+  "headline": "Two cameras need attention; warehouse mAP is holding.",
+  "summary": "46 of 48 cameras are streaming. GPU cluster is at 71% with p95 inference at 38ms. Open incidents: missing helmet on Chicago Dock 4, Dallas-03 offline, and an ANPR false-positive spike on the gate model.",
+  "kpis": [
+    {
+      "id": "live-cameras",
+      "label": "Live cameras",
+      "value": "46/48",
+      "hint": "2 offline · Dallas gate",
+      "trend": "down",
+      "trendValue": "-2",
+      "icon": "bi-camera-video",
+      "tone": "brand",
+      "sparkline": [48, 48, 47, 47, 46, 46, 46]
+    },
+    {
+      "id": "inferences",
+      "label": "Inferences today",
+      "value": 1820000,
+      "hint": "vs 1.64M yesterday",
+      "trend": "up",
+      "trendValue": "+11%",
+      "icon": "bi-lightning-charge",
+      "tone": "info",
+      "sparkline": [1.12, 1.28, 1.41, 1.52, 1.61, 1.7, 1.82]
+    },
+    {
+      "id": "map",
+      "label": "Fleet mAP",
+      "value": "0.841",
+      "hint": "yolov8-warehouse 0.847",
+      "trend": "up",
+      "trendValue": "+0.006",
+      "icon": "bi-bullseye",
+      "tone": "success",
+      "sparkline": [0.82, 0.824, 0.829, 0.831, 0.836, 0.838, 0.841]
+    },
+    {
+      "id": "latency",
+      "label": "p95 latency",
+      "value": "38ms",
+      "hint": "budget 50ms",
+      "trend": "down",
+      "trendValue": "-4ms",
+      "icon": "bi-stopwatch",
+      "tone": "info",
+      "sparkline": [46, 44, 43, 41, 40, 39, 38]
+    },
+    {
+      "id": "gpu",
+      "label": "GPU utilization",
+      "value": "71%",
+      "hint": "A100 cluster · 12 nodes",
+      "trend": "up",
+      "trendValue": "+6 pts",
+      "icon": "bi-gpu-card",
+      "tone": "warning",
+      "sparkline": [58, 61, 63, 66, 68, 70, 71]
+    },
+    {
+      "id": "incidents",
+      "label": "Open incidents",
+      "value": 3,
+      "hint": "1 safety · 1 outage · 1 quality",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-exclamation-octagon",
+      "tone": "danger",
+      "sparkline": [1, 1, 2, 2, 2, 3, 3]
+    }
+  ],
+  "inferenceTrend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      {
+        "name": "Inferences (k)",
+        "color": "#0F766E",
+        "values": [1480, 1512, 1588, 1620, 1694, 1740, 1820]
+      },
+      {
+        "name": "Detections (k)",
+        "color": "#14B8A6",
+        "values": [214, 228, 236, 241, 255, 262, 278]
+      }
+    ]
+  },
+  "classDistribution": [
+    { "name": "Person", "value": 84210, "color": "#0F766E" },
+    { "name": "Forklift", "value": 18440, "color": "#14B8A6" },
+    { "name": "PPE", "value": 12680, "color": "#115E59" },
+    { "name": "Plate", "value": 9320, "color": "#5EEAD4" },
+    { "name": "Defect", "value": 4110, "color": "#042F2E" }
+  ],
+  "cameraHealth": [
+    {
+      "id": "site-austin",
+      "site": "Austin DC",
+      "live": 14,
+      "total": 14,
+      "fps": 30,
+      "gpu": 64,
+      "status": "live",
+      "note": "All aisles green. Pack-out cam AUS-DC-04 at 29.8 FPS."
+    },
+    {
+      "id": "site-chicago",
+      "site": "Chicago dock",
+      "live": 11,
+      "total": 12,
+      "fps": 26,
+      "gpu": 78,
+      "status": "degraded",
+      "note": "CHI-DOCK-07 dropping frames after a lighting change on Dock 4."
+    },
+    {
+      "id": "site-hyderabad",
+      "site": "Hyderabad fab",
+      "live": 16,
+      "total": 16,
+      "fps": 28,
+      "gpu": 81,
+      "status": "live",
+      "note": "AOI line HYD-FAB-07 carrying defect-pcb v0.9.6 canary."
+    },
+    {
+      "id": "site-dallas",
+      "site": "Dallas gate",
+      "live": 5,
+      "total": 6,
+      "fps": 22,
+      "gpu": 44,
+      "status": "offline",
+      "note": "DAL-GATE-03 RTSP session died at 17:58. ANPR still running on 01 and 02."
+    }
+  ],
+  "recentDetections": [
+    {
+      "id": "det-88421",
+      "time": "2026-08-24T18:41:12.000Z",
+      "label": "forklift",
+      "camera": "AUS-DC-01",
+      "site": "Austin DC",
+      "confidence": 0.96,
+      "model": "yolov8-warehouse"
+    },
+    {
+      "id": "det-88418",
+      "time": "2026-08-24T18:40:44.000Z",
+      "label": "person",
+      "camera": "CHI-DOCK-04",
+      "site": "Chicago dock",
+      "confidence": 0.91,
+      "model": "pose-safety"
+    },
+    {
+      "id": "det-88416",
+      "time": "2026-08-24T18:40:18.000Z",
+      "label": "helmet",
+      "camera": "CHI-DOCK-04",
+      "site": "Chicago dock",
+      "confidence": 0.22,
+      "model": "pose-safety"
+    },
+    {
+      "id": "det-88411",
+      "time": "2026-08-24T18:39:02.000Z",
+      "label": "plate",
+      "camera": "DAL-GATE-01",
+      "site": "Dallas gate",
+      "confidence": 0.64,
+      "model": "anpr-gate"
+    },
+    {
+      "id": "det-88407",
+      "time": "2026-08-24T18:37:55.000Z",
+      "label": "defect",
+      "camera": "HYD-FAB-07",
+      "site": "Hyderabad fab",
+      "confidence": 0.88,
+      "model": "defect-pcb"
+    },
+    {
+      "id": "det-88402",
+      "time": "2026-08-24T18:36:40.000Z",
+      "label": "ppe",
+      "camera": "AUS-DC-04",
+      "site": "Austin DC",
+      "confidence": 0.93,
+      "model": "pose-safety"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "danger",
+      "title": "Missing helmet · Chicago Dock 4",
+      "message": "pose-safety scored helmet confidence 0.22 on CHI-DOCK-04. Safety lead Jonah Poluru is on INC-2041.",
+      "href": "/computer-vision/incidents"
+    },
+    {
+      "id": "al-02",
+      "variant": "danger",
+      "title": "Camera offline · Dallas-03",
+      "message": "DAL-GATE-03 has not published a keyframe since 17:58 CT. Gate coverage is down to five of six lenses.",
+      "href": "/computer-vision/cameras"
+    },
+    {
+      "id": "al-03",
+      "variant": "warning",
+      "title": "ANPR false-positive spike",
+      "message": "Trailer IDs are being read as plates on DAL-GATE-01. Precision on anpr-gate fell from 0.93 to 0.81 in two hours.",
+      "href": "/computer-vision/quality"
+    }
+  ]
+}

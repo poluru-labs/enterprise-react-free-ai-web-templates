@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "summary": {
+    "production": 4,
+    "canary": 1,
+    "meanMap": 0.841,
+    "p95LatencyMs": 38
+  },
+  "models": [
+    {
+      "id": "mdl-yolo",
+      "name": "yolov8-warehouse",
+      "task": "Object detection",
+      "version": "2.4.1",
+      "status": "deployed",
+      "map": 0.847,
+      "precision": 0.89,
+      "recall": 0.86,
+      "latencyMs": 32,
+      "fps": 31,
+      "owner": "Maya Poluru",
+      "runtime": "TensorRT · A100",
+      "sites": ["Austin DC", "Chicago dock"],
+      "updatedAt": "2026-08-22T14:10:00.000Z",
+      "notes": "Primary detector for forklift, pallet, and person in distribution centers."
+    },
+    {
+      "id": "mdl-pose",
+      "name": "pose-safety",
+      "task": "Pose + PPE",
+      "version": "1.8.0",
+      "status": "deployed",
+      "map": 0.812,
+      "precision": 0.84,
+      "recall": 0.79,
+      "latencyMs": 41,
+      "fps": 26,
+      "owner": "Jonah Poluru",
+      "runtime": "ONNX · T4",
+      "sites": ["Chicago dock", "Austin DC", "Hyderabad fab"],
+      "updatedAt": "2026-08-19T09:42:00.000Z",
+      "notes": "Helmet, vest, and skeleton tracks. Dock 4 miss is under review."
+    },
+    {
+      "id": "mdl-anpr",
+      "name": "anpr-gate",
+      "task": "Plate recognition",
+      "version": "3.1.2",
+      "status": "canary",
+      "map": 0.931,
+      "precision": 0.81,
+      "recall": 0.94,
+      "latencyMs": 18,
+      "fps": 42,
+      "owner": "Elena Poluru",
+      "runtime": "TensorRT · L4",
+      "sites": ["Dallas gate"],
+      "updatedAt": "2026-08-24T11:05:00.000Z",
+      "notes": "Trailer-ID false positives after the 3.1.2 canary. Roll back candidate: 3.0.9."
+    },
+    {
+      "id": "mdl-pcb",
+      "name": "defect-pcb",
+      "task": "Surface defect",
+      "version": "0.9.6",
+      "status": "canary",
+      "map": 0.776,
+      "precision": 0.81,
+      "recall": 0.74,
+      "latencyMs": 54,
+      "fps": 18,
+      "owner": "Priya Poluru",
+      "runtime": "PyTorch · A100",
+      "sites": ["Hyderabad fab"],
+      "updatedAt": "2026-08-23T21:18:00.000Z",
+      "notes": "Canary on HYD-FAB-07. Solder-bridge recall is the current bottleneck."
+    }
+  ]
+}

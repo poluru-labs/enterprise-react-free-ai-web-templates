@@ -1,0 +1,24 @@
+{
+  "workspace": {
+    "name": "Poluru Labs · Sightline",
+    "slug": "sightline-prod",
+    "region": "us-south-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 45,
+    "frameRetentionHours": 72,
+    "brandColor": "#0F766E"
+  },
+  "oncall": [
+    { "name": "Maya Poluru", "role": "Vision ops lead", "shift": "Primary · Mon–Thu" },
+    { "name": "Jonah Poluru", "role": "Safety models", "shift": "Chicago dock + PPE" },
+    { "name": "Elena Poluru", "role": "Gate / ANPR", "shift": "Dallas gate coverage" },
+    { "name": "Priya Poluru", "role": "Fab inspection", "shift": "Hyderabad AOI nights" }
+  ],
+  "channels": [
+    { "id": "pager", "label": "Pager for offline cameras and safety misses", "enabled": true },
+    { "id": "slack", "label": "Slack #vision-ops for degraded streams", "enabled": true },
+    { "id": "sms", "label": "SMS for helmet / PPE incidents", "enabled": true },
+    { "id": "email", "label": "Daily quality and GPU digest", "enabled": true },
+    { "id": "webhook", "label": "Webhook to incident.io", "enabled": false }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "summary": {
+    "today": 278420,
+    "highConfidence": 241102,
+    "reviewQueue": 186,
+    "meanConfidence": 0.91
+  },
+  "events": [
+    {
+      "id": "det-88421",
+      "time": "2026-08-24T18:41:12.000Z",
+      "label": "forklift",
+      "camera": "AUS-DC-01",
+      "site": "Austin DC",
+      "confidence": 0.96,
+      "model": "yolov8-warehouse",
+      "status": "live",
+      "bbox": "812,240,1288,902"
+    },
+    {
+      "id": "det-88418",
+      "time": "2026-08-24T18:40:44.000Z",
+      "label": "person",
+      "camera": "CHI-DOCK-04",
+      "site": "Chicago dock",
+      "confidence": 0.91,
+      "model": "pose-safety",
+      "status": "live",
+      "bbox": "420,180,610,880"
+    },
+    {
+      "id": "det-88416",
+      "time": "2026-08-24T18:40:18.000Z",
+      "label": "helmet",
+      "camera": "CHI-DOCK-04",
+      "site": "Chicago dock",
+      "confidence": 0.22,
+      "model": "pose-safety",
+      "status": "open",
+      "bbox": "448,180,520,248"
+    },
+    {
+      "id": "det-88414",
+      "time": "2026-08-24T18:39:40.000Z",
+      "label": "ppe",
+      "camera": "CHI-DOCK-04",
+      "site": "Chicago dock",
+      "confidence": 0.74,
+      "model": "pose-safety",
+      "status": "reviewing",
+      "bbox": "430,310,600,720"
+    },
+    {
+      "id": "det-88411",
+      "time": "2026-08-24T18:39:02.000Z",
+      "label": "plate",
+      "camera": "DAL-GATE-01",
+      "site": "Dallas gate",
+      "confidence": 0.64,
+      "model": "anpr-gate",
+      "status": "reviewing",
+      "bbox": "880,410,1040,470"
+    },
+    {
+      "id": "det-88409",
+      "time": "2026-08-24T18:38:22.000Z",
+      "label": "plate",
+      "camera": "DAL-GATE-02",
+      "site": "Dallas gate",
+      "confidence": 0.97,
+      "model": "anpr-gate",
+      "status": "live",
+      "bbox": "760,388,980,452"
+    },
+    {
+      "id": "det-88407",
+      "time": "2026-08-24T18:37:55.000Z",
+      "label": "defect",
+      "camera": "HYD-FAB-07",
+      "site": "Hyderabad fab",
+      "confidence": 0.88,
+      "model": "defect-pcb",
+      "status": "live",
+      "bbox": "512,266,548,301"
+    },
+    {
+      "id": "det-88404",
+      "time": "2026-08-24T18:37:10.000Z",
+      "label": "person",
+      "camera": "HYD-FAB-12",
+      "site": "Hyderabad fab",
+      "confidence": 0.94,
+      "model": "pose-safety",
+      "status": "live",
+      "bbox": "300,120,540,900"
+    },
+    {
+      "id": "det-88402",
+      "time": "2026-08-24T18:36:40.000Z",
+      "label": "ppe",
+      "camera": "AUS-DC-04",
+      "site": "Austin DC",
+      "confidence": 0.93,
+      "model": "pose-safety",
+      "status": "live",
+      "bbox": "210,250,390,810"
+    },
+    {
+      "id": "det-88398",
+      "time": "2026-08-24T18:35:08.000Z",
+      "label": "forklift",
+      "camera": "CHI-DOCK-02",
+      "site": "Chicago dock",
+      "confidence": 0.89,
+      "model": "yolov8-warehouse",
+      "status": "live",
+      "bbox": "140,300,920,980"
+    }
+  ]
+}

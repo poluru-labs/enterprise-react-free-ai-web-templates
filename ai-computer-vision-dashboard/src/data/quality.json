@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "summary": {
+    "precision": 0.862,
+    "recall": 0.838,
+    "f1": 0.85,
+    "driftScore": 0.18
+  },
+  "byModel": [
+    {
+      "name": "yolov8-warehouse",
+      "precision": 0.89,
+      "recall": 0.86,
+      "f1": 0.875,
+      "drift": "stable",
+      "note": "Forklift recall recovered after night-shift-aug landed."
+    },
+    {
+      "name": "pose-safety",
+      "precision": 0.84,
+      "recall": 0.79,
+      "f1": 0.814,
+      "drift": "watch",
+      "note": "Helmet class is under-firing on Dock 4 side lighting."
+    },
+    {
+      "name": "anpr-gate",
+      "precision": 0.81,
+      "recall": 0.94,
+      "f1": 0.87,
+      "drift": "drift",
+      "note": "Precision dropped 12 pts after trailer-ID confusion."
+    },
+    {
+      "name": "defect-pcb",
+      "precision": 0.81,
+      "recall": 0.74,
+      "f1": 0.773,
+      "drift": "watch",
+      "note": "Solder-bridge recall is the canary gate for 1.0."
+    }
+  ],
+  "trend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      { "name": "Precision", "color": "#0F766E", "values": [0.9, 0.898, 0.894, 0.89, 0.884, 0.87, 0.862] },
+      { "name": "Recall", "color": "#14B8A6", "values": [0.82, 0.824, 0.828, 0.831, 0.834, 0.836, 0.838] }
+    ]
+  },
+  "confusion": [
+    { "predicted": "plate", "actual": "trailer-id", "count": 48, "severity": "high" },
+    { "predicted": "person", "actual": "helmet-miss", "count": 17, "severity": "high" },
+    { "predicted": "ok", "actual": "solder-bridge", "count": 11, "severity": "medium" },
+    { "predicted": "pallet", "actual": "forklift", "count": 6, "severity": "low" }
+  ],
+  "notes": [
+    {
+      "id": "q-01",
+      "title": "Lighting shift on Chicago Dock 4",
+      "body": "New LED fixtures throw a hard shadow on helmet crowns. pose-safety needs a side-light sample pack before the next weekly train."
+    },
+    {
+      "id": "q-02",
+      "title": "ANPR domain drift",
+      "body": "Dallas started routing double-deck trailers through Lane 1. 3.1.2 was not trained on stacked IDs."
+    },
+    {
+      "id": "q-03",
+      "title": "Fab defect mix",
+      "body": "Q3 boards use a darker soldermask. defect-v3 unlabeled slice should be prioritized this week."
+    }
+  ]
+}

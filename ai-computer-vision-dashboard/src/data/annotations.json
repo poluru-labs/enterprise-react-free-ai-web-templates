@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "summary": {
+    "queued": 42,
+    "inReview": 11,
+    "approvedToday": 186,
+    "rejectedToday": 9
+  },
+  "frames": [
+    {
+      "id": "ann-4412",
+      "frame": "CHI-DOCK-04-184221",
+      "camera": "CHI-DOCK-04",
+      "site": "Chicago dock",
+      "label": "helmet",
+      "assignee": "Jonah Poluru",
+      "status": "in_review",
+      "priority": "high",
+      "dataset": "ppe-q3",
+      "submittedAt": "2026-08-24T18:12:00.000Z"
+    },
+    {
+      "id": "ann-4408",
+      "frame": "DAL-GATE-01-183902",
+      "camera": "DAL-GATE-01",
+      "site": "Dallas gate",
+      "label": "plate",
+      "assignee": "Elena Poluru",
+      "status": "in_review",
+      "priority": "high",
+      "dataset": "gate-plates-aug",
+      "submittedAt": "2026-08-24T18:04:00.000Z"
+    },
+    {
+      "id": "ann-4401",
+      "frame": "HYD-FAB-07-182211",
+      "camera": "HYD-FAB-07",
+      "site": "Hyderabad fab",
+      "label": "solder-bridge",
+      "assignee": "Priya Poluru",
+      "status": "queued",
+      "priority": "medium",
+      "dataset": "defect-v3",
+      "submittedAt": "2026-08-24T17:48:00.000Z"
+    },
+    {
+      "id": "ann-4396",
+      "frame": "AUS-DC-09-181104",
+      "camera": "AUS-DC-09",
+      "site": "Austin DC",
+      "label": "forklift",
+      "assignee": "Maya Poluru",
+      "status": "queued",
+      "priority": "medium",
+      "dataset": "night-shift-aug",
+      "submittedAt": "2026-08-24T17:22:00.000Z"
+    },
+    {
+      "id": "ann-4388",
+      "frame": "CHI-DOCK-07-175510",
+      "camera": "CHI-DOCK-07",
+      "site": "Chicago dock",
+      "label": "person",
+      "assignee": "Jonah Poluru",
+      "status": "approved",
+      "priority": "low",
+      "dataset": "night-shift-aug",
+      "submittedAt": "2026-08-24T16:55:00.000Z"
+    },
+    {
+      "id": "ann-4382",
+      "frame": "DAL-GATE-01-174402",
+      "camera": "DAL-GATE-01",
+      "site": "Dallas gate",
+      "label": "plate",
+      "assignee": "Elena Poluru",
+      "status": "rejected",
+      "priority": "high",
+      "dataset": "gate-plates-aug",
+      "submittedAt": "2026-08-24T16:40:00.000Z"
+    },
+    {
+      "id": "ann-4374",
+      "frame": "AUS-DC-04-173018",
+      "camera": "AUS-DC-04",
+      "site": "Austin DC",
+      "label": "vest",
+      "assignee": "Maya Poluru",
+      "status": "approved",
+      "priority": "low",
+      "dataset": "ppe-q3",
+      "submittedAt": "2026-08-24T16:12:00.000Z"
+    },
+    {
+      "id": "ann-4366",
+      "frame": "HYD-FAB-03-171802",
+      "camera": "HYD-FAB-03",
+      "site": "Hyderabad fab",
+      "label": "tombstone",
+      "assignee": "Priya Poluru",
+      "status": "queued",
+      "priority": "medium",
+      "dataset": "defect-v3",
+      "submittedAt": "2026-08-24T15:58:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "summary": {
+    "open": 3,
+    "investigating": 2,
+    "resolvedToday": 4,
+    "mttrMinutes": 42
+  },
+  "incidents": [
+    {
+      "id": "INC-2041",
+      "title": "Missing helmet on Dock 4",
+      "site": "Chicago dock",
+      "camera": "CHI-DOCK-04",
+      "model": "pose-safety",
+      "severity": "high",
+      "status": "open",
+      "owner": "Jonah Poluru",
+      "openedAt": "2026-08-24T18:36:12.000Z",
+      "detail": "A picker entered Dock 4 without a helmet. pose-safety helmet confidence was 0.22 while person confidence stayed at 0.91."
+    },
+    {
+      "id": "INC-2042",
+      "title": "Camera offline Dallas-03",
+      "site": "Dallas gate",
+      "camera": "DAL-GATE-03",
+      "model": "anpr-gate",
+      "severity": "critical",
+      "status": "investigating",
+      "owner": "Elena Poluru",
+      "openedAt": "2026-08-24T17:58:40.000Z",
+      "detail": "Overflow lane RTSP session ended. Watchdog retried four times. Physical check requested from Dallas facilities."
+    },
+    {
+      "id": "INC-2040",
+      "title": "False-positive spike on ANPR",
+      "site": "Dallas gate",
+      "camera": "DAL-GATE-01",
+      "model": "anpr-gate",
+      "severity": "medium",
+      "status": "investigating",
+      "owner": "Elena Poluru",
+      "openedAt": "2026-08-24T18:11:04.000Z",
+      "detail": "Trailer identification plates are being transcribed as vehicle plates after anpr-gate 3.1.2 canary."
+    },
+    {
+      "id": "INC-2036",
+      "title": "Mezzanine low light",
+      "site": "Austin DC",
+      "camera": "AUS-DC-09",
+      "model": "yolov8-warehouse",
+      "severity": "low",
+      "status": "resolved",
+      "owner": "Maya Poluru",
+      "openedAt": "2026-08-23T02:14:00.000Z",
+      "detail": "Ballast failure dropped FPS to 18. Night-shift-aug now covers the view until facilities replaces the fixture."
+    }
+  ]
+}

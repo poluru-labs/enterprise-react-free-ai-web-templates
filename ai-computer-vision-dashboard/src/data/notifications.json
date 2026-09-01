@@ -1,0 +1,37 @@
+{
+  "unread": 4,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "danger",
+      "title": "Missing helmet on Dock 4",
+      "body": "pose-safety flagged a person without a helmet at CHI-DOCK-04. Incident INC-2041 is still open.",
+      "time": "2026-08-24T18:36:12.000Z",
+      "href": "/computer-vision/incidents"
+    },
+    {
+      "id": "n-02",
+      "tone": "danger",
+      "title": "Dallas-03 camera offline",
+      "body": "DAL-GATE-03 stopped streaming at 17:58 CT. Watchdog has not recovered the RTSP session.",
+      "time": "2026-08-24T17:58:40.000Z",
+      "href": "/computer-vision/cameras"
+    },
+    {
+      "id": "n-03",
+      "tone": "warning",
+      "title": "ANPR false-positive spike",
+      "body": "anpr-gate v3.1.2 is tagging trailer IDs as plates on DAL-GATE-01. Precision dropped to 0.81.",
+      "time": "2026-08-24T18:11:04.000Z",
+      "href": "/computer-vision/quality"
+    },
+    {
+      "id": "n-04",
+      "tone": "info",
+      "title": "night-shift-aug ingest complete",
+      "body": "12,480 frames landed in defect-v3's sibling night set. Ready for annotation assignment.",
+      "time": "2026-08-24T16:44:00.000Z",
+      "href": "/computer-vision/datasets"
+    }
+  ]
+}
