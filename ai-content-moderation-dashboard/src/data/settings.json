@@ -1,0 +1,23 @@
+{
+  "workspace": {
+    "name": "Poluru Labs · ReviewBay",
+    "slug": "reviewbay-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 45,
+    "brandColor": "#7C3AED",
+    "humanSlaMinutes": 30
+  },
+  "oncall": [
+    { "name": "Nia Poluru", "role": "Trust & safety lead", "shift": "Primary · Mon–Thu" },
+    { "name": "Kai Poluru", "role": "PII / scam", "shift": "Secondary · marketplace" },
+    { "name": "Theo Poluru", "role": "Hate / livestream", "shift": "Raid coverage" },
+    { "name": "Mira Poluru", "role": "Ads integrity", "shift": "Creative review" }
+  ],
+  "channels": [
+    { "id": "pager", "label": "Pager for critical self-harm and raid SLAs", "enabled": true },
+    { "id": "slack", "label": "Slack #content-safety for queue aging", "enabled": true },
+    { "id": "email", "label": "Daily precision and appeals digest", "enabled": true },
+    { "id": "webhook", "label": "Webhook to incident.io", "enabled": false }
+  ]
+}

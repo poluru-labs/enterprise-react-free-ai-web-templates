@@ -1,0 +1,122 @@
+{
+  "summary": {
+    "open": 24,
+    "dueSoon": 6,
+    "medianSlaMinutes": 18,
+    "overturnRate": 21.4
+  },
+  "appeals": [
+    {
+      "id": "AP-4412",
+      "requester": "Harbor Line",
+      "subject": "Marketplace listing removed as scam",
+      "originalDecision": "rejected",
+      "queueId": "Q-18110",
+      "category": "scam",
+      "status": "open",
+      "slaMinutes": 18,
+      "sla": "risk",
+      "openedAt": "2026-08-24T17:12:00.000Z",
+      "owner": "Kai Poluru",
+      "note": "Seller says the wallet QR was a charity drive."
+    },
+    {
+      "id": "AP-4408",
+      "requester": "Maya Chen",
+      "subject": "Comment removed as self-harm",
+      "originalDecision": "rejected",
+      "queueId": "Q-18092",
+      "category": "self-harm",
+      "status": "open",
+      "slaMinutes": 9,
+      "sla": "ok",
+      "openedAt": "2026-08-24T16:40:22.000Z",
+      "owner": "Nia Poluru",
+      "note": "Requester argues it was a recovery story, not a plan."
+    },
+    {
+      "id": "AP-4401",
+      "requester": "Northwind Ads",
+      "subject": "Summer sale creative blocked",
+      "originalDecision": "rejected",
+      "queueId": "Q-18071",
+      "category": "sexual",
+      "status": "open",
+      "slaMinutes": 41,
+      "sla": "breach",
+      "openedAt": "2026-08-24T14:02:11.000Z",
+      "owner": "Mira Poluru",
+      "note": "Advertiser submitted a cropped variant."
+    },
+    {
+      "id": "AP-4394",
+      "requester": "Civic Watch",
+      "subject": "Reporter account muted after raid",
+      "originalDecision": "rejected",
+      "queueId": "Q-18044",
+      "category": "hate",
+      "status": "open",
+      "slaMinutes": 22,
+      "sla": "risk",
+      "openedAt": "2026-08-24T15:51:40.000Z",
+      "owner": "Theo Poluru",
+      "note": "Trusted flagger caught in a raid timeout."
+    },
+    {
+      "id": "AP-4388",
+      "requester": "Priya Raman",
+      "subject": "Profile bio stripped for PII",
+      "originalDecision": "rejected",
+      "queueId": "Q-18021",
+      "category": "pii",
+      "status": "open",
+      "slaMinutes": 55,
+      "sla": "breach",
+      "openedAt": "2026-08-24T12:18:00.000Z",
+      "owner": "Kai Poluru",
+      "note": "Numbers were store hours, not a phone line."
+    },
+    {
+      "id": "AP-4380",
+      "requester": "Jonah Poluru",
+      "subject": "How-to post tagged as spam",
+      "originalDecision": "rejected",
+      "queueId": "Q-17988",
+      "category": "spam",
+      "status": "upheld",
+      "slaMinutes": 0,
+      "sla": "ok",
+      "openedAt": "2026-08-23T19:22:00.000Z",
+      "owner": "Lila Poluru",
+      "note": "Affiliate cloaking confirmed. Decision stands."
+    },
+    {
+      "id": "AP-4372",
+      "requester": "Elena Vogt",
+      "subject": "Wellness reel restored",
+      "originalDecision": "rejected",
+      "queueId": "Q-17940",
+      "category": "self-harm",
+      "status": "overturned",
+      "slaMinutes": 0,
+      "sla": "ok",
+      "openedAt": "2026-08-23T16:05:00.000Z",
+      "owner": "Nia Poluru",
+      "note": "Supportive content. Restored with resources card."
+    },
+    {
+      "id": "AP-4366",
+      "requester": "Brand desk",
+      "subject": "Ad account limited after hash hit",
+      "originalDecision": "escalated",
+      "queueId": "Q-17911",
+      "category": "sexual",
+      "status": "open",
+      "slaMinutes": 27,
+      "sla": "risk",
+      "openedAt": "2026-08-24T16:11:33.000Z",
+      "owner": "Mira Poluru",
+      "note": "Need ads integrity to confirm the creative ID."
+    }
+  ]
+}

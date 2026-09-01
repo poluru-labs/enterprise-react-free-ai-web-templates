@@ -1,0 +1,232 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "hero": {
+    "kicker": "Monday · 24 Aug 2026 · last sync 9s ago",
+    "title": "Queue is holding, with two SLA hotspots in livestream and scam ads.",
+    "body": "Auto-moderation is covering 78% of inbound volume. Human reviewers are clearing 1,847 items today, but nine cases have already crossed the 30-minute SLA and a self-harm dual-review is waiting on a second rater."
+  },
+  "ticker": {
+    "pending": 312,
+    "medianSlaMinutes": 12,
+    "autoModRate": 78,
+    "reviewersOnline": 6
+  },
+  "kpis": [
+    {
+      "id": "pending",
+      "label": "Pending queue",
+      "value": 312,
+      "hint": "48 unassigned",
+      "trend": "up",
+      "trendValue": "+18",
+      "icon": "bi-inbox",
+      "tone": "warning",
+      "sparkline": [248, 261, 274, 268, 291, 304, 312]
+    },
+    {
+      "id": "reviewed",
+      "label": "Reviewed today",
+      "value": 1847,
+      "hint": "vs 1,612 yesterday",
+      "trend": "up",
+      "trendValue": "+14.6%",
+      "icon": "bi-clipboard-check",
+      "tone": "success",
+      "sparkline": [1280, 1394, 1472, 1588, 1660, 1754, 1847]
+    },
+    {
+      "id": "auto-mod",
+      "label": "Auto-mod rate",
+      "value": "78%",
+      "hint": "target 75–82%",
+      "trend": "up",
+      "trendValue": "+2.1 pts",
+      "icon": "bi-cpu",
+      "tone": "brand",
+      "sparkline": [71, 72, 74, 75, 76, 77, 78]
+    },
+    {
+      "id": "sla",
+      "label": "SLA breaches",
+      "value": 9,
+      "hint": "30-minute human SLA",
+      "trend": "up",
+      "trendValue": "+3",
+      "icon": "bi-hourglass-split",
+      "tone": "danger",
+      "sparkline": [4, 3, 5, 4, 6, 7, 9]
+    },
+    {
+      "id": "appeals",
+      "label": "Appeals open",
+      "value": 24,
+      "hint": "6 due in 2 hours",
+      "trend": "down",
+      "trendValue": "-5",
+      "icon": "bi-arrow-counterclockwise",
+      "tone": "info",
+      "sparkline": [31, 29, 28, 27, 26, 25, 24]
+    },
+    {
+      "id": "precision",
+      "label": "Precision",
+      "value": "96.4%",
+      "hint": "sampled auto-blocks",
+      "trend": "up",
+      "trendValue": "+0.4 pts",
+      "icon": "bi-bullseye",
+      "tone": "brand",
+      "sparkline": [95.1, 95.4, 95.6, 95.8, 96.0, 96.2, 96.4]
+    }
+  ],
+  "volumeTrend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      {
+        "name": "Submitted",
+        "color": "#A78BFA",
+        "values": [6840, 7122, 7450, 7318, 7924, 8106, 8412]
+      },
+      {
+        "name": "Auto-actioned",
+        "color": "#7C3AED",
+        "values": [5120, 5388, 5644, 5490, 6102, 6288, 6561]
+      },
+      {
+        "name": "Human reviewed",
+        "color": "#5B21B6",
+        "values": [1488, 1540, 1612, 1588, 1694, 1760, 1847]
+      }
+    ]
+  },
+  "categories": [
+    { "name": "Hate", "value": 86, "color": "#4C1D95" },
+    { "name": "Spam", "value": 74, "color": "#7C3AED" },
+    { "name": "Sexual", "value": 48, "color": "#A78BFA" },
+    { "name": "Self-harm", "value": 21, "color": "#b42318" },
+    { "name": "PII", "value": 39, "color": "#5B21B6" },
+    { "name": "Scam", "value": 44, "color": "#9a6700" }
+  ],
+  "policyHealth": [
+    {
+      "id": "pol-hate",
+      "name": "Hate & harassment",
+      "mode": "enforce",
+      "blocksToday": 412,
+      "precision": 97.1,
+      "note": "Raid language on livestreams is driving extra dual-reviews."
+    },
+    {
+      "id": "pol-spam",
+      "name": "Spam & manipulation",
+      "mode": "enforce",
+      "blocksToday": 980,
+      "precision": 94.2,
+      "note": "Affiliate comment storms are inflating false positives on UGC."
+    },
+    {
+      "id": "pol-sexual",
+      "name": "Sexual content",
+      "mode": "enforce",
+      "blocksToday": 266,
+      "precision": 96.8,
+      "note": "Ad creatives need a second look when the hash miss is > 0.4."
+    },
+    {
+      "id": "pol-harm",
+      "name": "Self-harm",
+      "mode": "enforce",
+      "blocksToday": 58,
+      "precision": 99.2,
+      "note": "Dual-review still required. Median handle time 6 minutes."
+    },
+    {
+      "id": "pol-pii",
+      "name": "PII leakage",
+      "mode": "enforce",
+      "blocksToday": 141,
+      "precision": 95.4,
+      "note": "Profile bios still leak phone numbers after regex misses."
+    },
+    {
+      "id": "pol-scam",
+      "name": "Scam & fraud",
+      "mode": "shadow",
+      "blocksToday": 188,
+      "precision": 91.0,
+      "note": "Marketplace listings remain in shadow until the classifier ships."
+    }
+  ],
+  "queuePreview": [
+    {
+      "id": "Q-18421",
+      "title": "Hate raid on NightMarket live",
+      "source": "livestream",
+      "severity": "critical",
+      "ageMinutes": 42,
+      "assignee": "Unassigned"
+    },
+    {
+      "id": "Q-18397",
+      "title": "Self-harm language in comment thread",
+      "source": "comments",
+      "severity": "critical",
+      "ageMinutes": 8,
+      "assignee": "Nia Poluru"
+    },
+    {
+      "id": "Q-18402",
+      "title": "Phone numbers dumped in profile bio",
+      "source": "ugc",
+      "severity": "high",
+      "ageMinutes": 51,
+      "assignee": "Unassigned"
+    },
+    {
+      "id": "Q-18409",
+      "title": "Sexual creative on summer sale ad",
+      "source": "ads",
+      "severity": "high",
+      "ageMinutes": 16,
+      "assignee": "Mira Poluru"
+    },
+    {
+      "id": "Q-18388",
+      "title": "Crypto giveaway scam listing",
+      "source": "ugc",
+      "severity": "high",
+      "ageMinutes": 33,
+      "assignee": "Unassigned"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "danger",
+      "title": "Livestream hate raid is aging past SLA",
+      "message": "Q-18421 has sat unassigned for 42 minutes. Coordinated slurs on NightMarket live.",
+      "href": "/content-moderation/queue"
+    },
+    {
+      "id": "al-02",
+      "variant": "warning",
+      "title": "Self-harm dual-review waiting on a second rater",
+      "message": "Q-18397 is with Nia Poluru. Policy requires a second reviewer before remove.",
+      "href": "/content-moderation/queue"
+    },
+    {
+      "id": "al-03",
+      "variant": "warning",
+      "title": "Scam classifier precision dipped to 91%",
+      "message": "Marketplace listings stay in shadow mode until the hash-match pack is promoted.",
+      "href": "/content-moderation/automation"
+    },
+    {
+      "id": "al-04",
+      "variant": "info",
+      "title": "Trusted flagger volume is up 22%",
+      "message": "Civic Watch filed 64 reports today. Three high-severity items still unclaimed.",
+      "href": "/content-moderation/reporters"
+    }
+  ]
+}

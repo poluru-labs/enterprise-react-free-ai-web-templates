@@ -1,0 +1,141 @@
+{
+  "summary": {
+    "decisionsToday": 1847,
+    "approved": 612,
+    "rejected": 1094,
+    "escalated": 141,
+    "medianHandleMinutes": 4.6
+  },
+  "decisions": [
+    {
+      "id": "RV-22091",
+      "queueId": "Q-18340",
+      "title": "Removed hate sticker pack",
+      "category": "hate",
+      "source": "ugc",
+      "decision": "rejected",
+      "reviewer": "Theo Poluru",
+      "policy": "Hate & harassment",
+      "handleMinutes": 3.2,
+      "decidedAt": "2026-08-24T18:38:12.000Z",
+      "note": "Pack reused a known raid kit from last week."
+    },
+    {
+      "id": "RV-22088",
+      "queueId": "Q-18336",
+      "title": "Allowed borderline wellness comment",
+      "category": "self-harm",
+      "source": "comments",
+      "decision": "approved",
+      "reviewer": "Nia Poluru",
+      "policy": "Self-harm",
+      "handleMinutes": 6.1,
+      "decidedAt": "2026-08-24T18:31:40.000Z",
+      "note": "Supportive reply, no plan language. Left up with resources."
+    },
+    {
+      "id": "RV-22084",
+      "queueId": "Q-18322",
+      "title": "Blocked SSN in a resume upload",
+      "category": "pii",
+      "source": "ugc",
+      "decision": "rejected",
+      "reviewer": "Kai Poluru",
+      "policy": "PII leakage",
+      "handleMinutes": 2.4,
+      "decidedAt": "2026-08-24T18:22:08.000Z",
+      "note": "Full SSN in the PDF filename and first page."
+    },
+    {
+      "id": "RV-22079",
+      "queueId": "Q-18318",
+      "title": "Escalated medical scam ad",
+      "category": "scam",
+      "source": "ads",
+      "decision": "escalated",
+      "reviewer": "Mira Poluru",
+      "policy": "Scam & fraud",
+      "handleMinutes": 8.8,
+      "decidedAt": "2026-08-24T18:14:55.000Z",
+      "note": "Paid advertiser. Needs ads integrity plus legal."
+    },
+    {
+      "id": "RV-22071",
+      "queueId": "Q-18305",
+      "title": "Removed sexual thumbnail",
+      "category": "sexual",
+      "source": "ugc",
+      "decision": "rejected",
+      "reviewer": "Rowan Poluru",
+      "policy": "Sexual content",
+      "handleMinutes": 4.0,
+      "decidedAt": "2026-08-24T18:02:19.000Z",
+      "note": "Cover frame failed 13+ even after crop."
+    },
+    {
+      "id": "RV-22066",
+      "queueId": "Q-18294",
+      "title": "Cleared false-positive spam",
+      "category": "spam",
+      "source": "comments",
+      "decision": "approved",
+      "reviewer": "Lila Poluru",
+      "policy": "Spam & manipulation",
+      "handleMinutes": 5.5,
+      "decidedAt": "2026-08-24T17:51:33.000Z",
+      "note": "Repeated SKU mentions were legitimate restock alerts."
+    },
+    {
+      "id": "RV-22058",
+      "queueId": "Q-18280",
+      "title": "Removed livestream slur burst",
+      "category": "hate",
+      "source": "livestream",
+      "decision": "rejected",
+      "reviewer": "Theo Poluru",
+      "policy": "Hate & harassment",
+      "handleMinutes": 2.1,
+      "decidedAt": "2026-08-24T17:40:12.000Z",
+      "note": "Auto-timeout plus human confirm. Chat frozen 2 minutes."
+    },
+    {
+      "id": "RV-22051",
+      "queueId": "Q-18271",
+      "title": "Overturned regex PII hit",
+      "category": "pii",
+      "source": "ugc",
+      "decision": "approved",
+      "reviewer": "Kai Poluru",
+      "policy": "PII leakage",
+      "handleMinutes": 3.8,
+      "decidedAt": "2026-08-24T17:22:47.000Z",
+      "note": "Looks like an order ID, not a phone number."
+    },
+    {
+      "id": "RV-22044",
+      "queueId": "Q-18260",
+      "title": "Escalated child-safety adjacent clip",
+      "category": "sexual",
+      "source": "ugc",
+      "decision": "escalated",
+      "reviewer": "Nia Poluru",
+      "policy": "Sexual content",
+      "handleMinutes": 9.4,
+      "decidedAt": "2026-08-24T16:58:03.000Z",
+      "note": "Age signal unclear. Sent to specialized queue."
+    },
+    {
+      "id": "RV-22036",
+      "queueId": "Q-18248",
+      "title": "Blocked wallet-drain listing",
+      "category": "scam",
+      "source": "ugc",
+      "decision": "rejected",
+      "reviewer": "Kai Poluru",
+      "policy": "Scam & fraud",
+      "handleMinutes": 4.7,
+      "decidedAt": "2026-08-24T16:41:28.000Z",
+      "note": "QR overlay matched hash pack HSH-220."
+    }
+  ]
+}

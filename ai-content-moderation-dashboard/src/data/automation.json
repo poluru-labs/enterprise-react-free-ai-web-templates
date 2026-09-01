@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "rules": 12,
+    "hitsToday": 8420,
+    "autoActions": 6561,
+    "shadowShare": 22
+  },
+  "rules": [
+    {
+      "id": "RUL-101",
+      "name": "Phone & SSN regex",
+      "type": "regex",
+      "policy": "PII leakage",
+      "status": "live",
+      "hitsToday": 1264,
+      "actions": 1102,
+      "precision": 91.4,
+      "owner": "Kai Poluru",
+      "updatedAt": "2026-08-24T09:18:00.000Z",
+      "pattern": "US phone, dotted phone, SSN"
+    },
+    {
+      "id": "RUL-118",
+      "name": "Hate raid lexicon",
+      "type": "regex",
+      "policy": "Hate & harassment",
+      "status": "live",
+      "hitsToday": 388,
+      "actions": 340,
+      "precision": 96.1,
+      "owner": "Theo Poluru",
+      "updatedAt": "2026-08-22T15:10:00.000Z",
+      "pattern": "slur variants + raid kit tokens"
+    },
+    {
+      "id": "RUL-204",
+      "name": "Self-harm classifier v6",
+      "type": "classifier",
+      "policy": "Self-harm",
+      "status": "live",
+      "hitsToday": 214,
+      "actions": 58,
+      "precision": 99.2,
+      "owner": "Nia Poluru",
+      "updatedAt": "2026-08-20T08:22:00.000Z",
+      "pattern": "text + comment thread context"
+    },
+    {
+      "id": "RUL-221",
+      "name": "Spam storm classifier",
+      "type": "classifier",
+      "policy": "Spam & manipulation",
+      "status": "live",
+      "hitsToday": 2410,
+      "actions": 1988,
+      "precision": 94.2,
+      "owner": "Lila Poluru",
+      "updatedAt": "2026-08-21T19:40:00.000Z",
+      "pattern": "near-duplicate comments + cloaked links"
+    },
+    {
+      "id": "RUL-240",
+      "name": "Scam listing classifier",
+      "type": "classifier",
+      "policy": "Scam & fraud",
+      "status": "shadow",
+      "hitsToday": 902,
+      "actions": 0,
+      "precision": 91.0,
+      "owner": "Kai Poluru",
+      "updatedAt": "2026-08-24T14:55:00.000Z",
+      "pattern": "marketplace + wallet QR + return claims"
+    },
+    {
+      "id": "RUL-310",
+      "name": "Known-bad sexual hashes",
+      "type": "hash_match",
+      "policy": "Sexual content",
+      "status": "live",
+      "hitsToday": 166,
+      "actions": 154,
+      "precision": 98.7,
+      "owner": "Mira Poluru",
+      "updatedAt": "2026-08-23T11:05:00.000Z",
+      "pattern": "PDQ pack SEX-14"
+    },
+    {
+      "id": "RUL-318",
+      "name": "Raid kit visual hashes",
+      "type": "hash_match",
+      "policy": "Hate & harassment",
+      "status": "live",
+      "hitsToday": 74,
+      "actions": 71,
+      "precision": 99.0,
+      "owner": "Theo Poluru",
+      "updatedAt": "2026-08-22T15:10:00.000Z",
+      "pattern": "sticker + overlay pack HATE-09"
+    },
+    {
+      "id": "RUL-330",
+      "name": "Wallet-drain hash pack",
+      "type": "hash_match",
+      "policy": "Scam & fraud",
+      "status": "paused",
+      "hitsToday": 41,
+      "actions": 36,
+      "precision": 97.4,
+      "owner": "Kai Poluru",
+      "updatedAt": "2026-08-24T16:12:00.000Z",
+      "pattern": "HSH-220 pending promotion"
+    }
+  ]
+}

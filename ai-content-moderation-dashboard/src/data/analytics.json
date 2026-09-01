@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "throughput": 1847,
+    "agreement": 94.8,
+    "medianHandleMinutes": 4.6,
+    "sampled": 220
+  },
+  "reviewers": [
+    { "name": "Nia Poluru", "reviewed": 214, "agreement": 98.1, "medianMinutes": 5.8, "focus": "Self-harm" },
+    { "name": "Kai Poluru", "reviewed": 388, "agreement": 93.4, "medianMinutes": 4.1, "focus": "PII / scam" },
+    { "name": "Mira Poluru", "reviewed": 276, "agreement": 95.2, "medianMinutes": 4.9, "focus": "Sexual / ads" },
+    { "name": "Theo Poluru", "reviewed": 341, "agreement": 96.0, "medianMinutes": 3.4, "focus": "Hate / live" },
+    { "name": "Lila Poluru", "reviewed": 362, "agreement": 92.7, "medianMinutes": 3.9, "focus": "Spam" },
+    { "name": "Rowan Poluru", "reviewed": 266, "agreement": 94.1, "medianMinutes": 5.1, "focus": "UGC sexual" }
+  ],
+  "throughputTrend": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      {
+        "name": "Human decisions",
+        "color": "#7C3AED",
+        "values": [1488, 1540, 1612, 1588, 1694, 1760, 1847]
+      },
+      {
+        "name": "Sampled audits",
+        "color": "#A78BFA",
+        "values": [180, 188, 196, 190, 204, 212, 220]
+      }
+    ]
+  },
+  "agreementByCategory": [
+    { "name": "Hate", "value": 96.4, "color": "#4C1D95" },
+    { "name": "Spam", "value": 92.1, "color": "#7C3AED" },
+    { "name": "Sexual", "value": 95.0, "color": "#A78BFA" },
+    { "name": "Self-harm", "value": 99.0, "color": "#5B21B6" },
+    { "name": "PII", "value": 93.3, "color": "#7C3AED" },
+    { "name": "Scam", "value": 91.2, "color": "#9a6700" }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "summary": {
+    "trusted": 18,
+    "reportsToday": 412,
+    "precision": 93.6,
+    "highSeverity": 27
+  },
+  "reporters": [
+    {
+      "id": "REP-01",
+      "name": "Civic Watch",
+      "type": "NGO",
+      "status": "trusted",
+      "reportsToday": 64,
+      "precision": 97.2,
+      "focus": "Hate raids",
+      "contact": "leads@civicwatch.org",
+      "lastReportAt": "2026-08-24T18:30:22.000Z"
+    },
+    {
+      "id": "REP-02",
+      "name": "Privacy Guild",
+      "type": "NGO",
+      "status": "trusted",
+      "reportsToday": 41,
+      "precision": 95.8,
+      "focus": "PII",
+      "contact": "desk@privacyguild.org",
+      "lastReportAt": "2026-08-24T18:27:18.000Z"
+    },
+    {
+      "id": "REP-03",
+      "name": "Harbor Line",
+      "type": "Trusted flagger",
+      "status": "trusted",
+      "reportsToday": 33,
+      "precision": 92.1,
+      "focus": "Scams",
+      "contact": "ops@harborline.org",
+      "lastReportAt": "2026-08-24T18:13:51.000Z"
+    },
+    {
+      "id": "REP-04",
+      "name": "Brand desk",
+      "type": "Internal",
+      "status": "trusted",
+      "reportsToday": 28,
+      "precision": 94.0,
+      "focus": "Ads",
+      "contact": "ads-integrity@poluru.labs",
+      "lastReportAt": "2026-08-24T18:25:44.000Z"
+    },
+    {
+      "id": "REP-05",
+      "name": "Youth Safety Net",
+      "type": "NGO",
+      "status": "trusted",
+      "reportsToday": 19,
+      "precision": 98.4,
+      "focus": "Self-harm",
+      "contact": "intake@ysn.org",
+      "lastReportAt": "2026-08-24T17:44:00.000Z"
+    },
+    {
+      "id": "REP-06",
+      "name": "Marketplace guild",
+      "type": "Partner",
+      "status": "probation",
+      "reportsToday": 47,
+      "precision": 81.2,
+      "focus": "Scams",
+      "contact": "safety@nightmarket.example",
+      "lastReportAt": "2026-08-24T18:08:20.000Z"
+    },
+    {
+      "id": "REP-07",
+      "name": "Open Web Watch",
+      "type": "Research",
+      "status": "trusted",
+      "reportsToday": 12,
+      "precision": 90.5,
+      "focus": "Spam",
+      "contact": "tips@openwebwatch.org",
+      "lastReportAt": "2026-08-24T16:12:40.000Z"
+    },
+    {
+      "id": "REP-08",
+      "name": "Signal Flood",
+      "type": "Partner",
+      "status": "revoked",
+      "reportsToday": 9,
+      "precision": 44.0,
+      "focus": "Spam",
+      "contact": "n/a",
+      "lastReportAt": "2026-08-22T11:03:00.000Z"
+    }
+  ]
+}

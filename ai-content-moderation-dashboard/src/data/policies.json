@@ -1,0 +1,76 @@
+{
+  "policies": [
+    {
+      "id": "pol-hate",
+      "name": "Hate & harassment",
+      "mode": "enforce",
+      "owner": "Theo Poluru",
+      "blocksToday": 412,
+      "hitsToday": 448,
+      "falsePositiveNotes": "Raid slang on livestreams still needs a human when the classifier score is 0.70–0.82.",
+      "coverage": 98,
+      "updatedAt": "2026-08-22T15:10:00.000Z",
+      "status": "live"
+    },
+    {
+      "id": "pol-spam",
+      "name": "Spam & manipulation",
+      "mode": "enforce",
+      "owner": "Lila Poluru",
+      "blocksToday": 980,
+      "hitsToday": 1124,
+      "falsePositiveNotes": "Restock alerts and SKU repeats are the main false-positive cluster this week.",
+      "coverage": 93,
+      "updatedAt": "2026-08-21T19:40:00.000Z",
+      "status": "live"
+    },
+    {
+      "id": "pol-sexual",
+      "name": "Sexual content",
+      "mode": "enforce",
+      "owner": "Mira Poluru",
+      "blocksToday": 266,
+      "hitsToday": 281,
+      "falsePositiveNotes": "Fashion ads with crop tops still leak into the 13+ surface on hash misses.",
+      "coverage": 96,
+      "updatedAt": "2026-08-23T11:05:00.000Z",
+      "status": "live"
+    },
+    {
+      "id": "pol-harm",
+      "name": "Self-harm",
+      "mode": "enforce",
+      "owner": "Nia Poluru",
+      "blocksToday": 58,
+      "hitsToday": 61,
+      "falsePositiveNotes": "Supportive recovery language is held for dual-review even when the model is confident.",
+      "coverage": 99,
+      "updatedAt": "2026-08-20T08:22:00.000Z",
+      "status": "live"
+    },
+    {
+      "id": "pol-pii",
+      "name": "PII leakage",
+      "mode": "enforce",
+      "owner": "Kai Poluru",
+      "blocksToday": 141,
+      "hitsToday": 168,
+      "falsePositiveNotes": "Dotted phone numbers and order IDs collide. Regex pack needs another pass.",
+      "coverage": 91,
+      "updatedAt": "2026-08-24T09:18:00.000Z",
+      "status": "live"
+    },
+    {
+      "id": "pol-scam",
+      "name": "Scam & fraud",
+      "mode": "shadow",
+      "owner": "Kai Poluru",
+      "blocksToday": 188,
+      "hitsToday": 254,
+      "falsePositiveNotes": "Marketplace giveaways stay in shadow until hash-match HSH-220 is promoted.",
+      "coverage": 84,
+      "updatedAt": "2026-08-24T14:55:00.000Z",
+      "status": "paused"
+    }
+  ]
+}
