@@ -1,0 +1,85 @@
+{
+  "suites": [
+    {
+      "id": "s_safety",
+      "name": "Customer reply safety",
+      "owner": "Meera Poluru",
+      "cases": 420,
+      "pass": 96.8,
+      "status": "Live",
+      "model": "Aurora Chat",
+      "dataset": "safety-gold-v6",
+      "note": "Jailbreak and refund-path gates."
+    },
+    {
+      "id": "s_notes",
+      "name": "Meeting notes groundedness",
+      "owner": "Kavya Poluru",
+      "cases": 180,
+      "pass": 94.6,
+      "status": "Live",
+      "model": "Atlas Summarizer",
+      "dataset": "notes-ground-v3",
+      "note": "Cite the eval doc span."
+    },
+    {
+      "id": "s_invoice",
+      "name": "Invoice field accuracy",
+      "owner": "Madhav Poluru",
+      "cases": 260,
+      "pass": 87.4,
+      "status": "Watch",
+      "model": "Lens Extractor",
+      "dataset": "invoice-fields-v2",
+      "note": "PO recall is the watch item."
+    },
+    {
+      "id": "s_intent",
+      "name": "Intent routing F1",
+      "owner": "Harini Poluru",
+      "cases": 640,
+      "pass": 99.1,
+      "status": "Live",
+      "model": "Nova Classifier",
+      "dataset": "intent-gold-v1",
+      "note": "Billing, legal, and support routes."
+    },
+    {
+      "id": "s_harbor",
+      "name": "Harbor retrieval nDCG",
+      "owner": "Arjun Poluru",
+      "cases": 1200,
+      "pass": 93.6,
+      "status": "Live",
+      "model": "Harbor Encoder",
+      "dataset": "harbor-retrieval-v2",
+      "note": "1,200 retrieval cases still scoring."
+    },
+    {
+      "id": "s_nimbus",
+      "name": "Nimbus rank quality",
+      "owner": "Sahana Poluru",
+      "cases": 540,
+      "pass": 90.8,
+      "status": "Draft",
+      "model": "Nimbus Ranker",
+      "dataset": "nimbus-rank-v1",
+      "note": "Promote after the next human pass."
+    }
+  ],
+  "datasetTree": [
+    {
+      "id": "pack_safety",
+      "label": "safety-gold-v6",
+      "children": [
+        { "id": "pack_safety_train", "label": "train.jsonl · Meera Poluru" },
+        { "id": "pack_safety_holdout", "label": "holdout.jsonl" }
+      ]
+    },
+    { "id": "pack_notes", "label": "notes-ground-v3 · Kavya Poluru" },
+    { "id": "pack_invoice", "label": "invoice-fields-v2 · Madhav Poluru" },
+    { "id": "pack_intent", "label": "intent-gold-v1 · Harini Poluru" },
+    { "id": "pack_harbor", "label": "harbor-retrieval-v2 · Arjun Poluru" },
+    { "id": "pack_nimbus", "label": "nimbus-rank-v1 · Sahana Poluru" }
+  ]
+}

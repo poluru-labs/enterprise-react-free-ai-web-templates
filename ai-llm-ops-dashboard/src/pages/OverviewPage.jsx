@@ -1,127 +1,207 @@
-import { Link } from 'react-router-dom';
+import { Alert, Button, ProgressBar, showToast } from '@poluru-labs/enterprise-design-system-react';
+import { Link, useNavigate } from 'react-router-dom';
+import overview from '../data/overview.json';
+import models from '../data/models.json';
+import incidents from '../data/incidents.json';
+import { BASE_PATH, BREADCRUMB_ROOT } from '../constants/navigation.js';
+import { AreaChart } from '../components/charts/AreaChart.jsx';
+import { DonutChart } from '../components/charts/DonutChart.jsx';
+import costs from '../data/costs.json';
 import {
-  Alert,
-  Badge,
-  Button,
-  Card,
-  CircularProgress,
-  ProgressBar,
-  Search,
-  SegmentedControl,
-  Stat,
-  Status,
-  Tab,
-  Tabs,
-  Timeline,
-  Toolbar,
-} from '@poluru-labs/enterprise-design-system-react';
-import { activities, incidents, models, statusVariant } from '../data';
+  ChartSection,
+  DataTable,
+  PageHeader,
+  SeverityBadge,
+  StatCard,
+  StatusBadge,
+} from '../components/widgets/index.js';
 
-export default function OverviewPage({ query, setQuery, timeRange, setTimeRange, onOpenTraces }) {
-  const filtered = models.filter((model) => `${model.name} ${model.owner}`.toLowerCase().includes(query.toLowerCase()));
+export default function OverviewPage() {
+  const navigate = useNavigate();
 
   return (
-    <>
-      <Toolbar
-        bordered
-        className="llm-eds-toolbar"
-        start={<Search value={query} placeholder="Search models or owners" onChange={(_, value) => setQuery(value)} />}
-        end={(
-          <SegmentedControl
-            value={timeRange}
-            onChange={setTimeRange}
-            options={[
-              { value: '24h', label: '24h' },
-              { value: '7d', label: '7d' },
-              { value: '30d', label: '30d' },
-            ]}
-          />
-        )}
+    <div className="llm-page">
+      <PageHeader
+        title="Ops snapshot"
+        description="FY26 Q3 · Subrahmanyam Poluru · 111.2K requests across six serving stacks."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Overview' }]}
+        actions={
+          <>
+            <Button
+              variant="secondary"
+              size="sm"
+              icon="download"
+              onClick={() => showToast({ title: 'Snapshot queued', variant: 'success' })}
+            >
+              Export
+            </Button>
+            <Button
+              size="sm"
+              icon="refresh"
+              onClick={() => showToast({ title: 'Metrics refreshed', variant: 'info' })}
+            >
+              Sync now
+            </Button>
+          </>
+        }
       />
-      <div className="llm-alert">
-        <Alert
-          variant="warning"
-          title="Lens Extractor is on watch"
-          message="p95 is 2.4s. Madhav Poluru opened a review; hold new invoice traffic until groundedness recovers."
-        />
-      </div>
-      <section className="llm-kpi-grid" aria-label="Key metrics">
-        <Card padded><Stat label="Total requests" value="111.2K" hint="vs 98.9K last period" trend="up" trendValue="+12.4%" /></Card>
-        <Card padded><Stat label="Average latency" value="684ms" hint="Across 4 active models" trend="down" trendValue="-8.1%" /></Card>
-        <Card padded><Stat label="Success rate" value="98.7%" hint="Target is above 98%" trend="up" trendValue="+0.6%" /></Card>
-        <Card padded>
-          <div className="llm-slo-row">
-            <CircularProgress value={87} showValue />
-            <Stat label="Budget used" value="87%" hint="$342 remaining" trend="up" trendValue="+4.2%" />
+
+      <section className="llm-hero">
+        <div>
+          <p className="llm-kicker">{overview.hero.kicker}</p>
+          <h2>{overview.hero.title}</h2>
+          <p>{overview.hero.body}</p>
+        </div>
+        <div className="llm-hero-meta">
+          <div>
+            <span>p95</span>
+            <strong>{overview.ticker.p95}</strong>
           </div>
-        </Card>
+          <div>
+            <span>Errors</span>
+            <strong>{overview.ticker.errors}</strong>
+          </div>
+          <div>
+            <span>Spend</span>
+            <strong>{overview.ticker.spend}</strong>
+          </div>
+        </div>
       </section>
-      <div className="llm-content-grid">
-        <Card padded={false}>
-          <div className="llm-card-heading">
-            <div>
-              <h2>Model health</h2>
-              <p>Performance across production models</p>
-            </div>
-            <Button variant="tertiary" size="sm" iconTrailing="external-link" onClick={onOpenTraces}>View traces</Button>
+
+      <div className="row g-3 mb-3">
+        {overview.kpis.map((kpi) => (
+          <div className="col-12 col-sm-6 col-xl-4 col-xxl-2" key={kpi.id}>
+            <StatCard
+              label={kpi.label}
+              value={kpi.value}
+              hint={kpi.hint}
+              trend={kpi.trend}
+              trendValue={kpi.trendValue}
+              icon={kpi.icon}
+              tone={kpi.tone}
+              sparkline={kpi.sparkline}
+            />
           </div>
-          <div className="llm-table-wrap">
-            <table className="llm-table">
-              <thead>
-                <tr><th>Model</th><th>Requests</th><th>Latency</th><th>Success</th><th>Status</th></tr>
-              </thead>
-              <tbody>
-                {filtered.map((model) => (
-                  <tr key={model.id}>
-                    <td>
-                      <Link className="llm-model-cell" to={`/models/${model.id}`}>
-                        <span className="llm-model-icon"><i className="bi bi-cpu" /></span>
-                        <div>
-                          <strong>{model.name}</strong>
-                          <small>{model.provider} · {model.owner}</small>
-                        </div>
-                      </Link>
-                    </td>
-                    <td>{model.calls}</td>
-                    <td>{model.latency}</td>
-                    <td>
-                      <div className="llm-progress-cell">
-                        <ProgressBar value={model.success} max={100} />
-                        <span>{model.success}%</span>
-                      </div>
-                    </td>
-                    <td><Status label={model.status} variant={statusVariant(model.status)} /></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </Card>
-        <Card padded={false}>
-          <div className="llm-card-heading">
-            <div>
-              <h2>Ops feed</h2>
-              <p>Latest workspace events</p>
-            </div>
-          </div>
-          <div style={{ padding: '8px 22px 18px' }}>
-            <Tabs className="llm-tabs">
-              <Tab label="Activity"><Timeline items={activities} /></Tab>
-              <Tab label="Incidents">
-                {incidents.map((item) => (
-                  <div key={item.id} className="llm-member">
-                    <div>
-                      <strong>{item.title}</strong>
-                      <div className="llm-muted">{item.owner} · {item.since}</div>
-                    </div>
-                    <Badge variant={item.severity === 'Watch' ? 'warning' : 'success'} soft>{item.severity}</Badge>
-                  </div>
-                ))}
-              </Tab>
-            </Tabs>
-          </div>
-        </Card>
+        ))}
       </div>
-    </>
+
+      <div className="row g-3 mb-3">
+        <div className="col-12 col-xl-7">
+          <ChartSection title="Request volume" subtitle="Inbound calls and errors · 7 days">
+            <AreaChart labels={overview.requestTrend.labels} series={overview.requestTrend.series} />
+          </ChartSection>
+        </div>
+        <div className="col-12 col-xl-5">
+          <ChartSection title="Spend share" subtitle="Token cost by model this period">
+            <DonutChart
+              items={costs.share.map((item) => ({ name: item.name, value: item.value, color: item.color }))}
+              centerLabel="USD"
+              centerValue={`$${costs.periodSpend.toLocaleString('en-US')}`}
+            />
+          </ChartSection>
+        </div>
+      </div>
+
+      <div className="row g-3 mb-3">
+        <div className="col-12 col-xl-7">
+          <ChartSection
+            title="Model health"
+            subtitle="Latency, success, and serving state"
+            action={
+              <Link className="llm-text-link" to={`${BASE_PATH}/models`}>
+                Open registry
+              </Link>
+            }
+          >
+            <DataTable
+              rows={models}
+              onRowClick={(row) => navigate(`${BASE_PATH}/models/${row.id}`)}
+              columns={[
+                {
+                  key: 'name',
+                  label: 'Model',
+                  render: (_, row) => (
+                    <div>
+                      <strong>{row.name}</strong>
+                      <div className="llm-subtle">{row.provider} · {row.owner}</div>
+                    </div>
+                  ),
+                },
+                { key: 'calls', label: 'Requests' },
+                { key: 'latency', label: 'Latency' },
+                {
+                  key: 'success',
+                  label: 'Success',
+                  render: (value) => (
+                    <div className="llm-progress-cell">
+                      <ProgressBar value={value} max={100} />
+                      <span>{value}%</span>
+                    </div>
+                  ),
+                },
+                {
+                  key: 'status',
+                  label: 'Status',
+                  render: (value) => <StatusBadge status={value} />,
+                },
+              ]}
+            />
+          </ChartSection>
+        </div>
+        <div className="col-12 col-xl-5">
+          <ChartSection
+            title="Incidents"
+            subtitle="Watch pages still open"
+            action={
+              <Link className="llm-text-link" to={`${BASE_PATH}/incidents`}>
+                View all
+              </Link>
+            }
+          >
+            <DataTable
+              rows={incidents.slice(0, 4)}
+              onRowClick={() => navigate(`${BASE_PATH}/incidents`)}
+              columns={[
+                { key: 'title', label: 'Incident' },
+                {
+                  key: 'severity',
+                  label: 'State',
+                  render: (value) => <SeverityBadge severity={value} />,
+                },
+                { key: 'owner', label: 'Owner' },
+              ]}
+            />
+          </ChartSection>
+        </div>
+      </div>
+
+      <div className="row g-3">
+        <div className="col-12">
+          <section className="llm-panel">
+            <header className="llm-panel-header">
+              <div>
+                <h2>Alerts</h2>
+                <p>Watch pages, budget, and eval sign-off.</p>
+              </div>
+            </header>
+            <div className="llm-alert-list">
+              {overview.alerts.map((alert) => (
+                <div key={alert.id} className="llm-alert-item">
+                  <Alert variant={alert.variant} title={alert.title} message={alert.message} />
+                  <Button
+                    variant="tertiary"
+                    size="sm"
+                    iconTrailing="chevron-right"
+                    onClick={() => navigate(alert.href)}
+                  >
+                    Inspect
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   );
 }

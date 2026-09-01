@@ -1,0 +1,47 @@
+{
+  "workspace": {
+    "name": "Poluru Cloud · Prism Eval",
+    "slug": "prism-eval-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 90,
+    "brandColor": "#BE185D",
+    "passThreshold": 90,
+    "webhook": "https://hooks.polurulabs.example/prism"
+  },
+  "webhookSnippet": "prism eval submit \\\n  --suite customer-reply-safety \\\n  --model aurora-chat \\\n  --owner \"Meera Poluru\"",
+  "team": [
+    { "name": "Meera Poluru", "role": "Owner", "shift": "Primary · eval lead" },
+    { "name": "Kavya Poluru", "role": "Editor", "shift": "Notes groundedness" },
+    { "name": "Madhav Poluru", "role": "Editor", "shift": "Invoice fields" },
+    { "name": "Harini Poluru", "role": "Viewer", "shift": "Intent routing" },
+    { "name": "Arjun Poluru", "role": "Editor", "shift": "Harbor retrieval" },
+    { "name": "Sahana Poluru", "role": "Editor", "shift": "Nimbus rank" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to meera.poluru@polurulabs.example", "enabled": true },
+    { "id": "autofail", "label": "Auto-fail Lens when PO recall drops below threshold", "enabled": true },
+    { "id": "slack", "label": "Slack #prism-eval for failed runs", "enabled": true },
+    { "id": "webhook", "label": "Webhook to staging ingest", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "meera", "label": "Meera Poluru" },
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "madhav", "label": "Madhav Poluru" },
+    { "value": "harini", "label": "Harini Poluru" },
+    { "value": "arjun", "label": "Arjun Poluru" },
+    { "value": "sahana", "label": "Sahana Poluru" },
+    { "value": "priya", "label": "Priya Poluru" },
+    { "value": "hana", "label": "Hana Poluru" }
+  ],
+  "judgeOptions": [
+    { "value": "llm", "label": "LLM judge · Aurora" },
+    { "value": "rubric", "label": "Rubric scorer" },
+    { "value": "human", "label": "Human panel" }
+  ],
+  "evalSteps": [
+    { "label": "Suite", "description": "Pick the pack" },
+    { "label": "Model", "description": "Choose the stack" },
+    { "label": "Review", "description": "Owner signs off" }
+  ]
+}

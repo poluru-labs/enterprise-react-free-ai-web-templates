@@ -1,22 +1,15 @@
 import { useEffect, useState } from 'react';
-import {
-  Accordion,
-  AccordionItem,
-  Button,
-  Card,
-  Modal,
-  ProgressBar,
-  Select,
-  Status,
-  Switch,
-  showToast,
-} from '@poluru-labs/enterprise-design-system-react';
-import { evaluations, guardrails, modelOptions, statusVariant } from '../data';
+import { Button, Modal, ProgressBar, Select, showToast } from '@poluru-labs/enterprise-design-system-react';
+import evaluations from '../data/evaluations.json';
+import { BREADCRUMB_ROOT } from '../constants/navigation.js';
+import { modelOptions } from '../lib/models.js';
+import { AreaChart } from '../components/charts/AreaChart.jsx';
+import { ChartSection, DataTable, PageHeader, StatCard, StatusBadge } from '../components/widgets/index.js';
 
 export default function EvaluationsPage() {
   const [open, setOpen] = useState(false);
-  const [pii, setPii] = useState(true);
-  const [jail, setJail] = useState(true);
+  const passed = evaluations.suites.filter((item) => item.outcome === 'Passed').length;
+  const avg = (evaluations.suites.reduce((sum, item) => sum + item.score, 0) / evaluations.suites.length).toFixed(1);
 
   useEffect(() => {
     const run = () => setOpen(true);
@@ -25,53 +18,89 @@ export default function EvaluationsPage() {
   }, []);
 
   return (
-    <>
-      <div className="llm-page-grid">
-        <Card padded={false}>
-          <div className="llm-card-heading">
-            <div>
-              <h2>Evaluation runs</h2>
-              <p>Quality signals from the latest suites</p>
-            </div>
-            <Button variant="primary" size="sm" icon="star" onClick={() => setOpen(true)}>Run evaluation</Button>
-          </div>
-          <div className="llm-table-wrap">
-            <table className="llm-table">
-              <thead>
-                <tr><th>Suite</th><th>Model</th><th>Score</th><th>Outcome</th></tr>
-              </thead>
-              <tbody>
-                {evaluations.map((item) => (
-                  <tr key={item.id}>
-                    <td>
-                      <strong>{item.name}</strong>
-                      <div className="llm-muted">{item.owner}</div>
-                    </td>
-                    <td>{item.model}</td>
-                    <td>
-                      <div className="llm-progress-cell">
-                        <ProgressBar value={item.score} max={100} />
-                        <span>{item.score}%</span>
-                      </div>
-                    </td>
-                    <td><Status label={item.outcome} variant={statusVariant(item.outcome)} /></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </Card>
-        <Card header="Guardrails">
-          <Switch label="PII redaction on Aurora logs" checked={pii} onChange={(_, checked) => setPii(checked)} />
-          <div style={{ height: 10 }} />
-          <Switch label="Jailbreak filter on customer reply" checked={jail} onChange={(_, checked) => setJail(checked)} />
-          <Accordion>
-            {guardrails.map((item) => (
-              <AccordionItem key={item.id} heading={item.heading}>{item.children}</AccordionItem>
-            ))}
-          </Accordion>
-        </Card>
+    <div className="llm-page">
+      <PageHeader
+        title="Evaluations"
+        description="Safety, groundedness, and field accuracy across the Poluru stacks."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Evaluations' }]}
+        actions={
+          <Button size="sm" icon="star" onClick={() => setOpen(true)}>
+            Run evaluation
+          </Button>
+        }
+      />
+
+      <div className="row g-3 mb-3">
+        <div className="col-6 col-xl-3">
+          <StatCard label="Suites" value={evaluations.suites.length} icon="bi-clipboard-check" tone="brand" />
+        </div>
+        <div className="col-6 col-xl-3">
+          <StatCard label="Passed" value={passed} icon="bi-check-circle" tone="success" />
+        </div>
+        <div className="col-6 col-xl-3">
+          <StatCard label="Needs review" value={evaluations.suites.length - passed} icon="bi-eye" tone="warning" />
+        </div>
+        <div className="col-6 col-xl-3">
+          <StatCard label="Mean score" value={`${avg}%`} icon="bi-graph-up" tone="info" />
+        </div>
       </div>
+
+      <div className="row g-3 mb-3">
+        <div className="col-12 col-xl-7">
+          <ChartSection title="Score trend" subtitle="Safety, groundedness, and Lens field accuracy">
+            <AreaChart labels={evaluations.scoreTrend.labels} series={evaluations.scoreTrend.series} />
+          </ChartSection>
+        </div>
+        <div className="col-12 col-xl-5">
+          <ChartSection title="Latest scores" subtitle="Harini Poluru owns the Nova suite">
+            {evaluations.suites.map((item) => (
+              <div key={item.id} className="llm-score-row">
+                <div>
+                  <strong>{item.name}</strong>
+                  <div className="llm-subtle">{item.owner}</div>
+                </div>
+                <ProgressBar value={item.score} max={100} />
+                <span>{item.score}%</span>
+              </div>
+            ))}
+          </ChartSection>
+        </div>
+      </div>
+
+      <ChartSection title="Evaluation runs" subtitle="Quality signals from the latest suites">
+        <DataTable
+          rows={evaluations.suites}
+          columns={[
+            {
+              key: 'name',
+              label: 'Suite',
+              render: (_, row) => (
+                <div>
+                  <strong>{row.name}</strong>
+                  <div className="llm-subtle">{row.owner}</div>
+                </div>
+              ),
+            },
+            { key: 'model', label: 'Model' },
+            {
+              key: 'score',
+              label: 'Score',
+              render: (value) => (
+                <div className="llm-progress-cell">
+                  <ProgressBar value={value} max={100} />
+                  <span>{value}%</span>
+                </div>
+              ),
+            },
+            {
+              key: 'outcome',
+              label: 'Outcome',
+              render: (value) => <StatusBadge status={value} />,
+            },
+          ]}
+        />
+      </ChartSection>
+
       <Modal
         open={open}
         onOpenChange={setOpen}
@@ -79,12 +108,19 @@ export default function EvaluationsPage() {
         footer={(
           <>
             <Button variant="secondary" onClick={() => setOpen(false)}>Cancel</Button>
-            <Button onClick={() => { setOpen(false); showToast({ title: 'Eval queued', description: 'Harini Poluru will see Nova results in ~8 minutes.', variant: 'success' }); }}>Start</Button>
+            <Button
+              onClick={() => {
+                setOpen(false);
+                showToast({ title: 'Eval queued', description: 'Harini Poluru will see Nova results in ~8 minutes.', variant: 'success' });
+              }}
+            >
+              Start
+            </Button>
           </>
         )}
       >
         <Select label="Model" options={modelOptions} defaultValue="nova" />
       </Modal>
-    </>
+    </div>
   );
 }

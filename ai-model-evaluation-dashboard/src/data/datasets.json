@@ -1,0 +1,76 @@
+{
+  "datasets": [
+    {
+      "id": "safety-gold-v6",
+      "name": "safety-gold-v6",
+      "suite": "Customer reply safety",
+      "suiteId": "s_safety",
+      "owner": "Meera Poluru",
+      "rows": 420,
+      "holdout": 80,
+      "status": "Live",
+      "kind": "Safety gold",
+      "note": "38 new jailbreak rows this week. Holdout stays with Meera Poluru."
+    },
+    {
+      "id": "notes-ground-v3",
+      "name": "notes-ground-v3",
+      "suite": "Meeting notes groundedness",
+      "suiteId": "s_notes",
+      "owner": "Kavya Poluru",
+      "rows": 180,
+      "holdout": 36,
+      "status": "Live",
+      "kind": "Groundedness",
+      "note": "Atlas must cite the eval doc span on every summary."
+    },
+    {
+      "id": "invoice-fields-v2",
+      "name": "invoice-fields-v2",
+      "suite": "Invoice field accuracy",
+      "suiteId": "s_invoice",
+      "owner": "Madhav Poluru",
+      "rows": 260,
+      "holdout": 52,
+      "status": "Watch",
+      "kind": "Extraction",
+      "note": "PO recall is the watch item. Judges never train on holdout."
+    },
+    {
+      "id": "intent-gold-v1",
+      "name": "intent-gold-v1",
+      "suite": "Intent routing F1",
+      "suiteId": "s_intent",
+      "owner": "Harini Poluru",
+      "rows": 640,
+      "holdout": 128,
+      "status": "Live",
+      "kind": "Classification",
+      "note": "Billing, legal, and support routes for Nova."
+    },
+    {
+      "id": "harbor-retrieval-v2",
+      "name": "harbor-retrieval-v2",
+      "suite": "Harbor retrieval nDCG",
+      "suiteId": "s_harbor",
+      "owner": "Arjun Poluru",
+      "rows": 1200,
+      "holdout": 200,
+      "status": "Live",
+      "kind": "Retrieval",
+      "note": "Harbor docs ranked for Arjun Poluru’s legal queries."
+    },
+    {
+      "id": "nimbus-rank-v1",
+      "name": "nimbus-rank-v1",
+      "suite": "Nimbus rank quality",
+      "suiteId": "s_nimbus",
+      "owner": "Sahana Poluru",
+      "rows": 540,
+      "holdout": 90,
+      "status": "Draft",
+      "kind": "Ranking",
+      "note": "Promote after Sahana Poluru’s next human pass."
+    }
+  ]
+}

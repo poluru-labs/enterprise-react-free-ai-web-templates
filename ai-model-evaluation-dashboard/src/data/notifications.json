@@ -1,0 +1,29 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "warning",
+      "title": "Lens needs review",
+      "body": "invoice-31 · Madhav Poluru · 2h",
+      "time": "2026-08-29T14:22:00.000Z",
+      "href": "/model-eval/runs/ev_1840"
+    },
+    {
+      "id": "n-02",
+      "tone": "info",
+      "title": "Nova passed",
+      "body": "intent-10 · 99.1% · Harini Poluru",
+      "time": "2026-08-29T13:28:00.000Z",
+      "href": "/model-eval/runs/ev_1839"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "Harbor still running",
+      "body": "ndcg-22 · 62% complete · Arjun Poluru",
+      "time": "2026-08-29T16:12:00.000Z",
+      "href": "/model-eval/runs/ev_1838"
+    }
+  ]
+}

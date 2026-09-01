@@ -1,0 +1,82 @@
+{
+  "models": [
+    {
+      "id": "aurora",
+      "name": "Aurora Chat",
+      "owner": "Meera Poluru",
+      "provider": "OpenAI",
+      "safety": 96.8,
+      "ground": 93.4,
+      "accuracy": 94.1,
+      "latency": 820,
+      "score": 94.8,
+      "status": "Production",
+      "note": "Primary reply model. Meera Poluru keeps it on the safety suite."
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas Summarizer",
+      "owner": "Kavya Poluru",
+      "provider": "Anthropic",
+      "safety": 97.2,
+      "ground": 94.6,
+      "accuracy": 91.8,
+      "latency": 1180,
+      "score": 94.1,
+      "status": "Production",
+      "note": "Groundedness lead on meeting notes."
+    },
+    {
+      "id": "lens",
+      "name": "Lens Extractor",
+      "owner": "Madhav Poluru",
+      "provider": "Google",
+      "safety": 92.4,
+      "ground": 87.4,
+      "accuracy": 88.9,
+      "latency": 640,
+      "score": 88.2,
+      "status": "Review",
+      "note": "PO recall slipped. Hold invoice traffic."
+    },
+    {
+      "id": "nova",
+      "name": "Nova Classifier",
+      "owner": "Harini Poluru",
+      "provider": "Azure",
+      "safety": 99.1,
+      "ground": 98.4,
+      "accuracy": 99.0,
+      "latency": 410,
+      "score": 98.7,
+      "status": "Production",
+      "note": "Intent routing F1 is the index leader."
+    },
+    {
+      "id": "harbor",
+      "name": "Harbor Encoder",
+      "owner": "Arjun Poluru",
+      "provider": "Poluru",
+      "safety": 95.0,
+      "ground": 92.1,
+      "accuracy": 94.2,
+      "latency": 210,
+      "score": 93.6,
+      "status": "Candidate",
+      "note": "Retrieval nDCG still scoring 1,200 cases."
+    },
+    {
+      "id": "nimbus",
+      "name": "Nimbus Ranker",
+      "owner": "Sahana Poluru",
+      "provider": "Poluru",
+      "safety": 93.8,
+      "ground": 89.4,
+      "accuracy": 90.6,
+      "latency": 340,
+      "score": 90.8,
+      "status": "Tuning",
+      "note": "Draft suite. Promote after the next human pass."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-08-29T16:30:00.000Z",
+  "hero": {
+    "kicker": "Friday · 29 Aug 2026 · last sync 11s ago",
+    "title": "Pass rate is 94.6% across six live suites. Lens still needs a judge pass.",
+    "body": "Meera Poluru is holding invoice traffic until PO recall recovers. Harbor nDCG is still scoring 1,200 retrieval cases, and four samples wait on Priya Poluru and Hana Poluru."
+  },
+  "ticker": {
+    "passRate": 94.6,
+    "meanScore": 91.2,
+    "openReviews": 12,
+    "liveSuites": 6,
+    "judgesWaiting": 4
+  },
+  "kpis": [
+    {
+      "id": "pass-rate",
+      "label": "Pass rate",
+      "value": "94.6%",
+      "hint": "Across 6 live suites",
+      "trend": "up",
+      "trendValue": "+1.8 pts",
+      "icon": "bi-check2-circle",
+      "tone": "success",
+      "sparkline": [91.2, 91.8, 92.4, 93.0, 93.6, 94.1, 94.6]
+    },
+    {
+      "id": "open-reviews",
+      "label": "Open reviews",
+      "value": 12,
+      "hint": "4 blocked on judges",
+      "trend": "down",
+      "trendValue": "-3",
+      "icon": "bi-clipboard",
+      "tone": "warning",
+      "sparkline": [18, 16, 15, 14, 13, 13, 12]
+    },
+    {
+      "id": "mean-score",
+      "label": "Mean score",
+      "value": "91.2",
+      "hint": "Weighted quality index",
+      "trend": "up",
+      "trendValue": "+0.7",
+      "icon": "bi-graph-up",
+      "tone": "brand",
+      "sparkline": [86.4, 87.1, 88.0, 89.4, 90.4, 91.0, 91.2]
+    },
+    {
+      "id": "eval-hours",
+      "label": "Eval hours",
+      "value": "38h",
+      "hint": "This week on Prism",
+      "trend": "flat",
+      "trendValue": "0",
+      "icon": "bi-hourglass-split",
+      "tone": "info",
+      "sparkline": [34, 36, 37, 38, 37, 38, 38]
+    },
+    {
+      "id": "failed-runs",
+      "label": "Failed runs",
+      "value": 1,
+      "hint": "aurora-safety-27 last night",
+      "trend": "down",
+      "trendValue": "-1",
+      "icon": "bi-x-circle",
+      "tone": "danger",
+      "sparkline": [3, 3, 2, 2, 2, 1, 1]
+    },
+    {
+      "id": "judge-lag",
+      "label": "Judge lag",
+      "value": "4",
+      "hint": "Priya and Hana still owe labels",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-person-check",
+      "tone": "warning",
+      "sparkline": [2, 2, 3, 3, 3, 4, 4]
+    }
+  ],
+  "scoreTrend": {
+    "labels": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+    "series": [
+      {
+        "name": "Quality index",
+        "color": "#BE185D",
+        "values": [86.4, 87.1, 88.0, 88.6, 89.4, 90.1, 90.4, 90.8, 91.0, 91.2, 91.4, 91.2]
+      },
+      {
+        "name": "Safety",
+        "color": "#F472B6",
+        "values": [92.1, 92.6, 93.0, 93.4, 93.8, 94.2, 94.6, 95.0, 95.4, 95.8, 96.1, 96.0]
+      }
+    ]
+  },
+  "suiteMix": [
+    { "name": "Live", "value": 4, "color": "#BE185D" },
+    { "name": "Watch", "value": 1, "color": "#F59E0B" },
+    { "name": "Draft", "value": 1, "color": "#F9A8D4" }
+  ],
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "warning",
+      "title": "Lens Extractor dropped 2.4 pts",
+      "message": "Invoice field accuracy is 87.4%. Madhav Poluru should hold production traffic until PO recall recovers.",
+      "href": "/model-eval/runs/ev_1840"
+    },
+    {
+      "id": "al-02",
+      "variant": "info",
+      "title": "12 samples wait on judges",
+      "message": "Priya Poluru and Hana Poluru still owe labels on Harbor retrieval disagreements.",
+      "href": "/model-eval/review"
+    },
+    {
+      "id": "al-03",
+      "variant": "info",
+      "title": "Nimbus rank suite is still a draft",
+      "message": "Sahana Poluru has 540 cases ready. Promote after the next human pass.",
+      "href": "/model-eval/suites/s_nimbus"
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Nova Classifier passed 99.1%",
+      "description": "Harini Poluru promoted intent routing F1.",
+      "timestamp": "12m ago",
+      "status": "complete"
+    },
+    {
+      "title": "Lens invoice run needs review",
+      "description": "Madhav Poluru opened 14 disagreement rows.",
+      "timestamp": "2h ago",
+      "status": "current"
+    },
+    {
+      "title": "Harbor nDCG is still running",
+      "description": "Arjun Poluru queued 1,200 retrieval cases.",
+      "timestamp": "3h ago",
+      "status": "upcoming"
+    },
+    {
+      "title": "Safety gold pack refreshed",
+      "description": "Meera Poluru shipped 38 new jailbreak rows.",
+      "timestamp": "1d ago",
+      "status": "upcoming"
+    }
+  ]
+}

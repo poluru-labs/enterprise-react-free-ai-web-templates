@@ -21,23 +21,26 @@ Default dev server: http://127.0.0.1:5184
 | `npm run dev` | Vite development server |
 | `npm run build` | Production build |
 | `npm run preview` | Preview the production build |
+| `npm test` | Vitest unit tests |
 
 ## Routes
 
-| Hash | Page |
+| Path | Page |
 | --- | --- |
-| `#/overview` | Live jobs, GPU heat, coaching |
-| `#/runs` | Filterable training jobs |
-| `#/run/:id` | Run workspace |
-| `#/experiments` | Experiment cards |
-| `#/datasets` | Lineage tree and quality |
-| `#/models` | Registry |
-| `#/clusters` | Regional GPU capacity |
-| `#/settings` | Profile, alerts, CLI |
+| `/ml-training/overview` | Live jobs, GPU heat, coaching |
+| `/ml-training/runs` | Filterable training jobs |
+| `/ml-training/runs/:id` | Run workspace |
+| `/ml-training/experiments` | Experiment cards |
+| `/ml-training/datasets` | Lineage tree and quality |
+| `/ml-training/models` | Registry |
+| `/ml-training/clusters` | Regional GPU capacity |
+| `/ml-training/checkpoints` | Epoch checkpoints |
+| `/ml-training/settings` | Profile, alerts, CLI |
 
 ## Stack
 
 - React 18
 - Vite
+- React Router 6
 - Bootstrap 5 + Bootstrap Icons
 - `@poluru-labs/enterprise-design-system-react`
