@@ -12,7 +12,7 @@ export function AlertPanel({ alerts = [], title = 'Anomaly alerts' }) {
           <p>Live guardrails for loops, memory, tools, and eval regressions.</p>
         </div>
       </header>
-      <div className="amd-alert-list">
+      <div className="amd-panel-body amd-alert-list">
         {alerts.map((alert) => (
           <div key={alert.id} className="amd-alert-item">
             <Alert variant={alert.variant} title={alert.title} message={alert.message} />

@@ -173,6 +173,83 @@
       "ref": "TOOL-web_search"
     }
   ],
+  "headerPulse": {
+    "completion": "89.3%",
+    "alerts": 4,
+    "p95": "1.84s"
+  },
+  "slos": [
+    {
+      "id": "completion",
+      "label": "Task completion SLO",
+      "value": "89.3%",
+      "hint": "Target ≥ 88%",
+      "trend": "up",
+      "trendValue": "+1.3 pts",
+      "icon": "bi-bullseye",
+      "tone": "success"
+    },
+    {
+      "id": "latency",
+      "label": "p95 task latency",
+      "value": "1.84s",
+      "hint": "Target < 2.0s",
+      "trend": "down",
+      "trendValue": "-120ms",
+      "icon": "bi-stopwatch",
+      "tone": "info"
+    },
+    {
+      "id": "error-budget",
+      "label": "Error budget left",
+      "value": "16%",
+      "hint": "crm_update is the burner",
+      "trend": "down",
+      "trendValue": "-9 pts",
+      "icon": "bi-battery-half",
+      "tone": "danger"
+    },
+    {
+      "id": "spend",
+      "label": "Spend vs daily cap",
+      "value": "$741",
+      "hint": "62% of $1,200 used",
+      "trend": "up",
+      "trendValue": "+$59",
+      "icon": "bi-currency-dollar",
+      "tone": "warning"
+    }
+  ],
+  "watchCards": [
+    {
+      "id": "watch-sentinel",
+      "name": "Sentinel Ops",
+      "status": "degraded",
+      "detail": "Loop score 92 on rollback planner",
+      "metric": "3 active loops"
+    },
+    {
+      "id": "watch-helix",
+      "name": "Helix Data",
+      "status": "critical",
+      "detail": "Memory saturation 86% · retrieval 71",
+      "metric": "MEM-HEL-12"
+    },
+    {
+      "id": "watch-nova",
+      "name": "Nova Support",
+      "status": "watch",
+      "detail": "crm_update burning 84% of error budget",
+      "metric": "91.8% success"
+    },
+    {
+      "id": "watch-prism",
+      "name": "Prism Content",
+      "status": "watch",
+      "detail": "web_search p95 still above 2.4s",
+      "metric": "3.18s p95"
+    }
+  ],
   "alerts": [
     {
       "id": "al-01",

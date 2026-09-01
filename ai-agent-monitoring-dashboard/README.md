@@ -1,18 +1,21 @@
 # AgentPulse Agent Monitoring Dashboard
 
-AgentPulse is a frontend dashboard for monitoring AI agent operations. It provides a realistic, data-driven interface for exploring agent activity, task execution, traces, tool calls, failures, handoffs, memory health, evaluations, guardrails, and cost.
+AgentPulse is a frontend dashboard for monitoring AI agent operations. It provides a realistic, data-driven interface for exploring agent activity, task execution, traces, tool calls, failures, handoffs, incidents, memory health, evaluations, guardrails, and cost.
 
 The project is intentionally self-contained: the screens use local JSON fixtures and can be adapted to a production API without adding a backend to this repository.
 
+Theme color is `#003161`. Signed in as **Avery Poluru**, ops lead.
+
 ## Features
 
-- Overview of agent health, volume, latency, failures, and spend
-- Agent fleet and task monitoring
+- Navy command-bar header with live SLO, alert, spend, and latency chips
+- Command palette (`⌘K`) and workspace search
+- Overview of agent health, SLOs, watch cards, volume, latency, failures, and spend
+- Agent fleet, task monitoring, and incident playbooks
 - Trace and tool-call inspection
 - Loop detection, failure analysis, and human handoff tracking
 - Memory health, evaluations, and guardrail reporting
 - Cost and token usage views
-- Search and workspace settings screens
 - Light theme powered by the Enterprise Design System
 
 ## Requirements
@@ -40,6 +43,7 @@ Vite will print the local development URL in the terminal. The dashboard is avai
 | `npm run dev` | Start the Vite development server. |
 | `npm run build` | Build the app for production. |
 | `npm run preview` | Preview the production build locally. |
+| `npm test` | Run Vitest unit tests. |
 
 ## Routes
 
@@ -55,6 +59,7 @@ All dashboard routes use the `/agent-monitoring` base path.
 | `/agent-monitoring/loops` | Loop detection |
 | `/agent-monitoring/failures` | Failure analysis |
 | `/agent-monitoring/handoffs` | Human handoffs |
+| `/agent-monitoring/incidents` | Reliability incidents and playbooks |
 | `/agent-monitoring/memory-health` | Memory and retrieval health |
 | `/agent-monitoring/evaluations` | Evaluation results |
 | `/agent-monitoring/guardrails` | Guardrail events |
@@ -66,12 +71,19 @@ All dashboard routes use the `/agent-monitoring` base path.
 
 ```text
 src/
-  components/   Reusable layout, chart, and widget components
+  components/   Layout, chart, and widget components
+    layout/     Shell, navy command bar, sidebar
+    charts/     Area, bar, donut, sparkline
+    widgets/    Shared cards, tables, filters
   constants/    Navigation and app-level constants
   data/         Local JSON fixtures used by the dashboard
-  lib/          Formatting and status helpers
+  hooks/        Command palette and shared hooks
+  lib/          Formatting, status, and search helpers
   pages/        Route-level dashboard screens
+  test/         Vitest setup
 ```
+
+This follows the usual React app layout: keep reusable UI under `components/`, route screens under `pages/`, fixtures under `data/`, and pure helpers under `lib/`.
 
 To connect the dashboard to live data, replace the fixtures in `src/data/` with API calls at the page or widget boundary, keeping the existing component data shapes where possible.
 
@@ -82,3 +94,4 @@ To connect the dashboard to live data, replace the fixtures in `src/data/` with 
 - React Router
 - Bootstrap and Bootstrap Icons
 - `@poluru-labs/enterprise-design-system-react`
+- Vitest

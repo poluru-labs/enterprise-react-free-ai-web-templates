@@ -192,17 +192,19 @@ body {
 }
 
 .amd-navbar {
-  display: grid;
-  grid-template-columns: minmax(11rem, 1fr) minmax(18rem, 36rem) minmax(11rem, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  column-gap: 1.25rem;
-  min-height: 4.25rem;
-  padding: 0.65rem 1.35rem;
-  background: #ffffff;
-  border-bottom: 1px solid var(--eds-color-border, #d7dee7);
+  gap: 0.85rem 1.1rem;
+  min-height: 4.6rem;
+  padding: 0.7rem 1.2rem;
+  background: linear-gradient(105deg, #001428 0%, #003161 55%, #0d4d8c 100%);
+  color: #eaf1f8;
+  border-bottom: 0;
   position: sticky;
   top: 0;
   z-index: 20;
+  box-shadow: 0 14px 32px rgb(0 20 40 / 0.28);
 }
 
 .amd-navbar-start,
@@ -214,16 +216,63 @@ body {
 }
 
 .amd-navbar-end {
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .amd-navbar-search {
-  width: 100%;
-  min-width: 0;
+  flex: 1 1 16rem;
+  min-width: 12rem;
+  max-width: 28rem;
 }
 
 .amd-navbar-search > * {
   width: 100%;
+}
+
+.amd-navbar-search .eds-search,
+.amd-navbar-search input {
+  background: #ffffff;
+}
+
+.amd-command-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.amd-command-chip {
+  min-width: 4.6rem;
+  padding: 0.28rem 0.65rem 0.32rem;
+  border-radius: 10px;
+  background: rgb(255 255 255 / 0.1);
+  border: 1px solid rgb(255 255 255 / 0.14);
+}
+
+.amd-command-chip span,
+.amd-command-chip em,
+.amd-command-chip strong {
+  display: block;
+  line-height: 1.15;
+}
+
+.amd-command-chip span {
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9bbcdc;
+  font-weight: 700;
+}
+
+.amd-command-chip strong {
+  margin-top: 0.12rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.amd-command-chip em {
+  font-style: normal;
+  font-size: 0.65rem;
+  color: #d0e0ee;
 }
 
 .amd-navbar-title {
@@ -246,11 +295,12 @@ body {
 .amd-navbar-heading strong {
   font-size: 0.95rem;
   white-space: nowrap;
+  color: #ffffff;
 }
 
 .amd-navbar-heading span {
   font-size: 0.72rem;
-  color: var(--eds-color-text-muted, #5b6b7c);
+  color: #9bbcdc;
 }
 
 .amd-live-pill {
@@ -259,8 +309,8 @@ body {
   gap: 0.4rem;
   padding: 0.18rem 0.55rem;
   border-radius: 999px;
-  background: var(--amd-brand-50, #eaf1f8);
-  color: var(--amd-brand-600, #003161);
+  background: rgb(234 241 248 / 0.14);
+  color: #d9f2e5;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -272,8 +322,8 @@ body {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #1f7a4d;
-  box-shadow: 0 0 0 0 rgb(31 122 77 / 0.55);
+  background: #5ee9a4;
+  box-shadow: 0 0 0 0 rgb(94 233 164 / 0.55);
   animation: amd-pulse 1.6s ease-out infinite;
 }
 
@@ -283,9 +333,11 @@ body {
   gap: 0.6rem;
   min-height: 2.5rem;
   padding: 0.2rem 0.7rem 0.2rem 0.25rem;
-  border: 1px solid var(--eds-color-border, #d7dee7);
+  border: 1px solid rgb(255 255 255 / 0.18);
   border-radius: 999px;
-  background: #ffffff;
+  background: rgb(255 255 255 / 0.08);
+  color: inherit;
+  cursor: pointer;
 }
 
 .amd-profile-copy {
@@ -301,11 +353,55 @@ body {
 .amd-profile-copy strong {
   font-size: 0.82rem;
   white-space: nowrap;
+  color: #ffffff;
 }
 
 .amd-profile-copy span {
   font-size: 0.7rem;
-  color: var(--eds-color-text-muted, #5b6b7c);
+  color: #9bbcdc;
+}
+
+.amd-cmd-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.amd-cmd-list button {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  background: #f4f6f8;
+  cursor: pointer;
+}
+
+.amd-cmd-list button:hover {
+  background: var(--amd-brand-50, #eaf1f8);
+}
+
+.amd-cmd-list small,
+.amd-cmd-list strong,
+.amd-cmd-list span {
+  display: block;
+}
+
+.amd-cmd-list small {
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--amd-brand-600, #003161);
+  font-weight: 700;
+}
+
+.amd-cmd-list span {
+  margin-top: 0.15rem;
+  color: #5b6b7c;
+  font-size: 0.78rem;
 }
 
 .amd-menu-btn {
@@ -466,6 +562,36 @@ body {
   overflow: hidden;
   padding: 1rem 1rem 0.9rem;
   height: 100%;
+  min-height: 168px;
+  display: flex;
+  flex-direction: column;
+}
+
+.amd-stat-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.7rem;
+  align-items: center;
+  margin-top: auto;
+}
+
+.amd-page .row > [class*='col'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.amd-page .row > [class*='col'] > * {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.amd-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.amd-panel-body {
+  flex: 1;
 }
 
 .amd-stat-card::before {
@@ -517,6 +643,7 @@ body {
   flex-wrap: wrap;
   gap: 0.45rem 0.7rem;
   align-items: center;
+  margin-top: auto;
 }
 
 .amd-stat-trend {
@@ -540,6 +667,8 @@ body {
   padding: 0;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .amd-panel-header {
@@ -921,6 +1050,15 @@ body {
   height: 100%;
 }
 
+button.amd-agent-card {
+  display: block;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
 .amd-agent-card header {
   display: flex;
   justify-content: space-between;
@@ -1041,23 +1179,17 @@ body {
   }
 
   .amd-navbar {
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-      'start end'
-      'search search';
-    row-gap: 0.65rem;
-  }
-
-  .amd-navbar-start {
-    grid-area: start;
-  }
-
-  .amd-navbar-end {
-    grid-area: end;
+    align-items: flex-start;
   }
 
   .amd-navbar-search {
-    grid-area: search;
+    order: 5;
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .amd-command-strip {
+    flex: 1 1 100%;
   }
 
   .amd-profile-copy {
@@ -1209,7 +1341,6 @@ html.eds-theme-dark body {
 }
 
 html.eds-theme-dark .amd-sidebar,
-html.eds-theme-dark .amd-navbar,
 html.eds-theme-dark .amd-hero,
 html.eds-theme-dark .amd-stat-card,
 html.eds-theme-dark .amd-panel,
@@ -1221,8 +1352,7 @@ html.eds-theme-dark .amd-agent-card,
 html.eds-theme-dark .amd-reason-card,
 html.eds-theme-dark .amd-search-hit,
 html.eds-theme-dark .amd-notify-item,
-html.eds-theme-dark .amd-brand,
-html.eds-theme-dark .amd-profile {
+html.eds-theme-dark .amd-brand {
   background: var(--eds-color-surface, #151d27);
   border-color: var(--eds-color-border, #2a3746);
 }

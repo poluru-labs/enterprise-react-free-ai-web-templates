@@ -1,21 +1,74 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Avatar, Button, Drawer, Search, useTheme } from '@poluru-labs/enterprise-design-system-react';
-import { APP_NAME, BASE_PATH } from '../../constants/navigation.js';
-import notifications from '../../data/notifications.json';
+import {
+  Avatar,
+  Button,
+  Drawer,
+  DropdownMenu,
+  Kbd,
+  MenuItem,
+  Modal,
+  Search,
+  Select,
+  showToast,
+  useTheme,
+} from '@poluru-labs/enterprise-design-system-react';
+import {
+  APP_NAME,
+  BASE_PATH,
+  CURRENT_USER,
+  NAV_ITEMS,
+  TIME_RANGE_OPTIONS,
+} from '../../constants/navigation.js';
+import { useCommandPalette } from '../../hooks/useCommandPalette.js';
 import { formatDateTime } from '../../lib/format.js';
+import { searchCatalog } from '../../lib/search.js';
+import { searchWorkspace } from '../../lib/workspaceSearch.js';
+import notifications from '../../data/notifications.json';
+import overview from '../../data/overview.json';
+import cost from '../../data/cost.json';
 
 export function DashboardNavbar({ onMenuToggle, sectionLabel }) {
   const navigate = useNavigate();
   const { theme, toggleTheme } = useTheme();
+  const { open: commandOpen, setOpen: setCommandOpen } = useCommandPalette();
   const [query, setQuery] = useState('');
+  const [paletteQuery, setPaletteQuery] = useState('');
+  const [timeRange, setTimeRange] = useState('24h');
   const [notifyOpen, setNotifyOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const catalog = useMemo(() => {
+    const pages = NAV_ITEMS.map((item) => ({
+      id: item.to,
+      kind: 'Page',
+      title: item.label,
+      detail: item.description,
+      href: item.to,
+    }));
+    return pages;
+  }, []);
+
+  const paletteHits = useMemo(() => {
+    const needle = paletteQuery.trim();
+    if (!needle) return catalog.slice(0, 8);
+    const pageHits = searchCatalog(catalog, needle);
+    const dataHits = searchWorkspace(needle).slice(0, 8);
+    return [...pageHits, ...dataHits].slice(0, 12);
+  }, [catalog, paletteQuery]);
 
   const runSearch = () => {
     const next = query.trim();
     if (!next) return;
     navigate(`${BASE_PATH}/search?q=${encodeURIComponent(next)}`);
   };
+
+  const chips = [
+    { label: 'Completion', value: overview.headerPulse.completion, hint: 'SLO' },
+    { label: 'Alerts', value: overview.headerPulse.alerts, hint: 'open' },
+    { label: 'Spend', value: `$${Math.round(cost.summary.spendToday)}`, hint: 'today' },
+    { label: 'p95', value: overview.headerPulse.p95, hint: 'latency' },
+  ];
 
   return (
     <header className="amd-navbar">
@@ -35,15 +88,25 @@ export function DashboardNavbar({ onMenuToggle, sectionLabel }) {
             Live
           </span>
           <div className="amd-navbar-heading">
-            <strong>{sectionLabel || APP_NAME}</strong>
-            <span>Agent monitoring</span>
+            <strong>{APP_NAME}</strong>
+            <span>{sectionLabel || 'Agent monitoring'}</span>
           </div>
         </div>
       </div>
 
+      <div className="amd-command-strip" aria-label="Fleet pulse">
+        {chips.map((chip) => (
+          <div key={chip.label} className="amd-command-chip">
+            <span>{chip.label}</span>
+            <strong>{chip.value}</strong>
+            <em>{chip.hint}</em>
+          </div>
+        ))}
+      </div>
+
       <div className="amd-navbar-search">
         <Search
-          placeholder="Search agents, tasks, traces, tools…"
+          placeholder="Search agents, traces, incidents…"
           size="sm"
           value={query}
           onChange={(_, value) => setQuery(value)}
@@ -54,13 +117,29 @@ export function DashboardNavbar({ onMenuToggle, sectionLabel }) {
             }
           }}
           onClear={() => setQuery('')}
+          onFocus={() => setCommandOpen(true)}
           clearable
         />
       </div>
 
       <div className="amd-navbar-end">
+        <Select
+          aria-label="Time range"
+          size="sm"
+          options={TIME_RANGE_OPTIONS}
+          value={timeRange}
+          onChange={(event) => setTimeRange(event.target.value)}
+        />
         <Button
-          variant="tertiary"
+          variant="secondary"
+          size="sm"
+          accessibleLabel="Open command palette"
+          onClick={() => setCommandOpen(true)}
+        >
+          <Kbd>⌘K</Kbd>
+        </Button>
+        <Button
+          variant="secondary"
           size="sm"
           accessibleLabel={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
           onClick={toggleTheme}
@@ -69,7 +148,7 @@ export function DashboardNavbar({ onMenuToggle, sectionLabel }) {
         </Button>
         <div className="amd-notify-wrap">
           <Button
-            variant="tertiary"
+            variant="secondary"
             size="sm"
             icon="bell"
             iconOnly
@@ -82,13 +161,29 @@ export function DashboardNavbar({ onMenuToggle, sectionLabel }) {
             </span>
           ) : null}
         </div>
-        <div className="amd-profile" title="Avery Poluru">
-          <Avatar name="Avery Poluru" size="sm" />
-          <div className="amd-profile-copy">
-            <strong>Avery Poluru</strong>
-            <span>Ops lead</span>
-          </div>
-        </div>
+        <DropdownMenu
+          open={menuOpen}
+          onOpenChange={setMenuOpen}
+          placement="bottom"
+          trigger={
+            <button type="button" className="amd-profile" aria-label={`${CURRENT_USER.name} menu`}>
+              <Avatar name={CURRENT_USER.name} size="sm" />
+              <div className="amd-profile-copy">
+                <strong>{CURRENT_USER.name}</strong>
+                <span>{CURRENT_USER.role}</span>
+              </div>
+            </button>
+          }
+        >
+          <MenuItem label="Settings" value="settings" onSelect={() => navigate(`${BASE_PATH}/settings`)} />
+          <MenuItem label="Incidents" value="incidents" onSelect={() => navigate(`${BASE_PATH}/incidents`)} />
+          <MenuItem
+            label="Sign out"
+            value="signout"
+            danger
+            onSelect={() => showToast({ title: 'Signed out', description: CURRENT_USER.name, variant: 'info' })}
+          />
+        </DropdownMenu>
       </div>
 
       <Drawer
@@ -116,6 +211,47 @@ export function DashboardNavbar({ onMenuToggle, sectionLabel }) {
           ))}
         </ul>
       </Drawer>
+
+      <Modal
+        open={commandOpen}
+        onOpenChange={(open) => {
+          setCommandOpen(open);
+          if (!open) setPaletteQuery('');
+        }}
+        heading="Jump across AgentPulse"
+      >
+        <Search
+          placeholder="Agents, incidents, tools, pages…"
+          value={paletteQuery}
+          onChange={(_, value) => setPaletteQuery(value)}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' && paletteHits[0]) {
+              event.preventDefault();
+              setCommandOpen(false);
+              navigate(paletteHits[0].href);
+            }
+          }}
+          clearable
+          onClear={() => setPaletteQuery('')}
+        />
+        <ul className="amd-cmd-list">
+          {paletteHits.map((hit) => (
+            <li key={`${hit.kind}-${hit.id}`}>
+              <button
+                type="button"
+                onClick={() => {
+                  setCommandOpen(false);
+                  navigate(hit.href);
+                }}
+              >
+                <small>{hit.kind}</small>
+                <strong>{hit.title}</strong>
+                <span>{hit.detail}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </Modal>
     </header>
   );
 }

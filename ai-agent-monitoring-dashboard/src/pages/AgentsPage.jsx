@@ -50,6 +50,42 @@ export default function AgentsPage() {
         </div>
       </div>
 
+      <div className="row g-3 mb-3">
+        {agents
+          .filter((agent) => ['critical', 'degraded', 'watch'].includes(agent.status))
+          .map((agent) => (
+            <div className="col-12 col-md-4" key={agent.id}>
+              <button
+                type="button"
+                className={`amd-agent-card status-${agent.status}`}
+                onClick={() => setSelected(agent)}
+              >
+                <header>
+                  <div>
+                    <h3>{agent.name}</h3>
+                    <p>{agent.role} · {agent.model}</p>
+                  </div>
+                  <StatusBadge status={agent.status} pulse={agent.status === 'critical'} />
+                </header>
+                <dl>
+                  <div>
+                    <dt>Success today</dt>
+                    <dd>
+                      <span>{formatPercent(agent.successRate)}</span>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Spend</dt>
+                    <dd>
+                      <span>{formatCurrency(agent.costToday, 1)}</span>
+                    </dd>
+                  </div>
+                </dl>
+              </button>
+            </div>
+          ))}
+      </div>
+
       <FilterBar
         search={
           <Search

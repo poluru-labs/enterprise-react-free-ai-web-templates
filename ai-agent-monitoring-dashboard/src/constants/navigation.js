@@ -2,6 +2,18 @@ export const APP_NAME = 'AgentPulse';
 export const APP_TAGLINE = 'Agent Monitor';
 export const BASE_PATH = '/agent-monitoring';
 
+export const CURRENT_USER = {
+  name: 'Avery Poluru',
+  role: 'Ops lead',
+};
+
+export const TIME_RANGE_OPTIONS = [
+  { label: 'Last 1 hour', value: '1h' },
+  { label: 'Last 24 hours', value: '24h' },
+  { label: 'Last 7 days', value: '7d' },
+  { label: 'Last 30 days', value: '30d' },
+];
+
 export const NAV_GROUPS = [
   {
     label: 'Operations',
@@ -53,6 +65,12 @@ export const NAV_GROUPS = [
         label: 'Handoffs',
         icon: 'bi-people',
         description: 'Human takeover',
+      },
+      {
+        to: `${BASE_PATH}/incidents`,
+        label: 'Incidents',
+        icon: 'bi-lightning-charge',
+        description: 'Live reliability events',
       },
     ],
   },

@@ -86,6 +86,39 @@ export default function OverviewPage() {
       </div>
 
       <div className="row g-3 mb-3">
+        {overview.slos.map((slo) => (
+          <div className="col-12 col-sm-6 col-xl-3" key={slo.id}>
+            <StatCard
+              label={slo.label}
+              value={slo.value}
+              hint={slo.hint}
+              trend={slo.trend}
+              trendValue={slo.trendValue}
+              icon={slo.icon}
+              tone={slo.tone}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className="row g-3 mb-3">
+        {overview.watchCards.map((card) => (
+          <div className="col-12 col-md-6 col-xl-3" key={card.id}>
+            <article className={`amd-agent-card status-${card.status}`}>
+              <header>
+                <div>
+                  <h3>{card.name}</h3>
+                  <p>{card.metric}</p>
+                </div>
+                <StatusBadge status={card.status} pulse={card.status === 'critical'} />
+              </header>
+              <p className="amd-drawer-copy mb-0">{card.detail}</p>
+            </article>
+          </div>
+        ))}
+      </div>
+
+      <div className="row g-3 mb-3">
         <div className="col-12 col-xl-7">
           <ChartSection
             title="Task completion trend"

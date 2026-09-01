@@ -1,0 +1,123 @@
+{
+  "summary": {
+    "open": 4,
+    "mitigating": 2,
+    "resolvedToday": 3,
+    "mttrMinutes": 18,
+    "errorBudget": 16
+  },
+  "items": [
+    {
+      "id": "INC-2204",
+      "title": "Sentinel Ops looping on deploy rollback",
+      "status": "active",
+      "severity": "critical",
+      "agent": "Sentinel Ops",
+      "owner": "Jonah Poluru",
+      "openedAt": "2026-08-24T18:12:00.000Z",
+      "updatedAt": "2026-08-24T18:36:44.000Z",
+      "summary": "Planner is repeating canary health checks. Loop score 92. Auto-pause arms at 16 repeats.",
+      "playbook": "Pause the planner, replay the last healthy canary, page SRE.",
+      "href": "/agent-monitoring/loops"
+    },
+    {
+      "id": "INC-2209",
+      "title": "Helix Data memory saturation",
+      "status": "mitigating",
+      "severity": "high",
+      "agent": "Helix Data",
+      "owner": "Elena Poluru",
+      "openedAt": "2026-08-24T17:48:00.000Z",
+      "updatedAt": "2026-08-24T18:31:08.000Z",
+      "summary": "Context saturation 86%, stale entries 18%, retrieval quality 71 on MEM-HEL-12.",
+      "playbook": "Evict stale shards, freeze new indexing, raise retrieval temperature.",
+      "href": "/agent-monitoring/memory-health"
+    },
+    {
+      "id": "INC-2211",
+      "title": "crm_update error-budget burn",
+      "status": "active",
+      "severity": "high",
+      "agent": "Nova Support",
+      "owner": "Avery Poluru",
+      "openedAt": "2026-08-24T17:05:00.000Z",
+      "updatedAt": "2026-08-24T18:14:19.000Z",
+      "summary": "Success 91.8% with 84% of the daily error budget used. Refunds are retrying.",
+      "playbook": "Shed non-VIP writes, pin to last known schema, open a vendor ticket.",
+      "href": "/agent-monitoring/tool-calls"
+    },
+    {
+      "id": "INC-2198",
+      "title": "Analytics SQL eval regression",
+      "status": "watching",
+      "severity": "medium",
+      "agent": "Helix Data",
+      "owner": "Elena Poluru",
+      "openedAt": "2026-08-24T16:20:00.000Z",
+      "updatedAt": "2026-08-24T17:12:00.000Z",
+      "summary": "EVAL-2209 scored 71 with 11 failed cases. Groundedness fleet-wide is still 88.2.",
+      "playbook": "Hold the prompt promote, rerun the gold set, attach failing SQL.",
+      "href": "/agent-monitoring/evaluations"
+    },
+    {
+      "id": "INC-2184",
+      "title": "web_search p95 breach",
+      "status": "mitigated",
+      "severity": "medium",
+      "agent": "Prism Content",
+      "owner": "Maya Poluru",
+      "openedAt": "2026-08-24T15:40:00.000Z",
+      "updatedAt": "2026-08-24T18:05:02.000Z",
+      "summary": "p95 hit 3.18s against a 1.20s budget. Success rate stayed at 96.4%.",
+      "playbook": "Fail over to cached SERP, cap concurrent calls, watch the next 15 minutes.",
+      "href": "/agent-monitoring/tool-calls"
+    },
+    {
+      "id": "INC-2171",
+      "title": "Jailbreak blocked on Nova Support",
+      "status": "resolved",
+      "severity": "low",
+      "agent": "Nova Support",
+      "owner": "Avery Poluru",
+      "openedAt": "2026-08-24T18:38:00.000Z",
+      "updatedAt": "2026-08-24T18:41:18.000Z",
+      "summary": "GRD-4381 stopped a VIP ticket that asked Nova to dump its system prompt.",
+      "playbook": "Confirm the policy hit, notify trust, leave the ticket in human review.",
+      "href": "/agent-monitoring/guardrails"
+    }
+  ],
+  "playbooks": [
+    {
+      "id": "pb-loop",
+      "title": "Loop breaker",
+      "owner": "Jonah Poluru",
+      "steps": 4,
+      "lastUsed": "2026-08-24T18:20:00.000Z",
+      "hint": "Pause planner → snapshot traces → replay canary"
+    },
+    {
+      "id": "pb-memory",
+      "title": "Memory eviction",
+      "owner": "Elena Poluru",
+      "steps": 5,
+      "lastUsed": "2026-08-24T18:28:00.000Z",
+      "hint": "Freeze ingest → drop stale shards → reheat retrieval"
+    },
+    {
+      "id": "pb-tool",
+      "title": "Tool budget shed",
+      "owner": "Avery Poluru",
+      "steps": 3,
+      "lastUsed": "2026-08-24T17:40:00.000Z",
+      "hint": "VIP-only writes → pin schema → vendor page"
+    },
+    {
+      "id": "pb-eval",
+      "title": "Eval hold",
+      "owner": "Elena Poluru",
+      "steps": 3,
+      "lastUsed": "2026-08-24T16:40:00.000Z",
+      "hint": "Block promote → rerun gold → attach diffs"
+    }
+  ]
+}

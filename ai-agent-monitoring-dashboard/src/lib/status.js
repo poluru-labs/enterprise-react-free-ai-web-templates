@@ -7,6 +7,7 @@ export const STATUS_TONE = {
   healthy: 'success',
   watching: 'info',
   mitigated: 'success',
+  mitigating: 'warning',
   failed: 'danger',
   error: 'danger',
   severe: 'danger',

@@ -9,6 +9,7 @@ import ToolCallsPage from './pages/ToolCallsPage.jsx';
 import LoopsPage from './pages/LoopsPage.jsx';
 import FailuresPage from './pages/FailuresPage.jsx';
 import HandoffsPage from './pages/HandoffsPage.jsx';
+import IncidentsPage from './pages/IncidentsPage.jsx';
 import MemoryHealthPage from './pages/MemoryHealthPage.jsx';
 import EvaluationsPage from './pages/EvaluationsPage.jsx';
 import GuardrailsPage from './pages/GuardrailsPage.jsx';
@@ -33,6 +34,7 @@ export default function App() {
               <Route path="loops" element={<LoopsPage />} />
               <Route path="failures" element={<FailuresPage />} />
               <Route path="handoffs" element={<HandoffsPage />} />
+              <Route path="incidents" element={<IncidentsPage />} />
               <Route path="memory-health" element={<MemoryHealthPage />} />
               <Route path="evaluations" element={<EvaluationsPage />} />
               <Route path="guardrails" element={<GuardrailsPage />} />
