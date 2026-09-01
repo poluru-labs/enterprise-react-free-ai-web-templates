@@ -1,0 +1,37 @@
+{
+  "workspace": {
+    "name": "Poluru LLM Ops",
+    "slug": "llm-ops-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 30,
+    "brandColor": "#4338CA"
+  },
+  "keys": [
+    { "id": "aurora_live", "label": "aurora_live_subrahmanyam", "owner": "Subrahmanyam Poluru", "scope": "traces ingest" },
+    { "id": "atlas_eval", "label": "atlas_eval_kavya", "owner": "Kavya Poluru", "scope": "evaluations" },
+    { "id": "beacon_idx", "label": "beacon_idx_priya", "owner": "Priya Poluru", "scope": "embeddings" }
+  ],
+  "team": [
+    { "name": "Subrahmanyam Poluru", "role": "Owner" },
+    { "name": "Kavya Poluru", "role": "Editor" },
+    { "name": "Harini Poluru", "role": "Viewer" },
+    { "name": "Madhav Poluru", "role": "Editor" },
+    { "name": "Meera Poluru", "role": "Editor" },
+    { "name": "Priya Poluru", "role": "Viewer" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to Subrahmanyam Poluru", "enabled": true },
+    { "id": "pager", "label": "Page on error rate above 1%", "enabled": true },
+    { "id": "slack", "label": "Slack #llm-ops for Lens watch", "enabled": true },
+    { "id": "webhook", "label": "Webhook to incident.io", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "subrahmanyam", "label": "Subrahmanyam Poluru" },
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "madhav", "label": "Madhav Poluru" },
+    { "value": "harini", "label": "Harini Poluru" },
+    { "value": "meera", "label": "Meera Poluru" },
+    { "value": "priya", "label": "Priya Poluru" }
+  ]
+}

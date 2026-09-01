@@ -1,0 +1,14 @@
+[
+  { "id": "tr_1842", "model": "Aurora Chat", "user": "Meera Poluru", "latency": 812, "tokens": 1240, "status": "ok", "when": "12s ago" },
+  { "id": "tr_1841", "model": "Atlas Summarizer", "user": "Kavya Poluru", "latency": 1410, "tokens": 2860, "status": "ok", "when": "41s ago" },
+  { "id": "tr_1840", "model": "Lens Extractor", "user": "Madhav Poluru", "latency": 2480, "tokens": 910, "status": "warn", "when": "2m ago" },
+  { "id": "tr_1839", "model": "Aurora Chat", "user": "Priya Poluru", "latency": 6200, "tokens": 410, "status": "error", "when": "6m ago" },
+  { "id": "tr_1838", "model": "Nova Classifier", "user": "Harini Poluru", "latency": 388, "tokens": 120, "status": "ok", "when": "9m ago" },
+  { "id": "tr_1837", "model": "Aurora Chat", "user": "Subrahmanyam Poluru", "latency": 940, "tokens": 780, "status": "ok", "when": "14m ago" },
+  { "id": "tr_1836", "model": "Harbor Reasoner", "user": "Meera Poluru", "latency": 1920, "tokens": 3400, "status": "ok", "when": "18m ago" },
+  { "id": "tr_1835", "model": "Beacon Embeddings", "user": "Priya Poluru", "latency": 74, "tokens": 512, "status": "ok", "when": "21m ago" },
+  { "id": "tr_1834", "model": "Atlas Summarizer", "user": "Kavya Poluru", "latency": 1680, "tokens": 2104, "status": "warn", "when": "27m ago" },
+  { "id": "tr_1833", "model": "Lens Extractor", "user": "Madhav Poluru", "latency": 710, "tokens": 640, "status": "ok", "when": "33m ago" },
+  { "id": "tr_1832", "model": "Nova Classifier", "user": "Harini Poluru", "latency": 402, "tokens": 96, "status": "ok", "when": "41m ago" },
+  { "id": "tr_1831", "model": "Harbor Reasoner", "user": "Meera Poluru", "latency": 4100, "tokens": 2800, "status": "warn", "when": "48m ago" }
+]

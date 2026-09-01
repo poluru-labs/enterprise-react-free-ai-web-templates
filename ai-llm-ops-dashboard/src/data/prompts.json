@@ -1,0 +1,101 @@
+{
+  "prompts": [
+    {
+      "id": "p_reply",
+      "name": "Customer reply",
+      "model": "Aurora Chat",
+      "version": "v2.8",
+      "owner": "Subrahmanyam Poluru",
+      "status": "Published"
+    },
+    {
+      "id": "p_notes",
+      "name": "Meeting notes",
+      "model": "Atlas Summarizer",
+      "version": "v1.4",
+      "owner": "Kavya Poluru",
+      "status": "Published"
+    },
+    {
+      "id": "p_invoice",
+      "name": "Invoice extraction",
+      "model": "Lens Extractor",
+      "version": "v3.1",
+      "owner": "Madhav Poluru",
+      "status": "Draft"
+    },
+    {
+      "id": "p_route",
+      "name": "Intent router",
+      "model": "Nova Classifier",
+      "version": "v1.0",
+      "owner": "Harini Poluru",
+      "status": "Published"
+    },
+    {
+      "id": "p_legal",
+      "name": "Harbor redline brief",
+      "model": "Harbor Reasoner",
+      "version": "v0.9",
+      "owner": "Meera Poluru",
+      "status": "Published"
+    },
+    {
+      "id": "p_search",
+      "name": "Retrieval query",
+      "model": "Beacon Embeddings",
+      "version": "v1.2",
+      "owner": "Priya Poluru",
+      "status": "Published"
+    },
+    {
+      "id": "p_triage",
+      "name": "Ticket triage",
+      "model": "Nova Classifier",
+      "version": "v1.3",
+      "owner": "Harini Poluru",
+      "status": "Draft"
+    }
+  ],
+  "versions": {
+    "p_reply": [
+      { "heading": "v2.8 · live", "children": "Customer reply voice for Subrahmanyam Poluru. Published 4 min ago." },
+      { "heading": "v2.7", "children": "Dropped the refund clause after Kavya Poluru’s legal note." },
+      { "heading": "v2.6", "children": "Added Harbor redline tone. Rolled back after latency rose." }
+    ],
+    "p_notes": [
+      { "heading": "v1.4 · live", "children": "Meeting notes for Kavya Poluru. Groundedness gate on." },
+      { "heading": "v1.3", "children": "Too terse on action items. Kept as archive." }
+    ],
+    "p_invoice": [
+      { "heading": "v3.1 · draft", "children": "Invoice fields for Madhav Poluru. Waiting on Lens review." }
+    ],
+    "p_route": [
+      { "heading": "v1.0 · live", "children": "Intent router owned by Harini Poluru." }
+    ],
+    "p_legal": [
+      { "heading": "v0.9 · live", "children": "Harbor redline brief owned by Meera Poluru. Cite source spans." },
+      { "heading": "v0.8", "children": "Over-quoted the term sheet. Trimmed in v0.9." }
+    ],
+    "p_search": [
+      { "heading": "v1.2 · live", "children": "Retrieval query rewrite for Priya Poluru’s Beacon index." }
+    ],
+    "p_triage": [
+      { "heading": "v1.3 · draft", "children": "Ticket triage for Harini Poluru. Billing vs product vs legal." }
+    ]
+  },
+  "templates": [
+    "Draft a reply to Meera Poluru about the Harbor redlines. Keep it under 120 words.",
+    "Summarize Kavya Poluru’s notes from the Atlas eval review.",
+    "Extract invoice fields for Madhav Poluru’s Lens sample pack.",
+    "Classify Priya Poluru’s ticket as billing, product, or legal.",
+    "Rewrite Harini Poluru’s intent router examples for Nova.",
+    "List the open Harbor clauses Subrahmanyam Poluru still owes legal."
+  ],
+  "timeline": [
+    { "title": "Customer reply v2.8 published", "description": "Aurora Chat · Subrahmanyam Poluru", "timestamp": "4 min ago", "status": "complete" },
+    { "title": "Harbor redline brief v0.9", "description": "Harbor Reasoner · Meera Poluru", "timestamp": "38 min ago", "status": "complete" },
+    { "title": "Invoice extraction still draft", "description": "Lens Extractor · Madhav Poluru", "timestamp": "2 hr ago", "status": "current" },
+    { "title": "Ticket triage v1.3 opened", "description": "Nova Classifier · Harini Poluru", "timestamp": "yesterday", "status": "upcoming" }
+  ]
+}

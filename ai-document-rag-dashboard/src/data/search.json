@@ -1,0 +1,48 @@
+{
+  "defaultQuery": "How does the employee equipment return process work?",
+  "options": {
+    "sources": "All sources",
+    "model": "Contextly RAG v2",
+    "mode": "Balanced"
+  },
+  "lastResult": {
+    "latency": "1.2s",
+    "match": 94,
+    "faithfulness": 96.2,
+    "answer": "Employees must return company equipment within five business days of their last working day. The People Operations team provides a prepaid shipping label for remote employees.",
+    "citations": [
+      {
+        "id": "cite-01",
+        "title": "Employee Handbook 2026",
+        "detail": "Equipment return policy, page 18",
+        "score": 0.94
+      },
+      {
+        "id": "cite-02",
+        "title": "IT Exit Checklist",
+        "detail": "Offboarding, section 4",
+        "score": 0.91
+      }
+    ],
+    "chunks": [
+      {
+        "id": "chk-18",
+        "doc": "Employee Handbook 2026",
+        "page": "p. 18",
+        "text": "Company laptops, badges, and peripherals must be returned within five business days of the last working day. Remote employees receive a prepaid shipping label from People Operations."
+      },
+      {
+        "id": "chk-04",
+        "doc": "IT Exit Checklist",
+        "page": "§4",
+        "text": "IT confirms receipt of returned hardware before closing the offboarding ticket. Missing accessories are billed to the cost center."
+      },
+      {
+        "id": "chk-22",
+        "doc": "Safety policy",
+        "page": "p. 6",
+        "text": "Access badges are deactivated at 17:00 on the last working day. Physical return can follow within the five-day window."
+      }
+    ]
+  }
+}

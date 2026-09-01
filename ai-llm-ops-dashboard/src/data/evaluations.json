@@ -1,0 +1,18 @@
+{
+  "suites": [
+    { "id": "ev1", "name": "Customer reply safety", "model": "Aurora Chat", "score": 96.8, "owner": "Subrahmanyam Poluru", "outcome": "Passed" },
+    { "id": "ev2", "name": "Meeting notes groundedness", "model": "Atlas Summarizer", "score": 94.6, "owner": "Kavya Poluru", "outcome": "Passed" },
+    { "id": "ev3", "name": "Invoice field accuracy", "model": "Lens Extractor", "score": 87.4, "owner": "Madhav Poluru", "outcome": "Needs review" },
+    { "id": "ev4", "name": "Intent routing F1", "model": "Nova Classifier", "score": 99.1, "owner": "Harini Poluru", "outcome": "Passed" },
+    { "id": "ev5", "name": "Harbor citation fidelity", "model": "Harbor Reasoner", "score": 91.2, "owner": "Meera Poluru", "outcome": "Passed" },
+    { "id": "ev6", "name": "Retrieval recall@10", "model": "Beacon Embeddings", "score": 93.5, "owner": "Priya Poluru", "outcome": "Passed" }
+  ],
+  "scoreTrend": {
+    "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "series": [
+      { "name": "Safety", "color": "#4338CA", "values": [94.2, 94.8, 95.1, 95.6, 96.0, 96.4, 96.8] },
+      { "name": "Groundedness", "color": "#0891B2", "values": [91.0, 91.8, 92.4, 93.1, 93.8, 94.2, 94.6] },
+      { "name": "Field accuracy", "color": "#d97706", "values": [88.4, 88.1, 87.9, 87.6, 87.5, 87.4, 87.4] }
+    ]
+  }
+}

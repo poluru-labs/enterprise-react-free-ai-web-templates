@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-08-28T16:42:00.000Z",
+  "hero": {
+    "kicker": "Friday · 28 Aug 2026 · last sync 2 min ago",
+    "title": "Production is green except Lens Extractor, which Madhav Poluru has on watch.",
+    "body": "111.2K requests this window. p95 is 684ms, error rate 0.3%, and spend is at 87% of the monthly envelope. Hold new invoice traffic on Lens until groundedness recovers."
+  },
+  "ticker": {
+    "p95": "684ms",
+    "errors": "0.3%",
+    "spend": "87%",
+    "requests": "111.2K"
+  },
+  "kpis": [
+    {
+      "id": "requests",
+      "label": "Total requests",
+      "value": "111.2K",
+      "hint": "vs 98.9K last period",
+      "trend": "up",
+      "trendValue": "+12.4%",
+      "icon": "bi-activity",
+      "tone": "brand",
+      "sparkline": [88.4, 92.1, 96.8, 101.2, 104.6, 108.1, 111.2]
+    },
+    {
+      "id": "latency",
+      "label": "Average latency",
+      "value": "684ms",
+      "hint": "Across 6 active models",
+      "trend": "down",
+      "trendValue": "-8.1%",
+      "icon": "bi-stopwatch",
+      "tone": "info",
+      "sparkline": [812, 790, 744, 721, 704, 692, 684]
+    },
+    {
+      "id": "success",
+      "label": "Success rate",
+      "value": "98.7%",
+      "hint": "Target is above 98%",
+      "trend": "up",
+      "trendValue": "+0.6%",
+      "icon": "bi-check-circle",
+      "tone": "success",
+      "sparkline": [97.8, 97.9, 98.1, 98.3, 98.4, 98.6, 98.7]
+    },
+    {
+      "id": "budget",
+      "label": "Budget used",
+      "value": "87%",
+      "hint": "$342 remaining",
+      "trend": "up",
+      "trendValue": "+4.2%",
+      "icon": "bi-wallet2",
+      "tone": "warning",
+      "sparkline": [61, 66, 71, 76, 80, 84, 87]
+    },
+    {
+      "id": "tokens",
+      "label": "Tokens",
+      "value": "87.4M",
+      "hint": "Input + output this window",
+      "trend": "up",
+      "trendValue": "+9.1%",
+      "icon": "bi-hash",
+      "tone": "brand",
+      "sparkline": [64, 68, 72, 76, 80, 84, 87.4]
+    },
+    {
+      "id": "errors",
+      "label": "Error rate",
+      "value": "0.3%",
+      "hint": "Priya Poluru’s Aurora timeout is the only burst",
+      "trend": "down",
+      "trendValue": "-0.1 pts",
+      "icon": "bi-exclamation-triangle",
+      "tone": "danger",
+      "sparkline": [0.6, 0.5, 0.5, 0.4, 0.4, 0.3, 0.3]
+    }
+  ],
+  "requestTrend": {
+    "labels": ["Aug 22", "Aug 23", "Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28"],
+    "series": [
+      { "name": "Requests", "color": "#4338CA", "values": [14200, 15180, 14840, 16210, 17120, 16880, 17640] },
+      { "name": "Errors", "color": "#dc2626", "values": [62, 54, 48, 51, 44, 41, 38] }
+    ]
+  },
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "warning",
+      "title": "Lens Extractor is on watch",
+      "message": "p95 is 2.4s. Madhav Poluru opened a review; hold new invoice traffic until groundedness recovers.",
+      "href": "/llm-ops/incidents"
+    },
+    {
+      "id": "al-02",
+      "variant": "warning",
+      "title": "Budget 87% used",
+      "message": "$342 left this month. Kavya Poluru can cap tokens on customer reply.",
+      "href": "/llm-ops/costs"
+    },
+    {
+      "id": "al-03",
+      "variant": "info",
+      "title": "Eval passed on Nova",
+      "message": "Intent routing F1 is 99.1%. Harini Poluru signed off.",
+      "href": "/llm-ops/evaluations"
+    }
+  ],
+  "activities": [
+    { "title": "Prompt version published", "description": "Aurora Chat · v2.8 · Subrahmanyam Poluru", "timestamp": "4 min ago", "status": "complete" },
+    { "title": "Latency threshold updated", "description": "Atlas Summarizer · Kavya Poluru", "timestamp": "22 min ago", "status": "current" },
+    { "title": "Evaluation completed", "description": "Nova Classifier · 99.1% pass rate", "timestamp": "1 hr ago", "status": "upcoming" },
+    { "title": "Lens Extractor flagged", "description": "Madhav Poluru opened a review on field accuracy", "timestamp": "2 hr ago", "status": "upcoming" }
+  ]
+}

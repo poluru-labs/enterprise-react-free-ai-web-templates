@@ -1,0 +1,82 @@
+{
+  "chats": [
+    {
+      "id": "c-01",
+      "title": "Why did my response include old pricing?",
+      "name": "Maya Poluru",
+      "time": "Today, 10:31",
+      "status": "Needs review",
+      "question": "Why did my response include old pricing?",
+      "answer": "The answer cited the 2025 pricing sheet, which is still enabled in Google Drive. I found a newer rate card updated this morning.",
+      "source": {
+        "title": "Pricing Sheet 2025",
+        "flag": "Outdated source"
+      }
+    },
+    {
+      "id": "c-02",
+      "title": "Summarize the onboarding process",
+      "name": "Aarav Poluru",
+      "time": "Today, 09:12",
+      "status": "Resolved",
+      "question": "Summarize the onboarding process",
+      "answer": "New hires complete IT setup on day one, then follow the onboarding wiki for week-one checklists. Isha Poluru’s handbook covers benefits enrollment by Friday of week one.",
+      "source": {
+        "title": "Onboarding wiki",
+        "flag": "Ready"
+      }
+    },
+    {
+      "id": "c-03",
+      "title": "What benefits are available?",
+      "name": "Isha Poluru",
+      "time": "Yesterday",
+      "status": "Resolved",
+      "question": "What benefits are available?",
+      "answer": "Full-time employees receive medical, dental, 401(k) match, and a learning stipend. Details live in Employee Handbook 2026, benefits chapter.",
+      "source": {
+        "title": "Employee Handbook 2026",
+        "flag": "Ready"
+      }
+    },
+    {
+      "id": "c-04",
+      "title": "Where is the legal MSA template?",
+      "name": "Maya Poluru",
+      "time": "Yesterday",
+      "status": "Resolved",
+      "question": "Where is the legal MSA template?",
+      "answer": "The current MSA template is in SharePoint Legal. Last crawl finished four minutes ago with 41 chunks.",
+      "source": {
+        "title": "Legal MSA template",
+        "flag": "Ready"
+      }
+    },
+    {
+      "id": "c-05",
+      "title": "How do we handle a safety incident?",
+      "name": "Aarav Poluru",
+      "time": "Aug 23",
+      "status": "Resolved",
+      "question": "How do we handle a safety incident?",
+      "answer": "File the incident using the Safety policy template, notify the on-call owner, and keep equipment in place until Facilities clears the area.",
+      "source": {
+        "title": "Safety policy",
+        "flag": "Ready"
+      }
+    },
+    {
+      "id": "c-06",
+      "title": "What shipped in the feature launch brief?",
+      "name": "Isha Poluru",
+      "time": "Aug 22",
+      "status": "Needs review",
+      "question": "What shipped in the feature launch brief?",
+      "answer": "The brief lists retrieval citations in product answers and a new Drive folder for terminology. Product terminology is still indexing, so SKU names may miss.",
+      "source": {
+        "title": "Feature launch brief",
+        "flag": "Needs review"
+      }
+    }
+  ]
+}

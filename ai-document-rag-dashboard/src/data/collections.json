@@ -1,0 +1,58 @@
+{
+  "collections": [
+    {
+      "id": "col-support",
+      "name": "Support",
+      "owner": "Aarav Poluru",
+      "chunks": 8420,
+      "docs": 214,
+      "status": "Ready",
+      "description": "Playbooks, macros, and Slack #support history for first-line answers."
+    },
+    {
+      "id": "col-legal",
+      "name": "Legal",
+      "owner": "Maya Poluru",
+      "chunks": 3188,
+      "docs": 64,
+      "status": "Ready",
+      "description": "MSAs, DPAs, and retention policies from SharePoint Legal."
+    },
+    {
+      "id": "col-research",
+      "name": "Research",
+      "owner": "Isha Poluru",
+      "chunks": 12540,
+      "docs": 188,
+      "status": "Ready",
+      "description": "Q3 briefs, earnings notes, and signed research PDFs."
+    },
+    {
+      "id": "col-onboarding",
+      "name": "Onboarding",
+      "owner": "Isha Poluru",
+      "chunks": 4210,
+      "docs": 72,
+      "status": "Ready",
+      "description": "Handbook, IT exit checklist, and the onboarding wiki."
+    },
+    {
+      "id": "col-product",
+      "name": "Product",
+      "owner": "Maya Poluru",
+      "chunks": 5660,
+      "docs": 96,
+      "status": "Indexing",
+      "description": "Terminology, launch briefs, and the 2025 pricing sheet still marked stale."
+    },
+    {
+      "id": "col-safety",
+      "name": "Safety",
+      "owner": "Aarav Poluru",
+      "chunks": 1980,
+      "docs": 28,
+      "status": "Ready",
+      "description": "Safety policy, incident templates, and equipment return rules."
+    }
+  ]
+}

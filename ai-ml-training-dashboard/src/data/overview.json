@@ -1,0 +1,156 @@
+{
+  "generatedAt": "2026-08-28T22:00:00.000Z",
+  "hero": {
+    "kicker": "Friday · 28 Aug 2026 · last sync 6s ago",
+    "title": "Harbor is holding 94.2% while eu-west-1 H100s sit at 94% util.",
+    "body": "Kavya Poluru has 18 live jobs in the foundry. Queue wait is 11 minutes. Keep Harbor in commit and delay nimbus-ranker-12 if a second H100 replica is needed."
+  },
+  "ticker": {
+    "liveRuns": 18,
+    "queueWaitMinutes": 11,
+    "valAccuracy": 94.2
+  },
+  "gpuMeters": [
+    { "id": "h100", "sku": "H100", "util": 94, "region": "eu-west-1", "owner": "Luca Poluru" },
+    { "id": "a100", "sku": "A100", "util": 82, "region": "us-east-1", "owner": "Elena Poluru" },
+    { "id": "l40s", "sku": "L40S", "util": 41, "region": "ap-south-1", "owner": "Noor Poluru" }
+  ],
+  "kpis": [
+    {
+      "id": "active-runs",
+      "label": "Active runs",
+      "value": 18,
+      "hint": "6 on A100 · 4 on H100",
+      "trend": "up",
+      "trendValue": "+5",
+      "icon": "bi-play-circle",
+      "tone": "brand",
+      "sparkline": [11, 12, 13, 14, 15, 16, 18]
+    },
+    {
+      "id": "gpu-util",
+      "label": "GPU utilization",
+      "value": "86%",
+      "hint": "eu-west-1 is hot",
+      "trend": "up",
+      "trendValue": "+9 pts",
+      "icon": "bi-gpu-card",
+      "tone": "warning",
+      "sparkline": [71, 74, 78, 80, 82, 84, 86]
+    },
+    {
+      "id": "queue-wait",
+      "label": "Queue wait",
+      "value": "11m",
+      "hint": "Median this hour",
+      "trend": "down",
+      "trendValue": "-4m",
+      "icon": "bi-hourglass-split",
+      "tone": "info",
+      "sparkline": [22, 19, 17, 16, 14, 13, 11]
+    },
+    {
+      "id": "val-acc",
+      "label": "Val accuracy",
+      "value": "94.2%",
+      "hint": "Harbor encoder v3",
+      "trend": "up",
+      "trendValue": "+1.1 pts",
+      "icon": "bi-bullseye",
+      "tone": "success",
+      "sparkline": [90.1, 91.0, 91.8, 92.4, 93.1, 93.6, 94.2]
+    },
+    {
+      "id": "failed-jobs",
+      "label": "Failed jobs",
+      "value": 3,
+      "hint": "Lumen OOM still open",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-exclamation-octagon",
+      "tone": "danger",
+      "sparkline": [1, 1, 2, 2, 2, 2, 3]
+    },
+    {
+      "id": "dataset-freshness",
+      "label": "Dataset freshness",
+      "value": "2h",
+      "hint": "harbor-ops-v4 · Meera Poluru",
+      "trend": "down",
+      "trendValue": "-6h",
+      "icon": "bi-database-check",
+      "tone": "info",
+      "sparkline": [18, 14, 11, 8, 6, 4, 2]
+    }
+  ],
+  "lossTrend": {
+    "labels": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12"],
+    "series": [
+      {
+        "name": "Train loss",
+        "color": "#de3e3e",
+        "values": [2.84, 2.41, 2.08, 1.76, 1.52, 1.31, 1.18, 1.09, 0.97, 0.91, 0.86, 0.82]
+      },
+      {
+        "name": "Val loss",
+        "color": "#F59E0B",
+        "values": [2.96, 2.55, 2.21, 1.88, 1.64, 1.42, 1.28, 1.18, 1.06, 0.99, 0.93, 0.88]
+      }
+    ]
+  },
+  "clusterUtil": [
+    { "name": "eu-west-1 H100", "value": 94, "color": "#9A3412" },
+    { "name": "us-east-1 A100", "value": 82, "color": "#de3e3e" },
+    { "name": "us-central-1 H100", "value": 67, "color": "#EA580C" },
+    { "name": "ap-south-1 L40S", "value": 41, "color": "#F59E0B" }
+  ],
+  "timeline": [
+    {
+      "title": "harbor-encoder-v3 passed 94%",
+      "description": "Kavya Poluru promoted the checkpoint.",
+      "timestamp": "12m ago",
+      "status": "complete"
+    },
+    {
+      "title": "lumen-ehr-ft OOM on rank 3",
+      "description": "Jordan Poluru is retrying with grad checkpointing.",
+      "timestamp": "28m ago",
+      "status": "current"
+    },
+    {
+      "title": "nimbus-ranker-12 entered queue",
+      "description": "Arjun Poluru requested 4×A100.",
+      "timestamp": "41m ago",
+      "status": "upcoming"
+    },
+    {
+      "title": "fold-labels-gold refreshed",
+      "description": "Hana Poluru shipped 18k new rows.",
+      "timestamp": "3h ago",
+      "status": "upcoming"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "al-west",
+      "variant": "warning",
+      "title": "eu-west-1 is at 94% GPU",
+      "message": "H100 wait is 11 minutes. Preempt nimbus-ranker-12 if Harbor needs a second replica.",
+      "href": "/ml-training/clusters"
+    },
+    {
+      "id": "al-lumen",
+      "variant": "danger",
+      "title": "Lumen run failed on step 4,812",
+      "message": "CUDA OOM. Jordan Poluru can relaunch with microbatch 2.",
+      "href": "/ml-training/runs/run_lumen"
+    },
+    {
+      "id": "al-nimbus",
+      "variant": "info",
+      "title": "Dataset drift on nimbus-catalog",
+      "message": "Arjun Poluru’s catalog grew 9% overnight. Recompute embeddings before the next ranker.",
+      "href": "/ml-training/datasets"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "id": "pii",
+      "heading": "PII redaction",
+      "owner": "Kavya Poluru",
+      "status": "Enabled",
+      "hits": 184,
+      "children": "Strip emails, phones, and account numbers before Aurora Chat logs persist. Owned by Kavya Poluru."
+    },
+    {
+      "id": "jail",
+      "heading": "Jailbreak filter",
+      "owner": "Subrahmanyam Poluru",
+      "status": "Enabled",
+      "hits": 27,
+      "children": "Block known override patterns on customer reply. Subrahmanyam Poluru reviews weekly."
+    },
+    {
+      "id": "ground",
+      "heading": "Groundedness gate",
+      "owner": "Kavya Poluru",
+      "status": "Enabled",
+      "hits": 61,
+      "children": "Atlas Summarizer must cite a source span or the answer is held. Kavya Poluru owns the threshold."
+    },
+    {
+      "id": "inject",
+      "heading": "Prompt injection",
+      "owner": "Harini Poluru",
+      "status": "Watch",
+      "hits": 9,
+      "children": "Nova Classifier flags tool-call overrides. Harini Poluru is tuning the regex pack."
+    },
+    {
+      "id": "toxic",
+      "heading": "Toxicity hold",
+      "owner": "Meera Poluru",
+      "status": "Enabled",
+      "hits": 14,
+      "children": "Harbor Reasoner holds completions above 0.4 toxicity. Meera Poluru reviews the queue."
+    },
+    {
+      "id": "rate",
+      "heading": "Rate envelope",
+      "owner": "Priya Poluru",
+      "status": "Enabled",
+      "hits": 42,
+      "children": "Beacon Embeddings is capped at 40 rps. Priya Poluru owns the burst policy."
+    }
+  ],
+  "webhookSnippet": "POST /v1/llm/traces\nAuthorization: Bearer aurora_live_subrahmanyam\n{ \"model\": \"aurora\", \"latency_ms\": 812 }"
+}

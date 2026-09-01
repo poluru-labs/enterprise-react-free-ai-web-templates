@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "exp_harbor", "name": "Harbor encoder", "owner": "Kavya Poluru", "runs": 14, "best": "94.2%", "status": "Live", "note": "Val set from Meera Poluru is clean through epoch 12." },
+    { "id": "exp_nimbus", "name": "Nimbus retrieval", "owner": "Arjun Poluru", "runs": 9, "best": "89.4%", "status": "Tuning", "note": "Waiting on catalog embeddings after overnight drift." },
+    { "id": "exp_lumen", "name": "Lumen clinical", "owner": "Jordan Poluru", "runs": 6, "best": "81.4%", "status": "Blocked", "note": "OOM on rank 3. Retry with grad checkpointing." },
+    { "id": "exp_oak", "name": "Oak vision", "owner": "Sahana Poluru", "runs": 11, "best": "88.1%", "status": "Live", "note": "s2 backbone is 7 of 24 epochs on 8×A100." },
+    { "id": "exp_kite", "name": "Kite distill", "owner": "Rohan Poluru", "runs": 4, "best": "86.4%", "status": "Shipped", "note": "Mini student is in production on L40S." },
+    { "id": "exp_bright", "name": "Brightline embeddings", "owner": "Maya Poluru", "runs": 7, "best": "91.8%", "status": "Live", "note": "embed-7 finished 30/30 and is ready to promote." }
+  ]
+}

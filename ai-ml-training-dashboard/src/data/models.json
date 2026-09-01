@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "m_harbor", "name": "kiln-harbor-v3", "owner": "Kavya Poluru", "params": "1.2B", "acc": "94.2%", "stage": "Candidate" },
+    { "id": "m_bright", "name": "kiln-embed-7", "owner": "Maya Poluru", "params": "350M", "acc": "91.8%", "stage": "Production" },
+    { "id": "m_kite", "name": "kiln-distill-mini", "owner": "Rohan Poluru", "params": "80M", "acc": "86.4%", "stage": "Production" },
+    { "id": "m_oak", "name": "kiln-vision-s2", "owner": "Sahana Poluru", "params": "620M", "acc": "88.1%", "stage": "Training" },
+    { "id": "m_nimbus", "name": "kiln-nimbus-ranker", "owner": "Arjun Poluru", "params": "210M", "acc": "89.4%", "stage": "Candidate" },
+    { "id": "m_lumen", "name": "kiln-lumen-ehr", "owner": "Jordan Poluru", "params": "410M", "acc": "81.4%", "stage": "Blocked" }
+  ]
+}

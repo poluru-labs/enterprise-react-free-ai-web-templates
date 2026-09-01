@@ -1,0 +1,25 @@
+{
+  "periodSpend": 2418,
+  "remaining": 342,
+  "budgetUsed": 87,
+  "projected": 2774,
+  "start": "2026-08-01",
+  "end": "2026-08-28",
+  "share": [
+    { "name": "Aurora Chat", "spend": "$1,086", "value": 1086, "share": "36%", "color": "#4338CA" },
+    { "name": "Atlas Summarizer", "spend": "$734", "value": 734, "share": "24%", "color": "#0891B2" },
+    { "name": "Harbor Reasoner", "spend": "$518", "value": 518, "share": "17%", "color": "#6366F1" },
+    { "name": "Lens Extractor", "spend": "$392", "value": 392, "share": "13%", "color": "#22D3EE" },
+    { "name": "Nova Classifier", "spend": "$206", "value": 206, "share": "7%", "color": "#312E81" },
+    { "name": "Beacon Embeddings", "spend": "$94", "value": 94, "share": "3%", "color": "#67E8F9" }
+  ],
+  "daily": [
+    { "name": "Mon", "value": 312, "color": "#4338CA" },
+    { "name": "Tue", "value": 348, "color": "#4338CA" },
+    { "name": "Wed", "value": 401, "color": "#0891B2" },
+    { "name": "Thu", "value": 376, "color": "#4338CA" },
+    { "name": "Fri", "value": 429, "color": "#0891B2" },
+    { "name": "Sat", "value": 274, "color": "#6366F1" },
+    { "name": "Sun", "value": 278, "color": "#6366F1" }
+  ]
+}

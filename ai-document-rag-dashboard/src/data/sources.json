@@ -1,0 +1,70 @@
+{
+  "connectors": [
+    {
+      "id": "drive",
+      "name": "Google Drive",
+      "kind": "drive",
+      "icon": "bi-folder",
+      "docs": 842,
+      "lastSync": "9s ago",
+      "health": "Healthy",
+      "owner": "Maya Poluru",
+      "note": "Shared drives for Research and Product. Two stale files queued."
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "kind": "notion",
+      "icon": "bi-journal-richtext",
+      "docs": 316,
+      "lastSync": "31 min ago",
+      "health": "Healthy",
+      "owner": "Aarav Poluru",
+      "note": "Support Playbook and onboarding wiki stay in lockstep with edits."
+    },
+    {
+      "id": "sharepoint",
+      "name": "SharePoint",
+      "kind": "sharepoint",
+      "icon": "bi-microsoft",
+      "docs": 64,
+      "lastSync": "4 min ago",
+      "health": "Degraded",
+      "owner": "Maya Poluru",
+      "note": "Legal site recrawl delayed behind Slack export."
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "kind": "slack",
+      "icon": "bi-slack",
+      "docs": 38,
+      "lastSync": "Indexing",
+      "health": "Indexing",
+      "owner": "Aarav Poluru",
+      "note": "#support export is chunking 410 threads from the last 90 days."
+    },
+    {
+      "id": "s3",
+      "name": "Amazon S3",
+      "kind": "s3",
+      "icon": "bi-bucket",
+      "docs": 22,
+      "lastSync": "2 hr ago",
+      "health": "Healthy",
+      "owner": "Isha Poluru",
+      "note": "Archive bucket for signed PDFs. Prefix research/2026."
+    },
+    {
+      "id": "upload",
+      "name": "Direct uploads",
+      "kind": "upload",
+      "icon": "bi-cloud-arrow-up",
+      "docs": 126,
+      "lastSync": "8 min ago",
+      "health": "Healthy",
+      "owner": "Maya Poluru",
+      "note": "Q3 Research Brief.pdf finished embedding this morning."
+    }
+  ]
+}

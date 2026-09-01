@@ -1,0 +1,131 @@
+{
+  "summary": {
+    "total": 1284,
+    "sources": 3,
+    "ready": 1178,
+    "indexing": 84,
+    "stale": 22
+  },
+  "documents": [
+    {
+      "id": "DOC-1284",
+      "name": "Q3 Research Brief.pdf",
+      "source": "PDF",
+      "owner": "Maya Poluru",
+      "updated": "2026-08-24T09:42:00.000Z",
+      "status": "Ready",
+      "chunks": 48,
+      "collection": "Research"
+    },
+    {
+      "id": "DOC-1102",
+      "name": "Support Playbook",
+      "source": "Notion",
+      "owner": "Aarav Poluru",
+      "updated": "2026-08-23T16:10:00.000Z",
+      "status": "Ready",
+      "chunks": 126,
+      "collection": "Support"
+    },
+    {
+      "id": "DOC-0944",
+      "name": "Employee Handbook 2026",
+      "source": "PDF",
+      "owner": "Isha Poluru",
+      "updated": "2026-08-22T11:20:00.000Z",
+      "status": "Ready",
+      "chunks": 212,
+      "collection": "Onboarding"
+    },
+    {
+      "id": "DOC-0881",
+      "name": "Product terminology",
+      "source": "Drive",
+      "owner": "Maya Poluru",
+      "updated": "2026-08-18T14:05:00.000Z",
+      "status": "Indexing",
+      "chunks": 64,
+      "collection": "Product"
+    },
+    {
+      "id": "DOC-0770",
+      "name": "Pricing Sheet 2025",
+      "source": "Drive",
+      "owner": "Maya Poluru",
+      "updated": "2025-11-02T09:00:00.000Z",
+      "status": "Stale",
+      "chunks": 18,
+      "collection": "Product"
+    },
+    {
+      "id": "DOC-0712",
+      "name": "IT Exit Checklist",
+      "source": "PDF",
+      "owner": "Aarav Poluru",
+      "updated": "2026-08-12T10:18:00.000Z",
+      "status": "Ready",
+      "chunks": 22,
+      "collection": "Onboarding"
+    },
+    {
+      "id": "DOC-0660",
+      "name": "Onboarding wiki",
+      "source": "Notion",
+      "owner": "Isha Poluru",
+      "updated": "2026-08-20T08:40:00.000Z",
+      "status": "Ready",
+      "chunks": 88,
+      "collection": "Onboarding"
+    },
+    {
+      "id": "DOC-0544",
+      "name": "Legal MSA template",
+      "source": "SharePoint",
+      "owner": "Maya Poluru",
+      "updated": "2026-08-15T13:22:00.000Z",
+      "status": "Ready",
+      "chunks": 41,
+      "collection": "Legal"
+    },
+    {
+      "id": "DOC-0491",
+      "name": "Safety policy",
+      "source": "PDF",
+      "owner": "Aarav Poluru",
+      "updated": "2026-08-09T15:00:00.000Z",
+      "status": "Ready",
+      "chunks": 36,
+      "collection": "Safety"
+    },
+    {
+      "id": "DOC-0418",
+      "name": "Q2 earnings notes",
+      "source": "Drive",
+      "owner": "Isha Poluru",
+      "updated": "2026-05-12T17:30:00.000Z",
+      "status": "Stale",
+      "chunks": 54,
+      "collection": "Research"
+    },
+    {
+      "id": "DOC-0388",
+      "name": "Feature launch brief",
+      "source": "Notion",
+      "owner": "Maya Poluru",
+      "updated": "2026-08-21T19:12:00.000Z",
+      "status": "Ready",
+      "chunks": 29,
+      "collection": "Product"
+    },
+    {
+      "id": "DOC-0310",
+      "name": "Slack #support export",
+      "source": "Slack",
+      "owner": "Aarav Poluru",
+      "updated": "2026-08-24T07:40:00.000Z",
+      "status": "Indexing",
+      "chunks": 410,
+      "collection": "Support"
+    }
+  ]
+}

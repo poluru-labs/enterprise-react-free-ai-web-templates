@@ -1,0 +1,29 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "warning",
+      "title": "p95 latency on Lens",
+      "body": "2.4s · Madhav Poluru · 6m",
+      "time": "2026-08-28T16:36:00.000Z",
+      "href": "/llm-ops/incidents"
+    },
+    {
+      "id": "n-02",
+      "tone": "warning",
+      "title": "Budget 87%",
+      "body": "$342 left this month",
+      "time": "2026-08-28T16:20:00.000Z",
+      "href": "/llm-ops/costs"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "Eval passed",
+      "body": "Nova Classifier · Harini Poluru",
+      "time": "2026-08-28T15:48:00.000Z",
+      "href": "/llm-ops/evaluations"
+    }
+  ]
+}

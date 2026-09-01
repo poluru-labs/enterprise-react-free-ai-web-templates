@@ -1,0 +1,34 @@
+{
+  "workspace": {
+    "name": "Poluru Cloud · Kiln Training",
+    "slug": "kiln-prod",
+    "region": "eu-west-1",
+    "timezone": "Europe/Dublin",
+    "retentionDays": 90,
+    "brandColor": "#DE3E3E",
+    "queueBufferMinutes": 12
+  },
+  "owners": [
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "arjun", "label": "Arjun Poluru" },
+    { "value": "maya", "label": "Maya Poluru" },
+    { "value": "jordan", "label": "Jordan Poluru" },
+    { "value": "sahana", "label": "Sahana Poluru" },
+    { "value": "rohan", "label": "Rohan Poluru" },
+    { "value": "hana", "label": "Hana Poluru" },
+    { "value": "priya", "label": "Priya Poluru" }
+  ],
+  "team": [
+    { "name": "Kavya Poluru", "role": "Training lead", "shift": "Primary · Harbor encoder" },
+    { "name": "Luca Poluru", "role": "GPU capacity", "shift": "eu-west-1 H100 watch" },
+    { "name": "Elena Poluru", "role": "Cluster owner", "shift": "us-east-1 / us-central-1" },
+    { "name": "Hana Poluru", "role": "Labels", "shift": "Gold mix reviews" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to kavya.poluru@polurulabs.example", "enabled": true },
+    { "id": "preempt", "label": "Preempt queued jobs when Harbor needs GPUs", "enabled": true },
+    { "id": "slack", "label": "Slack #kiln-foundry for H100 heat", "enabled": true },
+    { "id": "webhook", "label": "Webhook to incident.io", "enabled": false }
+  ],
+  "webhookSnippet": "kiln train submit \\\n  --experiment harbor-encoder \\\n  --owner \"Kavya Poluru\" \\\n  --cluster eu-west-1 \\\n  --gpus 8"
+}

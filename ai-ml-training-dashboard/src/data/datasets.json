@@ -1,0 +1,25 @@
+{
+  "items": [
+    { "id": "ds_harbor", "name": "harbor-ops-v4", "rows": "12.4M", "owner": "Meera Poluru", "freshness": "2h", "quality": 96 },
+    { "id": "ds_nimbus", "name": "nimbus-catalog", "rows": "4.8M", "owner": "Arjun Poluru", "freshness": "8h", "quality": 91 },
+    { "id": "ds_lumen", "name": "lumen-notes-deid", "rows": "1.1M", "owner": "Nikhil Poluru", "freshness": "1d", "quality": 88 },
+    { "id": "ds_fold", "name": "fold-labels-gold", "rows": "240k", "owner": "Hana Poluru", "freshness": "3h", "quality": 98 },
+    { "id": "ds_oak", "name": "oak-vision-frames", "rows": "6.2M", "owner": "Sahana Poluru", "freshness": "6h", "quality": 93 },
+    { "id": "ds_kite", "name": "kite-teacher-logits", "rows": "890k", "owner": "Rohan Poluru", "freshness": "12h", "quality": 95 }
+  ],
+  "tree": [
+    {
+      "id": "ds_harbor",
+      "label": "harbor-ops-v4",
+      "children": [
+        { "id": "ds_harbor_train", "label": "train.parquet · Meera Poluru" },
+        { "id": "ds_harbor_val", "label": "val.parquet" }
+      ]
+    },
+    { "id": "ds_nimbus", "label": "nimbus-catalog" },
+    { "id": "ds_lumen", "label": "lumen-notes-deid" },
+    { "id": "ds_fold", "label": "fold-labels-gold" },
+    { "id": "ds_oak", "label": "oak-vision-frames" },
+    { "id": "ds_kite", "label": "kite-teacher-logits" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "id": "c_east", "name": "us-east-1", "gpus": "64×A100", "sku": "A100", "util": 82, "queue": 7, "owner": "Elena Poluru" },
+    { "id": "c_west", "name": "eu-west-1", "gpus": "32×H100", "sku": "H100", "util": 94, "queue": 11, "owner": "Luca Poluru" },
+    { "id": "c_south", "name": "ap-south-1", "gpus": "16×L40S", "sku": "L40S", "util": 41, "queue": 1, "owner": "Noor Poluru" },
+    { "id": "c_central", "name": "us-central-1", "gpus": "24×H100", "sku": "H100", "util": 67, "queue": 4, "owner": "Elena Poluru" }
+  ]
+}

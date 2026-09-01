@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-08-24T18:42:00.000Z",
+  "hero": {
+    "kicker": "Monday · 24 Aug 2026 · last crawl 9s ago",
+    "title": "Your knowledge base is ready to answer.",
+    "body": "Retrieval is looking healthy. 1,284 documents are indexed across Drive, Notion, and direct uploads. Citation coverage is 93.1% and three sources still need a recrawl."
+  },
+  "ticker": {
+    "indexedDocs": 1284,
+    "chunks": 48200,
+    "lastCrawl": "9s",
+    "healthySources": 3
+  },
+  "kpis": [
+    {
+      "id": "indexed",
+      "label": "Indexed documents",
+      "value": 1284,
+      "hint": "from last month",
+      "trend": "up",
+      "trendValue": "+12.5%",
+      "icon": "bi-files",
+      "tone": "brand",
+      "sparkline": [980, 1042, 1118, 1164, 1201, 1248, 1284]
+    },
+    {
+      "id": "queries",
+      "label": "Queries this week",
+      "value": 8946,
+      "hint": "from last week",
+      "trend": "up",
+      "trendValue": "+18.2%",
+      "icon": "bi-activity",
+      "tone": "info",
+      "sparkline": [6200, 6680, 7124, 7588, 8010, 8462, 8946]
+    },
+    {
+      "id": "accuracy",
+      "label": "Answer accuracy",
+      "value": "94.8%",
+      "hint": "from last week",
+      "trend": "up",
+      "trendValue": "+2.1%",
+      "icon": "bi-bullseye",
+      "tone": "success",
+      "sparkline": [91.2, 91.8, 92.4, 93.1, 93.7, 94.2, 94.8]
+    },
+    {
+      "id": "latency",
+      "label": "Avg. response time",
+      "value": "1.2s",
+      "hint": "than last week",
+      "trend": "down",
+      "trendValue": "0.3s faster",
+      "icon": "bi-stopwatch",
+      "tone": "success",
+      "sparkline": [1.8, 1.7, 1.6, 1.5, 1.4, 1.3, 1.2]
+    },
+    {
+      "id": "citations",
+      "label": "Citation coverage",
+      "value": "93.1%",
+      "hint": "grounded answers",
+      "trend": "up",
+      "trendValue": "+1.4 pts",
+      "icon": "bi-link-45deg",
+      "tone": "brand",
+      "sparkline": [88.4, 89.1, 90.0, 90.8, 91.6, 92.4, 93.1]
+    },
+    {
+      "id": "stale",
+      "label": "Stale sources",
+      "value": 3,
+      "hint": "pricing + Q2 notes",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-exclamation-triangle",
+      "tone": "warning",
+      "sparkline": [1, 1, 2, 2, 2, 3, 3]
+    }
+  ],
+  "queryVolume": {
+    "labels": ["Aug 18", "Aug 19", "Aug 20", "Aug 21", "Aug 22", "Aug 23", "Aug 24"],
+    "series": [
+      {
+        "name": "Queries",
+        "color": "#0D9488",
+        "values": [1180, 1244, 1310, 1288, 1402, 1488, 1564]
+      },
+      {
+        "name": "Cited answers",
+        "color": "#0F766E",
+        "values": [1022, 1098, 1164, 1140, 1268, 1344, 1456]
+      },
+      {
+        "name": "Fallback",
+        "color": "#99D5C9",
+        "values": [88, 76, 82, 71, 64, 58, 52]
+      }
+    ]
+  },
+  "sourceMix": [
+    { "name": "Google Drive", "value": 842, "color": "#134E4A" },
+    { "name": "Notion", "value": 316, "color": "#0F766E" },
+    { "name": "Direct uploads", "value": 126, "color": "#2DD4BF" }
+  ],
+  "activity": [
+    {
+      "id": "act-01",
+      "name": "Maya Poluru",
+      "action": "Uploaded",
+      "item": "Q3 Research Brief.pdf",
+      "time": "8 min ago",
+      "icon": "bi-file-earmark-arrow-up"
+    },
+    {
+      "id": "act-02",
+      "name": "Aarav Poluru",
+      "action": "Updated",
+      "item": "Support Playbook",
+      "time": "31 min ago",
+      "icon": "bi-pencil-square"
+    },
+    {
+      "id": "act-03",
+      "name": "Isha Poluru",
+      "action": "Tested",
+      "item": "Employee onboarding query",
+      "time": "1 hr ago",
+      "icon": "bi-check2-circle"
+    },
+    {
+      "id": "act-04",
+      "name": "Maya Poluru",
+      "action": "Flagged",
+      "item": "Pricing Sheet 2025",
+      "time": "2 hr ago",
+      "icon": "bi-flag"
+    },
+    {
+      "id": "act-05",
+      "name": "Aarav Poluru",
+      "action": "Synced",
+      "item": "SharePoint Legal",
+      "time": "3 hr ago",
+      "icon": "bi-arrow-repeat"
+    }
+  ],
+  "retrievalHealth": [
+    {
+      "id": "rh-drive",
+      "name": "Google Drive",
+      "status": "Synced",
+      "detail": "842 documents",
+      "note": "Last crawl completed in 9s. Two stale files flagged for recrawl."
+    },
+    {
+      "id": "rh-notion",
+      "name": "Notion",
+      "status": "Synced",
+      "detail": "316 documents",
+      "note": "Support Playbook re-chunked after Aarav Poluru’s edit."
+    },
+    {
+      "id": "rh-upload",
+      "name": "Direct uploads",
+      "status": "Healthy",
+      "detail": "126 documents",
+      "note": "Q3 Research Brief.pdf finished embedding 8 minutes ago."
+    }
+  ],
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "warning",
+      "title": "Pricing Sheet 2025 is still in the index",
+      "message": "Maya Poluru’s answer cited the 2025 rate card. A newer sheet landed this morning.",
+      "href": "/document-rag/knowledge-base"
+    },
+    {
+      "id": "al-02",
+      "variant": "info",
+      "title": "Product terminology is still indexing",
+      "message": "Drive folder is 68% chunked. Queries against product names may miss new terms.",
+      "href": "/document-rag/sources"
+    },
+    {
+      "id": "al-03",
+      "variant": "success",
+      "title": "Faithfulness held at 96.2%",
+      "message": "Regression suite of 200 prompts cleared this morning with +2.1 points on accuracy.",
+      "href": "/document-rag/evaluations"
+    }
+  ]
+}

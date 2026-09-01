@@ -1,0 +1,30 @@
+{
+  "overall": {
+    "score": 94.8,
+    "label": "Excellent",
+    "delta": "+2.1 points this month"
+  },
+  "checks": [
+    { "label": "Faithfulness", "score": "96.2%", "icon": "bi-shield-check" },
+    { "label": "Citation coverage", "score": "93.1%", "icon": "bi-link-45deg" },
+    { "label": "Answer relevance", "score": "95.0%", "icon": "bi-bullseye" },
+    { "label": "Context precision", "score": "91.4%", "icon": "bi-bullseye" }
+  ],
+  "runs": [
+    { "id": "run-01", "name": "Regression suite", "count": "200 prompts", "score": "95.2%", "date": "Today, 08:00", "status": "Excellent" },
+    { "id": "run-02", "name": "Support benchmark", "count": "75 prompts", "score": "94.3%", "date": "Aug 24", "status": "Good" },
+    { "id": "run-03", "name": "Safety sweep", "count": "60 prompts", "score": "98.0%", "date": "Aug 19", "status": "Excellent" },
+    { "id": "run-04", "name": "Legal citation pack", "count": "40 prompts", "score": "92.1%", "date": "Aug 17", "status": "Good" },
+    { "id": "run-05", "name": "Onboarding gold set", "count": "50 prompts", "score": "96.4%", "date": "Aug 14", "status": "Excellent" },
+    { "id": "run-06", "name": "Pricing drift check", "count": "28 prompts", "score": "81.0%", "date": "Aug 12", "status": "Needs review" }
+  ],
+  "regression": {
+    "labels": ["Aug 12", "Aug 14", "Aug 17", "Aug 19", "Aug 24", "Today"],
+    "items": [
+      { "name": "Faithfulness", "value": 96.2, "color": "#0F766E" },
+      { "name": "Citation coverage", "value": 93.1, "color": "#0D9488" },
+      { "name": "Answer relevance", "value": 95.0, "color": "#134E4A" },
+      { "name": "Context precision", "value": 91.4, "color": "#2DD4BF" }
+    ]
+  }
+}

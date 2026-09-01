@@ -1,0 +1,31 @@
+{
+  "workspace": {
+    "name": "Poluru Research",
+    "slug": "contextly-prod",
+    "language": "English",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "brandColor": "#0F766E"
+  },
+  "models": {
+    "generator": "Contextly RAG v2",
+    "embedder": "text-embed-poluru-3",
+    "reranker": "bge-rerank-v2"
+  },
+  "retrieval": {
+    "topK": "8",
+    "chunkSize": "512",
+    "overlap": "64",
+    "hybrid": true,
+    "sourceAlerts": true
+  },
+  "team": [
+    { "name": "Maya Poluru", "role": "Admin" },
+    { "name": "Aarav Poluru", "role": "Editor" },
+    { "name": "Isha Poluru", "role": "Viewer" }
+  ],
+  "api": {
+    "keyHint": "ctx_live_••••poluru",
+    "endpoint": "https://api.contextly.example/v1/query"
+  }
+}

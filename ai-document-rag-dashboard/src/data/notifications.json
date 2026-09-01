@@ -1,0 +1,37 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "warning",
+      "title": "Stale pricing sheet cited",
+      "body": "Maya Poluru’s conversation pulled Pricing Sheet 2025 instead of this morning’s rate card.",
+      "time": "2026-08-24T18:31:00.000Z",
+      "href": "/document-rag/conversations"
+    },
+    {
+      "id": "n-02",
+      "tone": "info",
+      "title": "Product terminology still indexing",
+      "body": "Google Drive folder is 68% chunked. New SKU names may miss retrieval.",
+      "time": "2026-08-24T18:14:00.000Z",
+      "href": "/document-rag/knowledge-base"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "Evaluation suite finished",
+      "body": "Regression suite scored 95.2% on 200 prompts. Faithfulness 96.2%.",
+      "time": "2026-08-24T08:04:00.000Z",
+      "href": "/document-rag/evaluations"
+    },
+    {
+      "id": "n-04",
+      "tone": "warning",
+      "title": "SharePoint crawl delayed 4m",
+      "body": "Legal MSA template recrawl queued behind Slack #support export.",
+      "time": "2026-08-24T07:52:00.000Z",
+      "href": "/document-rag/sources"
+    }
+  ]
+}

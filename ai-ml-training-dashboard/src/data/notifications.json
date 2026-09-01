@@ -1,0 +1,29 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "success",
+      "title": "Harbor checkpoint saved",
+      "body": "epoch 12 · 94.2% · Kavya Poluru",
+      "time": "2026-08-28T21:52:00.000Z",
+      "href": "/ml-training/runs/run_harbor"
+    },
+    {
+      "id": "n-02",
+      "tone": "warning",
+      "title": "Queue moved",
+      "body": "nimbus-ranker-12 is next · Arjun Poluru",
+      "time": "2026-08-28T21:41:00.000Z",
+      "href": "/ml-training/runs"
+    },
+    {
+      "id": "n-03",
+      "tone": "danger",
+      "title": "Cluster watch",
+      "body": "eu-west-1 util 94% · Luca Poluru",
+      "time": "2026-08-28T21:19:00.000Z",
+      "href": "/ml-training/clusters"
+    }
+  ]
+}

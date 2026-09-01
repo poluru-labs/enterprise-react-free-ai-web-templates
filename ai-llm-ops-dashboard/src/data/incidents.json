@@ -1,0 +1,8 @@
+[
+  { "id": "inc-12", "title": "Lens Extractor p95", "owner": "Madhav Poluru", "severity": "Watch", "since": "18 min", "status": "Watch", "detail": "p95 is 2.4s on invoice extraction. Hold new Lens traffic until groundedness recovers." },
+  { "id": "inc-11", "title": "Aurora timeout burst", "owner": "Priya Poluru", "severity": "Resolved", "since": "6 min", "status": "Resolved", "detail": "Timeouts on customer reply cleared after the token cap. Priya Poluru closed the page." },
+  { "id": "inc-10", "title": "Atlas token spike", "owner": "Kavya Poluru", "severity": "Watch", "since": "41 min", "status": "Watch", "detail": "Meeting notes ran 2.8K tokens on three calls. Kavya Poluru is capping summaries." },
+  { "id": "inc-09", "title": "Nova false positive", "owner": "Harini Poluru", "severity": "Resolved", "since": "2 hr", "status": "Resolved", "detail": "Legal tickets were routing to billing. Intent router v1.0 is back above 99% F1." },
+  { "id": "inc-08", "title": "Harbor grounding miss", "owner": "Meera Poluru", "severity": "Watch", "since": "3 hr", "status": "Watch", "detail": "Two redline briefs cited a clause that is not in the pack. Gate is holding answers." },
+  { "id": "inc-07", "title": "Beacon index lag", "owner": "Priya Poluru", "severity": "Resolved", "since": "5 hr", "status": "Resolved", "detail": "Embedding backlog drained. Retrieval recall@10 is 93.5% again." }
+]

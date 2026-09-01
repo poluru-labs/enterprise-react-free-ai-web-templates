@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "id": "ckpt_harbor_06",
+      "runId": "run_harbor",
+      "run": "harbor-encoder-v3",
+      "experiment": "Harbor encoder",
+      "owner": "Kavya Poluru",
+      "epoch": 6,
+      "acc": 91.8,
+      "loss": 1.18,
+      "size": "4.5 GB",
+      "status": "Archived"
+    },
+    {
+      "id": "ckpt_harbor_08",
+      "runId": "run_harbor",
+      "run": "harbor-encoder-v3",
+      "experiment": "Harbor encoder",
+      "owner": "Kavya Poluru",
+      "epoch": 8,
+      "acc": 92.4,
+      "loss": 1.09,
+      "size": "4.6 GB",
+      "status": "Archived"
+    },
+    {
+      "id": "ckpt_harbor_10",
+      "runId": "run_harbor",
+      "run": "harbor-encoder-v3",
+      "experiment": "Harbor encoder",
+      "owner": "Kavya Poluru",
+      "epoch": 10,
+      "acc": 93.6,
+      "loss": 0.91,
+      "size": "4.7 GB",
+      "status": "Candidate"
+    },
+    {
+      "id": "ckpt_harbor_12",
+      "runId": "run_harbor",
+      "run": "harbor-encoder-v3",
+      "experiment": "Harbor encoder",
+      "owner": "Kavya Poluru",
+      "epoch": 12,
+      "acc": 94.2,
+      "loss": 0.82,
+      "size": "4.8 GB",
+      "status": "Candidate"
+    },
+    {
+      "id": "ckpt_oak_06",
+      "runId": "run_oak",
+      "run": "oak-vision-s2",
+      "experiment": "Oak vision",
+      "owner": "Sahana Poluru",
+      "epoch": 6,
+      "acc": 86.7,
+      "loss": 1.21,
+      "size": "2.45 GB",
+      "status": "Training"
+    },
+    {
+      "id": "ckpt_oak_04",
+      "runId": "run_oak",
+      "run": "oak-vision-s2",
+      "experiment": "Oak vision",
+      "owner": "Sahana Poluru",
+      "epoch": 4,
+      "acc": 84.1,
+      "loss": 1.38,
+      "size": "2.4 GB",
+      "status": "Archived"
+    },
+    {
+      "id": "ckpt_oak_07",
+      "runId": "run_oak",
+      "run": "oak-vision-s2",
+      "experiment": "Oak vision",
+      "owner": "Sahana Poluru",
+      "epoch": 7,
+      "acc": 88.1,
+      "loss": 1.12,
+      "size": "2.5 GB",
+      "status": "Training"
+    },
+    {
+      "id": "ckpt_bright_24",
+      "runId": "run_bright",
+      "run": "bright-embed-7",
+      "experiment": "Brightline embeddings",
+      "owner": "Maya Poluru",
+      "epoch": 24,
+      "acc": 90.6,
+      "loss": 0.51,
+      "size": "1.3 GB",
+      "status": "Archived"
+    },
+    {
+      "id": "ckpt_bright_30",
+      "runId": "run_bright",
+      "run": "bright-embed-7",
+      "experiment": "Brightline embeddings",
+      "owner": "Maya Poluru",
+      "epoch": 30,
+      "acc": 91.8,
+      "loss": 0.44,
+      "size": "1.4 GB",
+      "status": "Succeeded"
+    }
+  ]
+}
