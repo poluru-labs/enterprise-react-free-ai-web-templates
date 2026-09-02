@@ -1,0 +1,65 @@
+[
+  {
+    "id": "sso.enforced",
+    "name": "SSO enforced",
+    "description": "Require SAML or OIDC on Scale and Enterprise workspaces.",
+    "enabled": true,
+    "audience": "Scale · Enterprise",
+    "owner": "Lakshmi Poluru",
+    "updated": "2026-08-26T14:20:00.000Z"
+  },
+  {
+    "id": "usage.overage.alerts",
+    "name": "Usage overage alerts",
+    "description": "Email owners when a tenant crosses 80% of the monthly API envelope.",
+    "enabled": true,
+    "audience": "Team · Scale · Enterprise",
+    "owner": "Kavya Poluru",
+    "updated": "2026-08-28T14:40:00.000Z"
+  },
+  {
+    "id": "billing.usage.meter",
+    "name": "Usage-based metering",
+    "description": "Attach token and API overage lines to the next invoice.",
+    "enabled": true,
+    "audience": "Scale · Enterprise",
+    "owner": "Meera Poluru",
+    "updated": "2026-08-24T10:12:00.000Z"
+  },
+  {
+    "id": "audit.export.csv",
+    "name": "Audit CSV export",
+    "description": "Let platform admins download the security event log.",
+    "enabled": false,
+    "audience": "Enterprise",
+    "owner": "Rohan Poluru",
+    "updated": "2026-08-22T09:00:00.000Z"
+  },
+  {
+    "id": "tenants.scim",
+    "name": "SCIM directory sync",
+    "description": "Provision and deprovision seats from Okta or Entra.",
+    "enabled": true,
+    "audience": "Enterprise",
+    "owner": "Lakshmi Poluru",
+    "updated": "2026-08-25T16:05:00.000Z"
+  },
+  {
+    "id": "invite.self.serve",
+    "name": "Self-serve invites",
+    "description": "Allow tenant admins to invite members without a platform ticket.",
+    "enabled": true,
+    "audience": "All plans",
+    "owner": "Ananya Poluru",
+    "updated": "2026-08-27T12:30:00.000Z"
+  },
+  {
+    "id": "billing.ach",
+    "name": "ACH collections",
+    "description": "Collect Team and above on ACH instead of card.",
+    "enabled": false,
+    "audience": "Team · Scale · Enterprise",
+    "owner": "Priya Poluru",
+    "updated": "2026-08-19T08:45:00.000Z"
+  }
+]

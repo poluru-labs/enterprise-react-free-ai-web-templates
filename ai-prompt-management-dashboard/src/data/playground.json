@@ -1,0 +1,15 @@
+{
+  "hits": [
+    { "query": "How do we rotate API keys?", "hit": "Support copilot · Lakshmi Poluru", "score": "0.94", "citations": 3 },
+    { "query": "Draft a vendor NDA redline", "hit": "Legal summarizer · Venkata Poluru", "score": "0.71", "citations": 2 },
+    { "query": "Harbor SLA credits in email", "hit": "Brand voice · Hana Poluru", "score": "0.88", "citations": 4 },
+    { "query": "Cite the policy handbook", "hit": "RAG citation · Meera Poluru", "score": "0.62", "citations": 1 },
+    { "query": "Refuse a jailbreak on credentials", "hit": "Safety refusal · Arjun Poluru", "score": "0.99", "citations": 2 },
+    { "query": "Draft a 140-word outbound note", "hit": "Sales email · Priya Poluru", "score": "0.91", "citations": 1 }
+  ],
+  "completions": {
+    "gpt-4.1": "Lakshmi Poluru — rotate the live key from Settings, then retire the old secret within 15 minutes. Cite handbook §4.2. Sravani Poluru will stay on the thread if the canary regresses.",
+    "claude-3.5": "Hana Poluru’s Harbor voice: we can still close the SLA credit if the incident window is documented. Keep the note under 140 words and never invent a discount.",
+    "llama-3-70b": "Nikhil Poluru — vendor Harbor, amount 18400 USD, due 30 Aug 2026. Issued-on is 24 Aug; do not treat it as the due date."
+  }
+}

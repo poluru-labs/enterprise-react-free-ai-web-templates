@@ -1,28 +1,24 @@
 import { useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Badge,
   Button,
   Card,
   DataTable,
-  DescriptionList,
-  Drawer,
   Modal,
   ProgressBar,
-  Status,
   useToast,
 } from '@poluru-labs/enterprise-design-system-react';
-import { facilities, type Facility } from '../data/mock';
+import { BREADCRUMB_ROOT } from '../constants/navigation';
+import { facilities } from '../data';
+import { formatKw, formatNumber, formatPercent } from '../lib/format';
+import { PageHeader } from '../components/widgets/PageHeader';
+import { StatusBadge } from '../components/widgets/StatusBadge';
 import './pages.scss';
 
-const statusVariant = {
-  operational: 'success',
-  degraded: 'warning',
-  maintenance: 'info',
-} as const;
-
 export function FacilitiesPage() {
+  const navigate = useNavigate();
   const { show } = useToast();
-  const [selected, setSelected] = useState<Facility | null>(null);
   const [addOpen, setAddOpen] = useState(false);
 
   const columns = useMemo(
@@ -32,32 +28,34 @@ export function FacilitiesPage() {
       { key: 'status', label: 'Status' },
       { key: 'racks', label: 'Racks' },
       { key: 'utilization', label: 'Utilization' },
-      { key: 'powerKw', label: 'Power (kW)' },
+      { key: 'powerKw', label: 'Power' },
       { key: 'pue', label: 'PUE' },
     ],
     [],
   );
 
-  const rows = facilities.map((f) => ({
-    name: f.name,
-    region: f.region,
-    status: f.status,
-    racks: f.racks,
-    utilization: `${f.utilization}%`,
-    powerKw: f.powerKw,
-    pue: f.pue.toFixed(2),
+  const rows = facilities.map((facility) => ({
+    name: facility.name,
+    region: facility.region,
+    status: facility.status,
+    racks: formatNumber(facility.racks),
+    utilization: formatPercent(facility.utilization, 0),
+    powerKw: formatKw(facility.powerKw),
+    pue: facility.pue.toFixed(2),
   }));
 
   return (
     <div className="page">
-      <div className="page-toolbar">
-        <p className="page-lead">
-          Campus inventory across regions — capacity, power, and operational state.
-        </p>
-        <Button variant="primary" size="sm" icon="plus" onClick={() => setAddOpen(true)}>
-          Add facility
-        </Button>
-      </div>
+      <PageHeader
+        title="Facilities"
+        description="Campus inventory across regions — capacity, power, and operational state."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Facilities' }]}
+        actions={
+          <Button variant="primary" size="sm" icon="plus" onClick={() => setAddOpen(true)}>
+            Add facility
+          </Button>
+        }
+      />
 
       <section className="facility-cards stagger" aria-label="Facility cards">
         {facilities.map((facility) => (
@@ -65,7 +63,7 @@ export function FacilitiesPage() {
             <div className="facility-card">
               <div className="facility-card__head">
                 <h2>{facility.name}</h2>
-                <Status label={facility.status} variant={statusVariant[facility.status]} />
+                <StatusBadge status={facility.status} pulse={facility.status === 'degraded'} />
               </div>
               <Badge label={facility.region} variant="neutral" soft />
               <ProgressBar label="Utilization" value={facility.utilization} showValue />
@@ -76,7 +74,7 @@ export function FacilitiesPage() {
                 </div>
                 <div>
                   <dt>Power</dt>
-                  <dd className="mono">{facility.powerKw} kW</dd>
+                  <dd className="mono">{formatKw(facility.powerKw)}</dd>
                 </div>
                 <div>
                   <dt>PUE</dt>
@@ -87,7 +85,7 @@ export function FacilitiesPage() {
                   <dd className="mono">{facility.tempC}°C</dd>
                 </div>
               </dl>
-              <Button variant="secondary" size="sm" onClick={() => setSelected(facility)}>
+              <Button variant="secondary" size="sm" onClick={() => navigate(`/facilities/${facility.id}`)}>
                 View details
               </Button>
             </div>
@@ -106,39 +104,6 @@ export function FacilitiesPage() {
       >
         <DataTable columns={columns} rows={rows} striped sortable />
       </Card>
-
-      <Drawer
-        open={Boolean(selected)}
-        onOpenChange={(open) => {
-          if (!open) setSelected(null);
-        }}
-        heading={selected?.name ?? 'Facility'}
-        size="lg"
-        footer={
-          <Button variant="tertiary" onClick={() => setSelected(null)}>
-            Close
-          </Button>
-        }
-      >
-        {selected ? (
-          <div className="drawer-body">
-            <Status label={selected.status} variant={statusVariant[selected.status]} />
-            <DescriptionList
-              columns={2}
-              items={[
-                { term: 'Region', description: selected.region },
-                { term: 'Racks', description: String(selected.racks) },
-                { term: 'Utilization', description: `${selected.utilization}%` },
-                { term: 'Power', description: `${selected.powerKw} kW` },
-                { term: 'PUE', description: selected.pue.toFixed(2) },
-                { term: 'Cooling', description: `${selected.coolingTons} tons` },
-                { term: 'Temperature', description: `${selected.tempC}°C` },
-                { term: 'Humidity', description: `${selected.humidity}% RH` },
-              ]}
-            />
-          </div>
-        ) : null}
-      </Drawer>
 
       <Modal
         open={addOpen}
@@ -166,8 +131,7 @@ export function FacilitiesPage() {
         }
       >
         <p className="modal-copy">
-          Kick off onboarding for a new campus. Capacity planning and network design will be
-          assigned to regional ops.
+          Kick off onboarding for a new campus. Capacity planning and network design will be assigned to regional ops.
         </p>
       </Modal>
     </div>

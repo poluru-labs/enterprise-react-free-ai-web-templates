@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-08-28T16:42:00.000Z",
+  "hero": {
+    "kicker": "Friday · 28 Aug 2026 · last sync 2 min ago",
+    "title": "Support copilot v12 is live. Legal summarizer still sits with Venkata Poluru.",
+    "body": "128 live prompts this window. Eval pass is 94.2%, seven versions wait for review, and playground p95 is 1.18s. Hold RAG citation until Meera Poluru’s groundedness suite recovers."
+  },
+  "ticker": {
+    "live": "128",
+    "evalPass": "94.2%",
+    "pending": "7",
+    "p95": "1.18s"
+  },
+  "kpis": [
+    {
+      "id": "live",
+      "label": "Live prompts",
+      "value": "128",
+      "hint": "this week",
+      "trend": "up",
+      "trendValue": "+14",
+      "icon": "bi-journal-check",
+      "tone": "brand",
+      "sparkline": [98, 104, 109, 114, 118, 123, 128]
+    },
+    {
+      "id": "eval",
+      "label": "Eval pass rate",
+      "value": "94.2%",
+      "hint": "nDCG grounded",
+      "trend": "up",
+      "trendValue": "+2.1%",
+      "icon": "bi-clipboard-check",
+      "tone": "success",
+      "sparkline": [90.4, 91.1, 91.8, 92.6, 93.1, 93.7, 94.2]
+    },
+    {
+      "id": "review",
+      "label": "Pending review",
+      "value": "7",
+      "hint": "versions",
+      "trend": "down",
+      "trendValue": "-3",
+      "icon": "bi-hourglass-split",
+      "tone": "warning",
+      "sparkline": [14, 12, 11, 10, 9, 8, 7]
+    },
+    {
+      "id": "latency",
+      "label": "Avg. latency",
+      "value": "1.18s",
+      "hint": "playground p95",
+      "trend": "down",
+      "trendValue": "-0.12s",
+      "icon": "bi-stopwatch",
+      "tone": "info",
+      "sparkline": [1.42, 1.36, 1.31, 1.28, 1.24, 1.21, 1.18]
+    },
+    {
+      "id": "canary",
+      "label": "Canary traffic",
+      "value": "10%",
+      "hint": "Safety refusal · Arjun",
+      "trend": "up",
+      "trendValue": "+4 pts",
+      "icon": "bi-shield-check",
+      "tone": "warning",
+      "sparkline": [2, 3, 4, 6, 7, 8, 10]
+    },
+    {
+      "id": "coverage",
+      "label": "Eval coverage",
+      "value": "92%",
+      "hint": "92 of 100 golden cases",
+      "trend": "up",
+      "trendValue": "+5%",
+      "icon": "bi-collection",
+      "tone": "brand",
+      "sparkline": [78, 81, 84, 86, 88, 90, 92]
+    }
+  ],
+  "volumeTrend": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "Playground runs", "color": "#162E93", "values": [420, 512, 488, 604, 671, 638, 712] },
+      { "name": "Failed evals", "color": "#dc2626", "values": [18, 16, 21, 14, 12, 11, 9] }
+    ]
+  },
+  "health": [
+    { "name": "Live", "value": 86, "color": "#162E93" },
+    { "name": "Review", "value": 18, "color": "#3A52B0" },
+    { "name": "Canary", "value": 8, "color": "#d97706" },
+    { "name": "Failed", "value": 4, "color": "#dc2626" }
+  ],
+  "activity": [
+    { "title": "Support copilot v12 published", "detail": "Production · Lakshmi Poluru", "status": "Live", "time": "12 min ago" },
+    { "title": "Legal summarizer held for review", "detail": "ACL · Venkata Poluru", "status": "Review", "time": "38 min ago" },
+    { "title": "Brand voice pack refreshed", "detail": "GTM · Hana Poluru", "status": "Ready", "time": "1 hr ago" },
+    { "title": "RAG citation prompt failed eval", "detail": "Knowledge · Meera Poluru", "status": "Failed", "time": "2 hr ago" },
+    { "title": "Safety refusal canary started", "detail": "10% traffic · Arjun Poluru", "status": "Canary", "time": "3 hr ago" }
+  ],
+  "owners": [
+    { "name": "Lakshmi Poluru", "focus": "Support copilot", "load": 84 },
+    { "name": "Hana Poluru", "focus": "Brand voice", "load": 71 },
+    { "name": "Meera Poluru", "focus": "RAG citation", "load": 63 },
+    { "name": "Arjun Poluru", "focus": "Safety refusal", "load": 48 },
+    { "name": "Venkata Poluru", "focus": "Legal summarizer", "load": 56 },
+    { "name": "Priya Poluru", "focus": "Sales email", "load": 52 }
+  ],
+  "sla": [
+    { "label": "Publish SLA", "value": 94 },
+    { "label": "Eval SLA", "value": 88 },
+    { "label": "Review SLA", "value": 61 }
+  ],
+  "alerts": [
+    {
+      "id": "al-01",
+      "variant": "warning",
+      "title": "Legal summarizer is pending review",
+      "message": "Venkata Poluru held v4 until contract ACLs are signed. Retrieval stays paused for that family.",
+      "href": "/prompt-management/library/legal-summarizer"
+    },
+    {
+      "id": "al-02",
+      "variant": "danger",
+      "title": "RAG citation failed eval",
+      "message": "Meera Poluru’s eval set dropped 2.1 pts after the help-center crawl.",
+      "href": "/prompt-management/evaluations"
+    },
+    {
+      "id": "al-03",
+      "variant": "info",
+      "title": "Safety canary at 10%",
+      "message": "Arjun Poluru started a refusal-pack canary on production traffic.",
+      "href": "/prompt-management/releases"
+    }
+  ]
+}

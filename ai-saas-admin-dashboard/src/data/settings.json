@@ -1,0 +1,32 @@
+{
+  "workspace": {
+    "name": "Nexus production",
+    "slug": "nexus-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 365,
+    "brandColor": "#059669"
+  },
+  "team": [
+    { "name": "Lakshmi Poluru", "role": "Platform admin" },
+    { "name": "Kavya Poluru", "role": "Billing lead" },
+    { "name": "Harini Poluru", "role": "Success" },
+    { "name": "Madhav Poluru", "role": "Support" },
+    { "name": "Meera Poluru", "role": "Collections" },
+    { "name": "Priya Poluru", "role": "Risk" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to Lakshmi Poluru", "enabled": true },
+    { "id": "dunning", "label": "Page on failed invoices", "enabled": true },
+    { "id": "slack", "label": "Slack #nexus-billing", "enabled": true },
+    { "id": "webhook", "label": "Webhook to collections", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "lakshmi", "label": "Lakshmi Poluru" },
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "madhav", "label": "Madhav Poluru" },
+    { "value": "harini", "label": "Harini Poluru" },
+    { "value": "meera", "label": "Meera Poluru" },
+    { "value": "priya", "label": "Priya Poluru" }
+  ]
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "starter",
+    "name": "Starter",
+    "price": 49,
+    "cadence": "per month",
+    "seats": 10,
+    "tenants": 14,
+    "highlight": false,
+    "blurb": "A single workspace for early teams that need invoices and a seat cap.",
+    "features": [
+      "10 seats included",
+      "Email support weekdays",
+      "Basic usage meters",
+      "30-day audit retention",
+      "Card billing only"
+    ]
+  },
+  {
+    "id": "team",
+    "name": "Team",
+    "price": 180,
+    "cadence": "per month",
+    "seats": 40,
+    "tenants": 12,
+    "highlight": false,
+    "blurb": "Shared seats, role invites, and usage alerts for growing desks.",
+    "features": [
+      "40 seats included",
+      "Roles: admin, billing, member",
+      "Usage overage alerts",
+      "90-day audit retention",
+      "ACH and card"
+    ]
+  },
+  {
+    "id": "scale",
+    "name": "Scale",
+    "price": 420,
+    "cadence": "per month",
+    "seats": 120,
+    "tenants": 11,
+    "highlight": true,
+    "blurb": "SSO, usage meters, and dunning for companies past product-market fit.",
+    "features": [
+      "120 seats included",
+      "SSO enforced",
+      "Usage-based metering",
+      "Dunning and retries",
+      "1-year audit export"
+    ]
+  },
+  {
+    "id": "enterprise",
+    "name": "Enterprise",
+    "price": 1860,
+    "cadence": "per month",
+    "seats": 400,
+    "tenants": 5,
+    "highlight": false,
+    "blurb": "SCIM, custom contracts, and a named platform admin from Poluru Labs.",
+    "features": [
+      "400 seats included",
+      "SCIM directory sync",
+      "Custom invoice terms",
+      "Named platform admin",
+      "Unlimited audit export"
+    ]
+  }
+]

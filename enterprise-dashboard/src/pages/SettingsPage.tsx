@@ -1,16 +1,12 @@
 import { useState } from 'react';
-import {
-  Button,
-  Card,
-  Input,
-  Select,
-  Switch,
-  useToast,
-} from '@poluru-labs/enterprise-design-system-react';
+import { Button, Card, Input, Select, Switch, useTheme, useToast } from '@poluru-labs/enterprise-design-system-react';
+import { BREADCRUMB_ROOT, SIGNED_IN_USER } from '../constants/navigation';
+import { PageHeader } from '../components/widgets/PageHeader';
 import './pages.scss';
 
 export function SettingsPage() {
   const { show } = useToast();
+  const { theme, toggleTheme } = useTheme();
   const [emailAlerts, setEmailAlerts] = useState(true);
   const [smsAlerts, setSmsAlerts] = useState(false);
   const [autoAck, setAutoAck] = useState(false);
@@ -18,15 +14,13 @@ export function SettingsPage() {
   const [maintWatch, setMaintWatch] = useState(true);
   const [compactSidebar, setCompactSidebar] = useState(false);
 
-  const handleSave = () => {
-    show({ title: 'Settings saved', variant: 'success' });
-  };
-
   return (
     <div className="page">
-      <p className="page-lead">
-        Notification preferences and operational defaults for your data center workspace.
-      </p>
+      <PageHeader
+        title="Settings"
+        description="Notification preferences and operational defaults for your data center workspace."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Settings' }]}
+      />
 
       <div className="settings-grid stagger">
         <Card
@@ -40,6 +34,7 @@ export function SettingsPage() {
         >
           <div className="form-stack">
             <Input label="Workspace name" defaultValue="Poluru Data Centers" />
+            <Input label="Signed-in operator" defaultValue={`${SIGNED_IN_USER.name} · ${SIGNED_IN_USER.role}`} readOnly />
             <Select
               label="Primary region"
               defaultValue="us-central"
@@ -50,11 +45,7 @@ export function SettingsPage() {
                 { label: 'US South', value: 'us-south' },
               ]}
             />
-            <Input
-              label="Ops contact email"
-              type="email"
-              defaultValue="ops@polurulabs.com"
-            />
+            <Input label="Ops contact email" type="email" defaultValue="ops@polurulabs.com" />
             <Select
               label="Default landing page"
               defaultValue="overview"
@@ -78,30 +69,22 @@ export function SettingsPage() {
           }
         >
           <div className="form-stack">
-            <Switch
-              label="Email critical alerts"
-              checked={emailAlerts}
-              onChange={(_e, checked) => setEmailAlerts(checked)}
-            />
-            <Switch
-              label="SMS for P1 incidents"
-              checked={smsAlerts}
-              onChange={(_e, checked) => setSmsAlerts(checked)}
-            />
+            <Switch label="Email critical alerts" checked={emailAlerts} onChange={(_event, checked) => setEmailAlerts(checked)} />
+            <Switch label="SMS for P1 incidents" checked={smsAlerts} onChange={(_event, checked) => setSmsAlerts(checked)} />
             <Switch
               label="Auto-acknowledge info alerts"
               checked={autoAck}
-              onChange={(_e, checked) => setAutoAck(checked)}
+              onChange={(_event, checked) => setAutoAck(checked)}
             />
             <Switch
               label="Weekly capacity digest"
               checked={capacityDigest}
-              onChange={(_e, checked) => setCapacityDigest(checked)}
+              onChange={(_event, checked) => setCapacityDigest(checked)}
             />
             <Switch
               label="Maintenance window watchers"
               checked={maintWatch}
-              onChange={(_e, checked) => setMaintWatch(checked)}
+              onChange={(_event, checked) => setMaintWatch(checked)}
             />
           </div>
         </Card>
@@ -117,9 +100,14 @@ export function SettingsPage() {
         >
           <div className="form-stack">
             <Switch
+              label="Dark theme"
+              checked={theme === 'dark'}
+              onChange={() => toggleTheme()}
+            />
+            <Switch
               label="Prefer collapsed sidebar"
               checked={compactSidebar}
-              onChange={(_e, checked) => setCompactSidebar(checked)}
+              onChange={(_event, checked) => setCompactSidebar(checked)}
             />
             <Select
               label="Temperature units"
@@ -142,7 +130,7 @@ export function SettingsPage() {
       </div>
 
       <div className="settings-actions">
-        <Button variant="primary" onClick={handleSave}>
+        <Button variant="primary" onClick={() => show({ title: 'Settings saved', variant: 'success' })}>
           Save changes
         </Button>
         <Button variant="tertiary">Cancel</Button>

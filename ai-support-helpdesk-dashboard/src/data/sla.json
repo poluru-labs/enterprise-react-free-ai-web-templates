@@ -1,0 +1,87 @@
+{
+  "policies": [
+    {
+      "id": "sla-p1",
+      "name": "P1 Critical",
+      "firstResponse": "15m",
+      "resolve": "1h",
+      "coverage": "24 / 7",
+      "accounts": "Enterprise + health",
+      "status": "ok",
+      "atRisk": 2,
+      "breaches": 0
+    },
+    {
+      "id": "sla-p2",
+      "name": "P2 High",
+      "firstResponse": "1h",
+      "resolve": "4h",
+      "coverage": "08:00–22:00 CT",
+      "accounts": "Business and above",
+      "status": "watch",
+      "atRisk": 3,
+      "breaches": 1
+    },
+    {
+      "id": "sla-p3",
+      "name": "P3 Normal",
+      "firstResponse": "4h",
+      "resolve": "24h",
+      "coverage": "Sun–Sat",
+      "accounts": "All plans",
+      "status": "ok",
+      "atRisk": 1,
+      "breaches": 0
+    }
+  ],
+  "breaches": [
+    {
+      "id": "br-01",
+      "ticket": "TKT-1838",
+      "account": "Contoso Health",
+      "policy": "P2 High",
+      "missed": "First response",
+      "target": "1h",
+      "actual": "7h 1m",
+      "when": "2026-08-30T02:10:00.000Z",
+      "owner": "Ananya Poluru",
+      "status": "breached"
+    },
+    {
+      "id": "br-02",
+      "ticket": "TKT-1847",
+      "account": "Northwind Labs",
+      "policy": "P1 Critical",
+      "missed": "First response",
+      "target": "15m",
+      "actual": "—",
+      "when": "2026-08-30T16:12:00.000Z",
+      "owner": "Unassigned",
+      "status": "at_risk"
+    },
+    {
+      "id": "br-03",
+      "ticket": "TKT-1844",
+      "account": "Atlas Dental",
+      "policy": "P2 High",
+      "missed": "Resolve",
+      "target": "4h",
+      "actual": "—",
+      "when": "2026-08-30T15:48:00.000Z",
+      "owner": "Harini Poluru",
+      "status": "at_risk"
+    },
+    {
+      "id": "br-04",
+      "ticket": "TKT-1837",
+      "account": "Aurora Clinics",
+      "policy": "P1 Critical",
+      "missed": "Resolve",
+      "target": "1h",
+      "actual": "—",
+      "when": "2026-08-30T14:22:00.000Z",
+      "owner": "Harini Poluru",
+      "status": "watch"
+    }
+  ]
+}

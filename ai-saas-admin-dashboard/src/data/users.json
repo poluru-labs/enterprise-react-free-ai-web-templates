@@ -1,0 +1,101 @@
+[
+  {
+    "id": "u-lakshmi",
+    "name": "Lakshmi Poluru",
+    "email": "lakshmi.poluru@polurulabs.example",
+    "role": "Admin",
+    "tenant": "Poluru Cloud",
+    "tenantId": "poluru-cloud",
+    "status": "Active",
+    "lastActive": "2026-08-28T16:38:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-kavya",
+    "name": "Kavya Poluru",
+    "email": "kavya.poluru@harborlegal.example",
+    "role": "Admin",
+    "tenant": "Harbor Legal",
+    "tenantId": "harbor-legal",
+    "status": "Active",
+    "lastActive": "2026-08-28T15:12:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-madhav",
+    "name": "Madhav Poluru",
+    "email": "madhav.poluru@northwind.example",
+    "role": "Admin",
+    "tenant": "Northwind Support",
+    "tenantId": "northwind-support",
+    "status": "Active",
+    "lastActive": "2026-08-28T14:48:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-harini",
+    "name": "Harini Poluru",
+    "email": "harini.poluru@atlashealth.example",
+    "role": "Billing",
+    "tenant": "Atlas Health",
+    "tenantId": "atlas-health",
+    "status": "Active",
+    "lastActive": "2026-08-28T11:20:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-priya",
+    "name": "Priya Poluru",
+    "email": "priya.poluru@beaconfinance.example",
+    "role": "Admin",
+    "tenant": "Beacon Finance",
+    "tenantId": "beacon-finance",
+    "status": "Suspended",
+    "lastActive": "2026-08-27T09:04:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-meera",
+    "name": "Meera Poluru",
+    "email": "meera.poluru@cascaderetail.example",
+    "role": "Billing",
+    "tenant": "Cascade Retail",
+    "tenantId": "cascade-retail",
+    "status": "Active",
+    "lastActive": "2026-08-28T10:02:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-ananya",
+    "name": "Ananya Poluru",
+    "email": "ananya.poluru@northwind.example",
+    "role": "Member",
+    "tenant": "Northwind Support",
+    "tenantId": "northwind-support",
+    "status": "Active",
+    "lastActive": "2026-08-28T16:30:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-rohan",
+    "name": "Rohan Poluru",
+    "email": "rohan.poluru@summitlogistics.example",
+    "role": "Admin",
+    "tenant": "Summit Logistics",
+    "tenantId": "summit-logistics",
+    "status": "Active",
+    "lastActive": "2026-08-28T08:16:00.000Z",
+    "seats": 1
+  },
+  {
+    "id": "u-subrahmanyam",
+    "name": "Subrahmanyam Poluru",
+    "email": "subrahmanyam.poluru@polurulabs.example",
+    "role": "Viewer",
+    "tenant": "Poluru Cloud",
+    "tenantId": "poluru-cloud",
+    "status": "Invited",
+    "lastActive": null,
+    "seats": 1
+  }
+]

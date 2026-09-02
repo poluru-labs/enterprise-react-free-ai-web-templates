@@ -1,0 +1,42 @@
+{
+  "workspace": {
+    "name": "Relay",
+    "slug": "relay-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 365,
+    "brandColor": "#EA580C",
+    "hours": "Sun–Sat 08:00–22:00 CT"
+  },
+  "keys": [
+    { "id": "relay_live", "label": "relay_live_meera", "owner": "Meera Poluru", "scope": "inbox + macros" },
+    { "id": "relay_kb", "label": "relay_kb_kavya", "owner": "Kavya Poluru", "scope": "knowledge ingest" },
+    { "id": "relay_copilot", "label": "relay_copilot_harini", "owner": "Harini Poluru", "scope": "AI drafts" }
+  ],
+  "team": [
+    { "name": "Meera Poluru", "role": "Support lead" },
+    { "name": "Kavya Poluru", "role": "Billing specialist" },
+    { "name": "Harini Poluru", "role": "Copilot reviewer" },
+    { "name": "Madhav Poluru", "role": "Platform support" },
+    { "name": "Priya Poluru", "role": "Customer success" },
+    { "name": "Subrahmanyam Poluru", "role": "Overflow" },
+    { "name": "Ananya Poluru", "role": "Weekend coverage" },
+    { "name": "Rohan Poluru", "role": "Tier 1" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Morning digest to Meera Poluru", "enabled": true },
+    { "id": "pager", "label": "Page on P1 inside last 15 minutes", "enabled": true },
+    { "id": "slack", "label": "Slack #relay-desk for breaches", "enabled": true },
+    { "id": "webhook", "label": "Webhook to incident.io", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "meera", "label": "Meera Poluru" },
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "harini", "label": "Harini Poluru" },
+    { "value": "madhav", "label": "Madhav Poluru" },
+    { "value": "priya", "label": "Priya Poluru" },
+    { "value": "subrahmanyam", "label": "Subrahmanyam Poluru" },
+    { "value": "ananya", "label": "Ananya Poluru" },
+    { "value": "rohan", "label": "Rohan Poluru" }
+  ]
+}

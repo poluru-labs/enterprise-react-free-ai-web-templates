@@ -1,0 +1,134 @@
+{
+  "suites": [
+    {
+      "id": "ev-support",
+      "name": "Support groundedness",
+      "prompt": "Support copilot",
+      "owner": "Lakshmi Poluru",
+      "score": 96.4,
+      "passRate": 97,
+      "cases": 120,
+      "outcome": "Passed",
+      "updated": "2026-08-28T16:20:00.000Z"
+    },
+    {
+      "id": "ev-legal",
+      "name": "Legal ACL coverage",
+      "prompt": "Legal summarizer",
+      "owner": "Venkata Poluru",
+      "score": 81.2,
+      "passRate": 74,
+      "cases": 64,
+      "outcome": "Review",
+      "updated": "2026-08-28T16:00:00.000Z"
+    },
+    {
+      "id": "ev-brand",
+      "name": "Brand voice tone",
+      "prompt": "Brand voice",
+      "owner": "Hana Poluru",
+      "score": 93.1,
+      "passRate": 94,
+      "cases": 80,
+      "outcome": "Passed",
+      "updated": "2026-08-28T15:30:00.000Z"
+    },
+    {
+      "id": "ev-rag",
+      "name": "Citation nDCG",
+      "prompt": "RAG citation",
+      "owner": "Meera Poluru",
+      "score": 78.0,
+      "passRate": 68,
+      "cases": 100,
+      "outcome": "Failed",
+      "updated": "2026-08-28T14:36:00.000Z"
+    },
+    {
+      "id": "ev-safety",
+      "name": "Refusal pack",
+      "prompt": "Safety refusal",
+      "owner": "Arjun Poluru",
+      "score": 99.1,
+      "passRate": 99,
+      "cases": 200,
+      "outcome": "Passed",
+      "updated": "2026-08-28T13:10:00.000Z"
+    },
+    {
+      "id": "ev-sales",
+      "name": "Outbound honesty",
+      "prompt": "Sales email",
+      "owner": "Priya Poluru",
+      "score": 91.8,
+      "passRate": 92,
+      "cases": 48,
+      "outcome": "Passed",
+      "updated": "2026-08-27T19:00:00.000Z"
+    },
+    {
+      "id": "ev-invoice",
+      "name": "Field accuracy",
+      "prompt": "Invoice extractor",
+      "owner": "Nikhil Poluru",
+      "score": 87.4,
+      "passRate": 84,
+      "cases": 72,
+      "outcome": "Review",
+      "updated": "2026-08-27T16:50:00.000Z"
+    },
+    {
+      "id": "ev-tutor",
+      "name": "Onboarding completeness",
+      "prompt": "Onboarding tutor",
+      "owner": "Ramesh Poluru",
+      "score": 88.6,
+      "passRate": 86,
+      "cases": 36,
+      "outcome": "Review",
+      "updated": "2026-08-26T21:20:00.000Z"
+    }
+  ],
+  "failingCases": [
+    {
+      "id": "fc-01",
+      "suite": "Citation nDCG",
+      "prompt": "RAG citation",
+      "query": "Cite the policy handbook on API key rotation",
+      "reason": "Returned a 2024 span after the help-center crawl",
+      "owner": "Meera Poluru"
+    },
+    {
+      "id": "fc-02",
+      "suite": "Citation nDCG",
+      "prompt": "RAG citation",
+      "query": "What is the Harbor SLA credit table?",
+      "reason": "Missed the 2026 edition footnote",
+      "owner": "Meera Poluru"
+    },
+    {
+      "id": "fc-03",
+      "suite": "Legal ACL coverage",
+      "prompt": "Legal summarizer",
+      "query": "Draft a vendor NDA redline",
+      "reason": "412 contracts still lack a collection ACL",
+      "owner": "Venkata Poluru"
+    },
+    {
+      "id": "fc-04",
+      "suite": "Field accuracy",
+      "prompt": "Invoice extractor",
+      "query": "Extract due date from Harbor invoice 8841",
+      "reason": "Parsed the issued-on date as due date",
+      "owner": "Nikhil Poluru"
+    }
+  ],
+  "scoreTrend": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "Groundedness", "color": "#162E93", "values": [90.4, 91.1, 91.8, 92.6, 93.1, 93.7, 94.2] },
+      { "name": "Citation nDCG", "color": "#3A52B0", "values": [84.2, 83.1, 81.8, 80.4, 79.2, 78.4, 78.0] },
+      { "name": "Refusal", "color": "#059669", "values": [97.8, 98.1, 98.4, 98.6, 98.8, 99.0, 99.1] }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "kpis": [
+    {
+      "id": "csat",
+      "label": "CSAT",
+      "value": "4.6",
+      "hint": "142 surveys · 24–30 Aug",
+      "trend": "up",
+      "trendValue": "+0.2",
+      "icon": "bi-emoji-smile",
+      "tone": "success",
+      "sparkline": [4.3, 4.3, 4.4, 4.4, 4.5, 4.5, 4.6]
+    },
+    {
+      "id": "volume",
+      "label": "Created",
+      "value": "463",
+      "hint": "This window",
+      "trend": "up",
+      "trendValue": "+8%",
+      "icon": "bi-inboxes",
+      "tone": "brand",
+      "sparkline": [62, 71, 68, 84, 79, 58, 41]
+    },
+    {
+      "id": "resolved",
+      "label": "Resolved",
+      "value": "404",
+      "hint": "Including AI closes",
+      "trend": "up",
+      "trendValue": "+11%",
+      "icon": "bi-check2-circle",
+      "tone": "info",
+      "sparkline": [54, 61, 66, 72, 74, 49, 28]
+    },
+    {
+      "id": "deflect",
+      "label": "Deflection",
+      "value": "41%",
+      "hint": "Closed without an agent",
+      "trend": "up",
+      "trendValue": "+5 pts",
+      "icon": "bi-robot",
+      "tone": "brand",
+      "sparkline": [32, 34, 35, 36, 38, 39, 41]
+    }
+  ],
+  "csatTrend": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [{ "name": "CSAT", "color": "#EA580C", "values": [4.3, 4.3, 4.4, 4.4, 4.5, 4.5, 4.6] }]
+  },
+  "volume": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "Created", "color": "#EA580C", "values": [62, 71, 68, 84, 79, 58, 41] },
+      { "name": "Resolved", "color": "#C2410C", "values": [54, 61, 66, 72, 74, 49, 28] },
+      { "name": "Deflected", "color": "#FDBA74", "values": [18, 22, 24, 31, 29, 21, 17] }
+    ]
+  },
+  "channels": [
+    { "name": "Email", "value": 198, "color": "#EA580C" },
+    { "name": "Chat", "value": 142, "color": "#C2410C" },
+    { "name": "Portal", "value": 86, "color": "#FDBA74" },
+    { "name": "Phone", "value": 37, "color": "#9A3412" }
+  ],
+  "topics": [
+    { "name": "Billing", "value": 92, "color": "#EA580C" },
+    { "name": "SSO", "value": 61, "color": "#C2410C" },
+    { "name": "Exports", "value": 44, "color": "#FDBA74" },
+    { "name": "API", "value": 38, "color": "#FB923C" },
+    { "name": "Macros", "value": 27, "color": "#9A3412" }
+  ]
+}

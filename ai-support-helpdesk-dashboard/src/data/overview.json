@@ -1,0 +1,136 @@
+{
+  "generatedAt": "2026-08-30T16:18:00.000Z",
+  "openCount": 47,
+  "agentsOnline": 8,
+  "hero": {
+    "kicker": "Sunday · 30 Aug 2026 · last sync 1 min ago",
+    "title": "Weekend queue is 47 open. P1 billing at Northwind still has no owner.",
+    "body": "First response is 18m. Six tickets sit inside the last 20% of SLA. Copilot deflected 41% of inbound overnight — hold refund macros until Kavya reviews the $4,200 Northwind charge."
+  },
+  "slaCountdown": [
+    { "id": "p1", "label": "P1", "remaining": "12m", "minutes": 12, "limit": 15, "tone": "danger" },
+    { "id": "p2", "label": "P2", "remaining": "1h 4m", "minutes": 64, "limit": 120, "tone": "warning" },
+    { "id": "p3", "label": "P3", "remaining": "4h", "minutes": 240, "limit": 240, "tone": "info" }
+  ],
+  "queueDensity": [
+    { "id": "p1", "label": "P1", "color": "#dc2626" },
+    { "id": "p2", "label": "P2", "color": "#d97706" },
+    { "id": "p3", "label": "P3", "color": "#EA580C" },
+    { "id": "ai", "label": "AI", "color": "#FDBA74" }
+  ],
+  "kpis": [
+    {
+      "id": "open",
+      "label": "Open tickets",
+      "value": "47",
+      "hint": "14 in the working set",
+      "trend": "up",
+      "trendValue": "+9 overnight",
+      "icon": "bi-inbox",
+      "tone": "brand",
+      "sparkline": [31, 33, 36, 38, 41, 44, 47]
+    },
+    {
+      "id": "waiting",
+      "label": "Waiting",
+      "value": "12",
+      "hint": "On customer or vendor",
+      "trend": "down",
+      "trendValue": "-2",
+      "icon": "bi-hourglass-split",
+      "tone": "warning",
+      "sparkline": [16, 15, 15, 14, 13, 13, 12]
+    },
+    {
+      "id": "sla",
+      "label": "SLA at risk",
+      "value": "6",
+      "hint": "Inside last 20% of clock",
+      "trend": "up",
+      "trendValue": "+3",
+      "icon": "bi-exclamation-triangle",
+      "tone": "danger",
+      "sparkline": [2, 2, 3, 3, 4, 5, 6]
+    },
+    {
+      "id": "csat",
+      "label": "CSAT",
+      "value": "4.6",
+      "hint": "142 surveys this window",
+      "trend": "up",
+      "trendValue": "+0.2",
+      "icon": "bi-emoji-smile",
+      "tone": "success",
+      "sparkline": [4.3, 4.3, 4.4, 4.4, 4.5, 4.5, 4.6]
+    },
+    {
+      "id": "frt",
+      "label": "First response",
+      "value": "18m",
+      "hint": "Target is under 20m",
+      "trend": "down",
+      "trendValue": "-4m",
+      "icon": "bi-stopwatch",
+      "tone": "info",
+      "sparkline": [28, 26, 24, 22, 21, 19, 18]
+    },
+    {
+      "id": "deflect",
+      "label": "AI deflection",
+      "value": "41%",
+      "hint": "Closed without an agent",
+      "trend": "up",
+      "trendValue": "+5 pts",
+      "icon": "bi-robot",
+      "tone": "brand",
+      "sparkline": [32, 34, 35, 36, 38, 39, 41]
+    }
+  ],
+  "volumeTrend": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "Created", "color": "#EA580C", "values": [62, 71, 68, 84, 79, 58, 41] },
+      { "name": "Resolved", "color": "#C2410C", "values": [54, 61, 66, 72, 74, 49, 28] }
+    ]
+  },
+  "queueMix": [
+    { "name": "P1", "value": 6, "color": "#dc2626" },
+    { "name": "P2", "value": 18, "color": "#d97706" },
+    { "name": "P3", "value": 15, "color": "#EA580C" },
+    { "name": "AI hold", "value": 8, "color": "#FDBA74" }
+  ],
+  "queues": [
+    {
+      "id": "p1",
+      "label": "P1 · Critical",
+      "count": 6,
+      "hint": "12m on the hottest clock",
+      "owner": "Meera on-call",
+      "tone": "danger"
+    },
+    {
+      "id": "p2",
+      "label": "P2 · High",
+      "count": 18,
+      "hint": "Refunds and SSO leftovers",
+      "owner": "Kavya + Harini",
+      "tone": "warning"
+    },
+    {
+      "id": "p3",
+      "label": "P3 · Normal",
+      "count": 15,
+      "hint": "Exports, contrast, invites",
+      "owner": "Madhav + Priya",
+      "tone": "brand"
+    },
+    {
+      "id": "ai",
+      "label": "AI hold",
+      "count": 8,
+      "hint": "Drafts waiting human sign-off",
+      "owner": "Copilot · Relay",
+      "tone": "info"
+    }
+  ]
+}

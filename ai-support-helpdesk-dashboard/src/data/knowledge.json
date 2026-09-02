@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "id": "KB-188",
+      "title": "Rotate an Okta signing cert without bouncing other IdPs",
+      "owner": "Meera Poluru",
+      "usedByCopilot": 46,
+      "updatedAt": "2026-08-26T14:20:00.000Z",
+      "status": "Published",
+      "summary": "Swap ACS metadata, keep the previous cert for 30 minutes, then drop the pin."
+    },
+    {
+      "id": "KB-204",
+      "title": "Refund windows for annual vs monthly plans",
+      "owner": "Kavya Poluru",
+      "usedByCopilot": 88,
+      "updatedAt": "2026-08-12T09:10:00.000Z",
+      "status": "Needs review",
+      "summary": "Annual is 7 days. Monthly is 14. Copilot still cites the 2025 14-day annual rule."
+    },
+    {
+      "id": "KB-219",
+      "title": "Export tickets when a custom field contains emoji",
+      "owner": "Madhav Poluru",
+      "usedByCopilot": 21,
+      "updatedAt": "2026-08-30T10:18:00.000Z",
+      "status": "Published",
+      "summary": "Split the job, strip the emoji column, then merge the CSVs."
+    },
+    {
+      "id": "KB-231",
+      "title": "Webhook 429 playbook for dock-scan topics",
+      "owner": "Priya Poluru",
+      "usedByCopilot": 17,
+      "updatedAt": "2026-08-29T16:44:00.000Z",
+      "status": "Published",
+      "summary": "Raise burst to 120/min, enable jittered retries, page platform if the backlog is over 15 minutes."
+    },
+    {
+      "id": "KB-244",
+      "title": "Merge customer records after an acquisition",
+      "owner": "Meera Poluru",
+      "usedByCopilot": 9,
+      "updatedAt": "2026-08-27T16:00:00.000Z",
+      "status": "Published",
+      "summary": "Move seats, tickets, and the SLA pack. Keep the surviving billing entity."
+    },
+    {
+      "id": "KB-256",
+      "title": "Weekend coverage and overflow routing",
+      "owner": "Ananya Poluru",
+      "usedByCopilot": 14,
+      "updatedAt": "2026-08-22T08:00:00.000Z",
+      "status": "Needs review",
+      "summary": "Health accounts page Meera, not the generic overflow line. This article missed Contoso."
+    },
+    {
+      "id": "KB-262",
+      "title": "Redact PHI from copilot drafts",
+      "owner": "Harini Poluru",
+      "usedByCopilot": 6,
+      "updatedAt": "2026-08-30T13:55:00.000Z",
+      "status": "Draft",
+      "summary": "MRN, member id, and visit dates never leave the composer. Evict the cache after a hit."
+    }
+  ]
+}

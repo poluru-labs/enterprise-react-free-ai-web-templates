@@ -1,0 +1,53 @@
+{
+  "workspace": {
+    "name": "Prompt Bureau",
+    "slug": "prompt-bureau-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 90,
+    "brandColor": "#162E93"
+  },
+  "team": [
+    { "name": "Sravani Poluru", "role": "Prompt lead" },
+    { "name": "Lakshmi Poluru", "role": "Editor" },
+    { "name": "Venkata Poluru", "role": "Legal editor" },
+    { "name": "Meera Poluru", "role": "Knowledge editor" },
+    { "name": "Hana Poluru", "role": "GTM editor" },
+    { "name": "Arjun Poluru", "role": "Safety editor" },
+    { "name": "Priya Poluru", "role": "Viewer" },
+    { "name": "Nikhil Poluru", "role": "Finance editor" },
+    { "name": "Ramesh Poluru", "role": "HR editor" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to Sravani Poluru", "enabled": true },
+    { "id": "review", "label": "Ping on pending review", "enabled": true },
+    { "id": "eval", "label": "Slack #prompt-bureau on failed evals", "enabled": true },
+    { "id": "webhook", "label": "Webhook to release desk", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "sravani", "label": "Sravani Poluru" },
+    { "value": "lakshmi", "label": "Lakshmi Poluru" },
+    { "value": "venkata", "label": "Venkata Poluru" },
+    { "value": "meera", "label": "Meera Poluru" },
+    { "value": "hana", "label": "Hana Poluru" },
+    { "value": "arjun", "label": "Arjun Poluru" },
+    { "value": "priya", "label": "Priya Poluru" },
+    { "value": "nikhil", "label": "Nikhil Poluru" },
+    { "value": "ramesh", "label": "Ramesh Poluru" }
+  ],
+  "familyOptions": [
+    { "value": "support", "label": "Support" },
+    { "value": "legal", "label": "Legal" },
+    { "value": "gtm", "label": "GTM" },
+    { "value": "knowledge", "label": "Knowledge" },
+    { "value": "safety", "label": "Safety" },
+    { "value": "finance", "label": "Finance" },
+    { "value": "hr", "label": "HR" },
+    { "value": "ops", "label": "Ops" }
+  ],
+  "modelOptions": [
+    { "value": "gpt-4.1", "label": "gpt-4.1" },
+    { "value": "claude-3.5", "label": "claude-3.5" },
+    { "value": "llama-3-70b", "label": "llama-3-70b" }
+  ]
+}

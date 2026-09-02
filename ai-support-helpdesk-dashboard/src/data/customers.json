@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "id": "cus-northwind",
+      "name": "Northwind Labs",
+      "plan": "Trial hold",
+      "seats": 42,
+      "openTickets": 2,
+      "csat": 4.1,
+      "owner": "Kavya Poluru",
+      "region": "Austin",
+      "since": "2026-03-12",
+      "health": "Watch"
+    },
+    {
+      "id": "cus-contoso",
+      "name": "Contoso Health",
+      "plan": "Enterprise",
+      "seats": 860,
+      "openTickets": 2,
+      "csat": 4.4,
+      "owner": "Meera Poluru",
+      "region": "Chicago",
+      "since": "2024-11-02",
+      "health": "Risk"
+    },
+    {
+      "id": "cus-harbor",
+      "name": "Harbor Freight Cloud",
+      "plan": "Business",
+      "seats": 210,
+      "openTickets": 1,
+      "csat": 4.7,
+      "owner": "Meera Poluru",
+      "region": "Seattle",
+      "since": "2025-06-18",
+      "health": "Healthy"
+    },
+    {
+      "id": "cus-atlas",
+      "name": "Atlas Dental",
+      "plan": "Business",
+      "seats": 36,
+      "openTickets": 2,
+      "csat": 4.5,
+      "owner": "Harini Poluru",
+      "region": "Denver",
+      "since": "2025-09-04",
+      "health": "Watch"
+    },
+    {
+      "id": "cus-beacon",
+      "name": "Beacon Retail",
+      "plan": "Growth",
+      "seats": 128,
+      "openTickets": 1,
+      "csat": 4.8,
+      "owner": "Madhav Poluru",
+      "region": "Dallas",
+      "since": "2026-01-22",
+      "health": "Healthy"
+    },
+    {
+      "id": "cus-nova",
+      "name": "Nova Freight",
+      "plan": "Enterprise",
+      "seats": 540,
+      "openTickets": 1,
+      "csat": 4.2,
+      "owner": "Priya Poluru",
+      "region": "Memphis",
+      "since": "2025-02-14",
+      "health": "Watch"
+    },
+    {
+      "id": "cus-lens",
+      "name": "Lens Optics",
+      "plan": "Growth",
+      "seats": 64,
+      "openTickets": 1,
+      "csat": 4.9,
+      "owner": "Subrahmanyam Poluru",
+      "region": "Boston",
+      "since": "2025-08-01",
+      "health": "Healthy"
+    },
+    {
+      "id": "cus-aurora",
+      "name": "Aurora Clinics",
+      "plan": "Enterprise",
+      "seats": 310,
+      "openTickets": 2,
+      "csat": 4.3,
+      "owner": "Harini Poluru",
+      "region": "Minneapolis",
+      "since": "2024-07-19",
+      "health": "Risk"
+    }
+  ]
+}

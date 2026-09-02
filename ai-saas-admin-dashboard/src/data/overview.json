@@ -1,0 +1,177 @@
+{
+  "generatedAt": "2026-08-28T16:42:00.000Z",
+  "hero": {
+    "kicker": "Friday · 28 Aug 2026 · last sync 3 min ago",
+    "title": "Nexus is collecting $184.2K MRR across 42 live tenants. Cascade Retail is the only past-due workspace Lakshmi is watching.",
+    "body": "Seats sit at 2,418 of 3,200. Logo churn is 1.8% this window. Four invoices failed overnight — Priya Poluru opened dunning on Beacon Finance and Cascade Retail."
+  },
+  "ribbon": {
+    "mrr": "$184.2K",
+    "churn": "1.8%",
+    "seats": "2,418 / 3,200",
+    "failedInvoices": "4"
+  },
+  "kpis": [
+    {
+      "id": "mrr",
+      "label": "Monthly recurring revenue",
+      "value": "$184.2K",
+      "hint": "vs $171.4K last period",
+      "trend": "up",
+      "trendValue": "+7.5%",
+      "icon": "bi-currency-dollar",
+      "tone": "brand",
+      "sparkline": [152.1, 158.4, 164.8, 169.2, 174.6, 179.1, 184.2]
+    },
+    {
+      "id": "tenants",
+      "label": "Active tenants",
+      "value": "42",
+      "hint": "38 billed · 4 on trial",
+      "trend": "up",
+      "trendValue": "+3",
+      "icon": "bi-building",
+      "tone": "info",
+      "sparkline": [36, 37, 38, 39, 40, 41, 42]
+    },
+    {
+      "id": "seats",
+      "label": "Seats used",
+      "value": "2,418",
+      "hint": "of 3,200 contracted",
+      "trend": "up",
+      "trendValue": "+86",
+      "icon": "bi-people",
+      "tone": "success",
+      "sparkline": [2140, 2198, 2244, 2290, 2336, 2380, 2418]
+    },
+    {
+      "id": "churn",
+      "label": "Logo churn",
+      "value": "1.8%",
+      "hint": "One Scale downgrade this window",
+      "trend": "down",
+      "trendValue": "-0.3 pts",
+      "icon": "bi-arrow-down-right",
+      "tone": "warning",
+      "sparkline": [2.6, 2.4, 2.3, 2.1, 2.0, 1.9, 1.8]
+    },
+    {
+      "id": "failed",
+      "label": "Failed invoices",
+      "value": "4",
+      "hint": "$18.6K in dunning",
+      "trend": "down",
+      "trendValue": "-2",
+      "icon": "bi-exclamation-triangle",
+      "tone": "danger",
+      "sparkline": [9, 8, 7, 6, 5, 5, 4]
+    },
+    {
+      "id": "nps",
+      "label": "NPS",
+      "value": "62",
+      "hint": "Harbor Legal and Poluru Cloud lead",
+      "trend": "up",
+      "trendValue": "+4",
+      "icon": "bi-emoji-smile",
+      "tone": "brand",
+      "sparkline": [54, 55, 57, 58, 59, 61, 62]
+    }
+  ],
+  "revenueTrend": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "Recognized MRR", "color": "#059669", "values": [171400, 173200, 176800, 179100, 181400, 183000, 184200] },
+      { "name": "Failed invoices", "color": "#dc2626", "values": [9200, 8400, 7100, 6400, 5200, 4800, 4200] }
+    ]
+  },
+  "planMix": [
+    { "name": "Starter", "value": 14, "color": "#A7F3D0" },
+    { "name": "Team", "value": 12, "color": "#10B981" },
+    { "name": "Scale", "value": 11, "color": "#059669" },
+    { "name": "Enterprise", "value": 5, "color": "#047857" }
+  ],
+  "tenantHealth": [
+    {
+      "id": "harbor-legal",
+      "name": "Harbor Legal",
+      "plan": "Scale",
+      "status": "Active",
+      "owner": "Kavya Poluru",
+      "note": "Seat utilization 72%. Renewal 14 Oct.",
+      "health": 96
+    },
+    {
+      "id": "northwind-support",
+      "name": "Northwind Support",
+      "plan": "Team",
+      "status": "Active",
+      "owner": "Madhav Poluru",
+      "note": "API volume up 18% after the Aug 26 cutover.",
+      "health": 91
+    },
+    {
+      "id": "poluru-cloud",
+      "name": "Poluru Cloud",
+      "plan": "Enterprise",
+      "status": "Active",
+      "owner": "Lakshmi Poluru",
+      "note": "Internal control-plane tenant. Flags stay on.",
+      "health": 99
+    },
+    {
+      "id": "atlas-health",
+      "name": "Atlas Health",
+      "plan": "Scale",
+      "status": "Trial",
+      "owner": "Harini Poluru",
+      "note": "Trial ends 4 Sep. Convert before seats lock.",
+      "health": 78
+    },
+    {
+      "id": "cascade-retail",
+      "name": "Cascade Retail",
+      "plan": "Scale",
+      "status": "Past due",
+      "owner": "Meera Poluru",
+      "note": "Invoice INV-2841 failed twice. Dunning day 5.",
+      "health": 54
+    },
+    {
+      "id": "beacon-finance",
+      "name": "Beacon Finance",
+      "plan": "Starter",
+      "status": "Suspended",
+      "owner": "Priya Poluru",
+      "note": "Suspended 27 Aug after three failed invoices.",
+      "health": 22
+    }
+  ],
+  "activity": [
+    {
+      "title": "Invite accepted",
+      "description": "Ananya Poluru joined Northwind Support as Member",
+      "timestamp": "12 min ago",
+      "status": "complete"
+    },
+    {
+      "title": "Invoice failed",
+      "description": "Cascade Retail · INV-2841 · $6,400",
+      "timestamp": "41 min ago",
+      "status": "current"
+    },
+    {
+      "title": "Flag rolled out",
+      "description": "usage.overage.alerts · 80% of Scale tenants",
+      "timestamp": "2 hr ago",
+      "status": "upcoming"
+    },
+    {
+      "title": "Tenant restored",
+      "description": "Lotus Education · Lakshmi Poluru",
+      "timestamp": "5 hr ago",
+      "status": "upcoming"
+    }
+  ]
+}

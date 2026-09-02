@@ -13,9 +13,10 @@ A curated collection of free React templates for AI dashboards, SaaS products, a
 | [AI LLM Ops Dashboard](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops — traces, playground, evals, and cost. Theme `#F13E93`. |
 | [AI ML Training Dashboard](ai-ml-training-dashboard/README.md) | Kiln — training runs, datasets, and GPU clusters. Theme `#DE3E3E`. |
 | [AI Model Evaluation Dashboard](ai-model-evaluation-dashboard/README.md) | Prism — eval suites, leaderboards, and human review. Theme `#FF8383`. |
-| [AI Prompt Management Dashboard](ai-prompt-management-dashboard/) | Prompt versions, testing, and deployment management. |
-| [AI SaaS Admin Dashboard](ai-saas-admin-dashboard/) | Administration for AI-powered SaaS products. |
-| [AI Support Helpdesk Dashboard](ai-support-helpdesk-dashboard/) | Support queues, conversations, and agent productivity. |
+| [AI Prompt Management Dashboard](ai-prompt-management-dashboard/README.md) | Prompt Bureau — library, versions, evals, and releases. Theme `#162E93`. Two-row navy mast + paper tray. |
+| [AI SaaS Admin Dashboard](ai-saas-admin-dashboard/README.md) | Nexus — tenants, billing, flags, and audit. Theme `#059669`. Light emerald pill search. |
+| [AI Support Helpdesk Dashboard](ai-support-helpdesk-dashboard/README.md) | Relay — inbox, SLA, macros, and copilot drafts. Theme `#EA580C`. Cream SLA countdown header. |
+| [Enterprise Dashboard](enterprise-dashboard/README.md) | Poluru DC — facilities, power, capacity, and tickets. Theme `#30AFFF`. Frosted sky glass header. |
 
 ## Getting Started
 

@@ -1,0 +1,466 @@
+{
+  "items": [
+    {
+      "id": "TKT-1847",
+      "subject": "Charged $4,200 after the trial ended",
+      "customer": "Northwind Labs",
+      "customerId": "cus-northwind",
+      "requester": "Asha Rao",
+      "email": "asha.rao@northwind.example",
+      "priority": "P1",
+      "status": "Open",
+      "assignee": "Unassigned",
+      "channel": "Email",
+      "sla": "at_risk",
+      "slaLeft": "12m",
+      "ageMinutes": 38,
+      "updatedAt": "2026-08-30T16:06:00.000Z",
+      "createdAt": "2026-08-30T15:28:00.000Z",
+      "tags": ["billing", "trial"],
+      "aiDraft": "Asha — Relay shows the Northwind trial closed on 24 Aug and a $4,200 annual seat invoice posted this morning. I can void that charge and keep the workspace on the trial hold until Kavya confirms the conversion. Reply yes if you want the refund posted today.",
+      "messages": [
+        {
+          "id": "m-1847-1",
+          "author": "Asha Rao",
+          "role": "customer",
+          "time": "2026-08-30T15:28:00.000Z",
+          "body": "We never converted. The trial ended 24 Aug and we were going to stay on the free workspace. This morning finance saw a $4,200 charge. Please reverse it before the card statement closes."
+        },
+        {
+          "id": "m-1847-2",
+          "author": "Relay copilot",
+          "role": "ai",
+          "time": "2026-08-30T15:31:00.000Z",
+          "body": "Draft ready: void the annual invoice, keep Northwind on trial hold, and ping Kavya for conversion confirmation."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1846",
+      "subject": "SSO SAML loop after Okta cert rotation",
+      "customer": "Contoso Health",
+      "customerId": "cus-contoso",
+      "requester": "Liam Chen",
+      "email": "liam.chen@contoso.example",
+      "priority": "P1",
+      "status": "Waiting",
+      "assignee": "Meera Poluru",
+      "channel": "Chat",
+      "sla": "ok",
+      "slaLeft": "41m",
+      "ageMinutes": 96,
+      "updatedAt": "2026-08-30T15:52:00.000Z",
+      "createdAt": "2026-08-30T14:42:00.000Z",
+      "tags": ["sso", "okta"],
+      "aiDraft": "Liam — I rotated the Relay ACS to the new Okta cert. Sign in once from an incognito window and send me the assertion timestamp if the loop is still there.",
+      "messages": [
+        {
+          "id": "m-1846-1",
+          "author": "Liam Chen",
+          "role": "customer",
+          "time": "2026-08-30T14:42:00.000Z",
+          "body": "Clinicians are bouncing between Okta and Relay after we rotated the signing cert at 13:10 CT. Nobody can reach the weekend census board."
+        },
+        {
+          "id": "m-1846-2",
+          "author": "Meera Poluru",
+          "role": "agent",
+          "time": "2026-08-30T14:51:00.000Z",
+          "body": "I see the old cert still pinned on the Relay side. Send the new metadata XML and I will swap it without bouncing the other IdPs."
+        },
+        {
+          "id": "m-1846-3",
+          "author": "Liam Chen",
+          "role": "customer",
+          "time": "2026-08-30T15:18:00.000Z",
+          "body": "Metadata attached. We need this before the 17:00 shift change."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1845",
+      "subject": "Invoice PDF is missing line items",
+      "customer": "Harbor Freight Cloud",
+      "customerId": "cus-harbor",
+      "requester": "Nina Voss",
+      "email": "nina.voss@harbor.example",
+      "priority": "P2",
+      "status": "Open",
+      "assignee": "Kavya Poluru",
+      "channel": "Email",
+      "sla": "ok",
+      "slaLeft": "2h 10m",
+      "ageMinutes": 140,
+      "updatedAt": "2026-08-30T15:10:00.000Z",
+      "createdAt": "2026-08-30T13:58:00.000Z",
+      "tags": ["billing", "pdf"],
+      "aiDraft": "Nina — the August PDF dropped the overage rows. I regenerated INV-8841 with the three usage lines and attached it here.",
+      "messages": [
+        {
+          "id": "m-1845-1",
+          "author": "Nina Voss",
+          "role": "customer",
+          "time": "2026-08-30T13:58:00.000Z",
+          "body": "INV-8841 totals $1,180 but the PDF only shows the base seat line. AP will reject it."
+        },
+        {
+          "id": "m-1845-2",
+          "author": "Kavya Poluru",
+          "role": "agent",
+          "time": "2026-08-30T14:22:00.000Z",
+          "body": "Confirmed — the renderer skipped usage rows after Friday's invoice template change. Regenerating now."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1844",
+      "subject": "Copilot suggested the wrong refund amount",
+      "customer": "Atlas Dental",
+      "customerId": "cus-atlas",
+      "requester": "Jonah Park",
+      "email": "jonah.park@atlas.example",
+      "priority": "P2",
+      "status": "Waiting",
+      "assignee": "Harini Poluru",
+      "channel": "Chat",
+      "sla": "risk",
+      "slaLeft": "1h 4m",
+      "ageMinutes": 210,
+      "updatedAt": "2026-08-30T15:40:00.000Z",
+      "createdAt": "2026-08-30T12:48:00.000Z",
+      "tags": ["copilot", "refund"],
+      "aiDraft": "Jonah — the $890 draft was wrong. The unused seats are $240. I voided the bad credit and issued the correct one.",
+      "messages": [
+        {
+          "id": "m-1844-1",
+          "author": "Jonah Park",
+          "role": "customer",
+          "time": "2026-08-30T12:48:00.000Z",
+          "body": "Your bot offered an $890 refund for two unused hygienist seats. Those seats are $120 each. Please do not post $890."
+        },
+        {
+          "id": "m-1844-2",
+          "author": "Harini Poluru",
+          "role": "agent",
+          "time": "2026-08-30T13:06:00.000Z",
+          "body": "Holding the draft. Relay pulled annual instead of monthly. I will send the corrected credit once Kavya signs off."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1843",
+      "subject": "Cannot export last month's tickets",
+      "customer": "Beacon Retail",
+      "customerId": "cus-beacon",
+      "requester": "Priya Nair",
+      "email": "priya.nair@beacon.example",
+      "priority": "P3",
+      "status": "Pending",
+      "assignee": "Madhav Poluru",
+      "channel": "Portal",
+      "sla": "ok",
+      "slaLeft": "18h",
+      "ageMinutes": 400,
+      "updatedAt": "2026-08-30T11:20:00.000Z",
+      "createdAt": "2026-08-30T09:38:00.000Z",
+      "tags": ["export", "csv"],
+      "aiDraft": "Priya — the July export is queued. You will get a signed link in the portal within the hour.",
+      "messages": [
+        {
+          "id": "m-1843-1",
+          "author": "Priya Nair",
+          "role": "customer",
+          "time": "2026-08-30T09:38:00.000Z",
+          "body": "CSV export spins and dies at 82%. We need July for the franchise review on Tuesday."
+        },
+        {
+          "id": "m-1843-2",
+          "author": "Madhav Poluru",
+          "role": "agent",
+          "time": "2026-08-30T10:12:00.000Z",
+          "body": "The job is dying on the custom field with the emoji column. I am splitting the export and will send two files."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1842",
+      "subject": "Webhook deliveries hitting 429",
+      "customer": "Nova Freight",
+      "customerId": "cus-nova",
+      "requester": "Diego Alvarez",
+      "email": "diego.alvarez@nova.example",
+      "priority": "P1",
+      "status": "Open",
+      "assignee": "Priya Poluru",
+      "channel": "Email",
+      "sla": "ok",
+      "slaLeft": "28m",
+      "ageMinutes": 54,
+      "updatedAt": "2026-08-30T16:02:00.000Z",
+      "createdAt": "2026-08-30T15:24:00.000Z",
+      "tags": ["api", "webhooks"],
+      "aiDraft": "Diego — Relay is retrying the dock-scan topic with jitter. I raised your burst to 120/min until Monday.",
+      "messages": [
+        {
+          "id": "m-1842-1",
+          "author": "Diego Alvarez",
+          "role": "customer",
+          "time": "2026-08-30T15:24:00.000Z",
+          "body": "Dock scans are backing up. Every ticket.updated webhook is 429. Weekend yard is running on paper."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1841",
+      "subject": "Dark mode contrast on the agent reply box",
+      "customer": "Lens Optics",
+      "customerId": "cus-lens",
+      "requester": "Mira Shah",
+      "email": "mira.shah@lens.example",
+      "priority": "P3",
+      "status": "Resolved",
+      "assignee": "Subrahmanyam Poluru",
+      "channel": "Portal",
+      "sla": "ok",
+      "slaLeft": "—",
+      "ageMinutes": 1440,
+      "updatedAt": "2026-08-29T18:40:00.000Z",
+      "createdAt": "2026-08-28T11:12:00.000Z",
+      "tags": ["a11y", "theme"],
+      "aiDraft": "",
+      "messages": [
+        {
+          "id": "m-1841-1",
+          "author": "Mira Shah",
+          "role": "customer",
+          "time": "2026-08-28T11:12:00.000Z",
+          "body": "The reply composer in dark mode is grey on grey. Agents are typing into the wrong field."
+        },
+        {
+          "id": "m-1841-2",
+          "author": "Subrahmanyam Poluru",
+          "role": "agent",
+          "time": "2026-08-29T18:40:00.000Z",
+          "body": "Shipped in 1.18. Contrast is 7.2:1 on the composer now. Closing this out."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1840",
+      "subject": "Seat invite bounced for a new hygienist",
+      "customer": "Atlas Dental",
+      "customerId": "cus-atlas",
+      "requester": "Jonah Park",
+      "email": "jonah.park@atlas.example",
+      "priority": "P2",
+      "status": "Open",
+      "assignee": "Unassigned",
+      "channel": "Email",
+      "sla": "ok",
+      "slaLeft": "3h 12m",
+      "ageMinutes": 70,
+      "updatedAt": "2026-08-30T15:08:00.000Z",
+      "createdAt": "2026-08-30T15:08:00.000Z",
+      "tags": ["seats", "invite"],
+      "aiDraft": "Jonah — the invite hit a plus-address filter. I resent it to the clinic domain and added her to the front-desk group.",
+      "messages": [
+        {
+          "id": "m-1840-1",
+          "author": "Jonah Park",
+          "role": "customer",
+          "time": "2026-08-30T15:08:00.000Z",
+          "body": "Invite to rina+clinic@atlas.example bounced. She starts Tuesday and needs the chair-side macros."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1839",
+      "subject": "Refund policy article is a year out of date",
+      "customer": "Aurora Clinics",
+      "customerId": "cus-aurora",
+      "requester": "Elena Cho",
+      "email": "elena.cho@aurora.example",
+      "priority": "P3",
+      "status": "Waiting",
+      "assignee": "Kavya Poluru",
+      "channel": "Chat",
+      "sla": "ok",
+      "slaLeft": "11h",
+      "ageMinutes": 520,
+      "updatedAt": "2026-08-30T10:44:00.000Z",
+      "createdAt": "2026-08-29T16:12:00.000Z",
+      "tags": ["knowledge", "refund"],
+      "aiDraft": "Elena — the 14-day window is now 7 days for annual plans. I queued a rewrite of KB-204 for Harini.",
+      "messages": [
+        {
+          "id": "m-1839-1",
+          "author": "Elena Cho",
+          "role": "customer",
+          "time": "2026-08-29T16:12:00.000Z",
+          "body": "Your help article still says 14-day refunds. Finance was told 7 days on the last QBR."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1838",
+      "subject": "Weekend coverage missed a P2 page",
+      "customer": "Contoso Health",
+      "customerId": "cus-contoso",
+      "requester": "Liam Chen",
+      "email": "liam.chen@contoso.example",
+      "priority": "P2",
+      "status": "Pending",
+      "assignee": "Meera Poluru",
+      "channel": "Phone",
+      "sla": "breached",
+      "slaLeft": "Breached",
+      "ageMinutes": 860,
+      "updatedAt": "2026-08-30T09:05:00.000Z",
+      "createdAt": "2026-08-30T02:04:00.000Z",
+      "tags": ["sla", "weekend"],
+      "aiDraft": "Liam — we missed the 02:04 page. I am writing a credit and a coverage postmortem for Ananya's Saturday rotation.",
+      "messages": [
+        {
+          "id": "m-1838-1",
+          "author": "Liam Chen",
+          "role": "customer",
+          "time": "2026-08-30T02:04:00.000Z",
+          "body": "The census board was down from 02:04 to 03:40. Nobody picked up the P2."
+        },
+        {
+          "id": "m-1838-2",
+          "author": "Meera Poluru",
+          "role": "agent",
+          "time": "2026-08-30T09:05:00.000Z",
+          "body": "Confirmed breach. Ananya was on the overflow line, not the health channel. Credit and write-up coming today."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1837",
+      "subject": "AI draft included a patient MRN",
+      "customer": "Aurora Clinics",
+      "customerId": "cus-aurora",
+      "requester": "Elena Cho",
+      "email": "elena.cho@aurora.example",
+      "priority": "P1",
+      "status": "Waiting",
+      "assignee": "Harini Poluru",
+      "channel": "Email",
+      "sla": "ok",
+      "slaLeft": "22m",
+      "ageMinutes": 180,
+      "updatedAt": "2026-08-30T14:22:00.000Z",
+      "createdAt": "2026-08-30T13:18:00.000Z",
+      "tags": ["pii", "copilot"],
+      "aiDraft": "Elena — the draft never sent. Relay redacted the MRN and I pulled that thread from the model cache.",
+      "messages": [
+        {
+          "id": "m-1837-1",
+          "author": "Elena Cho",
+          "role": "customer",
+          "time": "2026-08-30T13:18:00.000Z",
+          "body": "A suggested reply showed MRN 44819-22 in the composer. It did not send. We still need confirmation it is gone."
+        },
+        {
+          "id": "m-1837-2",
+          "author": "Harini Poluru",
+          "role": "agent",
+          "time": "2026-08-30T13:41:00.000Z",
+          "body": "Redacted and evicted. I am adding a PHI filter to the clinic macro pack before we turn drafts back on."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1836",
+      "subject": "Refund macro is too aggressive",
+      "customer": "Northwind Labs",
+      "customerId": "cus-northwind",
+      "requester": "Asha Rao",
+      "email": "asha.rao@northwind.example",
+      "priority": "P2",
+      "status": "Open",
+      "assignee": "Madhav Poluru",
+      "channel": "Portal",
+      "sla": "ok",
+      "slaLeft": "2h 40m",
+      "ageMinutes": 250,
+      "updatedAt": "2026-08-30T14:55:00.000Z",
+      "createdAt": "2026-08-30T12:08:00.000Z",
+      "tags": ["macros", "refund"],
+      "aiDraft": "Asha — I paused the auto-refund macro. Credits over $200 now require Kavya.",
+      "messages": [
+        {
+          "id": "m-1836-1",
+          "author": "Asha Rao",
+          "role": "customer",
+          "time": "2026-08-30T12:08:00.000Z",
+          "body": "Your agents keep offering a full-year credit when we ask about a single unused seat."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1835",
+      "subject": "Mobile push is not firing for new tickets",
+      "customer": "Lens Optics",
+      "customerId": "cus-lens",
+      "requester": "Mira Shah",
+      "email": "mira.shah@lens.example",
+      "priority": "P3",
+      "status": "Open",
+      "assignee": "Priya Poluru",
+      "channel": "Chat",
+      "sla": "ok",
+      "slaLeft": "9h",
+      "ageMinutes": 300,
+      "updatedAt": "2026-08-30T13:12:00.000Z",
+      "createdAt": "2026-08-30T11:18:00.000Z",
+      "tags": ["mobile", "push"],
+      "aiDraft": "Mira — iOS 18.6 dropped the Relay token. Reinstall from TestFlight 3.4 and I will watch the next page.",
+      "messages": [
+        {
+          "id": "m-1835-1",
+          "author": "Mira Shah",
+          "role": "customer",
+          "time": "2026-08-30T11:18:00.000Z",
+          "body": "On-call did not get the 10:40 page on iPhone. Badge stayed at zero."
+        }
+      ]
+    },
+    {
+      "id": "TKT-1834",
+      "subject": "Merge two customer records after acquisition",
+      "customer": "Harbor Freight Cloud",
+      "customerId": "cus-harbor",
+      "requester": "Nina Voss",
+      "email": "nina.voss@harbor.example",
+      "priority": "P3",
+      "status": "Resolved",
+      "assignee": "Meera Poluru",
+      "channel": "Email",
+      "sla": "ok",
+      "slaLeft": "—",
+      "ageMinutes": 2880,
+      "updatedAt": "2026-08-27T16:20:00.000Z",
+      "createdAt": "2026-08-24T10:04:00.000Z",
+      "tags": ["merge", "accounts"],
+      "aiDraft": "",
+      "messages": [
+        {
+          "id": "m-1834-1",
+          "author": "Nina Voss",
+          "role": "customer",
+          "time": "2026-08-24T10:04:00.000Z",
+          "body": "Please merge Yardlight into Harbor Freight Cloud. Same billing entity after Friday's close."
+        },
+        {
+          "id": "m-1834-2",
+          "author": "Meera Poluru",
+          "role": "agent",
+          "time": "2026-08-27T16:20:00.000Z",
+          "body": "Merged. Tickets, seats, and the Harbor SLA pack now live under one account."
+        }
+      ]
+    }
+  ]
+}

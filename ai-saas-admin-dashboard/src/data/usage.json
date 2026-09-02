@@ -1,0 +1,25 @@
+{
+  "window": "24–30 Aug 2026",
+  "totals": {
+    "apiCalls": 1782000,
+    "tokensM": 111.8,
+    "overageUsd": 2400
+  },
+  "byTenant": [
+    { "id": "poluru-cloud", "name": "Poluru Cloud", "api": 842100, "tokens": 48.2, "color": "#047857" },
+    { "id": "summit-logistics", "name": "Summit Logistics", "api": 412800, "tokens": 27.3, "color": "#059669" },
+    { "id": "harbor-legal", "name": "Harbor Legal", "api": 184200, "tokens": 12.4, "color": "#10B981" },
+    { "id": "cascade-retail", "name": "Cascade Retail", "api": 128400, "tokens": 9.6, "color": "#34D399" },
+    { "id": "northwind-support", "name": "Northwind Support", "api": 96200, "tokens": 6.1, "color": "#6EE7B7" },
+    { "id": "meridian-labs", "name": "Meridian Labs", "api": 74100, "tokens": 4.9, "color": "#A7F3D0" },
+    { "id": "atlas-health", "name": "Atlas Health", "api": 21400, "tokens": 1.8, "color": "#D1FAE5" },
+    { "id": "lotus-education", "name": "Lotus Education", "api": 18600, "tokens": 1.1, "color": "#ECFDF5" }
+  ],
+  "daily": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "API calls (000s)", "color": "#059669", "values": [214, 228, 241, 236, 268, 274, 281] },
+      { "name": "Tokens (M)", "color": "#047857", "values": [14.2, 14.8, 15.6, 15.1, 17.2, 17.6, 17.3] }
+    ]
+  }
+}

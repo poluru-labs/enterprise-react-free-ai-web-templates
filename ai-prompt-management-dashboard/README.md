@@ -1,8 +1,10 @@
-# Prompt Bureau — prompt management
+# Prompt Bureau
 
-Corporate workspace for versioning, evaluating, and releasing enterprise
-prompts. Light canvas with a **full-width sticky header** in brand
-**`#162E93`**, plus a **simple sidebar**.
+React prompt-management workspace for Poluru Cloud. Corporate navy **`#162E93`** with supporting `#122678`, `#3A52B0`, `#E8ECF8`, and canvas `#F3F5FA`. Built with Vite, Bootstrap, and [`@poluru-labs/enterprise-design-system-react`](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react).
+
+**Prompt Bureau** — prompt control plane. Signed in as **Sravani Poluru**, prompt lead (`sravani.poluru@polurulabs.example`).
+
+The sticky header is two rows, not a single dark command bar: a full-bleed navy mast (letter **P** mark, product name, `v12 live` chip, theme, notifications, account) plus a light paper tray (`#fff` / `#d5dced`) with an underlined navy search, live ticker chips, ⌘K, and **New prompt**.
 
 ## Run
 
@@ -14,27 +16,50 @@ npm install
 npm run dev
 ```
 
-Default dev server: http://localhost:5187
+Default dev server: http://127.0.0.1:5187 · preview: http://127.0.0.1:4187
 
-| Route | Page |
+| Script | Description |
 | --- | --- |
-| `#/overview` | Overview — KPIs, playground volume, health coach |
-| `#/library` | Prompt catalog — filters, table, pagination |
-| `#/versions` | Family tree, visibility, and editors |
-| `#/playground` | Hybrid sandbox and grounded hits |
-| `#/releases` | Draft → eval → canary → publish |
-| `#/settings` | Evals, holds, and retention |
+| `npm run dev` | Vite development server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview the production build |
+| `npm test` | Vitest unit tests |
 
-```bash
-npm run build
+## Routes
+
+Base path: `/prompt-management`
+
+| Path | Page |
+| --- | --- |
+| `/prompt-management/overview` | KPIs, playground volume, health, live prompts, editor load |
+| `/prompt-management/library` | Filterable catalog with pagination |
+| `/prompt-management/library/:id` | Prompt detail — versions, score, owner, body |
+| `/prompt-management/versions` | Family tree and version table |
+| `/prompt-management/playground` | Model select, system prompt, mock completion, grounded hits |
+| `/prompt-management/releases` | Draft → eval → canary → publish |
+| `/prompt-management/evaluations` | Eval suites, pass rates, failing cases |
+| `/prompt-management/experiments` | A/B prompt tests |
+| `/prompt-management/search` | Workspace search from the navbar |
+| `/prompt-management/settings` | Workspace, digest, PIN, file upload |
+
+## Structure
+
+```
+src/
+  App.jsx, main.jsx, App.css
+  constants/navigation.js
+  data/*.json
+  hooks/useCommandPalette.js
+  lib/format.js, search.js, status.js
+  components/layout/DashboardLayout.jsx, DashboardNavbar.jsx, DashboardSidebar.jsx
+  components/charts/, components/widgets/
+  pages/*.jsx
+  test/setup.js
 ```
 
 ## Stack
 
-React 18, Vite 5, Bootstrap 5, Bootstrap Icons, Plus Jakarta Sans,
-`@poluru-labs/enterprise-design-system-react`. Demo people include
-**Sravani Poluru**, Lakshmi Poluru, Venkata Poluru, Meera Poluru, Hana Poluru,
-Arjun Poluru, Priya Poluru, Nikhil Poluru, and Ramesh Poluru.
-
-Copy and mock data live in `src/data.js`. Layout and brand color live in
-`src/App.jsx` and `src/App.css`.
+React 18, Vite 5, React Router, Bootstrap 5 + Bootstrap Icons, Plus Jakarta Sans,
+`@poluru-labs/enterprise-design-system-react`. Demo people include **Sravani Poluru**,
+Lakshmi, Venkata, Meera, Hana, Arjun, Priya, Nikhil, and Ramesh Poluru. Dates sit
+around 24–30 Aug 2026.

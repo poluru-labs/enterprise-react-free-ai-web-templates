@@ -1,14 +1,10 @@
-import {
-  Alert,
-  Badge,
-  Button,
-  Card,
-  DataTable,
-  ProgressBar,
-  Stat,
-  Tag,
-} from '@poluru-labs/enterprise-design-system-react';
-import { capacityForecasts } from '../data/mock';
+import { Alert, Badge, Button, Card, DataTable, ProgressBar, Tag } from '@poluru-labs/enterprise-design-system-react';
+import { useNavigate } from 'react-router-dom';
+import { BREADCRUMB_ROOT } from '../constants/navigation';
+import { capacityForecasts } from '../data';
+import { formatPercent } from '../lib/format';
+import { PageHeader } from '../components/widgets/PageHeader';
+import { StatCard } from '../components/widgets/StatCard';
 import './pages.scss';
 
 const riskVariant = {
@@ -18,6 +14,7 @@ const riskVariant = {
 } as const;
 
 export function CapacityPage() {
+  const navigate = useNavigate();
   const highRisk = capacityForecasts.filter((row) => row.risk === 'high');
 
   const columns = [
@@ -30,50 +27,48 @@ export function CapacityPage() {
 
   const rows = capacityForecasts.map((row) => ({
     facility: row.facility,
-    current: `${row.current}%`,
-    days30: `${row.days30}%`,
-    days90: `${row.days90}%`,
+    current: formatPercent(row.current, 0),
+    days30: formatPercent(row.days30, 0),
+    days90: formatPercent(row.days90, 0),
     risk: row.risk,
   }));
 
   return (
     <div className="page">
-      <div className="page-toolbar">
-        <p className="page-lead">
-          Rack fill forecasts and space planning signals so expansions land before constraints bite.
-        </p>
-        <Button variant="secondary" size="sm" icon="download">
-          Export plan
-        </Button>
-      </div>
+      <PageHeader
+        title="Capacity"
+        description="Rack fill forecasts and space planning signals so expansions land before constraints bite."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Capacity' }]}
+        actions={
+          <Button variant="secondary" size="sm" icon="download">
+            Export plan
+          </Button>
+        }
+      />
 
       {highRisk.length > 0 ? (
         <Alert
           variant="warning"
           title="Capacity risk rising"
-          message={`${highRisk.map((r) => r.facility).join(' and ')} projected above 90% within 90 days.`}
+          message={`${highRisk.map((row) => row.facility).join(' and ')} projected above 90% within 90 days.`}
           dismissible
         />
       ) : null}
 
       <section className="stat-grid stagger" aria-label="Capacity KPIs">
-        <Card elevated padded>
-          <Stat label="Fleet fill" value="79%" trend="up" trendValue="+2.4%" hint="Weighted by racks" />
-        </Card>
-        <Card elevated padded>
-          <Stat label="Sites > 85%" value={String(capacityForecasts.filter((r) => r.current >= 85).length)} hint="Need expansion review" />
-        </Card>
-        <Card elevated padded>
-          <Stat label="90-day high risk" value={String(highRisk.length)} trend="up" trendValue="+1" hint="Action recommended" />
-        </Card>
-        <Card elevated padded>
-          <Stat label="Available racks" value="312" hint="Across all campuses" />
-        </Card>
+        <StatCard label="Fleet fill" value="76%" trend="up" trendValue="+1.8%" hint="Weighted by racks" />
+        <StatCard
+          label="Sites > 85%"
+          value={String(capacityForecasts.filter((row) => row.current >= 85).length)}
+          hint="Need expansion review"
+        />
+        <StatCard label="90-day high risk" value={String(highRisk.length)} trend="up" trendValue="+1" hint="Action recommended" />
+        <StatCard label="Available racks" value="418" hint="Across all campuses" />
       </section>
 
-      <div className="capacity-grid stagger">
+      <div className="capacity-grid card-grid stagger">
         {capacityForecasts.map((row) => (
-          <Card key={row.facility} elevated padded>
+          <Card key={row.facilityId} elevated padded>
             <div className="capacity-card">
               <div className="capacity-card__head">
                 <h2>{row.facility}</h2>
@@ -93,6 +88,9 @@ export function CapacityPage() {
                 variant={row.risk === 'high' ? 'warning' : 'brand'}
                 soft
               />
+              <Button variant="tertiary" size="sm" onClick={() => navigate(`/facilities/${row.facilityId}`)}>
+                Open campus
+              </Button>
             </div>
           </Card>
         ))}

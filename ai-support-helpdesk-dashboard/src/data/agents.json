@@ -1,0 +1,93 @@
+{
+  "online": 8,
+  "items": [
+    {
+      "id": "ag-meera",
+      "name": "Meera Poluru",
+      "role": "Support lead",
+      "status": "Online",
+      "open": 3,
+      "occupancy": 78,
+      "csat": 4.8,
+      "shift": "08:00–18:00 CT",
+      "queue": "P1 + health"
+    },
+    {
+      "id": "ag-kavya",
+      "name": "Kavya Poluru",
+      "role": "Billing specialist",
+      "status": "Online",
+      "open": 3,
+      "occupancy": 64,
+      "csat": 4.7,
+      "shift": "09:00–17:00 CT",
+      "queue": "Billing"
+    },
+    {
+      "id": "ag-harini",
+      "name": "Harini Poluru",
+      "role": "Copilot reviewer",
+      "status": "Online",
+      "open": 2,
+      "occupancy": 82,
+      "csat": 4.6,
+      "shift": "10:00–19:00 CT",
+      "queue": "AI hold"
+    },
+    {
+      "id": "ag-madhav",
+      "name": "Madhav Poluru",
+      "role": "Platform support",
+      "status": "Online",
+      "open": 2,
+      "occupancy": 41,
+      "csat": 4.5,
+      "shift": "11:00–20:00 CT",
+      "queue": "P3 + exports"
+    },
+    {
+      "id": "ag-priya",
+      "name": "Priya Poluru",
+      "role": "Customer success",
+      "status": "Online",
+      "open": 2,
+      "occupancy": 55,
+      "csat": 4.9,
+      "shift": "08:00–16:00 CT",
+      "queue": "Enterprise"
+    },
+    {
+      "id": "ag-sub",
+      "name": "Subrahmanyam Poluru",
+      "role": "Overflow",
+      "status": "Online",
+      "open": 1,
+      "occupancy": 22,
+      "csat": 4.8,
+      "shift": "On call",
+      "queue": "Overflow"
+    },
+    {
+      "id": "ag-ananya",
+      "name": "Ananya Poluru",
+      "role": "Weekend coverage",
+      "status": "Online",
+      "open": 1,
+      "occupancy": 36,
+      "csat": 4.4,
+      "shift": "00:00–08:00 CT",
+      "queue": "Night"
+    },
+    {
+      "id": "ag-rohan",
+      "name": "Rohan Poluru",
+      "role": "Tier 1",
+      "status": "Online",
+      "open": 4,
+      "occupancy": 71,
+      "csat": 4.6,
+      "shift": "12:00–21:00 CT",
+      "queue": "Tier 1"
+    }
+  ]
+}

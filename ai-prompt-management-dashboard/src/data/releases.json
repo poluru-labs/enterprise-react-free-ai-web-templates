@@ -1,0 +1,47 @@
+{
+  "pipeline": [
+    { "label": "Draft", "description": "Author", "count": 3 },
+    { "label": "Eval", "description": "Golden set", "count": 2 },
+    { "label": "Review", "description": "Owner sign-off", "count": 3 },
+    { "label": "Canary", "description": "10% traffic", "count": 2 },
+    { "label": "Publish", "description": "Production", "count": 5 }
+  ],
+  "current": 2,
+  "cards": [
+    {
+      "stage": "Draft",
+      "items": [
+        { "id": "PV-4366", "prompt": "Onboarding tutor", "owner": "Ramesh Poluru", "status": "Draft" }
+      ]
+    },
+    {
+      "stage": "Eval",
+      "items": [
+        { "id": "PV-4401", "prompt": "RAG citation", "owner": "Meera Poluru", "status": "Failed" }
+      ]
+    },
+    {
+      "stage": "Review",
+      "items": [
+        { "id": "PV-4408", "prompt": "Legal summarizer", "owner": "Venkata Poluru", "status": "Review" },
+        { "id": "PV-4372", "prompt": "Invoice extractor", "owner": "Nikhil Poluru", "status": "Review" },
+        { "id": "PV-4354", "prompt": "Refund reply", "owner": "Lakshmi Poluru", "status": "Review" }
+      ]
+    },
+    {
+      "stage": "Canary",
+      "items": [
+        { "id": "PV-4394", "prompt": "Safety refusal", "owner": "Arjun Poluru", "status": "Canary" },
+        { "id": "PV-4340", "prompt": "Ticket triage", "owner": "Hana Poluru", "status": "Canary" }
+      ]
+    },
+    {
+      "stage": "Publish",
+      "items": [
+        { "id": "PV-4412", "prompt": "Support copilot", "owner": "Lakshmi Poluru", "status": "Live" },
+        { "id": "PV-4388", "prompt": "Brand voice", "owner": "Hana Poluru", "status": "Live" },
+        { "id": "PV-4380", "prompt": "Sales email", "owner": "Priya Poluru", "status": "Live" }
+      ]
+    }
+  ]
+}

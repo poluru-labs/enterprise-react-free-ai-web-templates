@@ -1,0 +1,37 @@
+{
+  "unread": 4,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "warning",
+      "title": "Legal summarizer pending",
+      "body": "Venkata Poluru held v4 for ACL sign-off",
+      "time": "2026-08-28T16:04:00.000Z",
+      "href": "/prompt-management/library/legal-summarizer"
+    },
+    {
+      "id": "n-02",
+      "tone": "danger",
+      "title": "RAG citation failed eval",
+      "body": "Meera Poluru · groundedness dropped 2.1 pts",
+      "time": "2026-08-28T14:42:00.000Z",
+      "href": "/prompt-management/evaluations"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "Safety canary at 10%",
+      "body": "Arjun Poluru started a refusal-pack canary",
+      "time": "2026-08-28T13:18:00.000Z",
+      "href": "/prompt-management/releases"
+    },
+    {
+      "id": "n-04",
+      "tone": "info",
+      "title": "Support copilot v12 is live",
+      "body": "Lakshmi Poluru published to production",
+      "time": "2026-08-28T16:30:00.000Z",
+      "href": "/prompt-management/library/support-copilot"
+    }
+  ]
+}

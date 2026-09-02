@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "id": "ab-01",
+      "name": "Support copilot tone",
+      "control": "v11",
+      "variant": "v12",
+      "owner": "Lakshmi Poluru",
+      "metric": "CSAT",
+      "lift": "+4.2%",
+      "traffic": "50 / 50",
+      "status": "Live",
+      "started": "2026-08-24T09:00:00.000Z",
+      "note": "v12 cites the handbook first. Winning on CSAT without extra latency."
+    },
+    {
+      "id": "ab-02",
+      "name": "Brand voice warmth",
+      "control": "v7",
+      "variant": "v8",
+      "owner": "Hana Poluru",
+      "metric": "Brand score",
+      "lift": "+1.8%",
+      "traffic": "70 / 30",
+      "status": "Live",
+      "started": "2026-08-25T11:30:00.000Z",
+      "note": "Harbor SLA credits only when the handbook cites them."
+    },
+    {
+      "id": "ab-03",
+      "name": "RAG citation opener",
+      "control": "v5",
+      "variant": "v6",
+      "owner": "Meera Poluru",
+      "metric": "nDCG",
+      "lift": "-2.1%",
+      "traffic": "80 / 20",
+      "status": "Failed",
+      "started": "2026-08-26T08:15:00.000Z",
+      "note": "v6 drifted after the help-center crawl. Pause and re-eval."
+    },
+    {
+      "id": "ab-04",
+      "name": "Safety refusal brevity",
+      "control": "v2",
+      "variant": "v3",
+      "owner": "Arjun Poluru",
+      "metric": "Refusal rate",
+      "lift": "+0.4%",
+      "traffic": "90 / 10",
+      "status": "Canary",
+      "started": "2026-08-27T14:00:00.000Z",
+      "note": "Shorter refusals, same coverage. Canary at 10%."
+    },
+    {
+      "id": "ab-05",
+      "name": "Sales email length",
+      "control": "v8",
+      "variant": "v9",
+      "owner": "Priya Poluru",
+      "metric": "Reply rate",
+      "lift": "+3.1%",
+      "traffic": "50 / 50",
+      "status": "Live",
+      "started": "2026-08-24T16:45:00.000Z",
+      "note": "140-word cap beats the longer v8 pack."
+    },
+    {
+      "id": "ab-06",
+      "name": "Legal clause order",
+      "control": "v3",
+      "variant": "v4",
+      "owner": "Venkata Poluru",
+      "metric": "ACL hit rate",
+      "lift": "0.0%",
+      "traffic": "60 / 40",
+      "status": "Review",
+      "started": "2026-08-28T10:20:00.000Z",
+      "note": "Held until contract ACLs are signed."
+    }
+  ]
+}

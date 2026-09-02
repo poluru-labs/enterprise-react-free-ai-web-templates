@@ -6,19 +6,15 @@ import {
   Button,
   Card,
   Modal,
-  Status,
   Stepper,
   Timeline,
   useToast,
 } from '@poluru-labs/enterprise-design-system-react';
-import { maintenanceWindows } from '../data/mock';
+import { BREADCRUMB_ROOT } from '../constants/navigation';
+import { maintenanceWindows } from '../data';
+import { PageHeader } from '../components/widgets/PageHeader';
+import { StatusBadge } from '../components/widgets/StatusBadge';
 import './pages.scss';
-
-const statusMap = {
-  scheduled: 'info',
-  'in-progress': 'warning',
-  completed: 'success',
-} as const;
 
 export function MaintenancePage() {
   const { show } = useToast();
@@ -38,14 +34,16 @@ export function MaintenancePage() {
 
   return (
     <div className="page">
-      <div className="page-toolbar">
-        <p className="page-lead">
-          Planned work windows, change readiness, and on-site impact across facilities.
-        </p>
-        <Button variant="primary" size="sm" icon="plus" onClick={() => setModalOpen(true)}>
-          Schedule window
-        </Button>
-      </div>
+      <PageHeader
+        title="Maintenance"
+        description="Planned work windows, change readiness, and on-site impact across facilities."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Maintenance' }]}
+        actions={
+          <Button variant="primary" size="sm" icon="plus" onClick={() => setModalOpen(true)}>
+            Schedule window
+          </Button>
+        }
+      />
 
       <Card
         elevated
@@ -93,13 +91,9 @@ export function MaintenancePage() {
         >
           <Accordion>
             {maintenanceWindows.map((item) => (
-              <AccordionItem
-                key={item.id}
-                heading={item.title}
-                defaultOpen={item.status === 'in-progress'}
-              >
+              <AccordionItem key={item.id} heading={item.title} defaultOpen={item.status === 'in-progress'}>
                 <div className="maint-detail">
-                  <Status label={item.status} variant={statusMap[item.status]} />
+                  <StatusBadge status={item.status} />
                   <p>
                     <strong>Facility:</strong> {item.facility}
                   </p>
@@ -154,8 +148,8 @@ export function MaintenancePage() {
         }
       >
         <p className="modal-copy">
-          Create a change request for facilities or network work. CAB review is required for
-          production-impacting windows.
+          Create a change request for facilities or network work. CAB review is required for production-impacting
+          windows.
         </p>
       </Modal>
     </div>

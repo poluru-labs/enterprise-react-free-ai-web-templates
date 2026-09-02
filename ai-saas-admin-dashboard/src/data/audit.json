@@ -1,0 +1,82 @@
+[
+  {
+    "id": "aud-1842",
+    "actor": "Lakshmi Poluru",
+    "action": "Restored tenant",
+    "target": "Lotus Education",
+    "href": "/saas-admin/tenants/lotus-education",
+    "ip": "10.18.4.12",
+    "time": "2026-08-28T11:18:00.000Z",
+    "tone": "success"
+  },
+  {
+    "id": "aud-1841",
+    "actor": "Priya Poluru",
+    "action": "Suspended tenant",
+    "target": "Beacon Finance",
+    "href": "/saas-admin/tenants/beacon-finance",
+    "ip": "10.18.4.44",
+    "time": "2026-08-27T09:06:00.000Z",
+    "tone": "danger"
+  },
+  {
+    "id": "aud-1840",
+    "actor": "Kavya Poluru",
+    "action": "Enabled flag",
+    "target": "usage.overage.alerts",
+    "href": "/saas-admin/flags",
+    "ip": "10.18.4.21",
+    "time": "2026-08-28T14:40:00.000Z",
+    "tone": "info"
+  },
+  {
+    "id": "aud-1839",
+    "actor": "Meera Poluru",
+    "action": "Retried invoice",
+    "target": "INV-2841",
+    "href": "/saas-admin/billing",
+    "ip": "10.18.5.8",
+    "time": "2026-08-28T15:01:00.000Z",
+    "tone": "warning"
+  },
+  {
+    "id": "aud-1838",
+    "actor": "Madhav Poluru",
+    "action": "Accepted invite",
+    "target": "Ananya Poluru · Northwind Support",
+    "href": "/saas-admin/users",
+    "ip": "10.22.1.9",
+    "time": "2026-08-28T16:30:00.000Z",
+    "tone": "success"
+  },
+  {
+    "id": "aud-1837",
+    "actor": "Rohan Poluru",
+    "action": "Exported audit log",
+    "target": "Summit Logistics",
+    "href": "/saas-admin/audit",
+    "ip": "10.40.2.3",
+    "time": "2026-08-26T17:12:00.000Z",
+    "tone": "info"
+  },
+  {
+    "id": "aud-1836",
+    "actor": "Harini Poluru",
+    "action": "Started trial",
+    "target": "Atlas Health",
+    "href": "/saas-admin/tenants/atlas-health",
+    "ip": "10.18.9.2",
+    "time": "2026-08-24T09:00:00.000Z",
+    "tone": "info"
+  },
+  {
+    "id": "aud-1835",
+    "actor": "Lakshmi Poluru",
+    "action": "Updated workspace",
+    "target": "Nexus production",
+    "href": "/saas-admin/settings",
+    "ip": "10.18.4.12",
+    "time": "2026-08-24T08:20:00.000Z",
+    "tone": "info"
+  }
+]

@@ -59,3 +59,11 @@ $header-height: 64px;
   --font-sans: 'Roboto', system-ui, sans-serif;
   --font-mono: 'Roboto Mono', ui-monospace, monospace;
 }
+
+html.eds-theme-dark {
+  --surface: #0b1220;
+  --surface-elevated: #111827;
+  --border: #1e293b;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+}

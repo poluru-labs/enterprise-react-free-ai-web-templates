@@ -1,0 +1,29 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "danger",
+      "title": "Invoice INV-2841 failed",
+      "body": "Cascade Retail · $6,400 · Meera Poluru",
+      "time": "2026-08-28T16:01:00.000Z",
+      "href": "/saas-admin/billing"
+    },
+    {
+      "id": "n-02",
+      "tone": "warning",
+      "title": "Atlas Health trial ends 4 Sep",
+      "body": "Harini Poluru · 22 of 80 seats used",
+      "time": "2026-08-28T14:20:00.000Z",
+      "href": "/saas-admin/tenants/atlas-health"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "Ananya Poluru accepted invite",
+      "body": "Northwind Support · Member",
+      "time": "2026-08-28T16:30:00.000Z",
+      "href": "/saas-admin/users"
+    }
+  ]
+}

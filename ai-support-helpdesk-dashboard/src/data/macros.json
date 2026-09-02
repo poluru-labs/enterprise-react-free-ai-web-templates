@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": "mac-refund",
+      "name": "Refund confirmation",
+      "owner": "Kavya Poluru",
+      "uses": 184,
+      "updatedAt": "2026-08-28T15:10:00.000Z",
+      "status": "Published",
+      "body": "I posted a credit for {{amount}} on {{invoice}}. It lands on the card in 3–5 business days. Reply if finance needs a PDF."
+    },
+    {
+      "id": "mac-reset",
+      "name": "Password and SSO reset",
+      "owner": "Meera Poluru",
+      "uses": 226,
+      "updatedAt": "2026-08-27T11:42:00.000Z",
+      "status": "Published",
+      "body": "I reset the Relay session and cleared the cached SAML cert. Sign in from a private window and tell me if the loop remains."
+    },
+    {
+      "id": "mac-sla",
+      "name": "SLA apology + credit",
+      "owner": "Meera Poluru",
+      "uses": 41,
+      "updatedAt": "2026-08-30T09:20:00.000Z",
+      "status": "Published",
+      "body": "We missed the {{priority}} clock on {{ticket}}. I am issuing a service credit and writing the coverage note today."
+    },
+    {
+      "id": "mac-eng",
+      "name": "Escalate to engineering",
+      "owner": "Madhav Poluru",
+      "uses": 67,
+      "updatedAt": "2026-08-26T16:05:00.000Z",
+      "status": "Published",
+      "body": "I opened a platform ticket with the request id and the last 15 minutes of logs. You will get a status note before end of day."
+    },
+    {
+      "id": "mac-hold",
+      "name": "Billing hold",
+      "owner": "Kavya Poluru",
+      "uses": 38,
+      "updatedAt": "2026-08-29T13:18:00.000Z",
+      "status": "Published",
+      "body": "I placed the workspace on billing hold. No new invoices will post until we confirm conversion."
+    },
+    {
+      "id": "mac-welcome",
+      "name": "Welcome and first steps",
+      "owner": "Rohan Poluru",
+      "uses": 112,
+      "updatedAt": "2026-08-24T10:00:00.000Z",
+      "status": "Published",
+      "body": "Welcome to Relay. Your workspace is live, macros are in the Assist pack, and weekend coverage runs 08:00–22:00 CT."
+    },
+    {
+      "id": "mac-pii",
+      "name": "PII redaction notice",
+      "owner": "Harini Poluru",
+      "uses": 9,
+      "updatedAt": "2026-08-30T13:50:00.000Z",
+      "status": "Draft",
+      "body": "The suggested reply never sent. I redacted the identifier and removed it from the draft cache."
+    },
+    {
+      "id": "mac-export",
+      "name": "Export is queued",
+      "owner": "Madhav Poluru",
+      "uses": 54,
+      "updatedAt": "2026-08-25T09:30:00.000Z",
+      "status": "Published",
+      "body": "The export is split and queued. You will see a signed link in the portal within the hour."
+    }
+  ]
+}

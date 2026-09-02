@@ -9,58 +9,60 @@ import {
   EmptyState,
   Modal,
   SegmentedControl,
-  Tag,
   useToast,
 } from '@poluru-labs/enterprise-design-system-react';
-import { alerts as initialAlerts, type AlertItem } from '../data/mock';
+import { BREADCRUMB_ROOT } from '../constants/navigation';
+import { ackAlert, ackAllAlerts, useAlerts, type AlertItem } from '../data';
+import { PageHeader } from '../components/widgets/PageHeader';
+import { SeverityBadge } from '../components/widgets/StatusBadge';
 import './pages.scss';
 
 export function AlertsPage() {
   const { show } = useToast();
-  const [items, setItems] = useState(initialAlerts);
+  const items = useAlerts();
   const [filter, setFilter] = useState('open');
   const [selected, setSelected] = useState<AlertItem | null>(null);
   const [ackAllOpen, setAckAllOpen] = useState(false);
 
   const filtered = useMemo(() => {
     if (filter === 'all') return items;
-    if (filter === 'open') return items.filter((a) => !a.acknowledged);
-    return items.filter((a) => a.severity === filter);
+    if (filter === 'open') return items.filter((item) => !item.acknowledged);
+    return items.filter((item) => item.severity === filter);
   }, [filter, items]);
 
-  const critical = items.filter((a) => a.severity === 'critical' && !a.acknowledged);
+  const critical = items.filter((item) => item.severity === 'critical' && !item.acknowledged);
 
   const acknowledge = (id: string) => {
-    setItems((prev) =>
-      prev.map((item) => (item.id === id ? { ...item, acknowledged: true } : item)),
-    );
+    ackAlert(id);
     show({ title: 'Alert acknowledged', variant: 'success' });
     setSelected(null);
   };
 
   return (
     <div className="page">
-      <div className="page-toolbar">
-        <p className="page-lead">
-          Active incidents and facility notifications across the fleet.
-        </p>
-        <div className="page-toolbar__actions">
-          <SegmentedControl
-            size="sm"
-            value={filter}
-            onChange={setFilter}
-            options={[
-              { label: 'Open', value: 'open' },
-              { label: 'Critical', value: 'critical' },
-              { label: 'Warning', value: 'warning' },
-              { label: 'All', value: 'all' },
-            ]}
-          />
-          <Button variant="primary" size="sm" icon="check" onClick={() => setAckAllOpen(true)}>
-            Acknowledge all
-          </Button>
-        </div>
-      </div>
+      <PageHeader
+        title="Alerts"
+        description="Active incidents and facility notifications across the fleet."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Alerts' }]}
+        actions={
+          <>
+            <SegmentedControl
+              size="sm"
+              value={filter}
+              onChange={setFilter}
+              options={[
+                { label: 'Open', value: 'open' },
+                { label: 'Critical', value: 'critical' },
+                { label: 'Warning', value: 'warning' },
+                { label: 'All', value: 'all' },
+              ]}
+            />
+            <Button variant="primary" size="sm" icon="check" onClick={() => setAckAllOpen(true)}>
+              Acknowledge all
+            </Button>
+          </>
+        }
+      />
 
       {critical.length > 0 ? (
         <Alert
@@ -70,21 +72,12 @@ export function AlertsPage() {
         />
       ) : null}
 
-      <section className="alert-grid stagger">
+      <section className="alert-grid card-grid stagger">
         {filtered.map((item) => (
           <Card key={item.id} elevated padded>
             <div className="alert-card">
               <div className="alert-card__meta">
-                <Tag
-                  label={item.severity}
-                  variant={
-                    item.severity === 'critical'
-                      ? 'danger'
-                      : item.severity === 'warning'
-                        ? 'warning'
-                        : 'info'
-                  }
-                />
+                <SeverityBadge severity={item.severity} />
                 <Badge label={item.time} variant="neutral" soft size="sm" />
                 {item.acknowledged ? <Badge label="Acked" variant="success" soft size="sm" /> : null}
               </div>
@@ -106,10 +99,7 @@ export function AlertsPage() {
       </section>
 
       {filtered.length === 0 ? (
-        <EmptyState
-          heading="No matching alerts"
-          description="Try another filter or clear acknowledged items from the feed."
-        />
+        <EmptyState heading="No matching alerts" description="Try another filter or clear acknowledged items from the feed." />
       ) : null}
 
       <Drawer
@@ -133,16 +123,7 @@ export function AlertsPage() {
       >
         {selected ? (
           <div className="drawer-body">
-            <Tag
-              label={selected.severity}
-              variant={
-                selected.severity === 'critical'
-                  ? 'danger'
-                  : selected.severity === 'warning'
-                    ? 'warning'
-                    : 'info'
-              }
-            />
+            <SeverityBadge severity={selected.severity} />
             <h3>{selected.title}</h3>
             <p>{selected.description}</p>
             <DescriptionList
@@ -171,7 +152,7 @@ export function AlertsPage() {
             <Button
               variant="primary"
               onClick={() => {
-                setItems((prev) => prev.map((item) => ({ ...item, acknowledged: true })));
+                ackAllAlerts();
                 setAckAllOpen(false);
                 show({ title: 'All alerts acknowledged', variant: 'success' });
               }}
@@ -182,8 +163,7 @@ export function AlertsPage() {
         }
       >
         <p className="modal-copy">
-          This marks every open alert as acknowledged. Critical items will remain in history for
-          audit.
+          This marks every open alert as acknowledged. Critical items will remain in history for audit.
         </p>
       </Modal>
     </div>

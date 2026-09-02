@@ -1,0 +1,144 @@
+{
+  "mrr": 184200,
+  "arr": 2210400,
+  "dunning": 18600,
+  "failedCount": 4,
+  "mrrTrend": {
+    "labels": ["Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28", "Aug 29", "Aug 30"],
+    "series": [
+      { "name": "MRR", "color": "#059669", "values": [171400, 173200, 176800, 179100, 181400, 183000, 184200] }
+    ]
+  },
+  "invoices": [
+    {
+      "id": "INV-2841",
+      "tenant": "Cascade Retail",
+      "tenantId": "cascade-retail",
+      "amount": 6400,
+      "status": "Failed",
+      "issued": "2026-08-25",
+      "due": "2026-08-28",
+      "owner": "Meera Poluru",
+      "attempts": 2
+    },
+    {
+      "id": "INV-2838",
+      "tenant": "Lotus Education",
+      "tenantId": "lotus-education",
+      "amount": 490,
+      "status": "Paid",
+      "issued": "2026-08-24",
+      "due": "2026-08-27",
+      "owner": "Ananya Poluru",
+      "attempts": 1
+    },
+    {
+      "id": "INV-2833",
+      "tenant": "Beacon Finance",
+      "tenantId": "beacon-finance",
+      "amount": 490,
+      "status": "Failed",
+      "issued": "2026-08-20",
+      "due": "2026-08-24",
+      "owner": "Priya Poluru",
+      "attempts": 3
+    },
+    {
+      "id": "INV-2824",
+      "tenant": "Meridian Labs",
+      "tenantId": "meridian-labs",
+      "amount": 1800,
+      "status": "Paid",
+      "issued": "2026-08-21",
+      "due": "2026-08-26",
+      "owner": "Meera Poluru",
+      "attempts": 1
+    },
+    {
+      "id": "INV-2820",
+      "tenant": "Northwind Support",
+      "tenantId": "northwind-support",
+      "amount": 1800,
+      "status": "Paid",
+      "issued": "2026-08-22",
+      "due": "2026-08-27",
+      "owner": "Madhav Poluru",
+      "attempts": 1
+    },
+    {
+      "id": "INV-2818",
+      "tenant": "Harbor Legal",
+      "tenantId": "harbor-legal",
+      "amount": 4200,
+      "status": "Paid",
+      "issued": "2026-08-18",
+      "due": "2026-08-25",
+      "owner": "Kavya Poluru",
+      "attempts": 1
+    },
+    {
+      "id": "INV-2816",
+      "tenant": "Cascade Retail",
+      "tenantId": "cascade-retail",
+      "amount": 4200,
+      "status": "Overdue",
+      "issued": "2026-08-01",
+      "due": "2026-08-24",
+      "owner": "Meera Poluru",
+      "attempts": 2
+    },
+    {
+      "id": "INV-2811",
+      "tenant": "Beacon Finance",
+      "tenantId": "beacon-finance",
+      "amount": 490,
+      "status": "Failed",
+      "issued": "2026-07-20",
+      "due": "2026-08-24",
+      "owner": "Priya Poluru",
+      "attempts": 3
+    },
+    {
+      "id": "INV-2808",
+      "tenant": "Summit Logistics",
+      "tenantId": "summit-logistics",
+      "amount": 12400,
+      "status": "Paid",
+      "issued": "2026-08-09",
+      "due": "2026-08-24",
+      "owner": "Rohan Poluru",
+      "attempts": 1
+    },
+    {
+      "id": "INV-2801",
+      "tenant": "Poluru Cloud",
+      "tenantId": "poluru-cloud",
+      "amount": 18600,
+      "status": "Paid",
+      "issued": "2026-08-08",
+      "due": "2026-08-24",
+      "owner": "Lakshmi Poluru",
+      "attempts": 1
+    }
+  ],
+  "dunningQueue": [
+    {
+      "id": "d-01",
+      "tenant": "Cascade Retail",
+      "tenantId": "cascade-retail",
+      "amount": 6400,
+      "day": 5,
+      "owner": "Meera Poluru",
+      "next": "2026-08-29T09:00:00.000Z"
+    },
+    {
+      "id": "d-02",
+      "tenant": "Beacon Finance",
+      "tenantId": "beacon-finance",
+      "amount": 980,
+      "day": 8,
+      "owner": "Priya Poluru",
+      "next": "2026-08-29T11:00:00.000Z"
+    }
+  ]
+}

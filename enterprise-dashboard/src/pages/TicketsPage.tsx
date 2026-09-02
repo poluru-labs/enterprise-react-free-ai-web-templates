@@ -11,7 +11,9 @@ import {
   Tag,
   useToast,
 } from '@poluru-labs/enterprise-design-system-react';
-import { tickets, type Ticket } from '../data/mock';
+import { BREADCRUMB_ROOT } from '../constants/navigation';
+import { tickets, type Ticket } from '../data';
+import { PageHeader } from '../components/widgets/PageHeader';
 import './pages.scss';
 
 export function TicketsPage() {
@@ -23,8 +25,8 @@ export function TicketsPage() {
 
   const filtered = useMemo(() => {
     if (filter === 'all') return tickets;
-    if (filter === 'open') return tickets.filter((t) => t.status !== 'Resolved');
-    return tickets.filter((t) => t.priority === filter.toUpperCase());
+    if (filter === 'open') return tickets.filter((ticket) => ticket.status !== 'Resolved');
+    return tickets.filter((ticket) => ticket.priority === filter.toUpperCase());
   }, [filter]);
 
   const pageRows = filtered.slice((page - 1) * pageSize, page * pageSize);
@@ -38,36 +40,38 @@ export function TicketsPage() {
     { key: 'status', label: 'Status' },
   ];
 
-  const rows = pageRows.map((t) => ({
-    id: t.id,
-    subject: t.subject,
-    priority: t.priority,
-    facility: t.facility,
-    assignee: t.assignee,
-    status: t.status,
+  const rows = pageRows.map((ticket) => ({
+    id: ticket.id,
+    subject: ticket.subject,
+    priority: ticket.priority,
+    facility: ticket.facility,
+    assignee: ticket.assignee,
+    status: ticket.status,
   }));
 
   return (
     <div className="page">
-      <div className="page-toolbar">
-        <p className="page-lead">
-          Incident and change tickets linked to facilities, alerts, and maintenance windows.
-        </p>
-        <SegmentedControl
-          size="sm"
-          value={filter}
-          onChange={(value) => {
-            setFilter(value);
-            setPage(1);
-          }}
-          options={[
-            { label: 'All', value: 'all' },
-            { label: 'Open', value: 'open' },
-            { label: 'P1', value: 'p1' },
-            { label: 'P2', value: 'p2' },
-          ]}
-        />
-      </div>
+      <PageHeader
+        title="Tickets"
+        description="Incident and change tickets linked to facilities, alerts, and maintenance windows."
+        crumbs={[BREADCRUMB_ROOT, { label: 'Tickets' }]}
+        actions={
+          <SegmentedControl
+            size="sm"
+            value={filter}
+            onChange={(value) => {
+              setFilter(value);
+              setPage(1);
+            }}
+            options={[
+              { label: 'All', value: 'all' },
+              { label: 'Open', value: 'open' },
+              { label: 'P1', value: 'p1' },
+              { label: 'P2', value: 'p2' },
+            ]}
+          />
+        }
+      />
 
       <Card elevated padded>
         <div className="table-wrap" style={{ marginTop: 0 }}>
@@ -75,12 +79,7 @@ export function TicketsPage() {
         </div>
         <div className="ticket-list">
           {pageRows.map((ticket) => (
-            <button
-              key={ticket.id}
-              type="button"
-              className="ticket-row"
-              onClick={() => setSelected(ticket)}
-            >
+            <button key={ticket.id} type="button" className="ticket-row" onClick={() => setSelected(ticket)}>
               <div>
                 <strong>
                   {ticket.id} · {ticket.subject}
@@ -99,12 +98,7 @@ export function TicketsPage() {
             </button>
           ))}
         </div>
-        <Pagination
-          page={page}
-          pageSize={pageSize}
-          total={filtered.length}
-          onChange={setPage}
-        />
+        <Pagination page={page} pageSize={pageSize} total={filtered.length} onChange={setPage} />
       </Card>
 
       <Drawer

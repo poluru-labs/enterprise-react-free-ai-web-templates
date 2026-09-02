@@ -1,0 +1,148 @@
+{
+  "items": [
+    {
+      "id": "PV-4412",
+      "promptId": "support-copilot",
+      "prompt": "Support copilot",
+      "owner": "Lakshmi Poluru",
+      "version": "v12",
+      "stage": "Publish",
+      "progress": 100,
+      "status": "Live",
+      "family": "Support",
+      "updated": "2026-08-28T16:30:00.000Z"
+    },
+    {
+      "id": "PV-4408",
+      "promptId": "legal-summarizer",
+      "prompt": "Legal summarizer",
+      "owner": "Venkata Poluru",
+      "version": "v4",
+      "stage": "Review",
+      "progress": 62,
+      "status": "Review",
+      "family": "Legal",
+      "updated": "2026-08-28T16:04:00.000Z"
+    },
+    {
+      "id": "PV-4401",
+      "promptId": "rag-citation",
+      "prompt": "RAG citation",
+      "owner": "Meera Poluru",
+      "version": "v6",
+      "stage": "Eval",
+      "progress": 40,
+      "status": "Failed",
+      "family": "Knowledge",
+      "updated": "2026-08-28T14:42:00.000Z"
+    },
+    {
+      "id": "PV-4394",
+      "promptId": "safety-refusal",
+      "prompt": "Safety refusal",
+      "owner": "Arjun Poluru",
+      "version": "v3",
+      "stage": "Canary",
+      "progress": 28,
+      "status": "Canary",
+      "family": "Safety",
+      "updated": "2026-08-28T13:18:00.000Z"
+    },
+    {
+      "id": "PV-4388",
+      "promptId": "brand-voice",
+      "prompt": "Brand voice",
+      "owner": "Hana Poluru",
+      "version": "v8",
+      "stage": "Publish",
+      "progress": 100,
+      "status": "Live",
+      "family": "GTM",
+      "updated": "2026-08-28T15:40:00.000Z"
+    },
+    {
+      "id": "PV-4380",
+      "promptId": "sales-email",
+      "prompt": "Sales email",
+      "owner": "Priya Poluru",
+      "version": "v9",
+      "stage": "Publish",
+      "progress": 100,
+      "status": "Live",
+      "family": "GTM",
+      "updated": "2026-08-27T19:12:00.000Z"
+    },
+    {
+      "id": "PV-4372",
+      "promptId": "invoice-extractor",
+      "prompt": "Invoice extractor",
+      "owner": "Nikhil Poluru",
+      "version": "v5",
+      "stage": "Review",
+      "progress": 55,
+      "status": "Review",
+      "family": "Finance",
+      "updated": "2026-08-27T17:05:00.000Z"
+    },
+    {
+      "id": "PV-4366",
+      "promptId": "onboarding-tutor",
+      "prompt": "Onboarding tutor",
+      "owner": "Ramesh Poluru",
+      "version": "v2",
+      "stage": "Draft",
+      "progress": 18,
+      "status": "Draft",
+      "family": "HR",
+      "updated": "2026-08-26T21:40:00.000Z"
+    },
+    {
+      "id": "PV-4360",
+      "promptId": "meeting-notes",
+      "prompt": "Meeting notes",
+      "owner": "Sravani Poluru",
+      "version": "v7",
+      "stage": "Publish",
+      "progress": 100,
+      "status": "Live",
+      "family": "Ops",
+      "updated": "2026-08-26T18:22:00.000Z"
+    },
+    {
+      "id": "PV-4354",
+      "promptId": "refund-reply",
+      "prompt": "Refund reply",
+      "owner": "Lakshmi Poluru",
+      "version": "v3",
+      "stage": "Review",
+      "progress": 48,
+      "status": "Review",
+      "family": "Support",
+      "updated": "2026-08-25T20:10:00.000Z"
+    },
+    {
+      "id": "PV-4348",
+      "promptId": "policy-qa",
+      "prompt": "Policy Q&A",
+      "owner": "Meera Poluru",
+      "version": "v5",
+      "stage": "Publish",
+      "progress": 100,
+      "status": "Live",
+      "family": "Knowledge",
+      "updated": "2026-08-25T15:48:00.000Z"
+    },
+    {
+      "id": "PV-4340",
+      "promptId": "ticket-triage",
+      "prompt": "Ticket triage",
+      "owner": "Hana Poluru",
+      "version": "v4",
+      "stage": "Canary",
+      "progress": 22,
+      "status": "Canary",
+      "family": "Support",
+      "updated": "2026-08-24T22:05:00.000Z"
+    }
+  ]
+}
