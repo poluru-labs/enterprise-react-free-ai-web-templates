@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { demoBasename } from './demoBasename.js';
 import { ThemeProvider, ToastProvider } from '@poluru-labs/enterprise-design-system-react';
 import { DashboardLayout } from './components/layout/DashboardLayout.jsx';
 import OverviewPage from './pages/OverviewPage.jsx';
@@ -14,7 +15,7 @@ export default function App() {
   return (
     <ThemeProvider defaultTheme="light">
       <ToastProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={demoBasename()}>
           <Routes>
             <Route path="/" element={<Navigate to="/document-rag/overview" replace />} />
             <Route path="/document-rag" element={<DashboardLayout />}>
