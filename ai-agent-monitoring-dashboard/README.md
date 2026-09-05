@@ -6,6 +6,10 @@ The project is intentionally self-contained: the screens use local JSON fixtures
 
 Theme color is `#003161`. Signed in as **Avery Poluru**, ops lead.
 
+## Screenshot
+<img width="3360" height="5030" alt="image" src="https://github.com/user-attachments/assets/8e2628ac-75bb-4f1a-b4a9-20857f54f287" />
+
+
 ## Features
 
 - Navy command-bar header with live SLO, alert, spend, and latency chips
