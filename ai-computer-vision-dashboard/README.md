@@ -6,6 +6,10 @@ The control room uses a dark teal top bar (`#042F2E` → `#0F766E`) over a light
 
 Signed-in operator: **Maya Poluru**, Vision ops lead.
 
+## Screenshot
+<img width="3360" height="3646" alt="image" src="https://github.com/user-attachments/assets/43173d0e-16de-415a-be43-5c70bfc2aa75" />
+
+
 ## Features
 
 - Dark teal control-room header with iris mark, live telemetry chips, search, time range, refresh, notifications, and avatar menu
