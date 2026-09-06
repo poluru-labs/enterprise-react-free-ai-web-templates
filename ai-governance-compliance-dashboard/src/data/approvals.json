@@ -1,0 +1,68 @@
+[
+  {
+    "id": "APR-104",
+    "title": "Raise Aurora Chat EU high-risk pack",
+    "model": "Aurora Chat",
+    "modelId": "aurora",
+    "requester": "Maya Poluru",
+    "approver": "Kavya Poluru",
+    "status": "Pending",
+    "submitted": "2026-09-02T14:10:00.000Z",
+    "slaHours": 18
+  },
+  {
+    "id": "APR-103",
+    "title": "Quill Copilot production hold",
+    "model": "Quill Copilot",
+    "modelId": "quill",
+    "requester": "Nikhil Poluru",
+    "approver": "Kavya Poluru",
+    "status": "In review",
+    "submitted": "2026-09-01T09:22:00.000Z",
+    "slaHours": 8
+  },
+  {
+    "id": "APR-102",
+    "title": "Harbor Vision face-blur waiver",
+    "model": "Harbor Vision",
+    "modelId": "harbor",
+    "requester": "Ishaan Poluru",
+    "approver": "Arjun Poluru",
+    "status": "Pending",
+    "submitted": "2026-08-30T16:40:00.000Z",
+    "slaHours": 40
+  },
+  {
+    "id": "APR-101",
+    "title": "Helix Classifier v1.8.0",
+    "model": "Helix Classifier",
+    "modelId": "helix",
+    "requester": "Rohan Poluru",
+    "approver": "Kavya Poluru",
+    "status": "Approved",
+    "submitted": "2026-08-21T11:05:00.000Z",
+    "slaHours": 0
+  },
+  {
+    "id": "APR-100",
+    "title": "Atlas Summarizer UK region",
+    "model": "Atlas Summarizer",
+    "modelId": "atlas",
+    "requester": "Harini Poluru",
+    "approver": "Maya Poluru",
+    "status": "Rejected",
+    "submitted": "2026-08-18T08:12:00.000Z",
+    "slaHours": 0
+  },
+  {
+    "id": "APR-099",
+    "title": "Northstar Embeddings retention 90d",
+    "model": "Northstar Embeddings",
+    "modelId": "northstar",
+    "requester": "Anika Poluru",
+    "approver": "Arjun Poluru",
+    "status": "Approved",
+    "submitted": "2026-08-12T13:30:00.000Z",
+    "slaHours": 0
+  }
+]

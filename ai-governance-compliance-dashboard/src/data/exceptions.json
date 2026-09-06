@@ -1,0 +1,38 @@
+[
+  {
+    "id": "EXP-12",
+    "title": "PII redaction waiver — Aurora staging",
+    "owner": "Maya Poluru",
+    "status": "Granted",
+    "expires": "2026-09-05",
+    "risk": "High",
+    "policy": "POL-02"
+  },
+  {
+    "id": "EXP-11",
+    "title": "Human review sampling 2% — Helix",
+    "owner": "Rohan Poluru",
+    "status": "Granted",
+    "expires": "2026-10-01",
+    "risk": "Medium",
+    "policy": "POL-03"
+  },
+  {
+    "id": "EXP-10",
+    "title": "On-prem exception — Harbor Vision",
+    "owner": "Ishaan Poluru",
+    "status": "Pending",
+    "expires": "2026-09-20",
+    "risk": "High",
+    "policy": "POL-05"
+  },
+  {
+    "id": "EXP-09",
+    "title": "Retention 365d — legal hold",
+    "owner": "Priya Poluru",
+    "status": "Expired",
+    "expires": "2026-08-15",
+    "risk": "Low",
+    "policy": "POL-04"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "workspace": {
+    "name": "Charter",
+    "slug": "charter-prod",
+    "region": "eu-central-1",
+    "timezone": "Europe/Berlin",
+    "retentionDays": 90,
+    "brandColor": "#B0CDE6"
+  },
+  "team": [
+    { "name": "Kavya Poluru", "role": "Owner" },
+    { "name": "Arjun Poluru", "role": "Editor" },
+    { "name": "Maya Poluru", "role": "Editor" },
+    { "name": "Rohan Poluru", "role": "Viewer" },
+    { "name": "Priya Poluru", "role": "Editor" },
+    { "name": "Nikhil Poluru", "role": "Viewer" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to Kavya Poluru", "enabled": true },
+    { "id": "pager", "label": "Page on expired exceptions", "enabled": true },
+    { "id": "legal", "label": "Legal queue for draft policies", "enabled": true },
+    { "id": "webhook", "label": "Webhook to GRC bus", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "arjun", "label": "Arjun Poluru" },
+    { "value": "maya", "label": "Maya Poluru" },
+    { "value": "rohan", "label": "Rohan Poluru" },
+    { "value": "priya", "label": "Priya Poluru" },
+    { "value": "nikhil", "label": "Nikhil Poluru" }
+  ]
+}

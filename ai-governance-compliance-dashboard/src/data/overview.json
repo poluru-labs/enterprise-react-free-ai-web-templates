@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "kicker": "FY26 Q3 · Charter",
+    "title": "Inventory is current. Two high-risk systems wait on sign-off.",
+    "body": "Kavya Poluru reviews EU AI Act coverage across six registered systems. Quill Copilot remains critical until human-review evidence lands."
+  },
+  "ticker": {
+    "models": "6",
+    "pending": "4",
+    "highRisk": "2",
+    "coverage": "91%"
+  },
+  "kpis": [
+    {
+      "id": "registered",
+      "label": "Registered systems",
+      "value": "6",
+      "hint": "vs 5 last quarter",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-collection",
+      "tone": "brand",
+      "sparkline": [4, 4, 5, 5, 5, 6]
+    },
+    {
+      "id": "pending",
+      "label": "Pending approvals",
+      "value": "4",
+      "hint": "SLA 3 business days",
+      "trend": "down",
+      "trendValue": "-2",
+      "icon": "bi-hourglass-split",
+      "tone": "warning",
+      "sparkline": [8, 7, 6, 5, 5, 4]
+    },
+    {
+      "id": "high",
+      "label": "High / critical",
+      "value": "2",
+      "hint": "Quill and Harbor",
+      "trend": "flat",
+      "trendValue": "0",
+      "icon": "bi-shield-exclamation",
+      "tone": "danger",
+      "sparkline": [3, 2, 2, 2, 2, 2]
+    },
+    {
+      "id": "policies",
+      "label": "Active policies",
+      "value": "9",
+      "hint": "1 draft in legal",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-journal-text",
+      "tone": "info",
+      "sparkline": [7, 7, 8, 8, 8, 9]
+    },
+    {
+      "id": "coverage",
+      "label": "Control coverage",
+      "value": "91%",
+      "hint": "vs 86% last period",
+      "trend": "up",
+      "trendValue": "+5%",
+      "icon": "bi-check2-circle",
+      "tone": "success",
+      "sparkline": [78, 81, 84, 86, 88, 91]
+    },
+    {
+      "id": "exceptions",
+      "label": "Open exceptions",
+      "value": "3",
+      "hint": "1 expires this week",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-exclamation-diamond",
+      "tone": "warning",
+      "sparkline": [1, 1, 2, 2, 2, 3]
+    }
+  ],
+  "reviewTrend": {
+    "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "series": [
+      { "name": "Reviews closed", "color": "#2C5268", "values": [6, 8, 5, 11, 9, 3, 2] },
+      { "name": "New requests", "color": "#6A9BC0", "values": [4, 7, 6, 8, 10, 2, 1] }
+    ]
+  },
+  "riskShare": [
+    { "name": "Critical", "value": 1, "color": "#dc2626" },
+    { "name": "High", "value": 1, "color": "#d97706" },
+    { "name": "Medium", "value": 2, "color": "#3D6A8A" },
+    { "name": "Low", "value": 2, "color": "#B0CDE6" }
+  ],
+  "alerts": [
+    {
+      "id": "a-01",
+      "variant": "warning",
+      "title": "Quill Copilot needs evidence",
+      "message": "Human-review pack is 4 days past due. Owner: Nikhil Poluru.",
+      "href": "/governance/inventory/quill"
+    },
+    {
+      "id": "a-02",
+      "variant": "info",
+      "title": "Policy POL-04 published",
+      "message": "Retention and deletion now applies to Harbor Vision logs.",
+      "href": "/governance/policies"
+    },
+    {
+      "id": "a-03",
+      "variant": "danger",
+      "title": "Exception EXP-12 expires Friday",
+      "message": "PII redaction waiver for Aurora Chat staging.",
+      "href": "/governance/exceptions"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tree": [
+    {
+      "id": "data",
+      "label": "Data protection",
+      "children": [
+        { "id": "pii", "label": "PII redaction" },
+        { "id": "retention", "label": "Retention clocks" },
+        { "id": "consents", "label": "Consent banners" }
+      ]
+    },
+    {
+      "id": "ops",
+      "label": "Operational",
+      "children": [
+        { "id": "human", "label": "Human review" },
+        { "id": "logging", "label": "Prompt logging" },
+        { "id": "secrets", "label": "Secret scanning" }
+      ]
+    },
+    {
+      "id": "vendor",
+      "label": "Vendor",
+      "children": [
+        { "id": "dpa", "label": "DPA on file" },
+        { "id": "sub", "label": "Subprocessors" }
+      ]
+    }
+  ],
+  "items": [
+    { "id": "pii", "label": "PII redaction", "owner": "Arjun Poluru", "coverage": 92, "enabled": true },
+    { "id": "human", "label": "Human review", "owner": "Maya Poluru", "coverage": 81, "enabled": true },
+    { "id": "logging", "label": "Prompt logging", "owner": "Dev Poluru", "coverage": 96, "enabled": true },
+    { "id": "secrets", "label": "Secret scanning", "owner": "Nikhil Poluru", "coverage": 74, "enabled": true },
+    { "id": "dpa", "label": "Vendor DPA", "owner": "Rohan Poluru", "coverage": 60, "enabled": false }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "POL-01",
+    "title": "Acceptable use",
+    "owner": "Kavya Poluru",
+    "status": "Published",
+    "appliesTo": "All systems",
+    "updated": "2026-07-14",
+    "summary": "No autonomous customer-facing send. Humans remain in the loop for High and Critical systems.",
+    "body": "Systems may draft. They may not publish, send, or execute without a named reviewer when residual risk is High or Critical."
+  },
+  {
+    "id": "POL-02",
+    "title": "PII handling",
+    "owner": "Arjun Poluru",
+    "status": "Published",
+    "appliesTo": "Aurora, Atlas, Harbor",
+    "updated": "2026-08-02",
+    "summary": "Minimize, redact, and retain for 90 days unless legal hold.",
+    "body": "Prompts and logs that may contain PII are redacted at ingest. Retention is 90 days. Legal hold is recorded in Charter."
+  },
+  {
+    "id": "POL-03",
+    "title": "Human review",
+    "owner": "Maya Poluru",
+    "status": "Published",
+    "appliesTo": "High and Critical",
+    "updated": "2026-06-20",
+    "summary": "Sampling at 5% for High, 100% for Critical until coverage is 90%.",
+    "body": "Critical systems require a named reviewer on every production action until control coverage is at least 90%."
+  },
+  {
+    "id": "POL-04",
+    "title": "Retention and deletion",
+    "owner": "Priya Poluru",
+    "status": "Published",
+    "appliesTo": "Harbor Vision",
+    "updated": "2026-08-28",
+    "summary": "Camera clips delete after 14 days. Events keep 180 days.",
+    "body": "Raw video is not exported. Face blur stays on. Clips older than 14 days are deleted automatically."
+  },
+  {
+    "id": "POL-05",
+    "title": "Vendor assessment",
+    "owner": "Rohan Poluru",
+    "status": "Draft",
+    "appliesTo": "Third-party models",
+    "updated": "2026-09-01",
+    "summary": "Legal is reviewing the Harbor Optics addendum.",
+    "body": "Third-party systems need a signed DPA, subprocessors list, and an annual residual-risk review."
+  },
+  {
+    "id": "POL-06",
+    "title": "EU AI Act mapping",
+    "owner": "Kavya Poluru",
+    "status": "Published",
+    "appliesTo": "Annex III systems",
+    "updated": "2026-05-11",
+    "summary": "Quill, Harbor, and Aurora are treated as high-risk until scored otherwise.",
+    "body": "Annex III mapping lives on each inventory record. Changes to intended purpose require a new approval."
+  }
+]

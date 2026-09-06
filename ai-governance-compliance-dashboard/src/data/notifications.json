@@ -1,0 +1,29 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "warning",
+      "title": "Quill evidence overdue",
+      "body": "Nikhil Poluru · 4 days past due",
+      "time": "2026-09-04T16:36:00.000Z",
+      "href": "/governance/inventory/quill"
+    },
+    {
+      "id": "n-02",
+      "tone": "danger",
+      "title": "Exception EXP-12 expires Friday",
+      "body": "Aurora Chat staging PII waiver",
+      "time": "2026-09-04T15:20:00.000Z",
+      "href": "/governance/exceptions"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "POL-04 published",
+      "body": "Priya Poluru · Harbor retention",
+      "time": "2026-08-28T15:48:00.000Z",
+      "href": "/governance/policies"
+    }
+  ]
+}

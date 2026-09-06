@@ -1,0 +1,38 @@
+[
+  {
+    "id": "AUD-44",
+    "title": "Q3 EU AI Act walkthrough",
+    "owner": "Kavya Poluru",
+    "status": "In review",
+    "date": "2026-09-03",
+    "systems": "Aurora, Quill, Harbor",
+    "finding": "Quill evidence pack incomplete"
+  },
+  {
+    "id": "AUD-43",
+    "title": "PII redaction sampling",
+    "owner": "Arjun Poluru",
+    "status": "Passed",
+    "date": "2026-08-19",
+    "systems": "Aurora Chat",
+    "finding": "No material gaps"
+  },
+  {
+    "id": "AUD-42",
+    "title": "Vendor DPA — Harbor Optics",
+    "owner": "Rohan Poluru",
+    "status": "Watch",
+    "date": "2026-08-11",
+    "systems": "Harbor Vision",
+    "finding": "Subprocessor list stale"
+  },
+  {
+    "id": "AUD-41",
+    "title": "Access review — embeddings",
+    "owner": "Anika Poluru",
+    "status": "Passed",
+    "date": "2026-07-28",
+    "systems": "Northstar Embeddings",
+    "finding": "Two unused keys revoked"
+  }
+]

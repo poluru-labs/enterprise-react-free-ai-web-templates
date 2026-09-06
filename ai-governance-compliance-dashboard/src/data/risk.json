@@ -1,0 +1,22 @@
+{
+  "bands": [
+    { "level": "Critical", "count": 1, "score": 92, "color": "#dc2626" },
+    { "level": "High", "count": 1, "score": 74, "color": "#d97706" },
+    { "level": "Medium", "count": 2, "score": 48, "color": "#3D6A8A" },
+    { "level": "Low", "count": 2, "score": 18, "color": "#B0CDE6" }
+  ],
+  "heatmap": [
+    { "name": "Quill Copilot", "impact": 5, "likelihood": 4, "owner": "Nikhil Poluru", "risk": "Critical" },
+    { "name": "Harbor Vision", "impact": 4, "likelihood": 3, "owner": "Ishaan Poluru", "risk": "High" },
+    { "name": "Aurora Chat", "impact": 4, "likelihood": 3, "owner": "Maya Poluru", "risk": "High" },
+    { "name": "Atlas Summarizer", "impact": 3, "likelihood": 2, "owner": "Harini Poluru", "risk": "Medium" },
+    { "name": "Helix Classifier", "impact": 3, "likelihood": 2, "owner": "Rohan Poluru", "risk": "Medium" },
+    { "name": "Northstar Embeddings", "impact": 2, "likelihood": 1, "owner": "Anika Poluru", "risk": "Low" }
+  ],
+  "factors": [
+    { "name": "Personal data", "value": 78, "color": "#2C5268" },
+    { "name": "Autonomy", "value": 64, "color": "#3D6A8A" },
+    { "name": "Safety impact", "value": 51, "color": "#6A9BC0" },
+    { "name": "Vendor lock-in", "value": 33, "color": "#B0CDE6" }
+  ]
+}
