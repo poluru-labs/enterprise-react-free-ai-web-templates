@@ -1,6 +1,5 @@
 {
   "name": "ai-prompt-management-dashboard",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "description": "Prompt Bureau — prompt control plane. Corporate navy #162E93, two-row manuscript header.",

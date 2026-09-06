@@ -1,6 +1,5 @@
 {
   "name": "ai-agent-monitoring-dashboard",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
