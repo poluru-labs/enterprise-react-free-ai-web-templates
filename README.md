@@ -9,7 +9,7 @@ A curated collection of free React templates for AI dashboards, SaaS products, a
 | [AI Agent Monitoring Dashboard](ai-agent-monitoring-dashboard/README.md) | AgentPulse — fleet ops, incidents, traces, guardrails, and cost. Theme `#003161`. Navy command bar. |
 | [AI Computer Vision Dashboard](ai-computer-vision-dashboard/README.md) | Sightline — cameras, models, detections, and quality. Theme `#0F766E`. Dark teal control-room header. |
 | [AI Content Moderation Dashboard](ai-content-moderation-dashboard/README.md) | ReviewBay — queue, policies, appeals, and automation. Theme `#7C3AED`. Light violet SLA ticker. |
-| [AI Document RAG Dashboard](ai-document-rag-dashboard/) | Document ingestion, retrieval, and question answering. |
+| [AI Document RAG Dashboard](ai-document-rag-dashboard/README.md) | Contextly — ingestion, retrieval, citations, and evals. Theme `#0F766E`. Paper canvas + teal brand. |
 | [AI LLM Ops Dashboard](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops — traces, playground, evals, and cost. Theme `#F13E93`. |
 | [AI ML Training Dashboard](ai-ml-training-dashboard/README.md) | Kiln — training runs, datasets, and GPU clusters. Theme `#DE3E3E`. |
 | [AI Model Evaluation Dashboard](ai-model-evaluation-dashboard/README.md) | Prism — eval suites, leaderboards, and human review. Theme `#FF8383`. |
