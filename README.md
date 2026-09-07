@@ -1,38 +1,85 @@
 # Enterprise React Free AI Web Templates
 
-A curated collection of free React templates for AI dashboards, SaaS products, admin panels, and internal tools. Each template is a self-contained Vite app that can be installed, developed, and built independently.
+Free, production-shaped React templates for AI dashboards, ops consoles, and admin workspaces. Each folder is a self-contained Vite app: install it, run it, and restyle it independently.
+
+Maintained by [Poluru Labs](https://polurus.com). Source: [github.com/poluru-labs/enterprise-react-free-ai-web-templates](https://github.com/poluru-labs/enterprise-react-free-ai-web-templates).
 
 ## Templates
 
-| Template | Description |
-| --- | --- |
-| [AI Agent Monitoring Dashboard](ai-agent-monitoring-dashboard/README.md) | AgentPulse — fleet ops, incidents, traces, guardrails, and cost. Theme `#003161`. Navy command bar. |
-| [AI Computer Vision Dashboard](ai-computer-vision-dashboard/README.md) | Sightline — cameras, models, detections, and quality. Theme `#0F766E`. Dark teal control-room header. |
-| [AI Content Moderation Dashboard](ai-content-moderation-dashboard/README.md) | ReviewBay — queue, policies, appeals, and automation. Theme `#7C3AED`. Light violet SLA ticker. |
-| [AI Document RAG Dashboard](ai-document-rag-dashboard/README.md) | Contextly — ingestion, retrieval, citations, and evals. Theme `#0F766E`. Paper canvas + teal brand. |
-| [AI Governance & Compliance Dashboard](ai-governance-compliance-dashboard/README.md) | Charter — inventories, risk, policies, and approvals. Theme `#B0CDE6`. Full-width sticky header. |
-| [AI LLM Ops Dashboard](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops — traces, playground, evals, and cost. Theme `#F13E93`. |
-| [AI ML Training Dashboard](ai-ml-training-dashboard/README.md) | Kiln — training runs, datasets, and GPU clusters. Theme `#DE3E3E`. |
-| [AI Model Evaluation Dashboard](ai-model-evaluation-dashboard/README.md) | Prism — eval suites, leaderboards, and human review. Theme `#FF8383`. |
-| [AI Prompt Management Dashboard](ai-prompt-management-dashboard/README.md) | Prompt Bureau — library, versions, evals, and releases. Theme `#162E93`. Two-row navy mast + paper tray. |
-| [AI SaaS Admin Dashboard](ai-saas-admin-dashboard/README.md) | Nexus — tenants, billing, flags, and audit. Theme `#059669`. Light emerald pill search. |
-| [AI Support Helpdesk Dashboard](ai-support-helpdesk-dashboard/README.md) | Relay — inbox, SLA, macros, and copilot drafts. Theme `#EA580C`. Cream SLA countdown header. |
-| [Enterprise Dashboard](enterprise-dashboard/README.md) | Poluru DC — facilities, power, capacity, and tickets. Theme `#30AFFF`. Frosted sky glass header. |
+| Template | Product | What it covers | Brand | Local demo |
+| --- | --- | --- | --- | --- |
+| [Agent monitoring](ai-agent-monitoring-dashboard/README.md) | AgentPulse | Fleet ops, incidents, traces, guardrails, and cost | `#003161` | [localhost:5173/agent-monitoring/overview](http://localhost:5173/agent-monitoring/overview) |
+| [Computer vision](ai-computer-vision-dashboard/README.md) | Sightline | Cameras, models, detections, and quality | `#0F766E` | [localhost:5173/computer-vision/overview](http://localhost:5173/computer-vision/overview) |
+| [Content moderation](ai-content-moderation-dashboard/README.md) | ReviewBay | Queue, policies, appeals, and automation | `#7C3AED` | [localhost:5173/content-moderation/overview](http://localhost:5173/content-moderation/overview) |
+| [Document RAG](ai-document-rag-dashboard/README.md) | Contextly | Ingestion, retrieval, citations, and evals | `#0F766E` | [localhost:5173/document-rag/overview](http://localhost:5173/document-rag/overview) |
+| [Governance](ai-governance-compliance-dashboard/README.md) | Charter | Inventories, risk, policies, and approvals | `#B0CDE6` | [localhost:5191/governance/overview](http://localhost:5191/governance/overview) |
+| [LLM ops](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops | Traces, playground, evals, and cost | `#4338CA` | [localhost:5185/llm-ops/overview](http://localhost:5185/llm-ops/overview) |
+| [ML training](ai-ml-training-dashboard/README.md) | Kiln | Training runs, datasets, and GPU clusters | `#DE3E3E` | [localhost:5184/ml-training/overview](http://localhost:5184/ml-training/overview) |
+| [Model evaluation](ai-model-evaluation-dashboard/README.md) | Prism | Eval suites, leaderboards, and human review | `#FF8383` | [localhost:5186](http://localhost:5186) |
+| [Prompt management](ai-prompt-management-dashboard/README.md) | Prompt Bureau | Library, versions, evals, and releases | `#162E93` | [localhost:5187/prompt-management/overview](http://localhost:5187/prompt-management/overview) |
+| [SaaS admin](ai-saas-admin-dashboard/README.md) | Nexus | Tenants, billing, flags, and audit | `#059669` | [localhost:5188/saas-admin/overview](http://localhost:5188/saas-admin/overview) |
+| [Support helpdesk](ai-support-helpdesk-dashboard/README.md) | Relay | Inbox, SLA, macros, and copilot drafts | `#EA580C` | [localhost:5189](http://localhost:5189) |
+| [Enterprise dashboard](enterprise-dashboard/README.md) | Poluru DC | Facilities, power, capacity, and tickets | `#30AFFF` | [localhost:5173](http://localhost:5173) |
+| [Security operations](ai-security-operations-center/README.md) | — | Prompt injection, data leaks, jailbreaks, and threats | — | README stub only |
 
-## Getting Started
+Browse source for any template:
 
-Choose a template, enter its directory, install dependencies, and start the Vite development server:
+`https://github.com/poluru-labs/enterprise-react-free-ai-web-templates/tree/main/<folder-name>`
+
+AgentPulse, Sightline, ReviewBay, Contextly, and Poluru DC use Vite’s default port **5173**. Start those one at a time, or pass `--port` when you run `npm run dev`. Prism uses hash routes (`#/overview`). `ai-security-operations-center` currently has a README only — no Vite app yet.
+
+## Getting started
+
+Requires Node.js 20+ (Node 18 works on several of the older templates).
 
 ```bash
-cd ai-agent-monitoring-dashboard
+git clone https://github.com/poluru-labs/enterprise-react-free-ai-web-templates.git
+cd enterprise-react-free-ai-web-templates/ai-agent-monitoring-dashboard
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite. To create a production build, run:
+Replace the folder name with any template from the table. Open the local demo URL for that app. Production build:
 
 ```bash
 npm run build
 ```
 
-Each template has its own `package.json`, so dependencies and scripts are scoped to that app. See the [AI Agent Monitoring Dashboard README](ai-agent-monitoring-dashboard/README.md) for a complete example of the available routes and project structure.
+Each template has its own `package.json`, so dependencies and scripts stay scoped to that app.
+
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Vite development server |
+| `npm test` | Vitest unit tests (where the template includes them) |
+| `npm run build` | Production build |
+| `npm run preview` | Preview the production build |
+
+## Stack
+
+Most templates share:
+
+- React 18 + React Router 6 (Poluru DC uses React 19, Router 7, and TypeScript)
+- Vite
+- Bootstrap 5 + Bootstrap Icons (Poluru DC uses SCSS instead of Bootstrap)
+- [`@poluru-labs/enterprise-design-system-react`](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react)
+- Vitest + Testing Library + jsdom
+
+Copy and mock data live in each app’s `src/data/`. Layout and brand color live in `src` CSS/SCSS and the header/shell components.
+
+Typical layout:
+
+```
+src/
+  App.jsx (or App.tsx)
+  main.jsx
+  components/layout/     header, sidebar, shell
+  components/widgets/    page header, stat cards, tables
+  components/charts/     SVG sparklines and charts
+  data/                  JSON fixtures
+  pages/ or views/
+  test/setup.js
+```
+
+## License
+
+MIT © 2026 [Subrahmanyam Poluru](https://polurus.com) / Poluru Labs
