@@ -1,0 +1,40 @@
+{
+  "workspace": {
+    "name": "Conduit",
+    "slug": "conduit-prod",
+    "region": "us-east-1",
+    "timezone": "America/Chicago",
+    "retentionDays": 45,
+    "brandColor": "#D45060"
+  },
+  "team": [
+    { "name": "Subbu Poluru", "role": "Owner" },
+    { "name": "Maya Poluru", "role": "Ingestion lead" },
+    { "name": "Arjun Poluru", "role": "Vision pipelines" },
+    { "name": "Priya Poluru", "role": "Lineage steward" },
+    { "name": "Dev Poluru", "role": "Feature store" },
+    { "name": "Ishaan Poluru", "role": "Privacy" },
+    { "name": "Leela Poluru", "role": "Support data" },
+    { "name": "Rohan Poluru", "role": "LLM events" }
+  ],
+  "channels": [
+    { "id": "digest", "label": "Daily digest to Subbu Poluru", "enabled": true },
+    { "id": "pager", "label": "Page on failed quality checks", "enabled": true },
+    { "id": "lag", "label": "Slack on lag over 15 minutes", "enabled": true },
+    { "id": "webhook", "label": "Webhook to pipeline bus", "enabled": false }
+  ],
+  "ownerOptions": [
+    { "value": "subbu", "label": "Subbu Poluru" },
+    { "value": "maya", "label": "Maya Poluru" },
+    { "value": "arjun", "label": "Arjun Poluru" },
+    { "value": "priya", "label": "Priya Poluru" },
+    { "value": "dev", "label": "Dev Poluru" },
+    { "value": "ishaan", "label": "Ishaan Poluru" }
+  ],
+  "pipelineOptions": [
+    { "value": "harbor-crm", "label": "Harbor CRM ingest" },
+    { "value": "quill-transcripts", "label": "Quill copilot transcripts" },
+    { "value": "lens-labels", "label": "Lens vision labels" },
+    { "value": "aurora-events", "label": "Aurora chat events" }
+  ]
+}

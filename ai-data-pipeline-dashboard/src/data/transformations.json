@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tf-features",
+    "pipelineId": "feature-nightly",
+    "name": "Core feature join",
+    "owner": "Dev Poluru",
+    "engine": "Spark SQL",
+    "status": "Healthy",
+    "runtime": "48m",
+    "rowsOut": 6200000,
+    "lastRun": "2026-09-08T07:02:00.000Z",
+    "sql": "SELECT contact_id, recency, spend_30d FROM crm.contacts JOIN billing.invoices"
+  },
+  {
+    "id": "tf-pii",
+    "pipelineId": "pii-redaction",
+    "name": "Quill PII mask",
+    "owner": "Ishaan Poluru",
+    "engine": "Flink",
+    "status": "Running",
+    "runtime": "streaming",
+    "rowsOut": 810000,
+    "lastRun": "2026-09-08T01:14:00.000Z",
+    "sql": "SELECT redact(body) AS body FROM quill.transcripts"
+  },
+  {
+    "id": "tf-lens",
+    "pipelineId": "lens-labels",
+    "name": "Lens label flatten",
+    "owner": "Arjun Poluru",
+    "engine": "Spark",
+    "status": "Failed",
+    "runtime": "18m",
+    "rowsOut": 0,
+    "lastRun": "2026-09-07T23:40:00.000Z",
+    "sql": "SELECT camera_id, explode(labels) FROM lens.raw"
+  },
+  {
+    "id": "tf-harbor",
+    "pipelineId": "harbor-crm",
+    "name": "CRM scd2 accounts",
+    "owner": "Maya Poluru",
+    "engine": "dbt",
+    "status": "Healthy",
+    "runtime": "9m",
+    "rowsOut": 184000,
+    "lastRun": "2026-09-08T01:08:00.000Z",
+    "sql": "SELECT * FROM {{ ref('stg_accounts') }} WHERE _is_current"
+  },
+  {
+    "id": "tf-aurora",
+    "pipelineId": "aurora-events",
+    "name": "Aurora session rollup",
+    "owner": "Rohan Poluru",
+    "engine": "Spark SQL",
+    "status": "Healthy",
+    "runtime": "6m",
+    "rowsOut": 42000,
+    "lastRun": "2026-09-08T01:06:00.000Z",
+    "sql": "SELECT session_id, count(*) AS turns FROM aurora.events GROUP BY 1"
+  },
+  {
+    "id": "tf-relay",
+    "pipelineId": "relay-tickets",
+    "name": "Ticket SLA windows",
+    "owner": "Leela Poluru",
+    "engine": "dbt",
+    "status": "Delayed",
+    "runtime": "14m",
+    "rowsOut": 12640,
+    "lastRun": "2026-09-08T00:52:00.000Z",
+    "sql": "SELECT ticket_id, datediff(first_reply, created) AS sla_hours"
+  },
+  {
+    "id": "tf-policy",
+    "pipelineId": "policy-pack",
+    "name": "Policy chunker",
+    "owner": "Priya Poluru",
+    "engine": "Python",
+    "status": "Healthy",
+    "runtime": "3m",
+    "rowsOut": 4200,
+    "lastRun": "2026-09-08T01:03:00.000Z",
+    "sql": "chunk(policy_text, 800)"
+  },
+  {
+    "id": "tf-embed",
+    "pipelineId": "quill-transcripts",
+    "name": "Transcript embeddings",
+    "owner": "Nikhil Poluru",
+    "engine": "Spark",
+    "status": "Queued",
+    "runtime": "—",
+    "rowsOut": 0,
+    "lastRun": "2026-09-07T22:10:00.000Z",
+    "sql": "embed(redacted_body) USING aurora-embed-v3"
+  }
+]

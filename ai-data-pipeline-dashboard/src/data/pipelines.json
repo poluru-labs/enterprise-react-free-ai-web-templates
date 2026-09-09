@@ -1,0 +1,249 @@
+[
+  {
+    "id": "harbor-crm",
+    "name": "Harbor CRM ingest",
+    "owner": "Maya Poluru",
+    "steward": "Subbu Poluru",
+    "status": "Running",
+    "sla": "ok",
+    "stage": "ingest",
+    "source": "Salesforce",
+    "destination": "warehouse.crm.contacts",
+    "schedule": "Continuous",
+    "engine": "Fivetran",
+    "rowsPerSec": 18420,
+    "lagMinutes": 0.7,
+    "qualityScore": 98.4,
+    "freshness": "2m",
+    "lastRun": "2026-09-08T01:12:00.000Z",
+    "volume24h": 1840000,
+    "purpose": "Land Harbor CRM contacts and accounts into the warehouse for copilot grounding.",
+    "tags": ["crm", "pii", "warehouse"],
+    "runs": [
+      { "id": "run-1842", "started": "2026-09-08T01:00:00.000Z", "duration": 12, "status": "Succeeded", "rows": 18420 },
+      { "id": "run-1841", "started": "2026-09-08T00:00:00.000Z", "duration": 11, "status": "Succeeded", "rows": 17640 },
+      { "id": "run-1840", "started": "2026-09-07T23:00:00.000Z", "duration": 14, "status": "Succeeded", "rows": 19110 }
+    ],
+    "stages": [
+      { "label": "Extract", "status": "Healthy" },
+      { "label": "Land", "status": "Healthy" },
+      { "label": "Quality", "status": "Passing" },
+      { "label": "Publish", "status": "Healthy" }
+    ]
+  },
+  {
+    "id": "quill-transcripts",
+    "name": "Quill copilot transcripts",
+    "owner": "Maya Poluru",
+    "steward": "Kavya Poluru",
+    "status": "Delayed",
+    "sla": "watch",
+    "stage": "ingest",
+    "source": "Kafka · quill.events",
+    "destination": "lake.quill.transcripts",
+    "schedule": "Streaming",
+    "engine": "Flink",
+    "rowsPerSec": 620,
+    "lagMinutes": 47,
+    "qualityScore": 91.2,
+    "freshness": "47m",
+    "lastRun": "2026-09-08T00:28:00.000Z",
+    "volume24h": 842000,
+    "purpose": "Stream Quill session transcripts for retrieval and quality scoring.",
+    "tags": ["kafka", "streaming", "pii"],
+    "runs": [
+      { "id": "run-902", "started": "2026-09-08T00:00:00.000Z", "duration": 47, "status": "Delayed", "rows": 18200 },
+      { "id": "run-901", "started": "2026-09-07T23:00:00.000Z", "duration": 12, "status": "Succeeded", "rows": 40120 },
+      { "id": "run-900", "started": "2026-09-07T22:00:00.000Z", "duration": 11, "status": "Succeeded", "rows": 38840 }
+    ],
+    "stages": [
+      { "label": "Consume", "status": "Delayed" },
+      { "label": "Parse", "status": "Healthy" },
+      { "label": "Quality", "status": "Watch" },
+      { "label": "Publish", "status": "Queued" }
+    ]
+  },
+  {
+    "id": "lens-labels",
+    "name": "Lens vision labels",
+    "owner": "Arjun Poluru",
+    "steward": "Nikhil Poluru",
+    "status": "Failed",
+    "sla": "breached",
+    "stage": "ingest",
+    "source": "S3 · lens-raw",
+    "destination": "lake.lens.labels",
+    "schedule": "Every 15m",
+    "engine": "Spark",
+    "rowsPerSec": 0,
+    "lagMinutes": 84,
+    "qualityScore": 72.1,
+    "freshness": "84m",
+    "lastRun": "2026-09-07T23:40:00.000Z",
+    "volume24h": 210400,
+    "purpose": "Ingest camera label batches from Sightline into the feature lake.",
+    "tags": ["vision", "s3", "batch"],
+    "runs": [
+      { "id": "run-441", "started": "2026-09-07T23:40:00.000Z", "duration": 18, "status": "Failed", "rows": 0 },
+      { "id": "run-440", "started": "2026-09-07T23:25:00.000Z", "duration": 9, "status": "Succeeded", "rows": 18400 },
+      { "id": "run-439", "started": "2026-09-07T23:10:00.000Z", "duration": 8, "status": "Succeeded", "rows": 17680 }
+    ],
+    "stages": [
+      { "label": "List objects", "status": "Failed" },
+      { "label": "Parse", "status": "Paused" },
+      { "label": "Quality", "status": "Failing" },
+      { "label": "Publish", "status": "Paused" }
+    ]
+  },
+  {
+    "id": "aurora-events",
+    "name": "Aurora chat events",
+    "owner": "Rohan Poluru",
+    "steward": "Subbu Poluru",
+    "status": "Running",
+    "sla": "ok",
+    "stage": "ingest",
+    "source": "Kinesis",
+    "destination": "lake.aurora.events",
+    "schedule": "Streaming",
+    "engine": "Flink",
+    "rowsPerSec": 9400,
+    "lagMinutes": 0.4,
+    "qualityScore": 99.1,
+    "freshness": "18s",
+    "lastRun": "2026-09-08T01:14:00.000Z",
+    "volume24h": 4210000,
+    "purpose": "Capture Aurora prompt and completion events for evals and cost.",
+    "tags": ["streaming", "llm", "events"],
+    "runs": [
+      { "id": "run-2201", "started": "2026-09-08T01:00:00.000Z", "duration": 14, "status": "Succeeded", "rows": 9400 },
+      { "id": "run-2200", "started": "2026-09-08T00:00:00.000Z", "duration": 14, "status": "Succeeded", "rows": 9120 }
+    ],
+    "stages": [
+      { "label": "Consume", "status": "Healthy" },
+      { "label": "Normalize", "status": "Healthy" },
+      { "label": "Quality", "status": "Passing" },
+      { "label": "Publish", "status": "Healthy" }
+    ]
+  },
+  {
+    "id": "policy-pack",
+    "name": "Policy pack sync",
+    "owner": "Priya Poluru",
+    "steward": "Kavya Poluru",
+    "status": "Healthy",
+    "sla": "ok",
+    "stage": "ingest",
+    "source": "Drive",
+    "destination": "lake.governance.policies",
+    "schedule": "Hourly",
+    "engine": "Airbyte",
+    "rowsPerSec": 12,
+    "lagMinutes": 8,
+    "qualityScore": 100,
+    "freshness": "8m",
+    "lastRun": "2026-09-08T01:00:00.000Z",
+    "volume24h": 1840,
+    "purpose": "Sync Charter policy packs into the lake for retrieval.",
+    "tags": ["governance", "docs"],
+    "runs": [
+      { "id": "run-88", "started": "2026-09-08T01:00:00.000Z", "duration": 4, "status": "Succeeded", "rows": 86 }
+    ],
+    "stages": [
+      { "label": "Fetch", "status": "Healthy" },
+      { "label": "Parse", "status": "Healthy" },
+      { "label": "Quality", "status": "Passing" },
+      { "label": "Publish", "status": "Healthy" }
+    ]
+  },
+  {
+    "id": "relay-tickets",
+    "name": "Relay ticket stream",
+    "owner": "Leela Poluru",
+    "steward": "Anika Poluru",
+    "status": "Running",
+    "sla": "ok",
+    "stage": "ingest",
+    "source": "Zendesk",
+    "destination": "warehouse.support.tickets",
+    "schedule": "Every 5m",
+    "engine": "Airbyte",
+    "rowsPerSec": 84,
+    "lagMinutes": 3,
+    "qualityScore": 97.6,
+    "freshness": "3m",
+    "lastRun": "2026-09-08T01:10:00.000Z",
+    "volume24h": 12640,
+    "purpose": "Land Relay helpdesk tickets for SLA dashboards and copilot macros.",
+    "tags": ["support", "batch"],
+    "runs": [
+      { "id": "run-310", "started": "2026-09-08T01:10:00.000Z", "duration": 2, "status": "Succeeded", "rows": 84 }
+    ],
+    "stages": [
+      { "label": "Extract", "status": "Healthy" },
+      { "label": "Land", "status": "Healthy" },
+      { "label": "Quality", "status": "Passing" },
+      { "label": "Publish", "status": "Healthy" }
+    ]
+  },
+  {
+    "id": "feature-nightly",
+    "name": "Feature store nightly",
+    "owner": "Dev Poluru",
+    "steward": "Subbu Poluru",
+    "status": "Healthy",
+    "sla": "ok",
+    "stage": "transform",
+    "source": "lake.*",
+    "destination": "feat.store.core",
+    "schedule": "02:00 CT",
+    "engine": "Spark",
+    "rowsPerSec": 2100,
+    "lagMinutes": 18,
+    "qualityScore": 99.4,
+    "freshness": "18m",
+    "lastRun": "2026-09-08T07:02:00.000Z",
+    "volume24h": 6200000,
+    "purpose": "Build nightly features for Aurora ranking and Harbor next-best-action.",
+    "tags": ["spark", "features"],
+    "runs": [
+      { "id": "run-77", "started": "2026-09-08T07:02:00.000Z", "duration": 48, "status": "Succeeded", "rows": 6200000 }
+    ],
+    "stages": [
+      { "label": "Join", "status": "Healthy" },
+      { "label": "Aggregate", "status": "Healthy" },
+      { "label": "Quality", "status": "Passing" },
+      { "label": "Publish", "status": "Healthy" }
+    ]
+  },
+  {
+    "id": "pii-redaction",
+    "name": "PII redaction lane",
+    "owner": "Ishaan Poluru",
+    "steward": "Kavya Poluru",
+    "status": "Running",
+    "sla": "ok",
+    "stage": "transform",
+    "source": "lake.quill.transcripts",
+    "destination": "lake.quill.redacted",
+    "schedule": "Streaming",
+    "engine": "Flink",
+    "rowsPerSec": 580,
+    "lagMinutes": 1.2,
+    "qualityScore": 99.8,
+    "freshness": "1m",
+    "lastRun": "2026-09-08T01:14:00.000Z",
+    "volume24h": 810000,
+    "purpose": "Strip identifiers from Quill transcripts before retrieval indexes.",
+    "tags": ["pii", "streaming", "compliance"],
+    "runs": [
+      { "id": "run-55", "started": "2026-09-08T01:00:00.000Z", "duration": 14, "status": "Succeeded", "rows": 34800 }
+    ],
+    "stages": [
+      { "label": "Detect", "status": "Healthy" },
+      { "label": "Mask", "status": "Healthy" },
+      { "label": "Quality", "status": "Passing" },
+      { "label": "Publish", "status": "Healthy" }
+    ]
+  }
+]

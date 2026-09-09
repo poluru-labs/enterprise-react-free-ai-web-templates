@@ -1,0 +1,29 @@
+{
+  "unread": 3,
+  "items": [
+    {
+      "id": "n-01",
+      "tone": "warning",
+      "title": "Quill consumer lag 47m",
+      "body": "Maya Poluru · Kafka offsets stalled after midnight",
+      "time": "2026-09-08T00:28:00.000Z",
+      "href": "/data-pipeline/ingestion"
+    },
+    {
+      "id": "n-02",
+      "tone": "danger",
+      "title": "Lens schema check failing",
+      "body": "Arjun Poluru · label_confidence nulls at 4.8%",
+      "time": "2026-09-07T23:42:00.000Z",
+      "href": "/data-pipeline/quality"
+    },
+    {
+      "id": "n-03",
+      "tone": "info",
+      "title": "Harbor lineage remapped",
+      "body": "Priya Poluru added crm.accounts downstream",
+      "time": "2026-09-07T18:12:00.000Z",
+      "href": "/data-pipeline/lineage"
+    }
+  ]
+}

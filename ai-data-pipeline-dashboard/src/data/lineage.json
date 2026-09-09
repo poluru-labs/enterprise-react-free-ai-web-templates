@@ -1,0 +1,41 @@
+{
+  "columns": [
+    { "id": "sources", "label": "Sources" },
+    { "id": "ingest", "label": "Ingest" },
+    { "id": "transform", "label": "Transform" },
+    { "id": "serving", "label": "Serving" }
+  ],
+  "nodes": [
+    { "id": "src-salesforce", "label": "Salesforce", "kind": "source", "column": "sources", "owner": "Maya Poluru", "status": "Healthy" },
+    { "id": "src-kafka", "label": "Kafka quill.events", "kind": "source", "column": "sources", "owner": "Maya Poluru", "status": "Delayed" },
+    { "id": "src-s3", "label": "S3 lens-raw", "kind": "source", "column": "sources", "owner": "Arjun Poluru", "status": "Failed" },
+    { "id": "src-kinesis", "label": "Kinesis aurora", "kind": "source", "column": "sources", "owner": "Rohan Poluru", "status": "Healthy" },
+    { "id": "job-harbor", "label": "Harbor CRM ingest", "kind": "job", "column": "ingest", "owner": "Maya Poluru", "status": "Running", "pipelineId": "harbor-crm" },
+    { "id": "job-quill", "label": "Quill transcripts", "kind": "job", "column": "ingest", "owner": "Maya Poluru", "status": "Delayed", "pipelineId": "quill-transcripts" },
+    { "id": "job-lens", "label": "Lens labels", "kind": "job", "column": "ingest", "owner": "Arjun Poluru", "status": "Failed", "pipelineId": "lens-labels" },
+    { "id": "job-aurora", "label": "Aurora events", "kind": "job", "column": "ingest", "owner": "Rohan Poluru", "status": "Running", "pipelineId": "aurora-events" },
+    { "id": "tf-harbor", "label": "CRM scd2", "kind": "transform", "column": "transform", "owner": "Maya Poluru", "status": "Healthy", "pipelineId": "harbor-crm" },
+    { "id": "tf-pii", "label": "PII redaction", "kind": "transform", "column": "transform", "owner": "Ishaan Poluru", "status": "Running", "pipelineId": "pii-redaction" },
+    { "id": "tf-features", "label": "Feature nightly", "kind": "transform", "column": "transform", "owner": "Dev Poluru", "status": "Healthy", "pipelineId": "feature-nightly" },
+    { "id": "tf-embed", "label": "Transcript embed", "kind": "transform", "column": "transform", "owner": "Nikhil Poluru", "status": "Queued", "pipelineId": "quill-transcripts" },
+    { "id": "srv-warehouse", "label": "Warehouse CRM", "kind": "serving", "column": "serving", "owner": "Subbu Poluru", "status": "Healthy" },
+    { "id": "srv-feat", "label": "Feature store", "kind": "serving", "column": "serving", "owner": "Dev Poluru", "status": "Healthy" },
+    { "id": "srv-index", "label": "Retrieval index", "kind": "serving", "column": "serving", "owner": "Nikhil Poluru", "status": "Watch" },
+    { "id": "srv-evals", "label": "Eval lake", "kind": "serving", "column": "serving", "owner": "Rohan Poluru", "status": "Healthy" }
+  ],
+  "edges": [
+    { "id": "e1", "from": "src-salesforce", "to": "job-harbor" },
+    { "id": "e2", "from": "src-kafka", "to": "job-quill" },
+    { "id": "e3", "from": "src-s3", "to": "job-lens" },
+    { "id": "e4", "from": "src-kinesis", "to": "job-aurora" },
+    { "id": "e5", "from": "job-harbor", "to": "tf-harbor" },
+    { "id": "e6", "from": "job-quill", "to": "tf-pii" },
+    { "id": "e7", "from": "job-aurora", "to": "tf-features" },
+    { "id": "e8", "from": "tf-harbor", "to": "srv-warehouse" },
+    { "id": "e9", "from": "tf-harbor", "to": "tf-features" },
+    { "id": "e10", "from": "tf-features", "to": "srv-feat" },
+    { "id": "e11", "from": "tf-pii", "to": "tf-embed" },
+    { "id": "e12", "from": "tf-embed", "to": "srv-index" },
+    { "id": "e13", "from": "job-aurora", "to": "srv-evals" }
+  ]
+}

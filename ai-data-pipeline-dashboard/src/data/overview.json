@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "kicker": "Poluru Data · Conduit",
+    "title": "Harbor CRM is streaming. Quill transcripts lag 47 minutes.",
+    "body": "Subbu Poluru watches eight named lanes across ingest, transform, quality, and lineage. Replay is queued for the Quill window that missed Kafka offsets overnight."
+  },
+  "ticker": {
+    "rowsPerSec": "42.1K",
+    "lag": "47s",
+    "failing": "2",
+    "fresh": "96%"
+  },
+  "stages": [
+    { "id": "ingest", "label": "Ingest", "count": 12, "hint": "11 healthy", "tone": "ok" },
+    { "id": "transform", "label": "Transform", "count": 8, "hint": "1 delayed", "tone": "warn" },
+    { "id": "quality", "label": "Quality", "count": 24, "hint": "2 failing", "tone": "danger" },
+    { "id": "lineage", "label": "Lineage", "count": 36, "hint": "mapped", "tone": "ok" }
+  ],
+  "kpis": [
+    {
+      "id": "volume",
+      "label": "Rows ingested",
+      "value": "18.4M",
+      "hint": "last 24 hours",
+      "trend": "up",
+      "trendValue": "+6.2%",
+      "icon": "bi-box-arrow-in-down",
+      "tone": "brand",
+      "sparkline": [12.1, 13.4, 14.8, 15.2, 16.9, 18.4]
+    },
+    {
+      "id": "jobs",
+      "label": "Active jobs",
+      "value": "20",
+      "hint": "12 ingest · 8 transform",
+      "trend": "flat",
+      "trendValue": "0",
+      "icon": "bi-activity",
+      "tone": "info",
+      "sparkline": [18, 19, 19, 20, 20, 20]
+    },
+    {
+      "id": "failing",
+      "label": "Failing checks",
+      "value": "2",
+      "hint": "Quill nulls · Lens schema",
+      "trend": "up",
+      "trendValue": "+1",
+      "icon": "bi-exclamation-diamond",
+      "tone": "danger",
+      "sparkline": [0, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "freshness",
+      "label": "Freshness SLA",
+      "value": "96%",
+      "hint": "vs 94% last week",
+      "trend": "up",
+      "trendValue": "+2%",
+      "icon": "bi-clock-history",
+      "tone": "success",
+      "sparkline": [91, 92, 93, 94, 95, 96]
+    },
+    {
+      "id": "lag",
+      "label": "Median lag",
+      "value": "47s",
+      "hint": "Quill outlier 47m",
+      "trend": "down",
+      "trendValue": "-9s",
+      "icon": "bi-hourglass-split",
+      "tone": "warning",
+      "sparkline": [72, 68, 61, 55, 51, 47]
+    },
+    {
+      "id": "lineage",
+      "label": "Mapped assets",
+      "value": "36",
+      "hint": "sources to serving",
+      "trend": "up",
+      "trendValue": "+3",
+      "icon": "bi-diagram-3",
+      "tone": "info",
+      "sparkline": [28, 30, 32, 33, 34, 36]
+    }
+  ],
+  "volumeTrend": {
+    "labels": ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue"],
+    "series": [
+      { "name": "Ingested", "color": "#D45060", "values": [12.4, 13.1, 14.8, 11.2, 10.6, 16.4, 18.4] },
+      { "name": "Transformed", "color": "#8F2E3B", "values": [11.1, 12.4, 13.9, 10.4, 9.8, 15.1, 17.2] }
+    ]
+  },
+  "qualityShare": [
+    { "name": "Passing", "value": 22, "color": "#059669" },
+    { "name": "Watch", "value": 4, "color": "#d97706" },
+    { "name": "Failing", "value": 2, "color": "#D45060" }
+  ],
+  "alerts": [
+    {
+      "id": "a-01",
+      "variant": "warning",
+      "title": "Quill transcripts delayed",
+      "message": "Kafka consumer lag hit 47 minutes. Maya Poluru owns the replay window.",
+      "href": "/data-pipeline/ingestion"
+    },
+    {
+      "id": "a-02",
+      "variant": "danger",
+      "title": "Lens schema check failing",
+      "message": "Null rate on label_confidence breached 4% for two consecutive runs.",
+      "href": "/data-pipeline/quality"
+    },
+    {
+      "id": "a-03",
+      "variant": "info",
+      "title": "Harbor lineage remapped",
+      "message": "Priya Poluru added crm.accounts as a downstream of Harbor CRM ingest.",
+      "href": "/data-pipeline/lineage"
+    }
+  ]
+}
