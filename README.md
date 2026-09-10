@@ -22,10 +22,11 @@ Maintained by [Poluru Labs](https://polurus.com). Source: [github.com/poluru-lab
 | [SaaS admin](ai-saas-admin-dashboard/README.md) | Nexus | Tenants, billing, flags, and audit | `#059669` | [localhost:5188/saas-admin/overview](http://localhost:5188/saas-admin/overview) |
 | [Support helpdesk](ai-support-helpdesk-dashboard/README.md) | Relay | Inbox, SLA, macros, and copilot drafts | `#EA580C` | [localhost:5189](http://localhost:5189) |
 | [Synthetic data studio](ai-synthetic-data-studio/README.md) | Poluru Synth Studio | Synthetic datasets, differential privacy, quality & TSTR evals | `#05339C` | [localhost:5194/synthetic-data/overview](http://localhost:5194/synthetic-data/overview) |
+| [Voice operations](ai-voice-operations-dashboard/README.md) | — | Analyze calls, transcriptions, sentiment, and escalations | — | README stub only |
 | [Enterprise dashboard](enterprise-dashboard/README.md) | Poluru DC | Facilities, power, capacity, and tickets | `#30AFFF` | [localhost:5173](http://localhost:5173) |
 | [Security operations](ai-security-operations-center/README.md) | — | Prompt injection, data leaks, jailbreaks, and threats | — | README stub only |
 
-Marquee uses port **5193**. AgentPulse, Sightline, ReviewBay, Contextly, and Poluru DC use Vite’s default port **5173**. Start those one at a time, or pass `--port` when you run `npm run dev`. Prism uses hash routes (`#/overview`). `ai-security-operations-center` currently has a README only — no Vite app yet.
+Marquee uses port **5193**. AgentPulse, Sightline, ReviewBay, Contextly, and Poluru DC use Vite’s default port **5173**. Start those one at a time, or pass `--port` when you run `npm run dev`. Prism uses hash routes (`#/overview`). `ai-security-operations-center` and `ai-voice-operations-dashboard` currently have README stubs only — no Vite app yet.
 
 Browse source for any template:
 
