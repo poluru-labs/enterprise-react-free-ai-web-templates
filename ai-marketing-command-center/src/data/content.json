@@ -1,0 +1,10 @@
+[
+  { "id": "ct-essay", "name": "Why trustees stay", "type": "Article", "channel": "Owned", "owner": "Kavya Poluru", "status": "Live", "impressions": 84200, "ctr": 4.8, "dwell": 214, "conversions": 96, "campaign": "Autumn enrollment" },
+  { "id": "ct-webinar", "name": "24 Sep briefing cut", "type": "Video", "channel": "Paid", "owner": "Maya Poluru", "status": "Live", "impressions": 126400, "ctr": 2.6, "dwell": 88, "conversions": 74, "campaign": "Trust webinar" },
+  { "id": "ct-soc2", "name": "Type II one-pager", "type": "PDF", "channel": "Owned", "owner": "Anika Poluru", "status": "Scheduled", "impressions": 0, "ctr": 0, "dwell": 0, "conversions": 0, "campaign": "SOC 2 launch" },
+  { "id": "ct-footer", "name": "Clinic footer v3", "type": "Email module", "channel": "Email", "owner": "Elena Poluru", "status": "Review", "impressions": 6200, "ctr": 1.1, "dwell": 41, "conversions": 4, "campaign": "HIPAA clinic" },
+  { "id": "ct-ref", "name": "Introduce one buyer", "type": "Email", "channel": "Automation", "owner": "Dev Poluru", "status": "Live", "impressions": 9180, "ctr": 6.4, "dwell": 96, "conversions": 61, "campaign": "Referral loop" },
+  { "id": "ct-search", "name": "Exact-match RSA", "type": "Ad", "channel": "Paid", "owner": "Ishaan Poluru", "status": "Watch", "impressions": 214000, "ctr": 1.7, "dwell": 12, "conversions": 38, "campaign": "Brand search" },
+  { "id": "ct-q4", "name": "Platform story 02", "type": "Article", "channel": "Owned", "owner": "Priya Poluru", "status": "Live", "impressions": 44100, "ctr": 5.1, "dwell": 188, "conversions": 52, "campaign": "Q4 nurture" },
+  { "id": "ct-social", "name": "Austin partner teaser", "type": "Social", "channel": "Owned", "owner": "Rohan Poluru", "status": "Draft", "impressions": 0, "ctr": 0, "dwell": 0, "conversions": 0, "campaign": "Partner day" }
+]

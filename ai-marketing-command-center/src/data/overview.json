@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "kicker": "Poluru Growth · week of 8 Sep",
+    "title": "Autumn flights are converting. GDPR nurture still sits on watch.",
+    "body": "Subbu Poluru holds the desk. Kavya Poluru owns email. Maya Poluru owns paid. Anika Poluru paused the HIPAA clinic send until legal clears the footer."
+  },
+  "ticker": {
+    "roas": "4.2x",
+    "spend": "$186k",
+    "live": 5,
+    "converting": 3
+  },
+  "stages": [
+    { "id": "audience", "label": "Audience", "count": 6, "hint": "Named segments", "tone": "ok" },
+    { "id": "campaign", "label": "Campaign", "count": 8, "hint": "5 live", "tone": "ok" },
+    { "id": "content", "label": "Content", "count": 12, "hint": "2 underperforming", "tone": "warn" },
+    { "id": "automate", "label": "Automate", "count": 5, "hint": "Welcome sending", "tone": "ok" }
+  ],
+  "kpis": [
+    { "id": "spend", "label": "Spend MTD", "value": "$186k", "hint": "of $240k September cap", "trend": "up", "trendValue": "+8%", "icon": "bi-cash-stack", "tone": "brand", "sparkline": [118, 124, 131, 142, 151, 164, 186] },
+    { "id": "roas", "label": "Blended ROAS", "value": "4.2x", "hint": "Paid + email + partner", "trend": "up", "trendValue": "+0.3x", "icon": "bi-graph-up", "tone": "success", "sparkline": [3.4, 3.5, 3.6, 3.8, 3.9, 4.0, 4.2] },
+    { "id": "pipeline", "label": "Attributed pipeline", "value": "$2.4M", "hint": "Influenced opportunities", "trend": "up", "trendValue": "+12%", "icon": "bi-briefcase", "tone": "info", "sparkline": [1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4] },
+    { "id": "ctr", "label": "Avg CTR", "value": "3.8%", "hint": "All live creative", "trend": "flat", "trendValue": "Hold", "icon": "bi-cursor", "tone": "brand", "sparkline": [3.6, 3.7, 3.9, 3.8, 3.7, 3.8, 3.8] },
+    { "id": "reach", "label": "Reach", "value": "412k", "hint": "Unique this month", "trend": "up", "trendValue": "+6%", "icon": "bi-people", "tone": "info", "sparkline": [310, 328, 344, 361, 378, 396, 412] },
+    { "id": "watch", "label": "On watch", "value": "2", "hint": "HIPAA clinic + GDPR footer", "trend": "down", "trendValue": "−1", "icon": "bi-exclamation-triangle", "tone": "warning", "sparkline": [4, 4, 3, 3, 2, 2, 2] }
+  ],
+  "spendTrend": {
+    "labels": ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue"],
+    "series": [
+      { "name": "Paid", "color": "#3E0F8D", "values": [18, 21, 19, 12, 11, 24, 26] },
+      { "name": "Email", "color": "#6B3BC4", "values": [8, 9, 11, 6, 5, 10, 12] }
+    ]
+  },
+  "channelShare": [
+    { "name": "Email", "value": 38, "color": "#3E0F8D" },
+    { "name": "Paid", "value": 31, "color": "#6B3BC4" },
+    { "name": "Content", "value": 18, "color": "#C7AEEA" },
+    { "name": "Automation", "value": 13, "color": "#1C0641" }
+  ],
+  "alerts": [
+    {
+      "id": "a1",
+      "variant": "warning",
+      "title": "HIPAA clinic send paused",
+      "message": "Anika Poluru held the footer until Elena Poluru clears the privacy line.",
+      "href": "/marketing/campaigns/cmp-hipaa"
+    },
+    {
+      "id": "a2",
+      "variant": "info",
+      "title": "Welcome journey at 94% delivery",
+      "message": "Leela Poluru’s new-trustee sequence sent 1,204 messages yesterday.",
+      "href": "/marketing/automation"
+    },
+    {
+      "id": "a3",
+      "variant": "danger",
+      "title": "Brand search CPC up 18%",
+      "message": "Ishaan Poluru should recut the trustee exact-match set before Friday.",
+      "href": "/marketing/campaigns/cmp-search"
+    }
+  ]
+}

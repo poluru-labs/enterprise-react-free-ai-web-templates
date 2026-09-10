@@ -1,0 +1,211 @@
+[
+  {
+    "id": "cmp-autumn",
+    "name": "Autumn enrollment",
+    "channel": "Email",
+    "audience": "Trustees",
+    "owner": "Kavya Poluru",
+    "status": "Live",
+    "spend": 28400,
+    "roas": 5.1,
+    "ctr": 4.6,
+    "conversions": 312,
+    "purpose": "Nurture existing trustees into the autumn plan.",
+    "steward": "Subbu Poluru",
+    "schedule": "Daily 09:00 CT",
+    "lastRun": "2026-09-08T14:10:00.000Z",
+    "tags": ["email", "nurture", "trust"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Live" },
+      { "label": "Send", "status": "Live" },
+      { "label": "Report", "status": "Watch" }
+    ],
+    "runs": [
+      { "id": "SND-441", "started": "2026-09-08T14:00:00.000Z", "duration": 12, "status": "Succeeded", "rows": 18420 },
+      { "id": "SND-440", "started": "2026-09-07T14:00:00.000Z", "duration": 11, "status": "Succeeded", "rows": 17980 },
+      { "id": "SND-439", "started": "2026-09-06T14:00:00.000Z", "duration": 14, "status": "Watch", "rows": 16840 }
+    ]
+  },
+  {
+    "id": "cmp-webinar",
+    "name": "Trust webinar",
+    "channel": "Paid",
+    "audience": "Finance buyers",
+    "owner": "Maya Poluru",
+    "status": "Live",
+    "spend": 61200,
+    "roas": 3.8,
+    "ctr": 2.9,
+    "conversions": 186,
+    "purpose": "Fill the 24 Sep trustee briefing.",
+    "steward": "Arjun Poluru",
+    "schedule": "Always on",
+    "lastRun": "2026-09-08T18:40:00.000Z",
+    "tags": ["paid", "linkedin", "event"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Live" },
+      { "label": "Bid", "status": "Live" },
+      { "label": "Report", "status": "Live" }
+    ],
+    "runs": [
+      { "id": "AD-118", "started": "2026-09-08T00:00:00.000Z", "duration": 1440, "status": "Succeeded", "rows": 84200 },
+      { "id": "AD-117", "started": "2026-09-07T00:00:00.000Z", "duration": 1440, "status": "Succeeded", "rows": 80110 }
+    ]
+  },
+  {
+    "id": "cmp-soc2",
+    "name": "SOC 2 launch",
+    "channel": "Content",
+    "audience": "Engineering leads",
+    "owner": "Anika Poluru",
+    "status": "Scheduled",
+    "spend": 8400,
+    "roas": 0,
+    "ctr": 0,
+    "conversions": 0,
+    "purpose": "Announce Type II with the Aegis packet.",
+    "steward": "Priya Poluru",
+    "schedule": "18 Sep 08:00 CT",
+    "lastRun": "2026-09-04T16:00:00.000Z",
+    "tags": ["content", "launch"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Review" },
+      { "label": "Send", "status": "Scheduled" },
+      { "label": "Report", "status": "Draft" }
+    ],
+    "runs": [
+      { "id": "PRE-12", "started": "2026-09-04T16:00:00.000Z", "duration": 8, "status": "Succeeded", "rows": 240 }
+    ]
+  },
+  {
+    "id": "cmp-hipaa",
+    "name": "HIPAA clinic",
+    "channel": "Email",
+    "audience": "Clinic ops",
+    "owner": "Leela Poluru",
+    "status": "Paused",
+    "spend": 4200,
+    "roas": 1.2,
+    "ctr": 1.4,
+    "conversions": 18,
+    "purpose": "Clinic walkthrough invite. Legal hold on the footer.",
+    "steward": "Anika Poluru",
+    "schedule": "Held",
+    "lastRun": "2026-09-02T11:20:00.000Z",
+    "tags": ["email", "hipaa", "hold"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Review" },
+      { "label": "Send", "status": "Paused" },
+      { "label": "Report", "status": "Watch" }
+    ],
+    "runs": [
+      { "id": "SND-318", "started": "2026-09-02T11:00:00.000Z", "duration": 9, "status": "Watch", "rows": 6200 }
+    ]
+  },
+  {
+    "id": "cmp-referral",
+    "name": "Referral loop",
+    "channel": "Automation",
+    "audience": "Alumni",
+    "owner": "Dev Poluru",
+    "status": "Live",
+    "spend": 1900,
+    "roas": 7.4,
+    "ctr": 6.1,
+    "conversions": 94,
+    "purpose": "Ask alumni to introduce one finance buyer.",
+    "steward": "Rohan Poluru",
+    "schedule": "Trigger on renewal",
+    "lastRun": "2026-09-08T09:12:00.000Z",
+    "tags": ["automation", "referral"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Live" },
+      { "label": "Send", "status": "Live" },
+      { "label": "Report", "status": "Live" }
+    ],
+    "runs": [
+      { "id": "JOY-88", "started": "2026-09-08T09:00:00.000Z", "duration": 4, "status": "Succeeded", "rows": 126 }
+    ]
+  },
+  {
+    "id": "cmp-search",
+    "name": "Brand search",
+    "channel": "Paid",
+    "audience": "Trustees",
+    "owner": "Ishaan Poluru",
+    "status": "Watch",
+    "spend": 44800,
+    "roas": 2.6,
+    "ctr": 1.8,
+    "conversions": 74,
+    "purpose": "Protect Poluru Trust exact match.",
+    "steward": "Maya Poluru",
+    "schedule": "Always on",
+    "lastRun": "2026-09-08T18:40:00.000Z",
+    "tags": ["paid", "search"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Live" },
+      { "label": "Bid", "status": "Watch" },
+      { "label": "Report", "status": "Watch" }
+    ],
+    "runs": [
+      { "id": "AD-90", "started": "2026-09-08T00:00:00.000Z", "duration": 1440, "status": "Watch", "rows": 41200 }
+    ]
+  },
+  {
+    "id": "cmp-nurture",
+    "name": "Q4 nurture",
+    "channel": "Email",
+    "audience": "Engineering leads",
+    "owner": "Priya Poluru",
+    "status": "Live",
+    "spend": 9600,
+    "roas": 4.8,
+    "ctr": 5.2,
+    "conversions": 141,
+    "purpose": "Four-week product story after the SOC 2 launch.",
+    "steward": "Kavya Poluru",
+    "schedule": "Tue / Thu 10:00 CT",
+    "lastRun": "2026-09-08T15:02:00.000Z",
+    "tags": ["email", "nurture"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Live" },
+      { "label": "Send", "status": "Live" },
+      { "label": "Report", "status": "Live" }
+    ],
+    "runs": [
+      { "id": "SND-512", "started": "2026-09-08T15:00:00.000Z", "duration": 10, "status": "Succeeded", "rows": 22140 }
+    ]
+  },
+  {
+    "id": "cmp-partner",
+    "name": "Partner day",
+    "channel": "Event",
+    "audience": "Partners",
+    "owner": "Rohan Poluru",
+    "status": "Draft",
+    "spend": 0,
+    "roas": 0,
+    "ctr": 0,
+    "conversions": 0,
+    "purpose": "Invite the six preferred partners to Austin.",
+    "steward": "Elena Poluru",
+    "schedule": "Draft",
+    "lastRun": "2026-09-01T12:00:00.000Z",
+    "tags": ["event", "draft"],
+    "stages": [
+      { "label": "Audience", "status": "Live" },
+      { "label": "Creative", "status": "Draft" },
+      { "label": "Send", "status": "Draft" },
+      { "label": "Report", "status": "Draft" }
+    ],
+    "runs": []
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "trustees", "name": "Trustees", "size": 48200, "owner": "Kavya Poluru", "status": "Live", "source": "Harbor CRM", "freshness": "2h", "fit": 92, "notes": "Primary buyers. Exclude paused clinics." },
+  { "id": "clinic", "name": "Clinic ops", "size": 22140, "owner": "Leela Poluru", "status": "Watch", "source": "Halo census", "freshness": "9h", "fit": 78, "notes": "HIPAA hold until the footer is rewritten." },
+  { "id": "eng", "name": "Engineering leads", "size": 31480, "owner": "Dev Poluru", "status": "Live", "source": "Product events", "freshness": "35m", "fit": 88, "notes": "SOC 2 launch list. Priya Poluru owns the story." },
+  { "id": "finance", "name": "Finance buyers", "size": 14620, "owner": "Maya Poluru", "status": "Live", "source": "LinkedIn + CRM", "freshness": "4h", "fit": 85, "notes": "Webinar fill. Arjun Poluru is the speaker." },
+  { "id": "alumni", "name": "Alumni", "size": 9180, "owner": "Rohan Poluru", "status": "Live", "source": "Renewals", "freshness": "1d", "fit": 81, "notes": "Referral loop. High intent, small list." },
+  { "id": "partners", "name": "Partners", "size": 640, "owner": "Ishaan Poluru", "status": "Draft", "source": "Vendor book", "freshness": "6d", "fit": 70, "notes": "Partner day invite. Elena Poluru reviews." }
+]

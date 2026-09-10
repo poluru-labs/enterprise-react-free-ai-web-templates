@@ -12,6 +12,7 @@ Maintained by [Poluru Labs](https://polurus.com). Source: [github.com/poluru-lab
 | [Computer vision](ai-computer-vision-dashboard/README.md) | Sightline | Cameras, models, detections, and quality | `#0F766E` | [localhost:5173/computer-vision/overview](http://localhost:5173/computer-vision/overview) |
 | [Content moderation](ai-content-moderation-dashboard/README.md) | ReviewBay | Queue, policies, appeals, and automation | `#7C3AED` | [localhost:5173/content-moderation/overview](http://localhost:5173/content-moderation/overview) |
 | [Data pipeline](ai-data-pipeline-dashboard/README.md) | Conduit | Ingestion, transformations, quality, and lineage | `#D45060` | [localhost:5192/data-pipeline/overview](http://localhost:5192/data-pipeline/overview) |
+| [Marketing command](ai-marketing-command-center/README.md) | Marquee | Campaigns, audiences, content, and automation | `#3E0F8D` | [localhost:5193/marketing/overview](http://localhost:5193/marketing/overview) |
 | [Document RAG](ai-document-rag-dashboard/README.md) | Contextly | Ingestion, retrieval, citations, and evals | `#0F766E` | [localhost:5173/document-rag/overview](http://localhost:5173/document-rag/overview) |
 | [Governance](ai-governance-compliance-dashboard/README.md) | Charter | Inventories, risk, policies, and approvals | `#B0CDE6` | [localhost:5191/governance/overview](http://localhost:5191/governance/overview) |
 | [LLM ops](ai-llm-ops-dashboard/README.md) | Poluru LLM Ops | Traces, playground, evals, and cost | `#4338CA` | [localhost:5185/llm-ops/overview](http://localhost:5185/llm-ops/overview) |
@@ -23,11 +24,11 @@ Maintained by [Poluru Labs](https://polurus.com). Source: [github.com/poluru-lab
 | [Enterprise dashboard](enterprise-dashboard/README.md) | Poluru DC | Facilities, power, capacity, and tickets | `#30AFFF` | [localhost:5173](http://localhost:5173) |
 | [Security operations](ai-security-operations-center/README.md) | — | Prompt injection, data leaks, jailbreaks, and threats | — | README stub only |
 
+Marquee uses port **5193**. AgentPulse, Sightline, ReviewBay, Contextly, and Poluru DC use Vite’s default port **5173**. Start those one at a time, or pass `--port` when you run `npm run dev`. Prism uses hash routes (`#/overview`). `ai-security-operations-center` currently has a README only — no Vite app yet.
+
 Browse source for any template:
 
 `https://github.com/poluru-labs/enterprise-react-free-ai-web-templates/tree/main/<folder-name>`
-
-AgentPulse, Sightline, ReviewBay, Contextly, and Poluru DC use Vite’s default port **5173**. Start those one at a time, or pass `--port` when you run `npm run dev`. Prism uses hash routes (`#/overview`). `ai-security-operations-center` currently has a README only — no Vite app yet.
 
 ## Getting started
 

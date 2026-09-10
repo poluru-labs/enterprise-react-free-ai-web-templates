@@ -1,0 +1,7 @@
+[
+  { "id": "auto-welcome", "name": "Welcome trustees", "trigger": "New CRM account", "owner": "Leela Poluru", "status": "Sending", "enrolled": 1204, "exit": 18, "goal": "Activate first login", "channel": "Email" },
+  { "id": "auto-abandon", "name": "Abandoned briefing", "trigger": "Form start, no submit", "owner": "Maya Poluru", "status": "Live", "enrolled": 418, "exit": 62, "goal": "Finish webinar RSVP", "channel": "Email" },
+  { "id": "auto-winback", "name": "90-day quiet", "trigger": "No open in 90 days", "owner": "Kavya Poluru", "status": "Live", "enrolled": 2860, "exit": 410, "goal": "Re-open autumn series", "channel": "Email" },
+  { "id": "auto-soc2", "name": "SOC 2 drip", "trigger": "Download one-pager", "owner": "Priya Poluru", "status": "Scheduled", "enrolled": 0, "exit": 0, "goal": "Book a security call", "channel": "Email" },
+  { "id": "auto-referral", "name": "Referral thank-you", "trigger": "Intro recorded", "owner": "Dev Poluru", "status": "Live", "enrolled": 94, "exit": 6, "goal": "Ask for a second intro", "channel": "Automation" }
+]

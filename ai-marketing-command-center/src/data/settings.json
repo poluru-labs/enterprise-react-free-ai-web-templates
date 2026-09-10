@@ -1,0 +1,30 @@
+{
+  "workspace": {
+    "name": "Poluru Growth",
+    "region": "us-east-1",
+    "retentionDays": 90,
+    "brandColor": "#3E0F8D"
+  },
+  "ownerOptions": [
+    { "value": "subbu", "label": "Subbu Poluru" },
+    { "value": "kavya", "label": "Kavya Poluru" },
+    { "value": "maya", "label": "Maya Poluru" },
+    { "value": "anika", "label": "Anika Poluru" },
+    { "value": "leela", "label": "Leela Poluru" }
+  ],
+  "team": [
+    { "name": "Subbu Poluru", "role": "Head of growth" },
+    { "name": "Kavya Poluru", "role": "Email lead" },
+    { "name": "Maya Poluru", "role": "Paid media" },
+    { "name": "Anika Poluru", "role": "Privacy + launch" },
+    { "name": "Leela Poluru", "role": "Lifecycle" },
+    { "name": "Ishaan Poluru", "role": "Search" },
+    { "name": "Priya Poluru", "role": "Content" },
+    { "name": "Dev Poluru", "role": "Automation" }
+  ],
+  "channels": [
+    { "id": "slack", "label": "Slack · #growth-desk", "enabled": true },
+    { "id": "email", "label": "Daily digest to Subbu Poluru", "enabled": true },
+    { "id": "sms", "label": "SMS on paused flights", "enabled": false }
+  ]
+}

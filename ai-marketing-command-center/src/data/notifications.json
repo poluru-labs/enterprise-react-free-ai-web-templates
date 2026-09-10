@@ -1,0 +1,37 @@
+{
+  "unread": 4,
+  "items": [
+    {
+      "id": "n1",
+      "title": "HIPAA clinic still paused",
+      "body": "Anika Poluru is waiting on Elena Poluru’s footer.",
+      "time": "2026-09-08T16:12:00.000Z",
+      "tone": "warning",
+      "href": "/marketing/campaigns/cmp-hipaa"
+    },
+    {
+      "id": "n2",
+      "title": "Brand search CPC up 18%",
+      "body": "Ishaan Poluru should recut trustee exact match.",
+      "time": "2026-09-08T15:40:00.000Z",
+      "tone": "danger",
+      "href": "/marketing/campaigns/cmp-search"
+    },
+    {
+      "id": "n3",
+      "title": "Welcome journey sent 1,204",
+      "body": "Leela Poluru · 94% delivery.",
+      "time": "2026-09-08T09:20:00.000Z",
+      "tone": "info",
+      "href": "/marketing/automation"
+    },
+    {
+      "id": "n4",
+      "title": "Autumn enrollment CTR 4.6%",
+      "body": "Kavya Poluru · above the 3.5% floor.",
+      "time": "2026-09-08T14:22:00.000Z",
+      "tone": "info",
+      "href": "/marketing/campaigns/cmp-autumn"
+    }
+  ]
+}
