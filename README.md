@@ -21,6 +21,7 @@ Maintained by [Poluru Labs](https://polurus.com). Source: [github.com/poluru-lab
 | [Prompt management](ai-prompt-management-dashboard/README.md) | Prompt Bureau | Library, versions, evals, and releases | `#162E93` | [localhost:5187/prompt-management/overview](http://localhost:5187/prompt-management/overview) |
 | [SaaS admin](ai-saas-admin-dashboard/README.md) | Nexus | Tenants, billing, flags, and audit | `#059669` | [localhost:5188/saas-admin/overview](http://localhost:5188/saas-admin/overview) |
 | [Support helpdesk](ai-support-helpdesk-dashboard/README.md) | Relay | Inbox, SLA, macros, and copilot drafts | `#EA580C` | [localhost:5189](http://localhost:5189) |
+| [Synthetic data studio](ai-synthetic-data-studio/README.md) | Poluru Synth Studio | Synthetic datasets, differential privacy, quality & TSTR evals | `#05339C` | [localhost:5194/synthetic-data/overview](http://localhost:5194/synthetic-data/overview) |
 | [Enterprise dashboard](enterprise-dashboard/README.md) | Poluru DC | Facilities, power, capacity, and tickets | `#30AFFF` | [localhost:5173](http://localhost:5173) |
 | [Security operations](ai-security-operations-center/README.md) | — | Prompt injection, data leaks, jailbreaks, and threats | — | README stub only |
 

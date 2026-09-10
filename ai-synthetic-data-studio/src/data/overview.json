@@ -1,0 +1,128 @@
+{
+  "summary": {
+    "totalRecords": "148.4M",
+    "totalRecordsRaw": 148400000,
+    "recordsTrend": "+18.2%",
+    "activeGenerators": 14,
+    "privacyScore": "99.4%",
+    "privacyStatus": "Zero-Leakage Verified",
+    "fidelityScore": "98.1%",
+    "fidelityStatus": "High Statistical Parity",
+    "dpBudgetUsed": "1.32 / 4.00",
+    "dpBudgetPercent": 33,
+    "reIdRisk": "< 0.008%",
+    "activePipelines": 9,
+    "gpuHoursThisMonth": "342.5 hrs"
+  },
+  "generationThroughput": {
+    "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "series": [
+      {
+        "name": "Synthetic Records (Millions)",
+        "color": "#05339C",
+        "values": [14.2, 18.5, 22.1, 19.8, 28.4, 31.2, 24.2]
+      },
+      {
+        "name": "Quality Verified Records (Millions)",
+        "color": "#1D5BD8",
+        "values": [13.9, 18.2, 21.8, 19.4, 27.9, 30.8, 23.9]
+      }
+    ]
+  },
+  "generatorDistribution": [
+    { "name": "Poluru-CTGAN v4.2", "value": 42, "color": "#05339C" },
+    { "name": "TabularDiffusion-DP", "value": 28, "color": "#1D5BD8" },
+    { "name": "GaussianCopula-HD", "value": 16, "color": "#3B82F6" },
+    { "name": "LLM-Agentic Synthesizer", "value": 10, "color": "#60A5FA" },
+    { "name": "TimeGAN-Poluru", "value": 4, "color": "#93C5FD" }
+  ],
+  "domainBreakdown": [
+    { "name": "Healthcare & Clinical", "records": "45.2M", "datasets": 8, "pct": 31, "color": "#05339C" },
+    { "name": "Banking & FinTech", "records": "38.6M", "datasets": 6, "pct": 26, "color": "#1D5BD8" },
+    { "name": "E-Commerce & Retail", "records": "29.4M", "datasets": 5, "pct": 20, "color": "#2563EB" },
+    { "name": "Telecom & Mobility", "records": "21.1M", "datasets": 4, "pct": 14, "color": "#3B82F6" },
+    { "name": "IoT & Telemetry", "records": "14.1M", "datasets": 3, "pct": 9, "color": "#60A5FA" }
+  ],
+  "privacyMetrics": {
+    "differentialPrivacyEpsilon": 0.85,
+    "kAnonymityScore": "k = 25",
+    "lDiversityScore": "l = 8",
+    "tClosenessScore": "t = 0.04",
+    "membershipInferenceRisk": 0.007,
+    "attributeDisclosureRisk": 0.012,
+    "piiLeakageRate": "0.000%"
+  },
+  "recentGenerations": [
+    {
+      "id": "gen-8901",
+      "datasetName": "Poluru Health Longitudinal Patients 2026",
+      "modality": "Tabular Clinical",
+      "generator": "Poluru-CTGAN v4.2",
+      "recordsGenerated": "2,500,000",
+      "privacyLevel": "Strict DP (ε=0.5)",
+      "fidelityScore": 98.6,
+      "privacyScore": 99.8,
+      "status": "Ready",
+      "creator": "Subbu Poluru",
+      "timestamp": "12 min ago"
+    },
+    {
+      "id": "gen-8902",
+      "datasetName": "Poluru FinTech AML & High-Risk Transactions",
+      "modality": "Multi-Table Relational",
+      "generator": "TabularDiffusion-DP",
+      "recordsGenerated": "10,000,000",
+      "privacyLevel": "Standard DP (ε=1.2)",
+      "fidelityScore": 97.9,
+      "privacyScore": 99.2,
+      "status": "Ready",
+      "creator": "Subrahmanyam Poluru",
+      "timestamp": "45 min ago"
+    },
+    {
+      "id": "gen-8903",
+      "datasetName": "Subbu Analytics Omnichannel Retail Customer 360",
+      "modality": "Tabular + Text",
+      "generator": "LLM-Agentic Synthesizer",
+      "recordsGenerated": "1,200,000",
+      "privacyLevel": "Standard DP (ε=1.0)",
+      "fidelityScore": 99.1,
+      "privacyScore": 99.5,
+      "status": "Ready",
+      "creator": "Ananya Poluru",
+      "timestamp": "2 hrs ago"
+    },
+    {
+      "id": "gen-8904",
+      "datasetName": "Poluru Smart Grid IoT Telemetry Series",
+      "modality": "Time-Series",
+      "generator": "TimeGAN-Poluru",
+      "recordsGenerated": "5,000,000",
+      "privacyLevel": "Relaxed DP (ε=2.0)",
+      "fidelityScore": 96.4,
+      "privacyScore": 98.9,
+      "status": "Generating",
+      "creator": "Vikram Poluru",
+      "timestamp": "In Progress (64%)"
+    },
+    {
+      "id": "gen-8905",
+      "datasetName": "Subbu Cloud Support RAG Synthetic Dialogues",
+      "modality": "Conversational Text",
+      "generator": "LLM-Agentic Synthesizer",
+      "recordsGenerated": "350,000",
+      "privacyLevel": "Strict DP (ε=0.6)",
+      "fidelityScore": 98.8,
+      "privacyScore": 99.9,
+      "status": "Ready",
+      "creator": "Subbu Poluru",
+      "timestamp": "5 hrs ago"
+    }
+  ],
+  "quickStats": [
+    { "label": "Zero PII Guarantee", "value": "100%", "icon": "bi-shield-fill-check", "tone": "success" },
+    { "label": "TSTR ML Accuracy Parity", "value": "99.1%", "icon": "bi-bullseye", "tone": "brand" },
+    { "label": "Avg Correlation Preservation", "value": "98.4%", "icon": "bi-diagram-3-fill", "tone": "info" },
+    { "label": "GDPR / HIPAA Certified", "value": "Pass", "icon": "bi-patch-check-fill", "tone": "success" }
+  ]
+}

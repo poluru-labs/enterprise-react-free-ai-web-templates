@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pipe-01",
+    "name": "Nightly EHR Clinical Mirror Generator",
+    "schedule": "Daily at 02:00 UTC",
+    "targetDataset": "Poluru Health Longitudinal Patients 2026",
+    "generator": "Poluru-CTGAN v4.2",
+    "batchRows": 500000,
+    "lastRunStatus": "Success",
+    "lastRunDuration": "14m 32s",
+    "lastRunDate": "Today, 02:14 UTC",
+    "privacyEnforcement": "Strict DP (ε=0.5)",
+    "owner": "Subbu Poluru",
+    "destination": "Snowflake Health Sandbox / S3",
+    "active": true
+  },
+  {
+    "id": "pipe-02",
+    "name": "FinTech Continuous Streaming Synthesizer",
+    "schedule": "Continuous Streaming (1K tx/sec)",
+    "targetDataset": "Poluru FinTech AML Transactions",
+    "generator": "TabularDiffusion-DP",
+    "batchRows": 1000000,
+    "lastRunStatus": "Running",
+    "lastRunDuration": "Active (48 hrs)",
+    "lastRunDate": "Continuous",
+    "privacyEnforcement": "Standard DP (ε=1.2)",
+    "owner": "Subrahmanyam Poluru",
+    "destination": "Kafka `synth-fintech-stream`",
+    "active": true
+  },
+  {
+    "id": "pipe-03",
+    "name": "Weekly Retail Customer 360 Feature Refresh",
+    "schedule": "Sundays at 00:00 UTC",
+    "targetDataset": "Subbu Analytics Omnichannel Retail Customer 360",
+    "generator": "LLM-Agentic Synthesizer",
+    "batchRows": 1200000,
+    "lastRunStatus": "Success",
+    "lastRunDuration": "38m 10s",
+    "lastRunDate": "Sep 07, 2026",
+    "privacyEnforcement": "Standard DP (ε=1.0)",
+    "owner": "Ananya Poluru",
+    "destination": "BigQuery Analytics Staging",
+    "active": true
+  },
+  {
+    "id": "pipe-04",
+    "name": "Edge Anomaly Injection Simulator",
+    "schedule": "Bi-weekly Tuesdays",
+    "targetDataset": "Poluru Smart Grid IoT Telemetry Series",
+    "generator": "TimeGAN-Poluru",
+    "batchRows": 2500000,
+    "lastRunStatus": "Success",
+    "lastRunDuration": "22m 45s",
+    "lastRunDate": "Sep 08, 2026",
+    "privacyEnforcement": "Relaxed DP (ε=2.0)",
+    "owner": "Vikram Poluru",
+    "destination": "R2 Object Store",
+    "active": true
+  }
+]

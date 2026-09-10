@@ -1,0 +1,52 @@
+[
+  {
+    "id": "rule-01",
+    "name": "Poluru Synthetic Full Names Mask",
+    "category": "PII Generator",
+    "pattern": "First/Last name synthesized from Poluru global name frequency table",
+    "applicability": "String columns tagged Demographic / PII",
+    "enforcement": "Strict Zero-Leakage (100% replacement)",
+    "creator": "Subbu Poluru",
+    "examples": ["Subbu Poluru", "Dr. Subrahmanyam Poluru", "Ananya Poluru", "Vikram Subbu Poluru", "Kiran Poluru"]
+  },
+  {
+    "id": "rule-02",
+    "name": "Cross-Column Age & Employment Consistency",
+    "category": "Business Logic Assertion",
+    "pattern": "IF age < 18 THEN employment_status = 'Minor / Student' AND annual_income = 0",
+    "applicability": "Demographic & Financial Columns",
+    "enforcement": "Deterministic Post-Processing Constraint",
+    "creator": "Subrahmanyam Poluru",
+    "examples": ["Age: 16 -> Status: Student, Income: $0"]
+  },
+  {
+    "id": "rule-03",
+    "name": "Blood Pressure Physiological Bounds",
+    "category": "Domain Heuristic",
+    "pattern": "systolic_bp >= (diastolic_bp + 15) AND diastolic_bp BETWEEN 40 AND 140",
+    "applicability": "Healthcare Vital Signs",
+    "enforcement": "Conditional Distribution Rejection Sampling",
+    "creator": "Subbu Poluru",
+    "examples": ["Systolic: 120, Diastolic: 80 (Valid)", "Systolic: 80, Diastolic: 90 (Rejected & Resampled)"]
+  },
+  {
+    "id": "rule-04",
+    "name": "Poluru FinTech Synthetic Account & Card Formatter",
+    "category": "Masking & Identifier",
+    "pattern": "Regex Mask: `PLR-[A-Z]{3}-[0-9]{6}` with Luhn Algorithm Checksum Parity",
+    "applicability": "Account Numbers, Credit Cards, IBANs",
+    "enforcement": "Synthetic Luhn Tokenizer",
+    "creator": "Ananya Poluru",
+    "examples": ["PLR-NYK-490218", "PLR-SFO-881923"]
+  },
+  {
+    "id": "rule-05",
+    "name": "Differential Privacy Gaussian Noise Boundary",
+    "category": "DP Rule",
+    "pattern": "Inject Gaussian noise N(0, sigma^2) with sigma = (Delta * sqrt(2 * ln(1.25 / delta))) / epsilon",
+    "applicability": "All Continuous Numerical Features",
+    "enforcement": "Automatic DP Engine Ingestion",
+    "creator": "Subrahmanyam Poluru",
+    "examples": ["Epsilon: 0.8, Delta: 1e-5 -> sigma = 0.94"]
+  }
+]

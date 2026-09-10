@@ -1,0 +1,47 @@
+{
+  "general": {
+    "studioName": "Poluru Synth Studio",
+    "organization": "Poluru Labs AI Research & Data Systems",
+    "primaryRegion": "US-East (N. Virginia)",
+    "environment": "Production Enterprise",
+    "defaultExportFormat": "Parquet (Snappy Compressed)",
+    "brandColor": "#05339C"
+  },
+  "privacyDefaults": {
+    "defaultEpsilon": 1.0,
+    "defaultDelta": "1e-5",
+    "enforceKAnonymity": true,
+    "minKAnonymityValue": 20,
+    "autoRedactPII": true,
+    "zeroLeakageGuarantee": true,
+    "differentialPrivacyEngine": "Rényi DP with Gaussian Mechanism (Poluru Labs Certified)"
+  },
+  "computeEngine": {
+    "defaultEngine": "Poluru-CTGAN v4.2 + TabularDiffusion-DP",
+    "gpuAcceleration": true,
+    "gpuInstanceType": "NVIDIA A100-SXM4-80GB (Cluster 04)",
+    "maxConcurrentGenerators": 8,
+    "batchChunkSize": 50000,
+    "randomSeed": 42
+  },
+  "storageAndConnectors": [
+    {
+      "name": "Poluru Cloudflare R2 Synthetic Bucket",
+      "type": "Object Storage",
+      "status": "Connected",
+      "endpoint": "https://r2.polurus.com/synth-datasets"
+    },
+    {
+      "name": "Snowflake Health Cleanroom Staging",
+      "type": "Data Warehouse",
+      "status": "Connected",
+      "endpoint": "poluru_health.synth_staging"
+    },
+    {
+      "name": "AWS S3 Enterprise Vault (Encrypted KMS)",
+      "type": "S3 Bucket",
+      "status": "Connected",
+      "endpoint": "s3://poluru-synthetic-vault-prod/"
+    }
+  ]
+}

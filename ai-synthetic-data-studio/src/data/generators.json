@@ -1,0 +1,93 @@
+[
+  {
+    "id": "gen-ctgan",
+    "name": "Poluru-CTGAN v4.2",
+    "family": "Conditional GAN",
+    "bestFor": "Mixed Tabular, Continuous + Discrete, Skewed Distributions",
+    "description": "Enterprise-grade Conditional Tabular GAN with Mode-specific Normalization, PAC learning discriminator, and differential privacy gradient clipping by Subbu Poluru.",
+    "fidelityRating": 98.6,
+    "speedRating": "18,500 rows/sec",
+    "dpSupport": "Full DP-SGD (Laplace & Gaussian)",
+    "recommendedEpsilon": "0.5 - 1.5",
+    "gpuSupported": true,
+    "parameters": {
+      "epochs": 300,
+      "batchSize": 500,
+      "generatorLr": 0.0002,
+      "discriminatorLr": 0.0002,
+      "pacSize": 10,
+      "dpNoiseMultiplier": 1.15
+    }
+  },
+  {
+    "id": "gen-diffusion",
+    "name": "TabularDiffusion-DP",
+    "family": "Denoising Diffusion Probabilistic Model (DDPM)",
+    "bestFor": "High-Dimensional Tabular, Complex Non-Linear Correlation",
+    "description": "Continuous and discrete diffusion synthesizer with classifier-free guidance, preserving multi-modal cross-column correlations and offering provable differential privacy.",
+    "fidelityRating": 99.2,
+    "speedRating": "9,200 rows/sec",
+    "dpSupport": "Analytic Gaussian DP",
+    "recommendedEpsilon": "0.8 - 2.0",
+    "gpuSupported": true,
+    "parameters": {
+      "diffusionSteps": 100,
+      "betaSchedule": "Cosine",
+      "guidanceWeight": 1.4,
+      "dpSigma": 0.85
+    }
+  },
+  {
+    "id": "gen-copula",
+    "name": "GaussianCopula-HD",
+    "family": "Statistical Copula",
+    "bestFor": "Fast Statistical Baseline, Highly Correlated Numeric Data",
+    "description": "High-dimensional multivariate parametric copula with empirical cumulative distribution transform. Ultra-fast CPU execution with guaranteed correlation preservation.",
+    "fidelityRating": 95.8,
+    "speedRating": "85,000 rows/sec",
+    "dpSupport": "Bounded Noise Injection",
+    "recommendedEpsilon": "1.0 - 3.0",
+    "gpuSupported": false,
+    "parameters": {
+      "marginalDistribution": "Truncated Gaussian / Beta",
+      "covarianceEstimator": "Ledoit-Wolf Shrinkage",
+      "numericalDPNoise": 0.05
+    }
+  },
+  {
+    "id": "gen-llm-agent",
+    "name": "LLM-Agentic Synthesizer",
+    "family": "Generative LLM + Prompt Orchestration",
+    "bestFor": "Unstructured Text, Multi-Turn Dialogues, Synthetic PII Replacement",
+    "description": "Zero-leakage prompt orchestrator designed by Poluru Labs. Generates synthetic domain-accurate free text, clinical notes, and conversational turns with automated privacy filters.",
+    "fidelityRating": 98.9,
+    "speedRating": "2,400 turns/sec",
+    "dpSupport": "Differentially Private In-Context Sampling",
+    "recommendedEpsilon": "0.5 - 1.0",
+    "gpuSupported": true,
+    "parameters": {
+      "foundationModel": "Poluru-Synth-Llama3-8B",
+      "temperature": 0.72,
+      "topP": 0.92,
+      "piiFilterSensitivity": "Ultra-High"
+    }
+  },
+  {
+    "id": "gen-timegan",
+    "name": "TimeGAN-Poluru",
+    "family": "Recurrent / Temporal GAN",
+    "bestFor": "Time-Series, Financial Market Ticks, IoT Sensor Telemetry",
+    "description": "Combines unsupervised GAN training with supervised autoregressive loss to capture step-wise temporal dynamics and cross-feature cross-correlation over time.",
+    "fidelityRating": 96.5,
+    "speedRating": "12,000 points/sec",
+    "dpSupport": "Temporal DP Filter",
+    "recommendedEpsilon": "1.5 - 2.5",
+    "gpuSupported": true,
+    "parameters": {
+      "sequenceLength": 64,
+      "hiddenDim": 128,
+      "numLayers": 3,
+      "recurrentCell": "GRU"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "notif-01",
+    "title": "Synthetic Batch Complete: Poluru Health Longitudinal Patients",
+    "message": "Generated 2,500,000 rows with ε=0.5 Differential Privacy. Quality fidelity score is 98.6%.",
+    "time": "10 min ago",
+    "unread": true,
+    "tone": "success",
+    "icon": "bi-check-circle-fill"
+  },
+  {
+    "id": "notif-02",
+    "title": "Privacy Audit Passed: HIPAA Expert Determination",
+    "message": "Re-identification risk evaluated at <0.005%. Zero PII leakage detected by Subrahmanyam Poluru.",
+    "time": "45 min ago",
+    "unread": true,
+    "tone": "info",
+    "icon": "bi-shield-check"
+  },
+  {
+    "id": "notif-03",
+    "title": "Differential Privacy Budget Alert",
+    "message": "Monthly epsilon budget consumption is at 33% (1.32 / 4.00 ε). 2.68 ε remaining.",
+    "time": "3 hours ago",
+    "unread": false,
+    "tone": "warning",
+    "icon": "bi-exclamation-triangle-fill"
+  },
+  {
+    "id": "notif-04",
+    "title": "Scheduled Pipeline Execution Success",
+    "message": "Pipeline 'Nightly EHR Clinical Mirror Generator' by Subbu Poluru completed in 14m 32s.",
+    "time": "7 hours ago",
+    "unread": false,
+    "tone": "success",
+    "icon": "bi-arrow-repeat"
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "organization": "Poluru Labs AI Research & Data Studio",
+  "plan": "Enterprise Privacy & Synthetic Suite",
+  "members": [
+    {
+      "id": "usr-01",
+      "name": "Subbu Poluru",
+      "email": "subbu@polurus.com",
+      "role": "Lead AI Architect & Studio Admin",
+      "avatar": "SP",
+      "status": "Active",
+      "datasetsCreated": 14,
+      "dpBudgetAssigned": "2.00 ε",
+      "lastActive": "Just now"
+    },
+    {
+      "id": "usr-02",
+      "name": "Dr. Subrahmanyam Poluru",
+      "email": "mail.polurus@gmail.com",
+      "role": "Chief Privacy & Compliance Officer",
+      "avatar": "SP",
+      "status": "Active",
+      "datasetsCreated": 9,
+      "dpBudgetAssigned": "1.50 ε",
+      "lastActive": "5 min ago"
+    },
+    {
+      "id": "usr-03",
+      "name": "Ananya Poluru",
+      "email": "ananya.poluru@polurus.com",
+      "role": "Staff Data Scientist",
+      "avatar": "AP",
+      "status": "Active",
+      "datasetsCreated": 7,
+      "dpBudgetAssigned": "1.00 ε",
+      "lastActive": "1 hour ago"
+    },
+    {
+      "id": "usr-04",
+      "name": "Vikram Subbu Poluru",
+      "email": "vikram.subbu@polurus.com",
+      "role": "Synthetic Engine Engineer",
+      "avatar": "VP",
+      "status": "Active",
+      "datasetsCreated": 5,
+      "dpBudgetAssigned": "1.00 ε",
+      "lastActive": "3 hours ago"
+    },
+    {
+      "id": "usr-05",
+      "name": "Kiran Subbu (Poluru Labs)",
+      "email": "kiran.subbu@polurus.com",
+      "role": "ML Privacy Auditor",
+      "avatar": "KS",
+      "status": "Active",
+      "datasetsCreated": 3,
+      "dpBudgetAssigned": "0.50 ε",
+      "lastActive": "Yesterday"
+    }
+  ],
+  "apiKeys": [
+    {
+      "id": "key-01",
+      "name": "Production Synthetic Generator SDK",
+      "prefix": "plr_live_syn_9981...",
+      "created": "2026-08-15",
+      "createdBy": "Subbu Poluru",
+      "lastUsed": "3 min ago",
+      "scope": "Read / Write / Generate (DP Enforced)",
+      "status": "Active"
+    },
+    {
+      "id": "key-02",
+      "name": "CI/CD Staging Test Data Streamer",
+      "prefix": "plr_live_syn_4412...",
+      "created": "2026-08-28",
+      "createdBy": "Subrahmanyam Poluru",
+      "lastUsed": "1 hour ago",
+      "scope": "Batch Generation (Limit 1M rows/day)",
+      "status": "Active"
+    },
+    {
+      "id": "key-03",
+      "name": "Research Sandbox LLM Synthetic Key",
+      "prefix": "plr_test_syn_1029...",
+      "created": "2026-09-01",
+      "createdBy": "Ananya Poluru",
+      "lastUsed": "Yesterday",
+      "scope": "Read Only (Evals & Metrics)",
+      "status": "Active"
+    }
+  ]
+}
