@@ -2,6 +2,11 @@
 
 Data center operations dashboard built with **Vite**, **React 19**, **TypeScript**, **React Router**, and **SCSS**, using [`@poluru-labs/enterprise-design-system-react`](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react).
 
+## Screenshot
+
+<img width="3360" height="3954" alt="enterprise-dashboard" src="https://github.com/user-attachments/assets/046d035c-5720-422f-9793-331613c1f49f" />
+
+
 ## Features
 
 - Frosted-glass header with facility switcher, live PUE + cooling sparkline, slash search, ⌘K command palette, theme toggle, and **Ack critical**
