@@ -410,8 +410,36 @@ body {
 
 .amd-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   padding: 1.35rem 1.35rem 2rem;
   overflow: auto;
+}
+
+.amd-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto auto 0;
+  padding: 1.15rem 0 0;
+  border-top: 1px solid var(--eds-color-border, #d7dee7);
+  color: var(--eds-color-text-subtle, #7a8b9c);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.amd-footer a {
+  color: var(--eds-color-brand-700, #00264d);
+  font-weight: 650;
+  text-underline-offset: 0.2em;
+}
+
+.amd-footer a:hover {
+  color: var(--eds-color-brand-500, #0d4d8c);
 }
 
 .amd-page {

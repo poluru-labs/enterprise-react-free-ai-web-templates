@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { NAV_ITEMS } from '../../constants/navigation.js';
+import { DashboardFooter } from './DashboardFooter.jsx';
 import { DashboardNavbar } from './DashboardNavbar.jsx';
 import { DashboardSidebar } from './DashboardSidebar.jsx';
 
@@ -38,6 +39,7 @@ export function DashboardLayout() {
         />
         <div className="amd-content">
           <Outlet />
+          <DashboardFooter />
         </div>
       </div>
     </div>
