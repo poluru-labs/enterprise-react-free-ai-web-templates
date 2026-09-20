@@ -31,3 +31,4 @@ pnpm-debug.log*
 
 # Coverage
 coverage/
+.vercel
