@@ -1,0 +1,49 @@
+{
+  "tools": [
+    {
+      "id": "web_search",
+      "name": "web_search",
+      "owner": "Priya Poluru",
+      "status": "published",
+      "version": "2.4.1",
+      "calls": 3120,
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "ticket_lookup",
+      "name": "ticket_lookup",
+      "owner": "Marcus Poluru",
+      "status": "published",
+      "version": "1.9.0",
+      "calls": 1510,
+      "updated": "2026-09-17"
+    },
+    {
+      "id": "doc_retrieve",
+      "name": "doc_retrieve",
+      "owner": "Elena Poluru",
+      "status": "review",
+      "version": "3.0.0-rc",
+      "calls": 1288,
+      "updated": "2026-09-19"
+    },
+    {
+      "id": "crm_update",
+      "name": "crm_update",
+      "owner": "Sofia Poluru",
+      "status": "draft",
+      "version": "0.8.2",
+      "calls": 742,
+      "updated": "2026-09-16"
+    },
+    {
+      "id": "code_exec",
+      "name": "code_exec",
+      "owner": "Jonah Poluru",
+      "status": "published",
+      "version": "4.1.0",
+      "calls": 1844,
+      "updated": "2026-09-15"
+    }
+  ]
+}

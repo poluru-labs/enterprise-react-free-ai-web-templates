@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Tools", "value": 42, "hint": "8 pending review", "trend": "up", "trendValue": "+5" },
+    { "label": "Workflows", "value": 18, "hint": "3 in draft", "trend": "up", "trendValue": "+2" },
+    { "label": "Tests passing", "value": "96.4%", "hint": "1,284 runs today", "trend": "up", "trendValue": "+1.2 pts" },
+    { "label": "Deploys", "value": 11, "hint": "2 canaries live", "trend": "flat", "trendValue": "0" }
+  ],
+  "features": [
+    { "title": "Tools", "body": "Versioned functions with typed input, output, and error contracts.", "href": "/studio/tools" },
+    { "title": "Workflows", "body": "Compose steps, branches, and retries without hidden loops.", "href": "/studio/workflows" },
+    { "title": "Memory", "body": "Scoped stores with TTL, staleness, and retrieval scores.", "href": "/studio/memory" },
+    { "title": "Tests", "body": "Eval suites that gate every rollout.", "href": "/studio/tests" },
+    { "title": "Deployments", "body": "Canary, production, and instant rollback.", "href": "/studio/deployments" },
+    { "title": "Workspace", "body": "Roles, keys, and audit in one settings surface.", "href": "/studio/settings" }
+  ],
+  "releases": [
+    { "title": "Tool registry v3", "description": "Schema lint on save.", "timestamp": "12 Sep", "status": "complete" },
+    { "title": "Workflow retries", "description": "Backoff and dead-letter queues.", "timestamp": "15 Sep", "status": "complete" },
+    { "title": "Memory TTL policies", "description": "Per-store retention windows.", "timestamp": "18 Sep", "status": "current" },
+    { "title": "Deploy freeze windows", "description": "Calendar-aware rollouts.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Studio lead" },
+    { "name": "Priya Poluru", "role": "Tools" },
+    { "name": "Marcus Poluru", "role": "Workflows" },
+    { "name": "Elena Poluru", "role": "Memory" },
+    { "name": "Jonah Poluru", "role": "Tests" },
+    { "name": "Sofia Poluru", "role": "Deploy" }
+  ]
+}

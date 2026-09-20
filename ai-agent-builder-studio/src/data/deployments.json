@@ -1,0 +1,29 @@
+{
+  "environments": ["Preview", "Canary", "Production"],
+  "history": [
+    {
+      "id": "dep-441",
+      "name": "Refund review 2.4",
+      "env": "Production",
+      "owner": "Sofia Poluru",
+      "status": "live",
+      "at": "2026-09-18T16:20:00.000Z"
+    },
+    {
+      "id": "dep-440",
+      "name": "Search tool 2.4.1",
+      "env": "Canary",
+      "owner": "Priya Poluru",
+      "status": "live",
+      "at": "2026-09-19T09:10:00.000Z"
+    },
+    {
+      "id": "dep-438",
+      "name": "Memory TTL policy",
+      "env": "Preview",
+      "owner": "Elena Poluru",
+      "status": "ready",
+      "at": "2026-09-19T14:02:00.000Z"
+    }
+  ]
+}

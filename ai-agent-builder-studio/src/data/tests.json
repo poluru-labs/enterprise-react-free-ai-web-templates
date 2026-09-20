@@ -1,0 +1,36 @@
+{
+  "suites": [
+    {
+      "id": "eval-refund",
+      "name": "Refund policy",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "passRate": 98.2,
+      "cases": 64
+    },
+    {
+      "id": "eval-search",
+      "name": "Search grounding",
+      "owner": "Priya Poluru",
+      "status": "passing",
+      "passRate": 95.1,
+      "cases": 40
+    },
+    {
+      "id": "eval-memory",
+      "name": "Memory recall",
+      "owner": "Elena Poluru",
+      "status": "failing",
+      "passRate": 81.4,
+      "cases": 28
+    },
+    {
+      "id": "eval-deploy",
+      "name": "Deploy smoke",
+      "owner": "Sofia Poluru",
+      "status": "passing",
+      "passRate": 100,
+      "cases": 12
+    }
+  ]
+}

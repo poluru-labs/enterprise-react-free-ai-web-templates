@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Trigger", "description": "Event or schedule" },
+    { "label": "Plan", "description": "Select tools" },
+    { "label": "Act", "description": "Call and branch" },
+    { "label": "Eval", "description": "Score the run" },
+    { "label": "Deploy", "description": "Promote the flow" }
+  ],
+  "flows": [
+    {
+      "id": "wf-refund",
+      "name": "Refund review",
+      "owner": "Priya Poluru",
+      "status": "live",
+      "steps": 6,
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "wf-onboard",
+      "name": "Customer onboarding",
+      "owner": "Marcus Poluru",
+      "status": "draft",
+      "steps": 9,
+      "updated": "2026-09-19"
+    },
+    {
+      "id": "wf-digest",
+      "name": "Weekly digest",
+      "owner": "Elena Poluru",
+      "status": "paused",
+      "steps": 4,
+      "updated": "2026-09-12"
+    }
+  ]
+}

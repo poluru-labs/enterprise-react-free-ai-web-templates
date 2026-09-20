@@ -1,0 +1,28 @@
+{
+  "stores": [
+    {
+      "id": "session",
+      "name": "Session",
+      "owner": "Elena Poluru",
+      "usage": 42,
+      "ttl": "24h",
+      "quality": 94
+    },
+    {
+      "id": "workspace",
+      "name": "Workspace",
+      "owner": "Avery Poluru",
+      "usage": 68,
+      "ttl": "30d",
+      "quality": 88
+    },
+    {
+      "id": "long-term",
+      "name": "Long-term",
+      "owner": "Jonah Poluru",
+      "usage": 31,
+      "ttl": "365d",
+      "quality": 81
+    }
+  ]
+}
