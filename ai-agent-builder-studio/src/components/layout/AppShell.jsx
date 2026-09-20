@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { MegaHeader } from './MegaHeader.jsx';
 import { SimpleSidebar } from './SimpleSidebar.jsx';
+import { SiteFooter } from './SiteFooter.jsx';
 
 export function AppShell() {
   return (
@@ -12,6 +13,7 @@ export function AppShell() {
           <Outlet />
         </main>
       </div>
+      <SiteFooter />
     </div>
   );
 }

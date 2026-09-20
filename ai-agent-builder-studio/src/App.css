@@ -263,6 +263,22 @@ body {
   overflow: auto;
 }
 
+.abs-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--abs-surface);
+  border-top: 1px solid var(--abs-line);
+  color: var(--abs-muted);
+  font-size: 0.82rem;
+}
+
+.abs-footer p {
+  margin: 0;
+}
+
 .abs-page {
   max-width: 1120px;
   margin: 0 auto;
