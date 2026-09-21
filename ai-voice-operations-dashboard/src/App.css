@@ -13,15 +13,26 @@ body,
   margin: 0;
 }
 
+#root {
+  min-height: 100vh;
+}
+
 body {
   background: #f6f8fb;
+}
+
+.vod-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .starter-app {
   box-sizing: border-box;
   display: grid;
   align-content: center;
-  min-height: 100vh;
+  flex: 1;
+  min-height: 0;
   max-width: 48rem;
   margin: 0 auto;
   padding: 3rem 1.5rem;
@@ -50,4 +61,20 @@ body {
   color: #526176;
   font-size: 1.05rem;
   line-height: 1.6;
+}
+
+.vod-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.85rem 1.5rem;
+  background: #ffffff;
+  border-top: 1px solid #d7dee7;
+  color: #526176;
+  font-size: 0.82rem;
+}
+
+.vod-footer p {
+  margin: 0;
 }
