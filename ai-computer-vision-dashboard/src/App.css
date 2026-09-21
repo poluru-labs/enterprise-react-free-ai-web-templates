@@ -412,6 +412,22 @@ body {
   overflow: auto;
 }
 
+.cvd-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.85rem 1.3rem;
+  background: #ffffff;
+  border-top: 1px solid var(--cvd-line);
+  color: #5b7a74;
+  font-size: 0.82rem;
+}
+
+.cvd-footer p {
+  margin: 0;
+}
+
 .cvd-page {
   max-width: 1440px;
   margin: 0 auto;
@@ -1222,7 +1238,8 @@ html.eds-theme-dark .cvd-dataset-card,
 html.eds-theme-dark .cvd-search-hit,
 html.eds-theme-dark .cvd-notify-item,
 html.eds-theme-dark .cvd-cmd-list button,
-html.eds-theme-dark .cvd-brand {
+html.eds-theme-dark .cvd-brand,
+html.eds-theme-dark .cvd-footer {
   background: #0b3d3a;
   border-color: #1a5c56;
   color: #ecfdf5;

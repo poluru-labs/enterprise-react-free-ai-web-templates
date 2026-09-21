@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { NAV_ITEMS } from '../../constants/navigation.js';
 import { DashboardNavbar } from './DashboardNavbar.jsx';
 import { DashboardSidebar } from './DashboardSidebar.jsx';
+import { SiteFooter } from './SiteFooter.jsx';
 
 export function DashboardLayout() {
   const location = useLocation();
@@ -39,6 +40,7 @@ export function DashboardLayout() {
         <div className="cvd-content">
           <Outlet />
         </div>
+        <SiteFooter />
       </div>
     </div>
   );
