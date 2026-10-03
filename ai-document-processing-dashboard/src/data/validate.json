@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "id": "rule-total",
+      "name": "Invoice total match",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "passRate": 97.4,
+      "cases": 842
+    },
+    {
+      "id": "rule-date",
+      "name": "Due date present",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "passRate": 99.1,
+      "cases": 842
+    },
+    {
+      "id": "rule-po",
+      "name": "PO required over $2k",
+      "owner": "Avery Poluru",
+      "status": "failing",
+      "passRate": 81.6,
+      "cases": 214
+    },
+    {
+      "id": "rule-id",
+      "name": "Identity expiry window",
+      "owner": "Priya Poluru",
+      "status": "passing",
+      "passRate": 94.2,
+      "cases": 64
+    }
+  ]
+}

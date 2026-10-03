@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "In queue", "value": 186, "hint": "42 new since 08:00", "trend": "up", "trendValue": "+18" },
+    { "label": "OCR pass", "value": "98.4%", "hint": "12 low-contrast scans", "trend": "up", "trendValue": "+0.6 pts" },
+    { "label": "Fields extracted", "value": "24.1k", "hint": "Elena Poluru desk", "trend": "up", "trendValue": "+1.4k" },
+    { "label": "Open exceptions", "value": 9, "hint": "2 past SLA", "trend": "down", "trendValue": "-3" }
+  ],
+  "features": [
+    { "title": "Batch ingest", "body": "Drop mixed packets. Page order and source stay attached.", "href": "/documents/inbox" },
+    { "title": "Duplicate detection", "body": "Hash match before a second OCR pass on the same file.", "href": "/documents/classify" },
+    { "title": "Confidence scoring", "body": "Field-level scores with a floor for auto-release.", "href": "/documents/extract" },
+    { "title": "Field rules", "body": "Totals, dates, and required keys before finance sees it.", "href": "/documents/validate" },
+    { "title": "Reviewer assignment", "body": "Route by type, site, and SLA to a named owner.", "href": "/documents/exceptions" },
+    { "title": "Export packs", "body": "JSON or CSV from any stage, with the audit trail.", "href": "/documents/settings" }
+  ],
+  "releases": [
+    { "title": "Batch ingest 1.2", "description": "Folder drop keeps page order.", "timestamp": "22 Sep", "status": "complete" },
+    { "title": "Duplicate hash", "description": "Skip a second pass on the same scan.", "timestamp": "26 Sep", "status": "complete" },
+    { "title": "Field confidence", "description": "Per-key floor for auto-release.", "timestamp": "30 Sep", "status": "current" },
+    { "title": "Exception SLA", "description": "Warn at 4 hours, page at 8.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Desk lead" },
+    { "name": "Priya Poluru", "role": "Inbox" },
+    { "name": "Marcus Poluru", "role": "Classify" },
+    { "name": "Elena Poluru", "role": "Extract" },
+    { "name": "Jonah Poluru", "role": "Validate" },
+    { "name": "Sofia Poluru", "role": "Exceptions" }
+  ]
+}

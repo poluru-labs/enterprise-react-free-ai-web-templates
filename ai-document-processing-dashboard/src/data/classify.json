@@ -1,0 +1,49 @@
+{
+  "types": [
+    {
+      "id": "invoice",
+      "name": "Invoice",
+      "owner": "Marcus Poluru",
+      "status": "live",
+      "volume": 842,
+      "accuracy": 0.986,
+      "note": "Vendor, total, due date, and PO. Duplicates skip a second pass."
+    },
+    {
+      "id": "contract",
+      "name": "Contract",
+      "owner": "Avery Poluru",
+      "status": "live",
+      "volume": 116,
+      "accuracy": 0.971,
+      "note": "MSA, SOW, and addendum. Routed to legal after classify."
+    },
+    {
+      "id": "identity",
+      "name": "Identity",
+      "owner": "Priya Poluru",
+      "status": "watch",
+      "volume": 64,
+      "accuracy": 0.934,
+      "note": "Passport and license. Low glare still needs a human look."
+    },
+    {
+      "id": "packing",
+      "name": "Packing slip",
+      "owner": "Elena Poluru",
+      "status": "live",
+      "volume": 210,
+      "accuracy": 0.992,
+      "note": "Ship-to, SKU, and qty. Auto-release above 0.95."
+    },
+    {
+      "id": "expense",
+      "name": "Expense",
+      "owner": "Jonah Poluru",
+      "status": "draft",
+      "volume": 38,
+      "accuracy": 0.881,
+      "note": "Receipts from travel. New type, still in review."
+    }
+  ]
+}

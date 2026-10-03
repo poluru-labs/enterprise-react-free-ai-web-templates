@@ -1,0 +1,36 @@
+{
+  "queue": [
+    {
+      "id": "EX-204",
+      "name": "PO missing on INV-4419",
+      "owner": "Sofia Poluru",
+      "status": "open",
+      "severity": "high",
+      "at": "2026-10-02T09:18:00.000Z"
+    },
+    {
+      "id": "EX-201",
+      "name": "Low contrast on Maya Poluru ID",
+      "owner": "Priya Poluru",
+      "status": "open",
+      "severity": "medium",
+      "at": "2026-10-01T16:42:00.000Z"
+    },
+    {
+      "id": "EX-198",
+      "name": "Duplicate packing slip",
+      "owner": "Elena Poluru",
+      "status": "resolved",
+      "severity": "low",
+      "at": "2026-09-30T11:05:00.000Z"
+    },
+    {
+      "id": "EX-194",
+      "name": "Expense total mismatch",
+      "owner": "Jonah Poluru",
+      "status": "open",
+      "severity": "high",
+      "at": "2026-09-30T08:20:00.000Z"
+    }
+  ]
+}

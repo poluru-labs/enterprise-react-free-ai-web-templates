@@ -1,0 +1,47 @@
+{
+  "score": 93,
+  "packs": [
+    {
+      "id": "DOC-1842",
+      "name": "Poluru Labs vendor invoice",
+      "owner": "Elena Poluru",
+      "usage": 18,
+      "quality": 97,
+      "ttl": "7d",
+      "fields": [
+        { "term": "Vendor", "description": "North desk supplies" },
+        { "term": "Invoice no.", "description": "INV-4419" },
+        { "term": "Total", "description": "$4,280.00" },
+        { "term": "Due", "description": "18 Oct 2026" }
+      ]
+    },
+    {
+      "id": "DOC-1836",
+      "name": "Poluru Freight packing slip",
+      "owner": "Elena Poluru",
+      "usage": 8,
+      "quality": 99,
+      "ttl": "14d",
+      "fields": [
+        { "term": "Ship-to", "description": "Austin DC" },
+        { "term": "SKU", "description": "PLT-220" },
+        { "term": "Qty", "description": "48" },
+        { "term": "Carrier", "description": "Poluru Freight" }
+      ]
+    },
+    {
+      "id": "DOC-1839",
+      "name": "Maya Poluru ID scan",
+      "owner": "Priya Poluru",
+      "usage": 6,
+      "quality": 91,
+      "ttl": "30d",
+      "fields": [
+        { "term": "Name", "description": "Maya Poluru" },
+        { "term": "Document", "description": "Driver license" },
+        { "term": "Expires", "description": "12 Mar 2028" },
+        { "term": "State", "description": "TX" }
+      ]
+    }
+  ]
+}
