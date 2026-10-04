@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "id": "PRIV-118",
+      "name": "Break-glass · restricted chart",
+      "owner": "Jonah Poluru",
+      "status": "open",
+      "severity": "high",
+      "at": "2026-10-04T08:12:00.000Z"
+    },
+    {
+      "id": "PRIV-115",
+      "name": "Bulk export · research set",
+      "owner": "Sofia Poluru",
+      "status": "review",
+      "severity": "medium",
+      "at": "2026-10-03T14:40:00.000Z"
+    },
+    {
+      "id": "PRIV-112",
+      "name": "After-hours access · Maya Poluru chart",
+      "owner": "Priya Poluru",
+      "status": "resolved",
+      "severity": "low",
+      "at": "2026-10-02T22:05:00.000Z"
+    },
+    {
+      "id": "PRIV-108",
+      "name": "Failed login spike · north campus",
+      "owner": "Jonah Poluru",
+      "status": "open",
+      "severity": "high",
+      "at": "2026-10-02T06:30:00.000Z"
+    }
+  ]
+}

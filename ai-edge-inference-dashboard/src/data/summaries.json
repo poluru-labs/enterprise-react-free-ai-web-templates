@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Intake", "description": "Problem list" },
+    { "label": "Draft", "description": "Note sections" },
+    { "label": "Review", "description": "Attestation" },
+    { "label": "Handoff", "description": "Sign-out pack" },
+    { "label": "Archive", "description": "Legal hold check" }
+  ],
+  "summaries": [
+    {
+      "id": "SUM-441",
+      "name": "ED visit · Maya Poluru",
+      "owner": "Marcus Poluru",
+      "status": "review",
+      "sections": 6,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "SUM-439",
+      "name": "Clinic progress · Priya Poluru",
+      "owner": "Marcus Poluru",
+      "status": "draft",
+      "sections": 4,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "SUM-435",
+      "name": "Discharge summary · ward 4B",
+      "owner": "Avery Poluru",
+      "status": "live",
+      "sections": 8,
+      "updated": "2026-10-03"
+    }
+  ]
+}

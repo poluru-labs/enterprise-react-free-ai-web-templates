@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Open queues", "value": 142, "hint": "28 past SLA", "trend": "down", "trendValue": "-11" },
+    { "label": "Summaries today", "value": 318, "hint": "12 awaiting attestation", "trend": "up", "trendValue": "+24" },
+    { "label": "Coding accuracy", "value": "94.2%", "hint": "Elena Poluru desk", "trend": "up", "trendValue": "+0.8 pts" },
+    { "label": "Privacy events", "value": 6, "hint": "2 break-glass", "trend": "flat", "trendValue": "0" }
+  ],
+  "features": [
+    { "title": "Priority lanes", "body": "Triage ED, clinic, and discharge by acuity and SLA.", "href": "/healthcare/queues" },
+    { "title": "Handoff packs", "body": "Structured sign-out with problem list and meds.", "href": "/healthcare/summaries" },
+    { "title": "Code confidence", "body": "ICD-10 and CPT suggestions with a review floor.", "href": "/healthcare/coding" },
+    { "title": "Access audit", "body": "Every chart open logged with reason and owner.", "href": "/healthcare/privacy" },
+    { "title": "Break-glass log", "body": "Emergency access with mandatory follow-up.", "href": "/healthcare/privacy" },
+    { "title": "Quiet hours", "body": "Pager rules and escalation for Sofia Poluru.", "href": "/healthcare/settings" }
+  ],
+  "releases": [
+    { "title": "Priority lanes 2.0", "description": "Acuity-aware queue ordering.", "timestamp": "18 Sep", "status": "complete" },
+    { "title": "Handoff packs", "description": "One-page sign-out template.", "timestamp": "22 Sep", "status": "complete" },
+    { "title": "Code confidence", "description": "Per-code review scores.", "timestamp": "28 Sep", "status": "current" },
+    { "title": "Privacy SLA", "description": "Break-glass review in 4 hours.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Network lead" },
+    { "name": "Priya Poluru", "role": "Queues" },
+    { "name": "Marcus Poluru", "role": "Summaries" },
+    { "name": "Elena Poluru", "role": "Coding" },
+    { "name": "Jonah Poluru", "role": "Privacy" },
+    { "name": "Sofia Poluru", "role": "On-call" }
+  ]
+}
