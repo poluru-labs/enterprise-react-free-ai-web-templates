@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Sense", "description": "Inlet / outlet" },
+    { "label": "Setpoint", "description": "CRAC targets" },
+    { "label": "Economize", "description": "Free cooling" },
+    { "label": "Balance", "description": "Row airflow" },
+    { "label": "Verify", "description": "PUE check" }
+  ],
+  "zones": [
+    {
+      "id": "CRAC-12",
+      "name": "North DC · row 12",
+      "owner": "Marcus Poluru",
+      "status": "live",
+      "deltaT": 8.2,
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "CRAC-08",
+      "name": "North DC · row 8",
+      "owner": "Marcus Poluru",
+      "status": "tune",
+      "deltaT": 5.1,
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "CRAC-03",
+      "name": "South campus · lab",
+      "owner": "Priya Poluru",
+      "status": "live",
+      "deltaT": 7.4,
+      "updated": "2026-10-04"
+    }
+  ]
+}

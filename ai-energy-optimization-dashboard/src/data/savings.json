@@ -1,0 +1,47 @@
+{
+  "score": 87,
+  "projects": [
+    {
+      "id": "PRJ-220",
+      "name": "CRAC setpoint reset",
+      "owner": "Jonah Poluru",
+      "usage": 82,
+      "quality": 94,
+      "ttl": "3y",
+      "fields": [
+        { "term": "CapEx", "description": "$420k" },
+        { "term": "Annual save", "description": "$310k" },
+        { "term": "Payback", "description": "16 months" },
+        { "term": "Owner", "description": "Marcus Poluru" }
+      ]
+    },
+    {
+      "id": "PRJ-218",
+      "name": "LED + controls · HQ",
+      "owner": "Jonah Poluru",
+      "usage": 64,
+      "quality": 91,
+      "ttl": "5y",
+      "fields": [
+        { "term": "CapEx", "description": "$180k" },
+        { "term": "Annual save", "description": "$92k" },
+        { "term": "Payback", "description": "23 months" },
+        { "term": "Owner", "description": "Priya Poluru" }
+      ]
+    },
+    {
+      "id": "PRJ-214",
+      "name": "Peak shave · North DC",
+      "owner": "Avery Poluru",
+      "usage": 71,
+      "quality": 88,
+      "ttl": "2y",
+      "fields": [
+        { "term": "CapEx", "description": "$95k" },
+        { "term": "Annual save", "description": "$140k" },
+        { "term": "Payback", "description": "8 months" },
+        { "term": "Owner", "description": "Jonah Poluru" }
+      ]
+    }
+  ]
+}

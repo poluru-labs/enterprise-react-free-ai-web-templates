@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "id": "carb-scope2",
+      "name": "Scope 2 intensity",
+      "owner": "Elena Poluru",
+      "status": "passing",
+      "passRate": 96.2,
+      "cases": 31
+    },
+    {
+      "id": "carb-budget",
+      "name": "Monthly carbon budget",
+      "owner": "Elena Poluru",
+      "status": "failing",
+      "passRate": 78.4,
+      "cases": 10
+    },
+    {
+      "id": "carb-offset",
+      "name": "REC match rate",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "passRate": 99.1,
+      "cases": 12
+    },
+    {
+      "id": "carb-report",
+      "name": "Disclosure pack complete",
+      "owner": "Avery Poluru",
+      "status": "passing",
+      "passRate": 100,
+      "cases": 4
+    }
+  ]
+}

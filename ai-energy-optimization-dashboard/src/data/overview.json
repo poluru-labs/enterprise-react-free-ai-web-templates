@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Load now", "value": "16.2 MW", "hint": "North DC peak window", "trend": "down", "trendValue": "-4%" },
+    { "label": "PUE", "value": "1.34", "hint": "Marcus Poluru target 1.32", "trend": "down", "trendValue": "-0.02" },
+    { "label": "Carbon today", "value": "42 tCO₂e", "hint": "Grid mix 38% renewable", "trend": "down", "trendValue": "-6%" },
+    { "label": "Savings YTD", "value": "$1.8M", "hint": "12 projects live", "trend": "up", "trendValue": "+$220k" }
+  ],
+  "features": [
+    { "title": "Peak shaving", "body": "Shift load before on-peak tariff windows.", "href": "/energy/usage" },
+    { "title": "Free cooling", "body": "Economizer hours tracked by site and season.", "href": "/energy/cooling" },
+    { "title": "Carbon budget", "body": "Monthly cap with alerts to Elena Poluru.", "href": "/energy/carbon" },
+    { "title": "ROI tracker", "body": "Payback and run rate on every project.", "href": "/energy/savings" },
+    { "title": "Anomaly feed", "body": "Spikes flagged before the bill closes.", "href": "/energy/usage" },
+    { "title": "Tariff sync", "body": "Rates and demand charges in settings.", "href": "/energy/settings" }
+  ],
+  "releases": [
+    { "title": "Peak shave 2.1", "description": "Auto curtail before on-peak.", "timestamp": "20 Sep", "status": "complete" },
+    { "title": "Free cooling map", "description": "Economizer hours by site.", "timestamp": "24 Sep", "status": "complete" },
+    { "title": "Carbon budget", "description": "Monthly cap and alerts.", "timestamp": "1 Oct", "status": "current" },
+    { "title": "Demand response", "description": "Utility DR enrollments.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Portfolio lead" },
+    { "name": "Priya Poluru", "role": "Usage" },
+    { "name": "Marcus Poluru", "role": "Cooling" },
+    { "name": "Elena Poluru", "role": "Carbon" },
+    { "name": "Jonah Poluru", "role": "Savings" },
+    { "name": "Sofia Poluru", "role": "On-call" }
+  ]
+}

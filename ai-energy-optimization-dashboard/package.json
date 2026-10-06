@@ -1,5 +1,5 @@
 {
-  "name": "enterprise-react-starter",
+  "name": "ai-energy-optimization-dashboard",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -10,7 +10,8 @@
   "dependencies": {
     "@poluru-labs/enterprise-design-system-react": "^1.0.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",

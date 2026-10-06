@@ -1,0 +1,49 @@
+{
+  "meters": [
+    {
+      "id": "MTR-441",
+      "name": "North DC · hall A",
+      "owner": "Priya Poluru",
+      "site": "North DC",
+      "status": "watch",
+      "kwh": 8420,
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "MTR-438",
+      "name": "South campus · lab wing",
+      "owner": "Priya Poluru",
+      "site": "South campus",
+      "status": "normal",
+      "kwh": 4210,
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "MTR-432",
+      "name": "Edge pod · Poluru freight",
+      "owner": "Avery Poluru",
+      "site": "Edge",
+      "status": "spike",
+      "kwh": 1180,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "MTR-429",
+      "name": "Office · HQ floor 3",
+      "owner": "Jonah Poluru",
+      "site": "HQ",
+      "status": "normal",
+      "kwh": 640,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "MTR-425",
+      "name": "Cold aisle · row 12",
+      "owner": "Marcus Poluru",
+      "site": "North DC",
+      "status": "done",
+      "kwh": 910,
+      "updated": "2026-10-03"
+    }
+  ]
+}
