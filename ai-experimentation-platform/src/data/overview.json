@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Live experiments", "value": 14, "hint": "3 ending this week", "trend": "up", "trendValue": "+2" },
+    { "label": "Variants", "value": 38, "hint": "6 pending review", "trend": "up", "trendValue": "+4" },
+    { "label": "Primary lift", "value": "+2.4%", "hint": "Checkout · Priya Poluru", "trend": "up", "trendValue": "+0.3 pts" },
+    { "label": "Gates open", "value": 5, "hint": "2 blocked on guardrail", "trend": "flat", "trendValue": "0" }
+  ],
+  "features": [
+    { "title": "Multi-arm tests", "body": "Run more than two variants with balanced traffic.", "href": "/lab/experiments" },
+    { "title": "Guardrail alerts", "body": "Auto-stop when latency or error rate regresses.", "href": "/lab/metrics" },
+    { "title": "Gate templates", "body": "Reusable promote checklists for Sofia Poluru.", "href": "/lab/rollouts" },
+    { "title": "Variant diff", "body": "Compare configs and prompts side by side.", "href": "/lab/variants" },
+    { "title": "CUPED metrics", "body": "Variance reduction on primary KPIs.", "href": "/lab/metrics" },
+    { "title": "Audit trail", "body": "Who changed traffic and when.", "href": "/lab/settings" }
+  ],
+  "releases": [
+    { "title": "Multi-arm 1.0", "description": "Three+ arms in one experiment.", "timestamp": "12 Sep", "status": "complete" },
+    { "title": "Guardrail stop", "description": "Kill switch on regression.", "timestamp": "18 Sep", "status": "complete" },
+    { "title": "Gate templates", "description": "Shared promote checklists.", "timestamp": "25 Sep", "status": "current" },
+    { "title": "Sequential testing", "description": "Alpha spend controls.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Program lead" },
+    { "name": "Priya Poluru", "role": "Experiments" },
+    { "name": "Marcus Poluru", "role": "Variants" },
+    { "name": "Elena Poluru", "role": "Metrics" },
+    { "name": "Jonah Poluru", "role": "Analysis" },
+    { "name": "Sofia Poluru", "role": "Rollouts" }
+  ]
+}

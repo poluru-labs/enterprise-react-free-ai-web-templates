@@ -1,0 +1,49 @@
+{
+  "variants": [
+    {
+      "id": "VAR-882",
+      "name": "ranker-v3.2-poluru",
+      "owner": "Marcus Poluru",
+      "model": "ranker",
+      "status": "published",
+      "traffic": 50,
+      "updated": "2026-10-06"
+    },
+    {
+      "id": "VAR-881",
+      "name": "checkout-copy-b",
+      "owner": "Priya Poluru",
+      "model": "copy",
+      "status": "review",
+      "traffic": 25,
+      "updated": "2026-10-06"
+    },
+    {
+      "id": "VAR-878",
+      "name": "support-routing-v1",
+      "owner": "Avery Poluru",
+      "model": "router",
+      "status": "published",
+      "traffic": 100,
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "VAR-875",
+      "name": "embed-small-512",
+      "owner": "Elena Poluru",
+      "model": "embed",
+      "status": "draft",
+      "traffic": 0,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "VAR-872",
+      "name": "guardrail-latency-cap",
+      "owner": "Jonah Poluru",
+      "model": "policy",
+      "status": "published",
+      "traffic": 100,
+      "updated": "2026-10-03"
+    }
+  ]
+}

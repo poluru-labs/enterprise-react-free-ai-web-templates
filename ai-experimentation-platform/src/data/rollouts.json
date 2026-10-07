@@ -1,0 +1,47 @@
+{
+  "score": 91,
+  "gates": [
+    {
+      "id": "GATE-220",
+      "name": "Ranker v3.2 → production",
+      "owner": "Sofia Poluru",
+      "usage": 88,
+      "quality": 96,
+      "ttl": "7d",
+      "fields": [
+        { "term": "Primary", "description": "+2.1% conversion" },
+        { "term": "Guardrail", "description": "Latency within 5%" },
+        { "term": "Sign-off", "description": "Jonah Poluru" },
+        { "term": "Canary", "description": "10% · 24h" }
+      ]
+    },
+    {
+      "id": "GATE-218",
+      "name": "Checkout copy B",
+      "owner": "Sofia Poluru",
+      "usage": 62,
+      "quality": 89,
+      "ttl": "3d",
+      "fields": [
+        { "term": "Primary", "description": "+0.8% CTR" },
+        { "term": "Guardrail", "description": "Errors flat" },
+        { "term": "Sign-off", "description": "Priya Poluru" },
+        { "term": "Canary", "description": "5% · 48h" }
+      ]
+    },
+    {
+      "id": "GATE-214",
+      "name": "Embed small 512",
+      "owner": "Avery Poluru",
+      "usage": 41,
+      "quality": 85,
+      "ttl": "14d",
+      "fields": [
+        { "term": "Primary", "description": "Recall +1.2 pts" },
+        { "term": "Guardrail", "description": "Cost −8%" },
+        { "term": "Sign-off", "description": "Elena Poluru" },
+        { "term": "Canary", "description": "Hold · review" }
+      ]
+    }
+  ]
+}

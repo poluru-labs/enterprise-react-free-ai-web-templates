@@ -1,0 +1,36 @@
+{
+  "metrics": [
+    {
+      "id": "met-conv",
+      "name": "Conversion rate",
+      "owner": "Elena Poluru",
+      "status": "passing",
+      "passRate": 97.2,
+      "cases": 12840
+    },
+    {
+      "id": "met-lat",
+      "name": "p95 latency",
+      "owner": "Jonah Poluru",
+      "status": "failing",
+      "passRate": 82.1,
+      "cases": 4410
+    },
+    {
+      "id": "met-err",
+      "name": "Error rate",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "passRate": 99.4,
+      "cases": 4410
+    },
+    {
+      "id": "met-rev",
+      "name": "Revenue per session",
+      "owner": "Priya Poluru",
+      "status": "passing",
+      "passRate": 94.8,
+      "cases": 12840
+    }
+  ]
+}

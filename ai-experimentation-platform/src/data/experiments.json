@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Hypothesis", "description": "Define the change" },
+    { "label": "Assign", "description": "Traffic split" },
+    { "label": "Run", "description": "Collect data" },
+    { "label": "Analyze", "description": "Stats review" },
+    { "label": "Gate", "description": "Promote or stop" }
+  ],
+  "experiments": [
+    {
+      "id": "EXP-441",
+      "name": "Checkout button color",
+      "owner": "Priya Poluru",
+      "status": "live",
+      "arms": 3,
+      "updated": "2026-10-06"
+    },
+    {
+      "id": "EXP-438",
+      "name": "Search ranker v3.2",
+      "owner": "Avery Poluru",
+      "status": "live",
+      "arms": 2,
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "EXP-435",
+      "name": "Support triage model",
+      "owner": "Marcus Poluru",
+      "status": "paused",
+      "arms": 2,
+      "updated": "2026-10-04"
+    }
+  ]
+}
