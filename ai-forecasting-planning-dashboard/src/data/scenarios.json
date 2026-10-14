@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Assumptions", "description": "Drivers & promo" },
+    { "label": "Run", "description": "Generate curves" },
+    { "label": "Compare", "description": "Base vs stress" },
+    { "label": "Consensus", "description": "S&OP review" },
+    { "label": "Publish", "description": "Lock to ERP" }
+  ],
+  "scenarios": [
+    {
+      "id": "SCN-441",
+      "name": "Q4 base · North",
+      "owner": "Priya Poluru",
+      "status": "live",
+      "delta": "+2.1%",
+      "updated": "2026-10-14"
+    },
+    {
+      "id": "SCN-438",
+      "name": "Q4 upside · promo",
+      "owner": "Priya Poluru",
+      "status": "live",
+      "delta": "+6.4%",
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "SCN-435",
+      "name": "Q4 stress · supply",
+      "owner": "Marcus Poluru",
+      "status": "draft",
+      "delta": "-4.8%",
+      "updated": "2026-10-12"
+    }
+  ]
+}

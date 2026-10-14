@@ -1,0 +1,47 @@
+{
+  "score": 89,
+  "bands": [
+    {
+      "id": "CNF-220",
+      "name": "North retail · P80",
+      "owner": "Jonah Poluru",
+      "usage": 94,
+      "quality": 96,
+      "ttl": "13 wk",
+      "fields": [
+        { "term": "Lower", "description": "16.2k units" },
+        { "term": "Point", "description": "18.4k units" },
+        { "term": "Upper", "description": "20.8k units" },
+        { "term": "Method", "description": "Quantile regression" }
+      ]
+    },
+    {
+      "id": "CNF-218",
+      "name": "DC replen · P90",
+      "owner": "Jonah Poluru",
+      "usage": 88,
+      "quality": 91,
+      "ttl": "8 wk",
+      "fields": [
+        { "term": "Lower", "description": "38.1k units" },
+        { "term": "Point", "description": "41.2k units" },
+        { "term": "Upper", "description": "45.0k units" },
+        { "term": "Method", "description": "Bootstrap" }
+      ]
+    },
+    {
+      "id": "CNF-214",
+      "name": "Launch SKU-033",
+      "owner": "Elena Poluru",
+      "usage": 62,
+      "quality": 84,
+      "ttl": "52 wk",
+      "fields": [
+        { "term": "Lower", "description": "1.8k units" },
+        { "term": "Point", "description": "2.4k units" },
+        { "term": "Upper", "description": "3.2k units" },
+        { "term": "Method", "description": "Analog set" }
+      ]
+    }
+  ]
+}

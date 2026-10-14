@@ -1,0 +1,36 @@
+{
+  "metrics": [
+    {
+      "id": "acc-mape",
+      "name": "MAPE · retail",
+      "owner": "Elena Poluru",
+      "status": "passing",
+      "passRate": 91.4,
+      "cases": 2840
+    },
+    {
+      "id": "acc-bias",
+      "name": "Bias · retail",
+      "owner": "Elena Poluru",
+      "status": "passing",
+      "passRate": 96.2,
+      "cases": 2840
+    },
+    {
+      "id": "acc-dc",
+      "name": "MAPE · DC",
+      "owner": "Marcus Poluru",
+      "status": "failing",
+      "passRate": 78.8,
+      "cases": 640
+    },
+    {
+      "id": "acc-wape",
+      "name": "WAPE · firm",
+      "owner": "Avery Poluru",
+      "status": "passing",
+      "passRate": 94.1,
+      "cases": 3480
+    }
+  ]
+}

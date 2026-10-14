@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "SKUs forecast", "value": "2,840", "hint": "North retail · Avery Poluru", "trend": "up", "trendValue": "+120" },
+    { "label": "Active scenarios", "value": 6, "hint": "S&OP lock Friday", "trend": "flat", "trendValue": "0" },
+    { "label": "Avg confidence", "value": "P82", "hint": "Bands on all horizons", "trend": "up", "trendValue": "+2 pts" },
+    { "label": "MAPE (4 wk)", "value": "8.6%", "hint": "Target 9%", "trend": "down", "trendValue": "-0.4 pts" }
+  ],
+  "features": [
+    { "title": "Scenario compare", "body": "Base, upside, and stress on one chart.", "href": "/forecast/scenarios" },
+    { "title": "P80 bands", "body": "Default confidence interval per SKU.", "href": "/forecast/confidence" },
+    { "title": "Rolling backtest", "body": "12-week holdout for every model.", "href": "/forecast/accuracy" },
+    { "title": "Override log", "body": "Planner edits with owner and reason.", "href": "/forecast/predictions" },
+    { "title": "Publish lock", "body": "Freeze forecast before S&OP.", "href": "/forecast/scenarios" },
+    { "title": "Horizon packs", "body": "Export CSV for supply and finance.", "href": "/forecast/settings" }
+  ],
+  "releases": [
+    { "title": "Scenario compare", "description": "Three curves in one view.", "timestamp": "5 Sep", "status": "complete" },
+    { "title": "P80 default", "description": "Confidence on new SKUs.", "timestamp": "12 Sep", "status": "complete" },
+    { "title": "Rolling backtest", "description": "Weekly accuracy refresh.", "timestamp": "20 Sep", "status": "current" },
+    { "title": "Promo calendar", "description": "Linked uplift factors.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Planning lead" },
+    { "name": "Priya Poluru", "role": "Scenarios" },
+    { "name": "Marcus Poluru", "role": "Predictions" },
+    { "name": "Elena Poluru", "role": "Accuracy" },
+    { "name": "Jonah Poluru", "role": "Confidence" },
+    { "name": "Sofia Poluru", "role": "S&OP" }
+  ]
+}

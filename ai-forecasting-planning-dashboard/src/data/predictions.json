@@ -1,0 +1,49 @@
+{
+  "forecasts": [
+    {
+      "id": "FC-8821",
+      "name": "SKU-441 · North retail",
+      "owner": "Marcus Poluru",
+      "horizon": "13 wk",
+      "status": "published",
+      "units": 18400,
+      "updated": "2026-10-14"
+    },
+    {
+      "id": "FC-8818",
+      "name": "SKU-220 · Poluru home line",
+      "owner": "Avery Poluru",
+      "horizon": "26 wk",
+      "status": "draft",
+      "units": 9200,
+      "updated": "2026-10-14"
+    },
+    {
+      "id": "FC-8812",
+      "name": "SKU-118 · DC replenishment",
+      "owner": "Marcus Poluru",
+      "horizon": "8 wk",
+      "status": "override",
+      "units": 41200,
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "FC-8809",
+      "name": "SKU-902 · Promo lift",
+      "owner": "Priya Poluru",
+      "horizon": "4 wk",
+      "status": "published",
+      "units": 6800,
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "FC-8804",
+      "name": "SKU-033 · New launch",
+      "owner": "Jonah Poluru",
+      "horizon": "52 wk",
+      "status": "review",
+      "units": 2400,
+      "updated": "2026-10-11"
+    }
+  ]
+}
