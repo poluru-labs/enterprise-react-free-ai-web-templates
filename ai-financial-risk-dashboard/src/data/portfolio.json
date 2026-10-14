@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "id": "PF-220",
+      "name": "Retail cards",
+      "owner": "Avery Poluru",
+      "status": "passing",
+      "utilization": 88,
+      "var": 18.2
+    },
+    {
+      "id": "PF-218",
+      "name": "Commercial SMB",
+      "owner": "Marcus Poluru",
+      "status": "failing",
+      "utilization": 96,
+      "var": 14.1
+    },
+    {
+      "id": "PF-214",
+      "name": "Mortgage warehouse",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "utilization": 72,
+      "var": 9.4
+    },
+    {
+      "id": "PF-210",
+      "name": "Auto indirect",
+      "owner": "Priya Poluru",
+      "status": "watch",
+      "utilization": 91,
+      "var": 6.8
+    }
+  ]
+}

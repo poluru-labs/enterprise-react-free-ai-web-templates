@@ -1,0 +1,47 @@
+{
+  "score": 92,
+  "packs": [
+    {
+      "id": "EXP-118",
+      "name": "Decline · Maya Poluru",
+      "owner": "Jonah Poluru",
+      "usage": 100,
+      "quality": 98,
+      "ttl": "7y",
+      "fields": [
+        { "term": "Top factor", "description": "Utilization on trade lines" },
+        { "term": "Reason code", "description": "RC-014 · High balance" },
+        { "term": "Model", "description": "Card origination v4.2" },
+        { "term": "Reviewer", "description": "Elena Poluru" }
+      ]
+    },
+    {
+      "id": "EXP-115",
+      "name": "Limit decrease · Poluru Labs",
+      "owner": "Jonah Poluru",
+      "usage": 86,
+      "quality": 94,
+      "ttl": "7y",
+      "fields": [
+        { "term": "Top factor", "description": "Cash flow volatility" },
+        { "term": "Reason code", "description": "RC-022 · Business risk" },
+        { "term": "Model", "description": "SMB line challenger" },
+        { "term": "Reviewer", "description": "Marcus Poluru" }
+      ]
+    },
+    {
+      "id": "EXP-112",
+      "name": "Fraud hold explain",
+      "owner": "Priya Poluru",
+      "usage": 74,
+      "quality": 91,
+      "ttl": "3y",
+      "fields": [
+        { "term": "Top factor", "description": "Graph link score" },
+        { "term": "Reason code", "description": "RC-F01 · Linked entities" },
+        { "term": "Model", "description": "Fraud graph v2" },
+        { "term": "Reviewer", "description": "Priya Poluru" }
+      ]
+    }
+  ]
+}

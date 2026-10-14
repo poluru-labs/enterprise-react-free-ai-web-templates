@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "id": "FRD-8821",
+      "name": "Mule ring · Maya Poluru card",
+      "owner": "Priya Poluru",
+      "channel": "Cards",
+      "status": "urgent",
+      "loss": 18400,
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "FRD-8818",
+      "name": "ATO · Poluru Labs payroll",
+      "owner": "Priya Poluru",
+      "channel": "ACH",
+      "status": "active",
+      "loss": 9200,
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "FRD-8812",
+      "name": "Synthetic ID · Jonah Poluru app",
+      "owner": "Jonah Poluru",
+      "channel": "Origination",
+      "status": "review",
+      "loss": 0,
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "FRD-8809",
+      "name": "Wire recall · North desk",
+      "owner": "Avery Poluru",
+      "channel": "Wire",
+      "status": "closed",
+      "loss": 4100,
+      "updated": "2026-10-11"
+    },
+    {
+      "id": "FRD-8804",
+      "name": "Merchant bust-out",
+      "owner": "Marcus Poluru",
+      "channel": "Acquiring",
+      "status": "active",
+      "loss": 52000,
+      "updated": "2026-10-10"
+    }
+  ]
+}

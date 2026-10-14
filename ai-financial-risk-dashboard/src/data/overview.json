@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Open fraud cases", "value": 47, "hint": "9 past SLA", "trend": "down", "trendValue": "-6" },
+    { "label": "Credit approval", "value": "68.2%", "hint": "Challenger +0.4 pts", "trend": "up", "trendValue": "+0.4 pts" },
+    { "label": "Portfolio VaR", "value": "$42M", "hint": "92% of limit", "trend": "up", "trendValue": "+3%" },
+    { "label": "Explain packs", "value": 128, "hint": "12 pending review", "trend": "up", "trendValue": "+18" }
+  ],
+  "features": [
+    { "title": "Graph signals", "body": "Linked accounts and mule rings in one case view.", "href": "/risk/fraud" },
+    { "title": "Champion/challenger", "body": "Shadow scores before you flip production.", "href": "/risk/credit" },
+    { "title": "Limit breaches", "body": "Real-time utilization against desk limits.", "href": "/risk/portfolio" },
+    { "title": "Reason codes", "body": "Reg-ready adverse action and decline text.", "href": "/risk/explain" },
+    { "title": "Case routing", "body": "Assign by loss amount and SLA to Priya Poluru.", "href": "/risk/fraud" },
+    { "title": "Model drift watch", "body": "PSI alerts for Elena Poluru on scorecards.", "href": "/risk/credit" }
+  ],
+  "releases": [
+    { "title": "Graph signals 1.0", "description": "Entity links on fraud cases.", "timestamp": "8 Sep", "status": "complete" },
+    { "title": "Champion/challenger", "description": "Shadow credit scores.", "timestamp": "15 Sep", "status": "complete" },
+    { "title": "Reason code pack", "description": "Export for compliance.", "timestamp": "28 Sep", "status": "current" },
+    { "title": "Portfolio stress", "description": "Scenario library v2.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Firm lead" },
+    { "name": "Priya Poluru", "role": "Fraud" },
+    { "name": "Marcus Poluru", "role": "Portfolio" },
+    { "name": "Elena Poluru", "role": "Credit models" },
+    { "name": "Jonah Poluru", "role": "Explainability" },
+    { "name": "Sofia Poluru", "role": "On-call" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Ingest", "description": "Bureau + app" },
+    { "label": "Score", "description": "Champion model" },
+    { "label": "Challenger", "description": "Shadow path" },
+    { "label": "Decision", "description": "Policy rules" },
+    { "label": "Monitor", "description": "Drift & PSI" }
+  ],
+  "models": [
+    {
+      "id": "CRD-441",
+      "name": "Card origination v4.2",
+      "owner": "Elena Poluru",
+      "status": "live",
+      "psi": 0.08,
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "CRD-438",
+      "name": "SMB line challenger",
+      "owner": "Elena Poluru",
+      "status": "shadow",
+      "psi": 0.12,
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "CRD-435",
+      "name": "Collections propensity",
+      "owner": "Marcus Poluru",
+      "status": "live",
+      "psi": 0.05,
+      "updated": "2026-10-10"
+    }
+  ]
+}
