@@ -1,0 +1,49 @@
+{
+  "queues": [
+    {
+      "id": "Q-8841",
+      "name": "ED · chest pain · Maya Poluru",
+      "owner": "Priya Poluru",
+      "unit": "Emergency",
+      "status": "urgent",
+      "waitMin": 18,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "Q-8838",
+      "name": "Clinic · follow-up · Marcus Poluru",
+      "owner": "Marcus Poluru",
+      "unit": "Primary care",
+      "status": "active",
+      "waitMin": 42,
+      "updated": "2026-10-04"
+    },
+    {
+      "id": "Q-8832",
+      "name": "Discharge · meds reconcile",
+      "owner": "Avery Poluru",
+      "unit": "Med-surg",
+      "status": "active",
+      "waitMin": 65,
+      "updated": "2026-10-03"
+    },
+    {
+      "id": "Q-8829",
+      "name": "Pre-op · Jonah Poluru",
+      "owner": "Priya Poluru",
+      "unit": "Surgery",
+      "status": "hold",
+      "waitMin": 120,
+      "updated": "2026-10-03"
+    },
+    {
+      "id": "Q-8824",
+      "name": "Telehealth · Elena Poluru",
+      "owner": "Elena Poluru",
+      "unit": "Virtual",
+      "status": "done",
+      "waitMin": 0,
+      "updated": "2026-10-02"
+    }
+  ]
+}

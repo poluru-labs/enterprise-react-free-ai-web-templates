@@ -1,0 +1,47 @@
+{
+  "score": 94,
+  "packs": [
+    {
+      "id": "ENC-2201",
+      "name": "ED · chest pain workup",
+      "owner": "Elena Poluru",
+      "usage": 72,
+      "quality": 96,
+      "ttl": "7y",
+      "fields": [
+        { "term": "Primary", "description": "R07.9 · Chest pain, unspecified" },
+        { "term": "Secondary", "description": "I10 · Essential hypertension" },
+        { "term": "CPT", "description": "99285 · ED visit, high" },
+        { "term": "Confidence", "description": "0.94" }
+      ]
+    },
+    {
+      "id": "ENC-2198",
+      "name": "Clinic · diabetes follow-up",
+      "owner": "Elena Poluru",
+      "usage": 58,
+      "quality": 91,
+      "ttl": "7y",
+      "fields": [
+        { "term": "Primary", "description": "E11.9 · Type 2 diabetes" },
+        { "term": "CPT", "description": "99214 · Office visit" },
+        { "term": "Owner", "description": "Priya Poluru attested" },
+        { "term": "Confidence", "description": "0.89" }
+      ]
+    },
+    {
+      "id": "ENC-2192",
+      "name": "Procedure · knee arthroscopy",
+      "owner": "Jonah Poluru",
+      "usage": 44,
+      "quality": 88,
+      "ttl": "7y",
+      "fields": [
+        { "term": "Primary", "description": "M23.51 · Cyst, knee" },
+        { "term": "CPT", "description": "29881 · Arthroscopy" },
+        { "term": "Modifier", "description": "LT" },
+        { "term": "Confidence", "description": "0.86" }
+      ]
+    }
+  ]
+}
