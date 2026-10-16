@@ -1,0 +1,47 @@
+{
+  "score": 91,
+  "bands": [
+    {
+      "id": "CAL-220",
+      "name": "Text NER · gold v12",
+      "owner": "Jonah Poluru",
+      "usage": 96,
+      "quality": 94,
+      "ttl": "Weekly",
+      "fields": [
+        { "term": "Items", "description": "240 labeled spans" },
+        { "term": "Pass threshold", "description": "≥ 90% exact match" },
+        { "term": "Last run", "description": "Mon 08:00" },
+        { "term": "Drift", "description": "−0.3 pts vs prior" }
+      ]
+    },
+    {
+      "id": "CAL-218",
+      "name": "BBox · retail aisle",
+      "owner": "Jonah Poluru",
+      "usage": 88,
+      "quality": 92,
+      "ttl": "Weekly",
+      "fields": [
+        { "term": "Items", "description": "180 images" },
+        { "term": "Pass threshold", "description": "IoU ≥ 0.85" },
+        { "term": "Last run", "description": "Mon 08:05" },
+        { "term": "Drift", "description": "+0.8 pts vs prior" }
+      ]
+    },
+    {
+      "id": "CAL-214",
+      "name": "Intent · support",
+      "owner": "Elena Poluru",
+      "usage": 72,
+      "quality": 87,
+      "ttl": "Biweekly",
+      "fields": [
+        { "term": "Items", "description": "120 utterances" },
+        { "term": "Pass threshold", "description": "≥ 88% macro-F1" },
+        { "term": "Last run", "description": "8 Sep" },
+        { "term": "Drift", "description": "Review scheduled" }
+      ]
+    }
+  ]
+}

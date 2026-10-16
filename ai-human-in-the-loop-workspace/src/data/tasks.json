@@ -1,0 +1,36 @@
+{
+  "metrics": [
+    {
+      "id": "TSK-01",
+      "name": "Vision backlog",
+      "owner": "Priya Poluru",
+      "status": "passing",
+      "passRate": 92,
+      "cases": 1840
+    },
+    {
+      "id": "TSK-02",
+      "name": "Text NER queue",
+      "owner": "Marcus Poluru",
+      "status": "passing",
+      "passRate": 88,
+      "cases": 2260
+    },
+    {
+      "id": "TSK-03",
+      "name": "Dispute tie-breaks",
+      "owner": "Elena Poluru",
+      "status": "failing",
+      "passRate": 76,
+      "cases": 142
+    },
+    {
+      "id": "TSK-04",
+      "name": "Calibration follow-ups",
+      "owner": "Jonah Poluru",
+      "status": "passing",
+      "passRate": 95,
+      "cases": 48
+    }
+  ]
+}

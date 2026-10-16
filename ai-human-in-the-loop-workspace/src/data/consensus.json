@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Label", "description": "First pass" },
+    { "label": "Review", "description": "Second pass" },
+    { "label": "Compare", "description": "Agreement check" },
+    { "label": "Resolve", "description": "Tie-break if needed" },
+    { "label": "Export", "description": "Training pack" }
+  ],
+  "scenarios": [
+    {
+      "id": "CON-88",
+      "name": "Vision · shelf overlap",
+      "status": "live",
+      "delta": "96% agree",
+      "owner": "Priya Poluru",
+      "updated": "Today"
+    },
+    {
+      "id": "CON-84",
+      "name": "NER · vendor names",
+      "status": "live",
+      "delta": "91% agree",
+      "owner": "Marcus Poluru",
+      "updated": "Yesterday"
+    },
+    {
+      "id": "CON-79",
+      "name": "Intent · refund vs cancel",
+      "status": "draft",
+      "delta": "Pending",
+      "owner": "Elena Poluru",
+      "updated": "Mon"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "batches": [
+    {
+      "id": "ANN-4412",
+      "name": "Invoice line items · batch 12",
+      "owner": "Marcus Poluru",
+      "horizon": "NER",
+      "status": "published",
+      "units": 842,
+      "updated": "Today 09:14"
+    },
+    {
+      "id": "ANN-4408",
+      "name": "Shelf photos · region tags",
+      "owner": "Priya Poluru",
+      "horizon": "BBox",
+      "status": "draft",
+      "units": 1204,
+      "updated": "Yesterday"
+    },
+    {
+      "id": "ANN-4399",
+      "name": "Support transcripts · intent",
+      "owner": "Marcus Poluru",
+      "horizon": "Classify",
+      "status": "review",
+      "units": 560,
+      "updated": "Mon 16:02"
+    },
+    {
+      "id": "ANN-4391",
+      "name": "Clinical PDF · redaction spans",
+      "owner": "Jonah Poluru",
+      "horizon": "Span",
+      "status": "override",
+      "units": 318,
+      "updated": "Sun 11:40"
+    },
+    {
+      "id": "ANN-4385",
+      "name": "Catalog attributes · QA",
+      "owner": "Elena Poluru",
+      "horizon": "Multi",
+      "status": "published",
+      "units": 2100,
+      "updated": "Fri 08:00"
+    }
+  ]
+}

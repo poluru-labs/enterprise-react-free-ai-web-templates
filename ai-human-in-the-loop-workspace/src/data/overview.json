@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Open tasks", "value": "1,284", "hint": "All lanes · Nina Poluru", "trend": "up", "trendValue": "+86" },
+    { "label": "Consensus rate", "value": "94.2%", "hint": "3-of-3 agreement", "trend": "up", "trendValue": "+1.1 pts" },
+    { "label": "Calibration pass", "value": "91%", "hint": "Gold set this week", "trend": "flat", "trendValue": "0" },
+    { "label": "Median turnaround", "value": "4.2h", "hint": "Target 6h", "trend": "down", "trendValue": "-18m" }
+  ],
+  "features": [
+    { "title": "Span labeling", "body": "Entity tags with keyboard shortcuts.", "href": "/hitl/annotation" },
+    { "title": "Majority vote", "body": "Auto-close when reviewers align.", "href": "/hitl/consensus" },
+    { "title": "Gold calibration", "body": "Weekly drift check on every lane.", "href": "/hitl/calibration" },
+    { "title": "Batch assign", "body": "Round-robin with SLA timers.", "href": "/hitl/tasks" },
+    { "title": "Dispute desk", "body": "Lead tie-break with audit trail.", "href": "/hitl/consensus" },
+    { "title": "Export packs", "body": "JSONL for training pipelines.", "href": "/hitl/settings" }
+  ],
+  "releases": [
+    { "title": "Majority vote", "description": "Three-reviewer auto-resolve.", "timestamp": "3 Sep", "status": "complete" },
+    { "title": "Gold refresh", "description": "Monday calibration drops.", "timestamp": "10 Sep", "status": "complete" },
+    { "title": "Span shortcuts", "description": "Keyboard entity labels.", "timestamp": "18 Sep", "status": "current" },
+    { "title": "Inter-rater report", "description": "Cohen’s kappa export.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Nina Poluru", "role": "Program lead" },
+    { "name": "Priya Poluru", "role": "Vision lane" },
+    { "name": "Marcus Poluru", "role": "Text lane" },
+    { "name": "Elena Poluru", "role": "Quality" },
+    { "name": "Jonah Poluru", "role": "Calibration" },
+    { "name": "Sofia Poluru", "role": "Ops" }
+  ]
+}
