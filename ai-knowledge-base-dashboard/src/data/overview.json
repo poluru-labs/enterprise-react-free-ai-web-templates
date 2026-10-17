@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Published articles", "value": "2,418", "hint": "Product + support · Leila Poluru", "trend": "up", "trendValue": "+64" },
+    { "label": "Connected sources", "value": 38, "hint": "Synced nightly", "trend": "up", "trendValue": "+2" },
+    { "label": "Cited answers", "value": "97.1%", "hint": "With footnotes", "trend": "up", "trendValue": "+0.6 pts" },
+    { "label": "Stale pages", "value": 142, "hint": "> 90 days", "trend": "down", "trendValue": "−18" }
+  ],
+  "features": [
+    { "title": "Inline citations", "body": "Every snippet links to source URL.", "href": "/kb/citations" },
+    { "title": "Source sync", "body": "Confluence, Notion, and PDF crawls.", "href": "/kb/sources" },
+    { "title": "Freshness radar", "body": "Owner reminders before stale date.", "href": "/kb/freshness" },
+    { "title": "Gap triage", "body": "Unanswered queries become articles.", "href": "/kb/gaps" },
+    { "title": "Merge drafts", "body": "Side-by-side author diff.", "href": "/kb/articles" },
+    { "title": "Export packs", "body": "Markdown bundle for search index.", "href": "/kb/settings" }
+  ],
+  "releases": [
+    { "title": "Inline cite", "description": "Footnotes on generated answers.", "timestamp": "4 Sep", "status": "complete" },
+    { "title": "Stale radar", "description": "90-day review queue.", "timestamp": "11 Sep", "status": "complete" },
+    { "title": "Gap triage", "description": "Daily unanswered report.", "timestamp": "19 Sep", "status": "current" },
+    { "title": "Source diff", "description": "Highlight upstream changes.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Leila Poluru", "role": "KB lead" },
+    { "name": "Priya Poluru", "role": "Sources" },
+    { "name": "Marcus Poluru", "role": "Articles" },
+    { "name": "Elena Poluru", "role": "Gaps" },
+    { "name": "Jonah Poluru", "role": "Freshness" },
+    { "name": "Sofia Poluru", "role": "Citations" }
+  ]
+}

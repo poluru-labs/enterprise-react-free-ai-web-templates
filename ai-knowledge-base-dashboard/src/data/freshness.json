@@ -1,0 +1,47 @@
+{
+  "score": 88,
+  "bands": [
+    {
+      "id": "FR-220",
+      "name": "Product how-tos",
+      "owner": "Jonah Poluru",
+      "usage": 92,
+      "quality": 94,
+      "ttl": "90d",
+      "fields": [
+        { "term": "Pages tracked", "description": "840 articles" },
+        { "term": "Stale", "description": "38 need review" },
+        { "term": "Next sweep", "description": "Mon 08:00" },
+        { "term": "Owner SLA", "description": "5 business days" }
+      ]
+    },
+    {
+      "id": "FR-218",
+      "name": "Support macros",
+      "owner": "Jonah Poluru",
+      "usage": 86,
+      "quality": 89,
+      "ttl": "60d",
+      "fields": [
+        { "term": "Pages tracked", "description": "412 articles" },
+        { "term": "Stale", "description": "61 need review" },
+        { "term": "Next sweep", "description": "Mon 08:05" },
+        { "term": "Owner SLA", "description": "3 business days" }
+      ]
+    },
+    {
+      "id": "FR-214",
+      "name": "Legal & compliance",
+      "owner": "Leila Poluru",
+      "usage": 78,
+      "quality": 96,
+      "ttl": "30d",
+      "fields": [
+        { "term": "Pages tracked", "description": "64 articles" },
+        { "term": "Stale", "description": "4 need review" },
+        { "term": "Next sweep", "description": "Weekly" },
+        { "term": "Owner SLA", "description": "2 business days" }
+      ]
+    }
+  ]
+}

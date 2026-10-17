@@ -1,0 +1,40 @@
+{
+  "links": [
+    {
+      "id": "CIT-9912",
+      "name": "Refund window · policy §3",
+      "owner": "Sofia Poluru",
+      "source": "Confluence",
+      "status": "verified",
+      "clicks": 842,
+      "updated": "Today"
+    },
+    {
+      "id": "CIT-9904",
+      "name": "Okta SAML metadata",
+      "owner": "Sofia Poluru",
+      "source": "Notion",
+      "status": "verified",
+      "clicks": 1204,
+      "updated": "Yesterday"
+    },
+    {
+      "id": "CIT-9898",
+      "name": "Rate limit table",
+      "owner": "Marcus Poluru",
+      "source": "OpenAPI",
+      "status": "broken",
+      "clicks": 318,
+      "updated": "Mon"
+    },
+    {
+      "id": "CIT-9881",
+      "name": "Retention schedule",
+      "owner": "Jonah Poluru",
+      "source": "PDF",
+      "status": "review",
+      "clicks": 96,
+      "updated": "Fri"
+    }
+  ]
+}

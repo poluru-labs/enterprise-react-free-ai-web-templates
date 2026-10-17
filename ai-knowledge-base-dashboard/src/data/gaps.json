@@ -1,0 +1,36 @@
+{
+  "metrics": [
+    {
+      "id": "GAP-01",
+      "name": "Billing proration",
+      "owner": "Elena Poluru",
+      "status": "failing",
+      "passRate": 68,
+      "cases": 240
+    },
+    {
+      "id": "GAP-02",
+      "name": "EU data residency",
+      "owner": "Elena Poluru",
+      "status": "passing",
+      "passRate": 91,
+      "cases": 88
+    },
+    {
+      "id": "GAP-03",
+      "name": "Mobile offline mode",
+      "owner": "Marcus Poluru",
+      "status": "passing",
+      "passRate": 84,
+      "cases": 156
+    },
+    {
+      "id": "GAP-04",
+      "name": "Partner API scopes",
+      "owner": "Priya Poluru",
+      "status": "failing",
+      "passRate": 72,
+      "cases": 112
+    }
+  ]
+}

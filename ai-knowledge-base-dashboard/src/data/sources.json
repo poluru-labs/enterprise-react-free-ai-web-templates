@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Connect", "description": "OAuth or crawl" },
+    { "label": "Map", "description": "Space to collection" },
+    { "label": "Sync", "description": "Nightly job" },
+    { "label": "Diff", "description": "Upstream change" },
+    { "label": "Publish", "description": "Articles updated" }
+  ],
+  "scenarios": [
+    {
+      "id": "SRC-41",
+      "name": "Confluence · product space",
+      "status": "live",
+      "delta": "Last sync 2h ago",
+      "owner": "Priya Poluru",
+      "updated": "Today"
+    },
+    {
+      "id": "SRC-38",
+      "name": "Notion · support macros",
+      "status": "live",
+      "delta": "Last sync 6h ago",
+      "owner": "Priya Poluru",
+      "updated": "Today"
+    },
+    {
+      "id": "SRC-33",
+      "name": "PDF vault · legal",
+      "status": "draft",
+      "delta": "Pending scan",
+      "owner": "Jonah Poluru",
+      "updated": "Mon"
+    }
+  ]
+}

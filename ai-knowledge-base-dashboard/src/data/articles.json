@@ -1,0 +1,49 @@
+{
+  "batches": [
+    {
+      "id": "ART-8821",
+      "name": "Refund policy · 2026 update",
+      "owner": "Marcus Poluru",
+      "horizon": "Policy",
+      "status": "published",
+      "units": 12,
+      "updated": "Today 10:02"
+    },
+    {
+      "id": "ART-8814",
+      "name": "SSO setup · Okta",
+      "owner": "Leila Poluru",
+      "horizon": "How-to",
+      "status": "draft",
+      "units": 8,
+      "updated": "Yesterday"
+    },
+    {
+      "id": "ART-8802",
+      "name": "API rate limits",
+      "owner": "Marcus Poluru",
+      "horizon": "Reference",
+      "status": "review",
+      "units": 6,
+      "updated": "Mon 14:20"
+    },
+    {
+      "id": "ART-8795",
+      "name": "On-call runbook · billing",
+      "owner": "Priya Poluru",
+      "horizon": "Runbook",
+      "status": "override",
+      "units": 22,
+      "updated": "Sun 09:15"
+    },
+    {
+      "id": "ART-8788",
+      "name": "Data retention FAQ",
+      "owner": "Jonah Poluru",
+      "horizon": "FAQ",
+      "status": "published",
+      "units": 14,
+      "updated": "Fri 16:40"
+    }
+  ]
+}
