@@ -1,0 +1,49 @@
+{
+  "batches": [
+    {
+      "id": "CLS-8821",
+      "name": "MSA · Acme Corp · indemnity",
+      "owner": "Sofia Poluru",
+      "horizon": "Indemnity",
+      "status": "published",
+      "units": 3,
+      "updated": "Today 11:20"
+    },
+    {
+      "id": "CLS-8814",
+      "name": "SOW · Cloud vendor · liability cap",
+      "owner": "Marcus Poluru",
+      "horizon": "Liability",
+      "status": "review",
+      "units": 2,
+      "updated": "Yesterday"
+    },
+    {
+      "id": "CLS-8802",
+      "name": "NDA · Partner · term",
+      "owner": "Adira Poluru",
+      "horizon": "Term",
+      "status": "draft",
+      "units": 1,
+      "updated": "Mon 09:00"
+    },
+    {
+      "id": "CLS-8795",
+      "name": "DPA · EU customer · data transfer",
+      "owner": "Priya Poluru",
+      "horizon": "Privacy",
+      "status": "override",
+      "units": 4,
+      "updated": "Sun 14:10"
+    },
+    {
+      "id": "CLS-8788",
+      "name": "Order form · renewal auto",
+      "owner": "Sofia Poluru",
+      "horizon": "Renewal",
+      "status": "published",
+      "units": 2,
+      "updated": "Fri 16:00"
+    }
+  ]
+}

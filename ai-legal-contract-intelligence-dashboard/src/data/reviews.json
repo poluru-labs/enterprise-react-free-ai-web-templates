@@ -1,0 +1,73 @@
+{
+  "score": 86,
+  "bands": [
+    {
+      "id": "REV-220",
+      "name": "Commercial MSAs",
+      "owner": "Elena Poluru",
+      "usage": 94,
+      "quality": 92,
+      "ttl": "7d SLA",
+      "fields": [
+        { "term": "In queue", "description": "6 contracts" },
+        { "term": "Avg cycle", "description": "4.8 days" },
+        { "term": "Blocked", "description": "1 pending counsel" },
+        { "term": "Playbook hits", "description": "88% standard" }
+      ]
+    },
+    {
+      "id": "REV-218",
+      "name": "Vendor SOWs",
+      "owner": "Elena Poluru",
+      "usage": 88,
+      "quality": 85,
+      "ttl": "5d SLA",
+      "fields": [
+        { "term": "In queue", "description": "5 contracts" },
+        { "term": "Avg cycle", "description": "3.2 days" },
+        { "term": "Blocked", "description": "0" },
+        { "term": "Playbook hits", "description": "76% standard" }
+      ]
+    },
+    {
+      "id": "REV-214",
+      "name": "NDAs & DPAs",
+      "owner": "Adira Poluru",
+      "usage": 91,
+      "quality": 96,
+      "ttl": "3d SLA",
+      "fields": [
+        { "term": "In queue", "description": "3 contracts" },
+        { "term": "Avg cycle", "description": "1.9 days" },
+        { "term": "Blocked", "description": "0" },
+        { "term": "Playbook hits", "description": "94% standard" }
+      ]
+    }
+  ],
+  "queue": [
+    {
+      "id": "REV-Q01",
+      "name": "Acme · MSA amendment",
+      "owner": "Elena Poluru",
+      "status": "failing",
+      "passRate": 68,
+      "cases": 12
+    },
+    {
+      "id": "REV-Q02",
+      "name": "CloudCo · SOW v3",
+      "owner": "Marcus Poluru",
+      "status": "passing",
+      "passRate": 91,
+      "cases": 8
+    },
+    {
+      "id": "REV-Q03",
+      "name": "Partner · mutual NDA",
+      "owner": "Adira Poluru",
+      "status": "passing",
+      "passRate": 95,
+      "cases": 4
+    }
+  ]
+}

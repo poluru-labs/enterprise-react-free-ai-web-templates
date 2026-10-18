@@ -1,0 +1,30 @@
+{
+  "kpis": [
+    { "label": "Active contracts", "value": "386", "hint": "Commercial · Adira Poluru", "trend": "up", "trendValue": "+12" },
+    { "label": "Clauses extracted", "value": "4,210", "hint": "Last 30 days", "trend": "up", "trendValue": "+340" },
+    { "label": "Open obligations", "value": 58, "hint": "Renewals & notices", "trend": "down", "trendValue": "−6" },
+    { "label": "Reviews in flight", "value": 14, "hint": "Target 7d SLA", "trend": "flat", "trendValue": "0" }
+  ],
+  "features": [
+    { "title": "Clause extract", "body": "Indemnity, liability, and term blocks.", "href": "/legal/clauses" },
+    { "title": "Obligation ledger", "body": "Owners, dates, and filing tasks.", "href": "/legal/obligations" },
+    { "title": "Review workflow", "body": "Redlines, comments, and sign-off.", "href": "/legal/reviews" },
+    { "title": "Playbook diff", "body": "Flag non-standard language.", "href": "/legal/clauses" },
+    { "title": "Renewal radar", "body": "90-day notice reminders.", "href": "/legal/obligations" },
+    { "title": "Counsel pack", "body": "PDF bundle for external review.", "href": "/legal/settings" }
+  ],
+  "releases": [
+    { "title": "Clause diff", "description": "Baseline vs executed text.", "timestamp": "2 Sep", "status": "complete" },
+    { "title": "Renewal radar", "description": "Obligation alerts.", "timestamp": "9 Sep", "status": "complete" },
+    { "title": "Review pack", "description": "One-click counsel export.", "timestamp": "17 Sep", "status": "current" },
+    { "title": "Multi-lingual OCR", "description": "Scanned annexes.", "timestamp": "Next", "status": "upcoming" }
+  ],
+  "team": [
+    { "name": "Adira Poluru", "role": "Legal lead" },
+    { "name": "Marcus Poluru", "role": "Commercial" },
+    { "name": "Priya Poluru", "role": "Vendor desk" },
+    { "name": "Elena Poluru", "role": "Reviews" },
+    { "name": "Jonah Poluru", "role": "Obligations" },
+    { "name": "Sofia Poluru", "role": "Clause library" }
+  ]
+}

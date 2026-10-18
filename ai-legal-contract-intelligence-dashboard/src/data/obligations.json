@@ -1,0 +1,35 @@
+{
+  "steps": [
+    { "label": "Extract", "description": "From executed PDF" },
+    { "label": "Assign", "description": "Owner & date" },
+    { "label": "Track", "description": "SLA & reminders" },
+    { "label": "File", "description": "Proof of completion" },
+    { "label": "Archive", "description": "Close obligation" }
+  ],
+  "scenarios": [
+    {
+      "id": "OBL-41",
+      "name": "Renewal notice · Acme MSA",
+      "status": "live",
+      "delta": "Due in 62d",
+      "owner": "Jonah Poluru",
+      "updated": "Today"
+    },
+    {
+      "id": "OBL-38",
+      "name": "Insurance certificate · vendor SOW",
+      "status": "live",
+      "delta": "Due in 18d",
+      "owner": "Jonah Poluru",
+      "updated": "Today"
+    },
+    {
+      "id": "OBL-33",
+      "name": "Audit report · enterprise DPA",
+      "status": "draft",
+      "delta": "Unassigned",
+      "owner": "Priya Poluru",
+      "updated": "Mon"
+    }
+  ]
+}
