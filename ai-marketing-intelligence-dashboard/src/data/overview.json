@@ -1,0 +1,78 @@
+{
+  "kpis": [
+    {
+      "label": "Blended ROAS",
+      "value": "4.2×",
+      "hint": "Paid + lifecycle",
+      "trend": "up",
+      "trendValue": "+0.3"
+    },
+    {
+      "label": "Weekly spend",
+      "value": "$186K",
+      "hint": "On pace",
+      "trend": "neutral",
+      "trendValue": "98%"
+    },
+    {
+      "label": "Qualified leads",
+      "value": "1,284",
+      "hint": "Last 7 days",
+      "trend": "up",
+      "trendValue": "+12%"
+    },
+    {
+      "label": "Content variants",
+      "value": "47",
+      "hint": "Ready to ship",
+      "trend": "up",
+      "trendValue": "+8"
+    }
+  ],
+  "features": [
+    {
+      "title": "Campaign desk",
+      "body": "Channel mix, pacing, and ROAS by owner.",
+      "href": "/marketing/campaigns"
+    },
+    {
+      "title": "Audience segments",
+      "body": "Reach, overlap, and lift against holdouts.",
+      "href": "/marketing/audiences"
+    },
+    {
+      "title": "Attribution models",
+      "body": "Compare first-touch, linear, and data-driven credit.",
+      "href": "/marketing/attribution"
+    }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Growth lead" },
+    { "name": "Maya Poluru", "role": "Paid media" },
+    { "name": "Kavya Poluru", "role": "Lifecycle" },
+    { "name": "Rahul Poluru", "role": "Attribution" }
+  ],
+  "releases": [
+    {
+      "title": "Multi-touch compare",
+      "timestamp": "2026-10-18T16:00:00.000Z",
+      "description": "Rahul Poluru shipped side-by-side credit views."
+    },
+    {
+      "title": "Variant scoring",
+      "timestamp": "2026-10-12T11:30:00.000Z",
+      "description": "Priya Poluru enabled CTR rank on generated copy."
+    },
+    {
+      "title": "Budget pacing alerts",
+      "timestamp": "2026-10-05T09:00:00.000Z",
+      "description": "Maya Poluru set drift thresholds for Q4 flights."
+    }
+  ],
+  "channels": [
+    { "label": "Paid search", "share": 34 },
+    { "label": "Paid social", "share": 28 },
+    { "label": "Email", "share": 22 },
+    { "label": "Display", "share": 16 }
+  ]
+}

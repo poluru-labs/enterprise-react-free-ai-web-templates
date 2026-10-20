@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cmp-q4-launch",
+    "name": "Q4 product launch",
+    "channel": "Paid",
+    "audience": "Product evaluators",
+    "owner": "Maya Poluru",
+    "status": "Live",
+    "spend": 84200,
+    "roas": 4.6,
+    "ctr": 3.2,
+    "conversions": 428,
+    "updated": "2026-10-19T14:20:00.000Z"
+  },
+  {
+    "id": "cmp-nurture",
+    "name": "Enterprise nurture",
+    "channel": "Email",
+    "audience": "Trial accounts",
+    "owner": "Kavya Poluru",
+    "status": "Live",
+    "spend": 12400,
+    "roas": 6.1,
+    "ctr": 5.4,
+    "conversions": 312,
+    "updated": "2026-10-18T09:10:00.000Z"
+  },
+  {
+    "id": "cmp-brand",
+    "name": "Brand awareness",
+    "channel": "Display",
+    "audience": "Broad reach",
+    "owner": "Elena Poluru",
+    "status": "Watch",
+    "spend": 45600,
+    "roas": 2.1,
+    "ctr": 0.9,
+    "conversions": 86,
+    "updated": "2026-10-17T16:45:00.000Z"
+  },
+  {
+    "id": "cmp-retarget",
+    "name": "Cart retargeting",
+    "channel": "Paid",
+    "audience": "Abandoned checkout",
+    "owner": "Maya Poluru",
+    "status": "Live",
+    "spend": 28900,
+    "roas": 5.8,
+    "ctr": 4.1,
+    "conversions": 264,
+    "updated": "2026-10-19T08:00:00.000Z"
+  },
+  {
+    "id": "cmp-webinar",
+    "name": "Webinar registration",
+    "channel": "Email",
+    "audience": "Finance buyers",
+    "owner": "Kavya Poluru",
+    "status": "Paused",
+    "spend": 9800,
+    "roas": 3.4,
+    "ctr": 4.8,
+    "conversions": 142,
+    "updated": "2026-10-15T12:30:00.000Z"
+  },
+  {
+    "id": "cmp-partner",
+    "name": "Partner co-marketing",
+    "channel": "Paid",
+    "audience": "Partner referrals",
+    "owner": "Marcus Poluru",
+    "status": "Live",
+    "spend": 22100,
+    "roas": 3.9,
+    "ctr": 2.6,
+    "conversions": 118,
+    "updated": "2026-10-16T10:15:00.000Z"
+  }
+]

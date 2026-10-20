@@ -1,0 +1,52 @@
+[
+  {
+    "id": "aud-evaluators",
+    "name": "Product evaluators",
+    "size": 184200,
+    "lift": 14.2,
+    "overlap": 8,
+    "owner": "Maya Poluru",
+    "status": "Active",
+    "channel": "Paid"
+  },
+  {
+    "id": "aud-trial",
+    "name": "Trial accounts",
+    "size": 42100,
+    "lift": 22.5,
+    "overlap": 12,
+    "owner": "Kavya Poluru",
+    "status": "Active",
+    "channel": "Email"
+  },
+  {
+    "id": "aud-finance",
+    "name": "Finance buyers",
+    "size": 67200,
+    "lift": 9.8,
+    "overlap": 5,
+    "owner": "Kavya Poluru",
+    "status": "Refreshing",
+    "channel": "Email"
+  },
+  {
+    "id": "aud-churn",
+    "name": "Win-back cohort",
+    "size": 28900,
+    "lift": 6.4,
+    "overlap": 18,
+    "owner": "Priya Poluru",
+    "status": "Active",
+    "channel": "Lifecycle"
+  },
+  {
+    "id": "aud-lookalike",
+    "name": "Paid lookalike seed",
+    "size": 512000,
+    "lift": 11.1,
+    "overlap": 3,
+    "owner": "Maya Poluru",
+    "status": "Active",
+    "channel": "Paid"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "models": [
+    { "id": "first", "name": "First touch", "credit": 100, "conversions": 892, "cpa": 142 },
+    { "id": "linear", "name": "Linear", "credit": 100, "conversions": 1048, "cpa": 128 },
+    { "id": "data", "name": "Data-driven", "credit": 100, "conversions": 1124, "cpa": 119 }
+  ],
+  "touchpoints": [
+    { "channel": "Paid search", "share": 31, "assisted": 42 },
+    { "channel": "Paid social", "share": 24, "assisted": 38 },
+    { "channel": "Email", "share": 22, "assisted": 55 },
+    { "channel": "Organic", "share": 15, "assisted": 61 },
+    { "channel": "Direct", "share": 8, "assisted": 28 }
+  ],
+  "paths": [
+    {
+      "id": "path-1",
+      "journey": "Paid social → Email → Direct",
+      "conversions": 186,
+      "avgDays": 12,
+      "owner": "Rahul Poluru"
+    },
+    {
+      "id": "path-2",
+      "journey": "Paid search → Organic → Email",
+      "conversions": 142,
+      "avgDays": 9,
+      "owner": "Rahul Poluru"
+    },
+    {
+      "id": "path-3",
+      "journey": "Display → Paid search → Direct",
+      "conversions": 98,
+      "avgDays": 18,
+      "owner": "Elena Poluru"
+    }
+  ]
+}

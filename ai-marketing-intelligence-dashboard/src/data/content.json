@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cnt-hero-a",
+    "title": "Hero headline A",
+    "campaign": "Q4 product launch",
+    "format": "Landing page",
+    "score": 92,
+    "status": "Approved",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-19T11:00:00.000Z"
+  },
+  {
+    "id": "cnt-hero-b",
+    "title": "Hero headline B",
+    "campaign": "Q4 product launch",
+    "format": "Landing page",
+    "score": 88,
+    "status": "In review",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-18T15:30:00.000Z"
+  },
+  {
+    "id": "cnt-email-1",
+    "title": "Trial day-3 nudge",
+    "campaign": "Enterprise nurture",
+    "format": "Email",
+    "score": 85,
+    "status": "Approved",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-17T09:20:00.000Z"
+  },
+  {
+    "id": "cnt-ad-set",
+    "title": "Retarget carousel",
+    "campaign": "Cart retargeting",
+    "format": "Paid social",
+    "score": 79,
+    "status": "Draft",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-16T14:00:00.000Z"
+  },
+  {
+    "id": "cnt-webinar",
+    "title": "Webinar invite block",
+    "campaign": "Webinar registration",
+    "format": "Email",
+    "score": 81,
+    "status": "Paused",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-14T10:45:00.000Z"
+  }
+]

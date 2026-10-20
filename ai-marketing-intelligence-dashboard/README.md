@@ -1,6 +1,6 @@
-# Enterprise React starter
+# AI Marketing Intelligence Dashboard
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+MarkSight — analyze campaigns, audiences, attribution, and generated content on a light desk powered by `@poluru-labs/enterprise-design-system-react`.
 
 ## Run
 
@@ -12,7 +12,6 @@ npm run dev
 ```
 
 Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
 
 | Script | Description |
 | --- | --- |
@@ -20,14 +19,11 @@ Preview server: http://127.0.0.1:4189
 | `npm run build` | Create a production build |
 | `npm run preview` | Preview the production build |
 
-## Structure
+## Routes
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
-
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+- `/marketing/overview` — Home snapshot
+- `/marketing/campaigns` — Campaign performance
+- `/marketing/audiences` — Segments and lift
+- `/marketing/attribution` — Credit models and paths
+- `/marketing/content` — Generated content variants
+- `/marketing/settings` — Desk settings
