@@ -1,0 +1,46 @@
+[
+  {
+    "id": "rec-home-hero",
+    "slot": "Home hero",
+    "surface": "In-app",
+    "model": "Collaborative v3",
+    "ctr": 8.2,
+    "lift": 14.5,
+    "status": "Live",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-20T08:00:00.000Z"
+  },
+  {
+    "id": "rec-cart-upsell",
+    "slot": "Cart upsell",
+    "surface": "Checkout",
+    "model": "Rules + rank",
+    "ctr": 5.6,
+    "lift": 11.2,
+    "status": "Live",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-19T12:30:00.000Z"
+  },
+  {
+    "id": "rec-email-block",
+    "slot": "Weekly digest block",
+    "surface": "Email",
+    "model": "Content ranker",
+    "ctr": 4.1,
+    "lift": 9.8,
+    "status": "In review",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-18T15:00:00.000Z"
+  },
+  {
+    "id": "rec-push-tip",
+    "slot": "Push tip of day",
+    "surface": "Push",
+    "model": "Context bandit",
+    "ctr": 3.4,
+    "lift": 7.6,
+    "status": "Draft",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-16T11:20:00.000Z"
+  }
+]

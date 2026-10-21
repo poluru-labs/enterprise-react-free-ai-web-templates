@@ -1,0 +1,52 @@
+[
+  {
+    "id": "jrn-onboard",
+    "name": "Product onboarding",
+    "trigger": "Signup complete",
+    "steps": 5,
+    "completion": 62,
+    "owner": "Rahul Poluru",
+    "status": "Live",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "jrn-upgrade",
+    "name": "Trial to paid",
+    "trigger": "Trial day 5",
+    "steps": 4,
+    "completion": 38,
+    "owner": "Kavya Poluru",
+    "status": "Live",
+    "updated": "2026-10-19T09:20:00.000Z"
+  },
+  {
+    "id": "jrn-winback",
+    "name": "Win-back sequence",
+    "trigger": "Inactive 21d",
+    "steps": 6,
+    "completion": 21,
+    "owner": "Priya Poluru",
+    "status": "Watch",
+    "updated": "2026-10-18T14:45:00.000Z"
+  },
+  {
+    "id": "jrn-feature",
+    "name": "Feature adoption",
+    "trigger": "First dashboard view",
+    "steps": 3,
+    "completion": 54,
+    "owner": "Maya Poluru",
+    "status": "Live",
+    "updated": "2026-10-17T16:10:00.000Z"
+  },
+  {
+    "id": "jrn-renewal",
+    "name": "Renewal nudge",
+    "trigger": "Contract -30d",
+    "steps": 4,
+    "completion": 47,
+    "owner": "Marcus Poluru",
+    "status": "Paused",
+    "updated": "2026-10-15T10:00:00.000Z"
+  }
+]

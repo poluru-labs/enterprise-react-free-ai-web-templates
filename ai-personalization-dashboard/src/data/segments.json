@@ -1,0 +1,52 @@
+[
+  {
+    "id": "seg-power",
+    "name": "Power users",
+    "size": 84200,
+    "lift": 18.4,
+    "overlap": 6,
+    "owner": "Kavya Poluru",
+    "status": "Active",
+    "channel": "In-app"
+  },
+  {
+    "id": "seg-trial",
+    "name": "Trial day 1–7",
+    "size": 12800,
+    "lift": 24.1,
+    "overlap": 11,
+    "owner": "Kavya Poluru",
+    "status": "Active",
+    "channel": "Email"
+  },
+  {
+    "id": "seg-dormant",
+    "name": "Dormant 30d",
+    "size": 45600,
+    "lift": 9.2,
+    "overlap": 14,
+    "owner": "Priya Poluru",
+    "status": "Refreshing",
+    "channel": "Push"
+  },
+  {
+    "id": "seg-enterprise",
+    "name": "Enterprise admins",
+    "size": 4200,
+    "lift": 31.5,
+    "overlap": 3,
+    "owner": "Marcus Poluru",
+    "status": "Active",
+    "channel": "In-app"
+  },
+  {
+    "id": "seg-churn-risk",
+    "name": "Churn risk band",
+    "size": 18900,
+    "lift": 12.8,
+    "overlap": 9,
+    "owner": "Elena Poluru",
+    "status": "Active",
+    "channel": "Lifecycle"
+  }
+]

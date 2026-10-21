@@ -1,0 +1,36 @@
+{
+  "cohorts": [
+    { "label": "Week 1", "retained": 92 },
+    { "label": "Week 4", "retained": 78 },
+    { "label": "Week 8", "retained": 71 },
+    { "label": "Week 12", "retained": 66 }
+  ],
+  "riskBands": [
+    { "band": "Low", "users": 124800, "share": 58 },
+    { "band": "Medium", "users": 64200, "share": 30 },
+    { "band": "High", "users": 26400, "share": 12 }
+  ],
+  "plays": [
+    {
+      "id": "play-1",
+      "name": "High-value save offer",
+      "segment": "Churn risk band",
+      "lift": 8.4,
+      "owner": "Elena Poluru"
+    },
+    {
+      "id": "play-2",
+      "name": "Feature checklist nudge",
+      "segment": "Trial day 1–7",
+      "lift": 12.1,
+      "owner": "Rahul Poluru"
+    },
+    {
+      "id": "play-3",
+      "name": "Admin expansion prompt",
+      "segment": "Enterprise admins",
+      "lift": 15.3,
+      "owner": "Marcus Poluru"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "kpis": [
+    {
+      "label": "Active segments",
+      "value": "38",
+      "hint": "Published rules",
+      "trend": "up",
+      "trendValue": "+4"
+    },
+    {
+      "label": "Live journeys",
+      "value": "12",
+      "hint": "Across product",
+      "trend": "neutral",
+      "trendValue": "Stable"
+    },
+    {
+      "label": "Rec click-through",
+      "value": "6.8%",
+      "hint": "Weighted avg",
+      "trend": "up",
+      "trendValue": "+0.9%"
+    },
+    {
+      "label": "90-day retention",
+      "value": "71%",
+      "hint": "Paid cohort",
+      "trend": "up",
+      "trendValue": "+2.1%"
+    }
+  ],
+  "features": [
+    {
+      "title": "User segments",
+      "body": "Rule sets, overlap, and holdout lift.",
+      "href": "/personalize/segments"
+    },
+    {
+      "title": "Journey maps",
+      "body": "Triggers, branches, and completion rates.",
+      "href": "/personalize/journeys"
+    },
+    {
+      "title": "Recommendation slots",
+      "body": "Surfaces, models, and ranked variants.",
+      "href": "/personalize/recommendations"
+    }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Personalization lead" },
+    { "name": "Kavya Poluru", "role": "Segments & CRM" },
+    { "name": "Maya Poluru", "role": "In-app surfaces" },
+    { "name": "Rahul Poluru", "role": "Journey ops" }
+  ],
+  "releases": [
+    {
+      "title": "Journey simulator",
+      "timestamp": "2026-10-19T15:00:00.000Z",
+      "description": "Rahul Poluru shipped path preview before publish."
+    },
+    {
+      "title": "Slot ranking",
+      "timestamp": "2026-10-14T10:00:00.000Z",
+      "description": "Maya Poluru enabled model compare on home feed."
+    },
+    {
+      "title": "Churn radar",
+      "timestamp": "2026-10-08T09:30:00.000Z",
+      "description": "Elena Poluru set weekly risk cohort alerts."
+    }
+  ],
+  "surfaces": [
+    { "label": "Home feed", "share": 32 },
+    { "label": "Checkout", "share": 24 },
+    { "label": "Email", "share": 22 },
+    { "label": "Push", "share": 22 }
+  ]
+}
