@@ -1,6 +1,6 @@
-# Enterprise React starter
+# AI Recommendation Engine Dashboard
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+Rankline — track recommendations, conversions, experiments, and catalog coverage on a light desk powered by `@poluru-labs/enterprise-design-system-react`.
 
 ## Run
 
@@ -12,7 +12,6 @@ npm run dev
 ```
 
 Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
 
 | Script | Description |
 | --- | --- |
@@ -20,14 +19,11 @@ Preview server: http://127.0.0.1:4189
 | `npm run build` | Create a production build |
 | `npm run preview` | Preview the production build |
 
-## Structure
+## Routes
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
-
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+- `/recommend/overview` — Serving snapshot
+- `/recommend/recommendations` — Slots, models, and rank
+- `/recommend/conversions` — Assisted orders and revenue
+- `/recommend/experiments` — Traffic, lift, and guardrails
+- `/recommend/catalog` — Coverage by department
+- `/recommend/settings` — Windows, floors, and exports

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "REC-104",
+    "slot": "Home hero",
+    "surface": "Home",
+    "model": "Ranker v4",
+    "ctr": 4.8,
+    "conversion": 2.1,
+    "quality": 4,
+    "status": "Live",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-21T16:40:00.000Z"
+  },
+  {
+    "id": "REC-118",
+    "slot": "Similar items",
+    "surface": "Product",
+    "model": "Two-tower",
+    "ctr": 7.2,
+    "conversion": 3.4,
+    "quality": 5,
+    "status": "Live",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-22T13:10:00.000Z"
+  },
+  {
+    "id": "REC-121",
+    "slot": "Cart add-on",
+    "surface": "Cart",
+    "model": "Session bandit",
+    "ctr": 5.1,
+    "conversion": 4.6,
+    "quality": 4,
+    "status": "Live",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-20T18:05:00.000Z"
+  },
+  {
+    "id": "REC-133",
+    "slot": "Weekly edit",
+    "surface": "Email",
+    "model": "Sequential",
+    "ctr": 3.2,
+    "conversion": 1.4,
+    "quality": 3,
+    "status": "In review",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-19T15:20:00.000Z"
+  },
+  {
+    "id": "REC-140",
+    "slot": "Search fallback",
+    "surface": "Search",
+    "model": "Fallback rules",
+    "ctr": 2.4,
+    "conversion": 0.8,
+    "quality": 2,
+    "status": "Draft",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "REC-146",
+    "slot": "Category rail",
+    "surface": "Category",
+    "model": "Ranker v4",
+    "ctr": 6.1,
+    "conversion": 2.8,
+    "quality": 4,
+    "status": "Live",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-21T09:30:00.000Z"
+  },
+  {
+    "id": "REC-152",
+    "slot": "Next basket",
+    "surface": "Order",
+    "model": "Next-basket",
+    "ctr": 3.9,
+    "conversion": 2.2,
+    "quality": 4,
+    "status": "Watch",
+    "owner": "Elena Poluru",
+    "updated": "2026-10-17T14:45:00.000Z"
+  },
+  {
+    "id": "REC-160",
+    "slot": "Restock nudge",
+    "surface": "Push",
+    "model": "Propensity",
+    "ctr": 1.8,
+    "conversion": 0.9,
+    "quality": 3,
+    "status": "Paused",
+    "owner": "Marcus Poluru",
+    "updated": "2026-10-12T10:15:00.000Z"
+  }
+]

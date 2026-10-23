@@ -1,0 +1,95 @@
+{
+  "kpis": [
+    {
+      "label": "Recommendations served",
+      "value": "4.8M",
+      "hint": "Impressions",
+      "trend": "up",
+      "trendValue": "+6.2%"
+    },
+    {
+      "label": "Conversion rate",
+      "value": "3.4%",
+      "hint": "Assisted orders",
+      "trend": "up",
+      "trendValue": "+0.4%"
+    },
+    {
+      "label": "Live experiments",
+      "value": "4",
+      "hint": "Running now",
+      "trend": "up",
+      "trendValue": "+1"
+    },
+    {
+      "label": "Catalog coverage",
+      "value": "86%",
+      "hint": "Active SKUs",
+      "trend": "up",
+      "trendValue": "+3%"
+    }
+  ],
+  "newFeatures": [
+    {
+      "title": "Attribution ledger",
+      "body": "Credit a slot when an order lands within seven days.",
+      "href": "/recommend/conversions"
+    },
+    {
+      "title": "Guardrail stop",
+      "body": "Pause a test when conversion falls under the floor.",
+      "href": "/recommend/experiments"
+    },
+    {
+      "title": "Coverage map",
+      "body": "See departments where live slots do not reach the shelf.",
+      "href": "/recommend/catalog"
+    }
+  ],
+  "enhancements": [
+    {
+      "title": "Slot compare",
+      "body": "Rank two models on the same surface before publish.",
+      "href": "/recommend/recommendations"
+    },
+    {
+      "title": "Holdout snapshot",
+      "body": "Read lift versus control without leaving home.",
+      "href": "/recommend/overview"
+    },
+    {
+      "title": "Serving window",
+      "body": "Nina Poluru can pause overnight sends from settings.",
+      "href": "/recommend/settings"
+    }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Engine lead" },
+    { "name": "Maya Poluru", "role": "Slots and rank" },
+    { "name": "Elena Poluru", "role": "Conversions" },
+    { "name": "Kavya Poluru", "role": "Catalog coverage" }
+  ],
+  "releases": [
+    {
+      "title": "Attribution ledger",
+      "timestamp": "2026-10-20T15:00:00.000Z",
+      "description": "Jonah Poluru turned on seven-day slot credit for orders."
+    },
+    {
+      "title": "Guardrail stop",
+      "timestamp": "2026-10-15T11:30:00.000Z",
+      "description": "Rahul Poluru set an automatic pause when lift drops under the floor."
+    },
+    {
+      "title": "Coverage map",
+      "timestamp": "2026-10-09T09:00:00.000Z",
+      "description": "Kavya Poluru published department coverage for the weekly review."
+    }
+  ],
+  "surfaces": [
+    { "label": "Home", "share": 28 },
+    { "label": "Product", "share": 34 },
+    { "label": "Cart", "share": 22 },
+    { "label": "Email", "share": 16 }
+  ]
+}

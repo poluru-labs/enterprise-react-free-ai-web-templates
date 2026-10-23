@@ -1,0 +1,59 @@
+{
+  "channels": [
+    { "surface": "Home", "orders": 8420, "revenue": 418200, "rate": 2.4 },
+    { "surface": "Product", "orders": 18420, "revenue": 962400, "rate": 3.8 },
+    { "surface": "Cart", "orders": 12110, "revenue": 704800, "rate": 4.6 },
+    { "surface": "Email", "orders": 3960, "revenue": 188400, "rate": 1.6 },
+    { "surface": "Push", "orders": 1540, "revenue": 62400, "rate": 0.9 }
+  ],
+  "orders": [
+    {
+      "id": "ORD-4418",
+      "slot": "Similar items",
+      "buyer": "Leela Poluru",
+      "total": 86.4,
+      "credit": "Assisted",
+      "when": "2026-10-22T14:10:00.000Z"
+    },
+    {
+      "id": "ORD-4412",
+      "slot": "Cart add-on",
+      "buyer": "Jonah Poluru",
+      "total": 42.0,
+      "credit": "Last click",
+      "when": "2026-10-22T13:02:00.000Z"
+    },
+    {
+      "id": "ORD-4404",
+      "slot": "Home hero",
+      "buyer": "Priya Poluru",
+      "total": 128.5,
+      "credit": "Assisted",
+      "when": "2026-10-22T11:40:00.000Z"
+    },
+    {
+      "id": "ORD-4391",
+      "slot": "Category rail",
+      "buyer": "Marcus Poluru",
+      "total": 64.2,
+      "credit": "Assisted",
+      "when": "2026-10-21T19:18:00.000Z"
+    },
+    {
+      "id": "ORD-4380",
+      "slot": "Weekly edit",
+      "buyer": "Nina Poluru",
+      "total": 37.9,
+      "credit": "View",
+      "when": "2026-10-21T16:05:00.000Z"
+    },
+    {
+      "id": "ORD-4366",
+      "slot": "Next basket",
+      "buyer": "Elena Poluru",
+      "total": 54.0,
+      "credit": "Assisted",
+      "when": "2026-10-21T09:22:00.000Z"
+    }
+  ]
+}

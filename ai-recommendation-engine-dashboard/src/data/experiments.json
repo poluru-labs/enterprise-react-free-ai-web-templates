@@ -1,0 +1,79 @@
+[
+  {
+    "id": "EXP-19",
+    "name": "Hero ranker v4",
+    "hypothesis": "Ranker v4 lifts home conversion versus v3.",
+    "lift": 8.4,
+    "status": "Running",
+    "owner": "Rahul Poluru",
+    "traffic": 40,
+    "started": "2026-10-06",
+    "note": "Holdout is 10%. Maya Poluru owns the home hero slot."
+  },
+  {
+    "id": "EXP-21",
+    "name": "Cart bandit holdout",
+    "hypothesis": "Session bandit beats the fixed add-on list at checkout.",
+    "lift": 3.1,
+    "status": "Running",
+    "owner": "Priya Poluru",
+    "traffic": 25,
+    "started": "2026-10-09",
+    "note": "Priya Poluru reviews basket size every Thursday."
+  },
+  {
+    "id": "EXP-22",
+    "name": "Product two-tower",
+    "hypothesis": "Two-tower similar items raise product conversion.",
+    "lift": 5.6,
+    "status": "Running",
+    "owner": "Maya Poluru",
+    "traffic": 50,
+    "started": "2026-10-02",
+    "note": "Ready for a full rollup if Friday's read stays positive."
+  },
+  {
+    "id": "EXP-24",
+    "name": "Email subject lines",
+    "hypothesis": "Personalized subjects raise the weekly edit conversion.",
+    "lift": -1.8,
+    "status": "Guardrail",
+    "owner": "Nina Poluru",
+    "traffic": 15,
+    "started": "2026-10-11",
+    "note": "Stopped after conversion fell under the floor. Nina Poluru is reviewing the copy."
+  },
+  {
+    "id": "EXP-26",
+    "name": "Search fallback",
+    "hypothesis": "Rules on zero-result search recover a missed order.",
+    "lift": 0,
+    "status": "Draft",
+    "owner": "Rahul Poluru",
+    "traffic": 10,
+    "started": "2026-10-18",
+    "note": "Draft only. Rahul Poluru still needs a catalog join from Kavya Poluru."
+  },
+  {
+    "id": "EXP-27",
+    "name": "Category rail order",
+    "hypothesis": "Ranker v4 order beats merchandiser order on category.",
+    "lift": 2.2,
+    "status": "Running",
+    "owner": "Kavya Poluru",
+    "traffic": 30,
+    "started": "2026-10-14",
+    "note": "Kavya Poluru is watching apparel and home separately."
+  },
+  {
+    "id": "EXP-16",
+    "name": "Push restock",
+    "hypothesis": "Restock nudges recover lapsed grocery buyers.",
+    "lift": 0.6,
+    "status": "Completed",
+    "owner": "Marcus Poluru",
+    "traffic": 20,
+    "started": "2026-09-20",
+    "note": "Completed. Marcus Poluru paused the slot after a flat read."
+  }
+]

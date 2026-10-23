@@ -1,0 +1,119 @@
+{
+  "tree": [
+    {
+      "id": "apparel",
+      "label": "Apparel",
+      "children": [
+        { "id": "apparel-tops", "label": "Tops" },
+        { "id": "apparel-outer", "label": "Outerwear" }
+      ]
+    },
+    {
+      "id": "home",
+      "label": "Home",
+      "children": [
+        { "id": "home-bedding", "label": "Bedding" },
+        { "id": "home-light", "label": "Lighting" }
+      ]
+    },
+    {
+      "id": "grocery",
+      "label": "Grocery",
+      "children": [
+        { "id": "grocery-pantry", "label": "Pantry" },
+        { "id": "grocery-fresh", "label": "Fresh" }
+      ]
+    },
+    { "id": "beauty", "label": "Beauty" },
+    { "id": "electronics", "label": "Electronics" },
+    { "id": "kids", "label": "Kids" }
+  ],
+  "departments": [
+    {
+      "id": "apparel",
+      "label": "Apparel",
+      "coverage": 94,
+      "skus": 1840,
+      "served": 1728,
+      "owner": "Maya Poluru",
+      "floor": 80
+    },
+    {
+      "id": "home",
+      "label": "Home",
+      "coverage": 91,
+      "skus": 960,
+      "served": 874,
+      "owner": "Kavya Poluru",
+      "floor": 80
+    },
+    {
+      "id": "grocery",
+      "label": "Grocery",
+      "coverage": 78,
+      "skus": 2400,
+      "served": 1872,
+      "owner": "Leela Poluru",
+      "floor": 80
+    },
+    {
+      "id": "beauty",
+      "label": "Beauty",
+      "coverage": 88,
+      "skus": 640,
+      "served": 563,
+      "owner": "Priya Poluru",
+      "floor": 80
+    },
+    {
+      "id": "electronics",
+      "label": "Electronics",
+      "coverage": 86,
+      "skus": 420,
+      "served": 361,
+      "owner": "Marcus Poluru",
+      "floor": 80
+    },
+    {
+      "id": "kids",
+      "label": "Kids",
+      "coverage": 79,
+      "skus": 710,
+      "served": 561,
+      "owner": "Jonah Poluru",
+      "floor": 80
+    }
+  ],
+  "notes": [
+    {
+      "id": "apparel",
+      "heading": "Seasonal outerwear",
+      "body": "New coats are covered. Maya Poluru is swapping the hero set on Friday."
+    },
+    {
+      "id": "home",
+      "heading": "Lighting substitutes",
+      "body": "Kavya Poluru filled bedding. Lighting still leans on a manual rail."
+    },
+    {
+      "id": "grocery",
+      "heading": "Cold-start pantry",
+      "body": "528 pantry SKUs have no live slot. Leela Poluru is adding substitutes."
+    },
+    {
+      "id": "beauty",
+      "heading": "Routine bundles",
+      "body": "Priya Poluru linked routine bundles to the product slot this week."
+    },
+    {
+      "id": "electronics",
+      "heading": "Accessory attach",
+      "body": "Marcus Poluru is testing accessory attach only on carts over $80."
+    },
+    {
+      "id": "kids",
+      "heading": "Age-band gaps",
+      "body": "Jonah Poluru flagged age bands under 4 as under the coverage floor."
+    }
+  ]
+}
