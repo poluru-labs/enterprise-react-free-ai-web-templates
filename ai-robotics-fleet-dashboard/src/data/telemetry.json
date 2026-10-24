@@ -1,0 +1,58 @@
+{
+  "streams": [
+    { "id": "vel", "label": "Velocity", "unit": "m/s", "value": 1.2, "max": 2.5, "status": "ok" },
+    { "id": "load", "label": "Payload", "unit": "kg", "value": 18, "max": 40, "status": "ok" },
+    { "id": "temp", "label": "Motor temp", "unit": "°C", "value": 52, "max": 85, "status": "warn" },
+    { "id": "wifi", "label": "Link quality", "unit": "%", "value": 91, "max": 100, "status": "ok" }
+  ],
+  "sites": [
+    {
+      "id": "wh-east",
+      "label": "Warehouse east",
+      "children": [
+        { "id": "pick-a", "label": "Pick A aisle" },
+        { "id": "pick-b", "label": "Pick B aisle" }
+      ]
+    },
+    {
+      "id": "wh-west",
+      "label": "Warehouse west",
+      "children": [
+        { "id": "pack", "label": "Pack lanes" },
+        { "id": "stage", "label": "Staging" }
+      ]
+    },
+    { "id": "charge-yard", "label": "Charge yard" }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-88",
+      "robot": "Pick Gamma",
+      "signal": "Motor temp high",
+      "when": "2026-10-23T16:42:00.000Z",
+      "owner": "Jonah Poluru"
+    },
+    {
+      "id": "ALT-85",
+      "robot": "Pack Runner",
+      "signal": "Wheel slip detected",
+      "when": "2026-10-23T17:10:00.000Z",
+      "owner": "Maya Poluru"
+    },
+    {
+      "id": "ALT-81",
+      "robot": "Picker Beta",
+      "signal": "LiDAR calibration drift",
+      "when": "2026-10-23T14:05:00.000Z",
+      "owner": "Priya Poluru"
+    }
+  ],
+  "samplePayload": {
+    "robotId": "RBT-101",
+    "missionId": "MSN-401",
+    "velocityMps": 1.18,
+    "batteryPct": 72,
+    "motorTempC": 48,
+    "owner": "Maya Poluru"
+  }
+}

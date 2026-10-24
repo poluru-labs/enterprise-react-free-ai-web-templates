@@ -1,0 +1,90 @@
+[
+  {
+    "id": "RBT-101",
+    "name": "Picker Alpha",
+    "model": "AMR-400",
+    "zone": "Pick A",
+    "battery": 72,
+    "missions": 4,
+    "status": "Active",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:20:00.000Z"
+  },
+  {
+    "id": "RBT-108",
+    "name": "Picker Beta",
+    "model": "AMR-400",
+    "zone": "Pick B",
+    "battery": 54,
+    "missions": 3,
+    "status": "Active",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:05:00.000Z"
+  },
+  {
+    "id": "RBT-115",
+    "name": "Pack Runner",
+    "model": "AMR-220",
+    "zone": "Pack",
+    "battery": 41,
+    "missions": 2,
+    "status": "Active",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T17:50:00.000Z"
+  },
+  {
+    "id": "RBT-122",
+    "name": "Stage Lift",
+    "model": "Fork-120",
+    "zone": "Staging",
+    "battery": 88,
+    "missions": 1,
+    "status": "Idle",
+    "owner": "Marcus Poluru",
+    "updated": "2026-10-23T17:30:00.000Z"
+  },
+  {
+    "id": "RBT-130",
+    "name": "Dock Charge",
+    "model": "AMR-400",
+    "zone": "Charge",
+    "battery": 96,
+    "missions": 0,
+    "status": "Charging",
+    "owner": "Elena Poluru",
+    "updated": "2026-10-23T18:15:00.000Z"
+  },
+  {
+    "id": "RBT-137",
+    "name": "Pick Gamma",
+    "model": "AMR-400",
+    "zone": "Pick A",
+    "battery": 22,
+    "missions": 0,
+    "status": "Fault",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T16:40:00.000Z"
+  },
+  {
+    "id": "RBT-141",
+    "name": "Pack Shuttle",
+    "model": "AMR-220",
+    "zone": "Pack",
+    "battery": 61,
+    "missions": 2,
+    "status": "Active",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T18:00:00.000Z"
+  },
+  {
+    "id": "RBT-149",
+    "name": "Maint Cart",
+    "model": "Service-90",
+    "zone": "Shop",
+    "battery": 100,
+    "missions": 0,
+    "status": "Maintenance",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  }
+]

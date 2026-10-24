@@ -1,6 +1,6 @@
-# Enterprise React starter
+# AI Robotics Fleet Dashboard
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+FleetPulse — monitor robots, missions, battery levels, telemetry, and maintenance on a light desk powered by `@poluru-labs/enterprise-design-system-react`. Brand accent `#BD114A`, Roboto and Lato via Google Fonts.
 
 ## Run
 
@@ -11,23 +11,24 @@ npm install
 npm run dev
 ```
 
-Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
+Default dev server: http://127.0.0.1:5204
 
 | Script | Description |
 | --- | --- |
 | `npm run dev` | Start the Vite development server |
 | `npm run build` | Create a production build |
-| `npm run preview` | Preview the production build |
+| `npm run preview` | Preview the production build (port 4204) |
 
-## Structure
+## Routes
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
+- `/fleet/overview` — Fleet snapshot and zone mix
+- `/fleet/robots` — Units, zones, and status
+- `/fleet/missions` — Routes, tasks, and ETAs
+- `/fleet/battery` — SOC bands and charge docks
+- `/fleet/telemetry` — Streams, site map, and alerts
+- `/fleet/maintenance` — Work orders and shop queue
+- `/fleet/settings` — Alert windows, SOC floors, and exports
 
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+## Footer
+
+Created by [Subrahmanyam Poluru](https://polurus.com). Built with [@poluru-labs/enterprise-design-system-react](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react).

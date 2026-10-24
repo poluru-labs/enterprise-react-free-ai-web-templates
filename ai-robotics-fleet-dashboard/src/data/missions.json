@@ -1,0 +1,79 @@
+[
+  {
+    "id": "MSN-401",
+    "name": "Pick wave 12",
+    "robot": "Picker Alpha",
+    "zone": "Pick A",
+    "progress": 68,
+    "etaMin": 14,
+    "status": "Running",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "MSN-408",
+    "name": "Pack lane 3",
+    "robot": "Pack Runner",
+    "zone": "Pack",
+    "progress": 42,
+    "etaMin": 22,
+    "status": "Running",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T18:00:00.000Z"
+  },
+  {
+    "id": "MSN-412",
+    "name": "Staging pull",
+    "robot": "Stage Lift",
+    "zone": "Staging",
+    "progress": 0,
+    "etaMin": 45,
+    "status": "Queued",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T17:45:00.000Z"
+  },
+  {
+    "id": "MSN-415",
+    "name": "Return to dock",
+    "robot": "Pick Gamma",
+    "zone": "Pick A",
+    "progress": 15,
+    "etaMin": 0,
+    "status": "Paused",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T16:55:00.000Z"
+  },
+  {
+    "id": "MSN-390",
+    "name": "Cycle count B",
+    "robot": "Picker Beta",
+    "zone": "Pick B",
+    "progress": 100,
+    "etaMin": 0,
+    "status": "Completed",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T15:30:00.000Z"
+  },
+  {
+    "id": "MSN-388",
+    "name": "Overflow tote",
+    "robot": "Pack Shuttle",
+    "zone": "Pack",
+    "progress": 100,
+    "etaMin": 0,
+    "status": "Completed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T14:20:00.000Z"
+  },
+  {
+    "id": "MSN-377",
+    "name": "Cold aisle scan",
+    "robot": "Picker Alpha",
+    "zone": "Pick A",
+    "progress": 35,
+    "etaMin": 0,
+    "status": "Failed",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-22T20:00:00.000Z"
+  }
+]

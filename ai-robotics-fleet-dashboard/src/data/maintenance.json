@@ -1,0 +1,52 @@
+[
+  {
+    "id": "WO-2201",
+    "title": "Replace drive wheel",
+    "robot": "Pick Gamma",
+    "priority": "High",
+    "status": "Open",
+    "due": "2026-10-24",
+    "owner": "Jonah Poluru",
+    "note": "Fault cleared after wheel swap. Marcus Poluru holds the part."
+  },
+  {
+    "id": "WO-2194",
+    "title": "LiDAR calibration",
+    "robot": "Picker Beta",
+    "priority": "Medium",
+    "status": "Scheduled",
+    "due": "2026-10-25",
+    "owner": "Priya Poluru",
+    "note": "Priya Poluru runs calibration Friday morning."
+  },
+  {
+    "id": "WO-2188",
+    "title": "Annual service cart",
+    "robot": "Maint Cart",
+    "priority": "Low",
+    "status": "In progress",
+    "due": "2026-10-26",
+    "owner": "Jonah Poluru",
+    "note": "Shop bay 2. Nina Poluru signed the checklist."
+  },
+  {
+    "id": "WO-2175",
+    "title": "Battery pack inspect",
+    "robot": "Pack Runner",
+    "priority": "Medium",
+    "status": "Open",
+    "due": "2026-10-27",
+    "owner": "Elena Poluru",
+    "note": "SOC swings flagged by telemetry. Elena Poluru owns sign-off."
+  },
+  {
+    "id": "WO-2160",
+    "title": "Firmware rollback",
+    "robot": "Stage Lift",
+    "priority": "High",
+    "status": "Completed",
+    "due": "2026-10-20",
+    "owner": "Rahul Poluru",
+    "note": "Completed. Rahul Poluru rolled back to v3.2.1."
+  }
+]

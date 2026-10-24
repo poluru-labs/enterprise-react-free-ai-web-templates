@@ -1,0 +1,95 @@
+{
+  "kpis": [
+    {
+      "label": "Robots online",
+      "value": "42",
+      "hint": "Of 48 registered",
+      "trend": "up",
+      "trendValue": "+3"
+    },
+    {
+      "label": "Active missions",
+      "value": "17",
+      "hint": "In progress",
+      "trend": "up",
+      "trendValue": "+2"
+    },
+    {
+      "label": "Avg battery",
+      "value": "68%",
+      "hint": "Fleet SOC",
+      "trend": "down",
+      "trendValue": "-4%"
+    },
+    {
+      "label": "Open maintenance",
+      "value": "5",
+      "hint": "Work orders",
+      "trend": "down",
+      "trendValue": "-2"
+    }
+  ],
+  "newFeatures": [
+    {
+      "title": "Live trace map",
+      "body": "Follow one unit across the warehouse floor in real time.",
+      "href": "/fleet/telemetry"
+    },
+    {
+      "title": "Swap scheduler",
+      "body": "Queue dock slots when SOC drops under the floor.",
+      "href": "/fleet/battery"
+    },
+    {
+      "title": "Mission replay",
+      "body": "Step through a completed run before the next publish.",
+      "href": "/fleet/missions"
+    }
+  ],
+  "enhancements": [
+    {
+      "title": "Zone compare",
+      "body": "Compare utilization between pick and pack zones.",
+      "href": "/fleet/robots"
+    },
+    {
+      "title": "Fleet heatmap",
+      "body": "See aisle density without leaving home.",
+      "href": "/fleet/overview"
+    },
+    {
+      "title": "Quiet hours",
+      "body": "Nina Poluru can pause overnight alert noise.",
+      "href": "/fleet/settings"
+    }
+  ],
+  "team": [
+    { "name": "Victor Poluru", "role": "Fleet lead" },
+    { "name": "Maya Poluru", "role": "Field robots" },
+    { "name": "Rahul Poluru", "role": "Mission dispatch" },
+    { "name": "Elena Poluru", "role": "Battery desk" }
+  ],
+  "releases": [
+    {
+      "title": "Live trace map",
+      "timestamp": "2026-10-21T14:00:00.000Z",
+      "description": "Priya Poluru shipped floor tracing for pick units."
+    },
+    {
+      "title": "Swap scheduler",
+      "timestamp": "2026-10-16T09:30:00.000Z",
+      "description": "Elena Poluru turned on dock slot queueing."
+    },
+    {
+      "title": "Mission replay",
+      "timestamp": "2026-10-10T11:00:00.000Z",
+      "description": "Rahul Poluru added step playback for closed missions."
+    }
+  ],
+  "zones": [
+    { "label": "Pick", "share": 38 },
+    { "label": "Pack", "share": 28 },
+    { "label": "Staging", "share": 22 },
+    { "label": "Charge", "share": 12 }
+  ]
+}

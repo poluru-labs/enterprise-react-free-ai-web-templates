@@ -1,0 +1,35 @@
+{
+  "bands": [
+    { "zone": "Pick A", "avgSoc": 64, "units": 12, "swapsDue": 2 },
+    { "zone": "Pick B", "avgSoc": 71, "units": 10, "swapsDue": 1 },
+    { "zone": "Pack", "avgSoc": 58, "units": 8, "swapsDue": 3 },
+    { "zone": "Staging", "avgSoc": 82, "units": 6, "swapsDue": 0 },
+    { "zone": "Charge", "avgSoc": 94, "units": 4, "swapsDue": 0 }
+  ],
+  "docks": [
+    {
+      "id": "DCK-1",
+      "label": "Dock north",
+      "occupied": true,
+      "robot": "Dock Charge",
+      "soc": 96,
+      "owner": "Elena Poluru"
+    },
+    {
+      "id": "DCK-2",
+      "label": "Dock south",
+      "occupied": false,
+      "robot": "—",
+      "soc": 0,
+      "owner": "Elena Poluru"
+    },
+    {
+      "id": "DCK-3",
+      "label": "Fast charge",
+      "occupied": true,
+      "robot": "Pick Gamma",
+      "soc": 22,
+      "owner": "Leela Poluru"
+    }
+  ]
+}
