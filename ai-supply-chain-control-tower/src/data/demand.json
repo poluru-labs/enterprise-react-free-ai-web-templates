@@ -1,0 +1,68 @@
+[
+  {
+    "id": "DM-401",
+    "name": "Q4 apparel uplift",
+    "region": "Americas",
+    "variance": 6.2,
+    "units": 12400,
+    "horizonDays": 14,
+    "status": "Active",
+    "owner": "Avery Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "DM-408",
+    "name": "Electronics promo",
+    "region": "EMEA",
+    "variance": 3.1,
+    "units": 8200,
+    "horizonDays": 7,
+    "status": "Active",
+    "owner": "Avery Poluru",
+    "updated": "2026-10-23T17:30:00.000Z"
+  },
+  {
+    "id": "DM-412",
+    "name": "Pantry restock wave",
+    "region": "Americas",
+    "variance": 0,
+    "units": 5600,
+    "horizonDays": 21,
+    "status": "Forecast",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "DM-415",
+    "name": "APAC flash sale",
+    "region": "APAC",
+    "variance": 11.4,
+    "units": 9800,
+    "horizonDays": 3,
+    "status": "Spike",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T15:45:00.000Z"
+  },
+  {
+    "id": "DM-390",
+    "name": "Back-to-school close",
+    "region": "LATAM",
+    "variance": -2.0,
+    "units": 2100,
+    "horizonDays": 0,
+    "status": "Closed",
+    "owner": "Avery Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "DM-388",
+    "name": "Home goods baseline",
+    "region": "EMEA",
+    "variance": 1.8,
+    "units": 4400,
+    "horizonDays": 28,
+    "status": "Forecast",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-19T09:20:00.000Z"
+  }
+]

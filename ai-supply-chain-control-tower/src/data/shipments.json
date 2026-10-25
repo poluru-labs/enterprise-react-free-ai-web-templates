@@ -1,0 +1,79 @@
+[
+  {
+    "id": "SHP-8801",
+    "name": "Container AX-12",
+    "lane": "Shanghai → Chicago",
+    "mode": "Ocean",
+    "etaDays": 6,
+    "fill": 78,
+    "status": "In transit",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T18:20:00.000Z"
+  },
+  {
+    "id": "SHP-8808",
+    "name": "Truck lot 44",
+    "lane": "Dallas → Atlanta",
+    "mode": "Road",
+    "etaDays": 1,
+    "fill": 92,
+    "status": "In transit",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T17:55:00.000Z"
+  },
+  {
+    "id": "SHP-8812",
+    "name": "Air pallet 7",
+    "lane": "Frankfurt → Newark",
+    "mode": "Air",
+    "etaDays": 0,
+    "fill": 100,
+    "status": "Delayed",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T16:40:00.000Z"
+  },
+  {
+    "id": "SHP-8790",
+    "name": "Rail block 19",
+    "lane": "Vancouver → Memphis",
+    "mode": "Rail",
+    "etaDays": 3,
+    "fill": 65,
+    "status": "In transit",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T15:10:00.000Z"
+  },
+  {
+    "id": "SHP-8785",
+    "name": "Container BX-03",
+    "lane": "Rotterdam → Houston",
+    "mode": "Ocean",
+    "etaDays": 0,
+    "fill": 100,
+    "status": "Delivered",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "SHP-8771",
+    "name": "Parcel wave 2",
+    "lane": "Phoenix → Denver",
+    "mode": "Road",
+    "etaDays": 0,
+    "fill": 0,
+    "status": "Exception",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-22T20:00:00.000Z"
+  },
+  {
+    "id": "SHP-8766",
+    "name": "Staging load 8",
+    "lane": "Chicago DC",
+    "mode": "Road",
+    "etaDays": 2,
+    "fill": 40,
+    "status": "Pending",
+    "owner": "Elena Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  }
+]

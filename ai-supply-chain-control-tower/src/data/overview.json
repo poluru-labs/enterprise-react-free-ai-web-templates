@@ -1,0 +1,95 @@
+{
+  "kpis": [
+    {
+      "label": "Open shipments",
+      "value": "128",
+      "hint": "In network",
+      "trend": "up",
+      "trendValue": "+6"
+    },
+    {
+      "label": "Demand variance",
+      "value": "4.2%",
+      "hint": "Vs plan",
+      "trend": "down",
+      "trendValue": "-0.8%"
+    },
+    {
+      "label": "Suppliers at risk",
+      "value": "7",
+      "hint": "Medium or higher",
+      "trend": "down",
+      "trendValue": "-1"
+    },
+    {
+      "label": "SKUs under floor",
+      "value": "23",
+      "hint": "Inventory",
+      "trend": "down",
+      "trendValue": "-4"
+    }
+  ],
+  "newFeatures": [
+    {
+      "title": "Lane tracker",
+      "body": "Follow containers from port to DC in one view.",
+      "href": "/tower/shipments"
+    },
+    {
+      "title": "Spike alerts",
+      "body": "Notify planners when demand jumps past the band.",
+      "href": "/tower/demand"
+    },
+    {
+      "title": "Coverage map",
+      "body": "See regional on-hand against safety stock.",
+      "href": "/tower/inventory"
+    }
+  ],
+  "enhancements": [
+    {
+      "title": "Risk compare",
+      "body": "Compare vendor scores before awarding POs.",
+      "href": "/tower/suppliers"
+    },
+    {
+      "title": "Network heatmap",
+      "body": "Lane volume without leaving home.",
+      "href": "/tower/overview"
+    },
+    {
+      "title": "Quiet hours",
+      "body": "Nina Poluru can pause overnight alert noise.",
+      "href": "/tower/settings"
+    }
+  ],
+  "team": [
+    { "name": "Avery Poluru", "role": "Planning lead" },
+    { "name": "Rahul Poluru", "role": "Logistics" },
+    { "name": "Jonah Poluru", "role": "Vendor desk" },
+    { "name": "Elena Poluru", "role": "Inventory" }
+  ],
+  "releases": [
+    {
+      "title": "Lane tracker",
+      "timestamp": "2026-10-21T14:00:00.000Z",
+      "description": "Priya Poluru shipped live container tracing."
+    },
+    {
+      "title": "Spike alerts",
+      "timestamp": "2026-10-16T09:30:00.000Z",
+      "description": "Avery Poluru turned on demand band notifications."
+    },
+    {
+      "title": "Coverage map",
+      "timestamp": "2026-10-10T11:00:00.000Z",
+      "description": "Elena Poluru added regional SKU health."
+    }
+  ],
+  "regions": [
+    { "label": "Americas", "share": 42 },
+    { "label": "EMEA", "share": 31 },
+    { "label": "APAC", "share": 19 },
+    { "label": "LATAM", "share": 8 }
+  ]
+}

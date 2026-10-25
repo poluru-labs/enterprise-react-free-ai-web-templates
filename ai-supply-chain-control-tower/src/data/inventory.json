@@ -1,0 +1,34 @@
+{
+  "regions": [
+    { "region": "Americas", "coverage": 86, "skus": 4200, "underFloor": 9 },
+    { "region": "EMEA", "coverage": 79, "skus": 3100, "underFloor": 7 },
+    { "region": "APAC", "coverage": 72, "skus": 2800, "underFloor": 5 },
+    { "region": "LATAM", "coverage": 68, "skus": 900, "underFloor": 2 }
+  ],
+  "dc": [
+    {
+      "id": "DC-1",
+      "label": "Chicago DC",
+      "occupied": true,
+      "sku": "SKU-8842",
+      "daysOnHand": 12,
+      "owner": "Elena Poluru"
+    },
+    {
+      "id": "DC-2",
+      "label": "Rotterdam DC",
+      "occupied": true,
+      "sku": "SKU-1204",
+      "daysOnHand": 8,
+      "owner": "Elena Poluru"
+    },
+    {
+      "id": "DC-3",
+      "label": "Singapore DC",
+      "occupied": false,
+      "sku": "—",
+      "daysOnHand": 0,
+      "owner": "Leela Poluru"
+    }
+  ]
+}

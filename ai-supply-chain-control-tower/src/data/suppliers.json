@@ -1,0 +1,68 @@
+[
+  {
+    "id": "SUP-2201",
+    "title": "Acme Components Ltd",
+    "category": "Electronics",
+    "risk": "High",
+    "score": 62,
+    "status": "Open",
+    "due": "2026-10-24",
+    "owner": "Jonah Poluru",
+    "note": "Lead time slipped two weeks. Marcus Poluru sourcing alternates."
+  },
+  {
+    "id": "SUP-2194",
+    "title": "Northstar Textiles",
+    "category": "Apparel",
+    "risk": "Medium",
+    "score": 74,
+    "status": "Scheduled",
+    "due": "2026-10-25",
+    "owner": "Priya Poluru",
+    "note": "Priya Poluru reviews capacity Friday with the mill."
+  },
+  {
+    "id": "SUP-2188",
+    "title": "Blue Harbor Logistics",
+    "category": "3PL",
+    "risk": "Low",
+    "score": 91,
+    "status": "In progress",
+    "due": "2026-10-26",
+    "owner": "Rahul Poluru",
+    "note": "Annual audit in progress. Nina Poluru signed the checklist."
+  },
+  {
+    "id": "SUP-2175",
+    "title": "Summit Packaging",
+    "category": "Packaging",
+    "risk": "Medium",
+    "score": 68,
+    "status": "Open",
+    "due": "2026-10-27",
+    "owner": "Jonah Poluru",
+    "note": "Price variance flagged. Elena Poluru owns commercial sign-off."
+  },
+  {
+    "id": "SUP-2160",
+    "title": "Polar Metals Co",
+    "category": "Raw materials",
+    "risk": "Critical",
+    "score": 48,
+    "status": "Open",
+    "due": "2026-10-23",
+    "owner": "Jonah Poluru",
+    "note": "Geopolitical exposure. Rahul Poluru escalated to exec review."
+  },
+  {
+    "id": "SUP-2155",
+    "title": "GreenField Farms",
+    "category": "Grocery",
+    "risk": "Low",
+    "score": 88,
+    "status": "Completed",
+    "due": "2026-10-18",
+    "owner": "Kavya Poluru",
+    "note": "Audit completed. Kavya Poluru closed the action log."
+  }
+]
