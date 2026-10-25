@@ -1,9 +1,33 @@
+/* QueryLens — brand #DF301C, flat light surfaces, Google fonts */
+
 :root {
-  font-family: var(--eds-font-sans, system-ui, sans-serif);
-  color: #172033;
-  background: #f6f8fb;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  --qla-brand: #df301c;
+  --qla-brand-hover: #c42918;
+  --qla-brand-active: #b82616;
+  --qla-brand-50: #fdf3f1;
+  --qla-brand-100: #fde8e4;
+  --qla-bg: #f9f8f6;
+  --qla-surface: #ffffff;
+  --qla-border: #e3e1dc;
+
+  --eds-color-brand-900: #9a2012;
+  --eds-color-brand-800: #b82616;
+  --eds-color-brand-700: #c42918;
+  --eds-color-brand-600: #df301c;
+  --eds-color-brand-500: #df301c;
+  --eds-color-brand-400: #e85544;
+  --eds-color-brand-300: #ef877a;
+  --eds-color-brand-200: #f7bbb3;
+  --eds-color-brand-100: #fde8e4;
+  --eds-color-brand-50: #fdf3f1;
+  --eds-color-primary: var(--qla-brand);
+  --eds-color-primary-hover: var(--qla-brand-hover);
+  --eds-color-primary-active: var(--qla-brand-active);
+  --eds-color-focus: var(--qla-brand);
+  --eds-shadow-focus: 0 0 0 3px rgb(223 48 28 / 0.22);
+  --eds-color-bg: var(--qla-bg);
+  --eds-font-sans: "Open Sans", system-ui, sans-serif;
+  --eds-font-display: "Roboto", system-ui, sans-serif;
 }
 
 html,
@@ -14,40 +38,321 @@ body,
 }
 
 body {
-  background: #f6f8fb;
+  background: var(--qla-bg) !important;
+  font-family: var(--eds-font-sans);
+  color: var(--eds-color-text);
 }
 
-.starter-app {
-  box-sizing: border-box;
-  display: grid;
-  align-content: center;
+.qla-ui-font {
+  font-family: "Lato", var(--eds-font-sans);
+}
+
+.qla-app {
   min-height: 100vh;
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.starter-eyebrow {
-  margin: 0 0 0.75rem;
-  color: #526176;
-  font-size: 0.75rem;
+.qla-skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  background: var(--qla-surface);
+}
+
+.qla-skip:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.qla-mark {
+  width: 10px;
+  height: 10px;
+  background: var(--qla-brand);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.qla-toolbar {
+  background: var(--qla-surface) !important;
+}
+
+.qla-toolbar-start,
+.qla-toolbar-end {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.qla-product-name {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 1.0625rem;
+  letter-spacing: -0.02em;
+}
+
+.qla-top-nav {
+  display: flex;
+  gap: 1.25rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9375rem;
+}
+
+.qla-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 2rem;
+  align-items: start;
+}
+
+.qla-eyebrow {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--qla-brand);
+  margin: 0 0 0.75rem;
 }
 
-.starter-app h1 {
+.qla-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+}
+
+.qla-lead {
+  margin: 0 0 1.5rem;
+  color: var(--eds-color-text-muted);
+  font-size: 1.0625rem;
+  max-width: 36rem;
+  line-height: 1.65;
+}
+
+.qla-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.qla-kbd-hint {
   margin: 0;
-  color: #172033;
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  font-size: 0.8125rem;
+  color: var(--eds-color-text-muted);
 }
 
-.starter-copy {
+.qla-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.qla-shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.qla-sidebar-wrap {
+  position: sticky;
+  top: 4.5rem;
+  align-self: start;
+}
+
+.qla-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.qla-toolbar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.qla-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.qla-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.qla-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.qla-stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.qla-progress-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.qla-skeleton-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.qla-tabs {
+  max-width: none;
+}
+
+.qla-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.qla-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.qla-table-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qla-controls {
+  max-width: 32rem;
+}
+
+.qla-rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.qla-control-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.qla-cta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.qla-cta-title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+
+.qla-cta-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: var(--qla-brand);
+}
+
+.qla-footer {
+  border-top: 1px solid var(--qla-border);
+  background: var(--qla-surface);
+  margin-top: auto;
+}
+
+.qla-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.qla-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.qla-footer-tagline {
+  margin: 0 0 1rem;
+  color: var(--eds-color-text-muted);
+  font-size: 0.9375rem;
   max-width: 28rem;
-  margin: 1.25rem 0 0;
-  color: #526176;
-  font-size: 1.05rem;
-  line-height: 1.6;
+}
+
+.qla-footer-meta {
+  margin: 0.35rem 0;
+  font-size: 0.875rem;
+  color: var(--eds-color-text-muted);
+}
+
+.qla-footer-copy {
+  margin: 1rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--eds-color-text-subtle);
+}
+
+@media (max-width: 960px) {
+  .qla-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .qla-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .qla-sidebar-wrap {
+    position: static;
+  }
+
+  .qla-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .qla-top-nav {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
 }
