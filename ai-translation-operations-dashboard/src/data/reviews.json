@@ -1,0 +1,68 @@
+[
+  {
+    "id": "REV-401",
+    "name": "Checkout es-MX QA",
+    "locale": "es-MX",
+    "words": 420,
+    "score": 92,
+    "dueInDays": 1,
+    "status": "In progress",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "REV-408",
+    "name": "FAQ fr-FR pass",
+    "locale": "fr-FR",
+    "words": 680,
+    "score": 0,
+    "dueInDays": 2,
+    "status": "Open",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-23T17:30:00.000Z"
+  },
+  {
+    "id": "REV-412",
+    "name": "Legal ja-JP block",
+    "locale": "ja-JP",
+    "words": 120,
+    "score": 71,
+    "dueInDays": 0,
+    "status": "Open",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "REV-415",
+    "name": "Catalog it-IT",
+    "locale": "it-IT",
+    "words": 890,
+    "score": 82,
+    "dueInDays": 3,
+    "status": "In progress",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T15:45:00.000Z"
+  },
+  {
+    "id": "REV-390",
+    "name": "Email pt-BR sign-off",
+    "locale": "pt-BR",
+    "words": 540,
+    "score": 95,
+    "dueInDays": 0,
+    "status": "Approved",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "REV-388",
+    "name": "Onboarding de-DE",
+    "locale": "de-DE",
+    "words": 310,
+    "score": 65,
+    "dueInDays": 0,
+    "status": "Rejected",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-19T09:20:00.000Z"
+  }
+]

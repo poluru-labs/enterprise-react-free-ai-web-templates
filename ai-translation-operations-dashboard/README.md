@@ -1,6 +1,6 @@
-# Enterprise React starter
+# AI Translation Operations Dashboard
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+LocalePulse — track translations, language coverage, terminology, and reviews on a light operations desk powered by `@poluru-labs/enterprise-design-system-react`. Brand accent `#E11A45`, **Lato** via Google Fonts.
 
 ## Run
 
@@ -11,23 +11,23 @@ npm install
 npm run dev
 ```
 
-Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
+Default dev server: http://127.0.0.1:5206
 
 | Script | Description |
 | --- | --- |
 | `npm run dev` | Start the Vite development server |
 | `npm run build` | Create a production build |
-| `npm run preview` | Preview the production build |
+| `npm run preview` | Preview the production build (port 4206) |
 
-## Structure
+## Routes
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
+- `/translate/overview` — Operations snapshot and locale mix
+- `/translate/translations` — Jobs, locales, and publish status
+- `/translate/coverage` — Language completion and gaps
+- `/translate/terminology` — Glossary and conflicts
+- `/translate/reviews` — Linguist QA queue
+- `/translate/settings` — MT policy, floors, and exports
 
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+## Footer
+
+Created by [Subrahmanyam Poluru](https://polurus.com). Built with [@poluru-labs/enterprise-design-system-react](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react).

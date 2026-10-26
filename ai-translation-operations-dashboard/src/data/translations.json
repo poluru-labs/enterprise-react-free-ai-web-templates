@@ -1,0 +1,79 @@
+[
+  {
+    "id": "TRN-8801",
+    "name": "Checkout strings v12",
+    "locale": "es-MX",
+    "words": 420,
+    "quality": 92,
+    "progress": 100,
+    "status": "Published",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:20:00.000Z"
+  },
+  {
+    "id": "TRN-8808",
+    "name": "Help center FAQ batch",
+    "locale": "fr-FR",
+    "words": 680,
+    "quality": 88,
+    "progress": 85,
+    "status": "In review",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T17:55:00.000Z"
+  },
+  {
+    "id": "TRN-8812",
+    "name": "Mobile onboarding",
+    "locale": "de-DE",
+    "words": 310,
+    "quality": 0,
+    "progress": 45,
+    "status": "Draft",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T16:40:00.000Z"
+  },
+  {
+    "id": "TRN-8790",
+    "name": "Legal footer update",
+    "locale": "ja-JP",
+    "words": 120,
+    "quality": 71,
+    "progress": 60,
+    "status": "Blocked",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T15:10:00.000Z"
+  },
+  {
+    "id": "TRN-8785",
+    "name": "Email templates Q4",
+    "locale": "pt-BR",
+    "words": 540,
+    "quality": 95,
+    "progress": 100,
+    "status": "Published",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "TRN-8771",
+    "name": "Product catalog tags",
+    "locale": "it-IT",
+    "words": 890,
+    "quality": 82,
+    "progress": 72,
+    "status": "In review",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T20:00:00.000Z"
+  },
+  {
+    "id": "TRN-8766",
+    "name": "Release notes 2.1",
+    "locale": "ko-KR",
+    "words": 210,
+    "quality": 0,
+    "progress": 20,
+    "status": "Draft",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TERM-2201",
+    "title": "Control tower",
+    "locale": "Global",
+    "category": "Product",
+    "status": "Conflict",
+    "due": "2026-10-24",
+    "owner": "Priya Poluru",
+    "note": "Spanish prefers \"torre de control\". Marcus Poluru holds marketing copy."
+  },
+  {
+    "id": "TERM-2194",
+    "title": "Sign in",
+    "locale": "fr-FR",
+    "category": "UI",
+    "status": "Approved",
+    "due": "2026-10-25",
+    "owner": "Priya Poluru",
+    "note": "Locked to \"Se connecter\" per Leela Poluru."
+  },
+  {
+    "id": "TERM-2188",
+    "title": "Free trial",
+    "locale": "de-DE",
+    "category": "Marketing",
+    "status": "Proposed",
+    "due": "2026-10-26",
+    "owner": "Nina Poluru",
+    "note": "Legal review pending. Jonah Poluru owns compliance."
+  },
+  {
+    "id": "TERM-2175",
+    "title": "Shipment",
+    "locale": "Global",
+    "category": "Supply chain",
+    "status": "Approved",
+    "due": "2026-10-27",
+    "owner": "Priya Poluru",
+    "note": "Aligned with Poluru Global Supply glossary."
+  },
+  {
+    "id": "TERM-2160",
+    "title": "Dashboard",
+    "locale": "ja-JP",
+    "category": "UI",
+    "status": "Deprecated",
+    "due": "2026-10-20",
+    "owner": "Kavya Poluru",
+    "note": "Replace with product-specific names. Kavya Poluru closed the ticket."
+  }
+]

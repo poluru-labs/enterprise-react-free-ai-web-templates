@@ -1,0 +1,35 @@
+{
+  "locales": [
+    { "locale": "es-MX", "coverage": 96, "strings": 12400, "missing": 420 },
+    { "locale": "fr-FR", "coverage": 91, "strings": 11800, "missing": 980 },
+    { "locale": "de-DE", "coverage": 88, "strings": 11200, "missing": 1240 },
+    { "locale": "ja-JP", "coverage": 78, "strings": 9800, "missing": 2100 },
+    { "locale": "pt-BR", "coverage": 93, "strings": 10500, "missing": 680 }
+  ],
+  "projects": [
+    {
+      "id": "PRJ-1",
+      "label": "Web app",
+      "occupied": true,
+      "focus": "Checkout v12",
+      "completion": 94,
+      "owner": "Kavya Poluru"
+    },
+    {
+      "id": "PRJ-2",
+      "label": "Mobile app",
+      "occupied": true,
+      "focus": "Onboarding",
+      "completion": 81,
+      "owner": "Kavya Poluru"
+    },
+    {
+      "id": "PRJ-3",
+      "label": "Help center",
+      "occupied": false,
+      "focus": "—",
+      "completion": 0,
+      "owner": "Leela Poluru"
+    }
+  ]
+}

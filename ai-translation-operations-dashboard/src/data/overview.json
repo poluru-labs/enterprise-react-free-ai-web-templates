@@ -1,0 +1,96 @@
+{
+  "kpis": [
+    {
+      "label": "Strings in queue",
+      "value": "2,840",
+      "hint": "Awaiting publish",
+      "trend": "down",
+      "trendValue": "-12%"
+    },
+    {
+      "label": "Locale coverage",
+      "value": "91%",
+      "hint": "Weighted avg",
+      "trend": "up",
+      "trendValue": "+2.1%"
+    },
+    {
+      "label": "Open reviews",
+      "value": "18",
+      "hint": "Linguist desk",
+      "trend": "down",
+      "trendValue": "-3"
+    },
+    {
+      "label": "Term conflicts",
+      "value": "4",
+      "hint": "Glossary",
+      "trend": "flat",
+      "trendValue": "Steady"
+    }
+  ],
+  "newFeatures": [
+    {
+      "title": "Batch publish",
+      "body": "Ship approved bundles to all locales at once.",
+      "href": "/translate/translations"
+    },
+    {
+      "title": "Locale gap map",
+      "body": "Spot missing languages before release.",
+      "href": "/translate/coverage"
+    },
+    {
+      "title": "Term diff",
+      "body": "Compare glossary proposals side by side.",
+      "href": "/translate/terminology"
+    }
+  ],
+  "enhancements": [
+    {
+      "title": "Review routing",
+      "body": "Route locales to Nina Poluru automatically.",
+      "href": "/translate/reviews"
+    },
+    {
+      "title": "Throughput chart",
+      "body": "Words per day on the home desk.",
+      "href": "/translate/overview"
+    },
+    {
+      "title": "MT guardrails",
+      "body": "Block auto-publish below quality score.",
+      "href": "/translate/settings"
+    }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Linguistics lead" },
+    { "name": "Maya Poluru", "role": "Production" },
+    { "name": "Priya Poluru", "role": "Terminology" },
+    { "name": "Kavya Poluru", "role": "Locale coverage" }
+  ],
+  "releases": [
+    {
+      "title": "Batch publish",
+      "timestamp": "2026-10-21T14:00:00.000Z",
+      "description": "Maya Poluru shipped multi-locale publish."
+    },
+    {
+      "title": "Locale gap map",
+      "timestamp": "2026-10-16T09:30:00.000Z",
+      "description": "Kavya Poluru added coverage visualization."
+    },
+    {
+      "title": "Term diff",
+      "timestamp": "2026-10-10T11:00:00.000Z",
+      "description": "Priya Poluru launched glossary compare."
+    }
+  ],
+  "locales": [
+    { "label": "English (source)", "share": 100 },
+    { "label": "Spanish", "share": 94 },
+    { "label": "French", "share": 89 },
+    { "label": "German", "share": 86 },
+    { "label": "Japanese", "share": 78 }
+  ]
+}
