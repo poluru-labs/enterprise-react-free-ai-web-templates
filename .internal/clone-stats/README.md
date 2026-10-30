@@ -1,6 +1,6 @@
 # Clone traffic analytics (maintainer)
 
-This folder is updated by GitHub Actions (`.github/workflows/clone-traffic-report.yml`). It stores **aggregate** clone and view traffic from the [GitHub repository traffic API](https://docs.github.com/en/rest/metrics/traffic)—not individual clone events (GitHub does not expose those).
+This folder is updated by GitHub Actions (`.github/workflows/clone-traffic-report.yml`). The workflow uses **shell steps only** (no `actions/checkout` / `actions/setup-node`) so it complies with org policies that restrict third-party actions. It stores **aggregate** clone and view traffic from the [GitHub repository traffic API](https://docs.github.com/en/rest/metrics/traffic)—not individual clone events (GitHub does not expose those).
 
 | File | Purpose |
 | --- | --- |

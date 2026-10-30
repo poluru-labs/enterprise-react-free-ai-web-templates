@@ -1,5 +1,8 @@
 name: Clone traffic report
 
+# No third-party actions (org policy: only poluru-labs/* actions allowed).
+# Uses git + Node on the hosted runner only.
+
 on:
   schedule:
     # Roughly every 14 days: 1st and 15th of each month, 14:00 UTC
@@ -17,31 +20,37 @@ jobs:
   collect-and-commit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+      - name: Checkout repository
+        env:
+          GH_TOKEN: ${{ secrets.CLONE_STATS_TOKEN || github.token }}
+        run: |
+          set -euo pipefail
+          BRANCH="${GITHUB_REF_NAME}"
+          git init
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "${BRANCH}"
+          git checkout FETCH_HEAD
 
       - name: Collect clone and view traffic
         env:
-          # Optional CLONE_STATS_TOKEN (PAT with repo access) if GITHUB_TOKEN cannot read traffic
           GITHUB_TOKEN: ${{ secrets.CLONE_STATS_TOKEN || github.token }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: node scripts/collect-clone-stats.mjs
+        run: |
+          node --version
+          node scripts/collect-clone-stats.mjs
 
       - name: Commit and push stats
+        env:
+          GH_TOKEN: ${{ secrets.CLONE_STATS_TOKEN || github.token }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git add .internal/clone-stats/
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
           fi
           git commit -m "chore(analytics): update clone traffic report [skip ci]"
-          git push
+          git push origin HEAD:"${GITHUB_REF_NAME}"
