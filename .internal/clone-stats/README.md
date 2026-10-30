@@ -1,6 +1,6 @@
 # Clone traffic analytics (maintainer)
 
-This folder is updated by GitHub Actions (`.github/workflows/clone-traffic-report.yml`). The workflow uses **shell steps only** (no `actions/checkout` / `actions/setup-node`) so it complies with org policies that restrict third-party actions. It stores **aggregate** clone and view traffic from the [GitHub repository traffic API](https://docs.github.com/en/rest/metrics/traffic)—not individual clone events (GitHub does not expose those).
+This folder is updated by GitHub Actions (`.github/workflows/clone-traffic-report.yml`). The workflow uses **shell steps only** (no marketplace actions). It stores **aggregate** clone and view traffic from the [GitHub repository traffic API](https://docs.github.com/en/rest/metrics/traffic)—not individual clone events (GitHub does not expose those).
 
 | File | Purpose |
 | --- | --- |
@@ -12,61 +12,49 @@ This folder is updated by GitHub Actions (`.github/workflows/clone-traffic-repor
 - On a **private** repository, only people with access to the repo can see these files.
 - On a **public** repository, this folder is public too. Keep the repo private if you want this data visible only to you and collaborators.
 
-## Local run
+---
+
+## Required secret: `CLONE_STATS_TOKEN`
+
+The traffic API **does not work** with the default Actions `GITHUB_TOKEN`. It also **does not work** with many fine-grained PATs unless they are configured exactly as below.
+
+### Option A — Fine-grained PAT (recommended for org repos)
+
+1. GitHub → your profile **Settings** → **Developer settings** → **Fine-grained personal access tokens** → **Generate new token**.
+2. **Resource owner**: **`poluru-labs`** (the organization — **not** your personal account).  
+   Wrong owner → `403 Resource not accessible by personal access token`.
+3. **Repository access**: **Only select repositories** → `enterprise-react-free-ai-web-templates`.
+4. **Repository permissions**:
+   - **Administration**: **Read-only** ← required for `/traffic/clones` and `/traffic/views`
+   - (Contents/Metadata alone are **not** enough)
+5. Generate and copy the token.
+6. If the org requires approval: **poluru-labs** org **Settings** → **Personal access tokens** → approve the request.
+7. Repo **Settings** → **Secrets and variables** → **Actions** → **New repository secret**:
+   - Name: **`CLONE_STATS_TOKEN`**
+   - Value: the token
+
+Git **push** uses the workflow’s built-in `github.token`, not this PAT.
+
+### Option B — Classic PAT
+
+1. **Tokens (classic)** → generate with scope **`repo`**.
+2. If `poluru-labs` uses SAML SSO: open the token → **Configure SSO** → **Authorize** for **poluru-labs**.
+3. Save as repository secret **`CLONE_STATS_TOKEN`** (same as above).
+
+---
+
+## Run
+
+After the secret is set: **Actions** → **Clone traffic report** → **Run workflow**.
+
+Schedule: 1st and 15th of each month (~every 14 days). Edit the `cron` in the workflow file to change it.
+
+### Local test
 
 ```bash
-export GH_TOKEN=ghp_...   # classic PAT with `repo` scope, or fine-grained with Contents read + Metadata
-export CLONE_STATS_REPO=owner/repo   # optional outside Actions; Actions sets GITHUB_REPOSITORY
-node scripts/collect-clone-stats.mjs
-```
-
-### Required: `CLONE_STATS_TOKEN` (GitHub Actions)
-
-Traffic endpoints return **403 Resource not accessible by integration** for the default `GITHUB_TOKEN`. You must store a **Personal Access Token** as a repo secret (never commit it to git).
-
-#### 1. Create a token (pick one)
-
-**Classic PAT (simplest)**  
-GitHub → **Settings** (your profile) → **Developer settings** → **Personal access tokens** → **Tokens (classic)** → **Generate new token**:
-
-- Note: `clone-traffic-report`
-- Expiration: 90 days or custom (set a calendar reminder to rotate)
-- Scopes: **`repo`** (full control of private repositories)
-
-**Fine-grained PAT**  
-**Developer settings** → **Fine-grained tokens** → **Generate**:
-
-- Resource owner: `poluru-labs`
-- Repository access: **Only** `enterprise-react-free-ai-web-templates`
-- Permissions:
-  - **Contents**: Read and write (needed so the same token can push JSON commits)
-  - **Metadata**: Read-only
-
-Traffic metrics still require a **user** token; fine-grained with Contents + Metadata is usually enough for `/traffic/clones`.
-
-#### 2. Save it as a repository secret (not `.env` in the repo)
-
-1. Open **`poluru-labs/enterprise-react-free-ai-web-templates`** on GitHub.
-2. **Settings** → **Secrets and variables** → **Actions**.
-3. **New repository secret**
-   - Name: **`CLONE_STATS_TOKEN`** (exact spelling)
-   - Value: paste the PAT → **Add secret**.
-
-The workflow already uses:
-
-`secrets.CLONE_STATS_TOKEN || github.token`
-
-After the secret exists, re-run **Actions → Clone traffic report → Run workflow**.
-
-#### 3. Do not
-
-- Put the PAT in `.env`, `vite.config`, or any committed file.
-- Use **Variables** for the token unless your org treats them as non-secret (secrets are encrypted; use secrets).
-
-#### 4. Optional: run locally
-
-```bash
-export GH_TOKEN=ghp_....   # same PAT value, only on your machine
+export GH_TOKEN=ghp_....   # same PAT as CLONE_STATS_TOKEN
 export CLONE_STATS_REPO=poluru-labs/enterprise-react-free-ai-web-templates
 node scripts/collect-clone-stats.mjs
 ```
+
+Never commit tokens to the repository.

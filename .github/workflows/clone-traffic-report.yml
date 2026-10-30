@@ -1,7 +1,8 @@
 name: Clone traffic report
 
 # No third-party actions (org policy: only poluru-labs/* actions allowed).
-# Uses git + Node on the hosted runner only.
+# Traffic API: CLONE_STATS_TOKEN (org fine-grained PAT, Administration: Read).
+# Git checkout/push: github.token (GITHUB_TOKEN).
 
 on:
   schedule:
@@ -20,9 +21,18 @@ jobs:
   collect-and-commit:
     runs-on: ubuntu-latest
     steps:
+      - name: Require CLONE_STATS_TOKEN
+        run: |
+          if [ -z "${{ secrets.CLONE_STATS_TOKEN }}" ]; then
+            echo "::error::Missing repository secret CLONE_STATS_TOKEN."
+            echo "Create an org-owned fine-grained PAT with Administration: Read on this repo."
+            echo "See .internal/clone-stats/README.md"
+            exit 1
+          fi
+
       - name: Checkout repository
         env:
-          GH_TOKEN: ${{ secrets.CLONE_STATS_TOKEN || github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           BRANCH="${GITHUB_REF_NAME}"
@@ -33,7 +43,7 @@ jobs:
 
       - name: Collect clone and view traffic
         env:
-          GITHUB_TOKEN: ${{ secrets.CLONE_STATS_TOKEN || github.token }}
+          GITHUB_TOKEN: ${{ secrets.CLONE_STATS_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           node --version
@@ -41,7 +51,7 @@ jobs:
 
       - name: Commit and push stats
         env:
-          GH_TOKEN: ${{ secrets.CLONE_STATS_TOKEN || github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"

@@ -60,14 +60,19 @@ async function ghGet(token, url) {
   if (!response.ok) {
     const body = await response.text();
     let hint = '';
-    if (
-      response.status === 403 &&
-      body.includes('Resource not accessible by integration')
-    ) {
-      hint =
-        '\n\nThe default GITHUB_TOKEN cannot read clone traffic. Add a repository secret ' +
-        'CLONE_STATS_TOKEN (classic PAT with repo scope, or fine-grained with Metadata + Contents read) ' +
-        'at Settings → Secrets and variables → Actions.\n';
+    if (response.status === 403) {
+      if (body.includes('Resource not accessible by integration')) {
+        hint =
+          '\n\nThe default GITHUB_TOKEN cannot read clone traffic. Use repository secret CLONE_STATS_TOKEN.\n';
+      } else if (body.includes('Resource not accessible by personal access token')) {
+        hint =
+          '\n\nFix CLONE_STATS_TOKEN:\n' +
+          '  • Fine-grained PAT: Resource owner = poluru-labs (the ORG, not your user account)\n' +
+          '  • Repository access = this repo only\n' +
+          '  • Repository permission: Administration = Read (required for /traffic/*)\n' +
+          '  • Approve the token under org Settings → Personal access tokens if pending\n' +
+          'Or use a classic PAT with the repo scope + authorize SSO for poluru-labs.\n';
+      }
     }
     throw new Error(
       `GitHub API ${response.status} ${response.statusText} for ${url}\n${body}${hint}`,
