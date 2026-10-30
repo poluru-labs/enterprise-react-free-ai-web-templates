@@ -20,4 +20,53 @@ export CLONE_STATS_REPO=owner/repo   # optional outside Actions; Actions sets GI
 node scripts/collect-clone-stats.mjs
 ```
 
-If the default `GITHUB_TOKEN` in Actions cannot read traffic (some org policies block it), add a repository secret **`CLONE_STATS_TOKEN`** with a PAT that has push access to this repo.
+### Required: `CLONE_STATS_TOKEN` (GitHub Actions)
+
+Traffic endpoints return **403 Resource not accessible by integration** for the default `GITHUB_TOKEN`. You must store a **Personal Access Token** as a repo secret (never commit it to git).
+
+#### 1. Create a token (pick one)
+
+**Classic PAT (simplest)**  
+GitHub → **Settings** (your profile) → **Developer settings** → **Personal access tokens** → **Tokens (classic)** → **Generate new token**:
+
+- Note: `clone-traffic-report`
+- Expiration: 90 days or custom (set a calendar reminder to rotate)
+- Scopes: **`repo`** (full control of private repositories)
+
+**Fine-grained PAT**  
+**Developer settings** → **Fine-grained tokens** → **Generate**:
+
+- Resource owner: `poluru-labs`
+- Repository access: **Only** `enterprise-react-free-ai-web-templates`
+- Permissions:
+  - **Contents**: Read and write (needed so the same token can push JSON commits)
+  - **Metadata**: Read-only
+
+Traffic metrics still require a **user** token; fine-grained with Contents + Metadata is usually enough for `/traffic/clones`.
+
+#### 2. Save it as a repository secret (not `.env` in the repo)
+
+1. Open **`poluru-labs/enterprise-react-free-ai-web-templates`** on GitHub.
+2. **Settings** → **Secrets and variables** → **Actions**.
+3. **New repository secret**
+   - Name: **`CLONE_STATS_TOKEN`** (exact spelling)
+   - Value: paste the PAT → **Add secret**.
+
+The workflow already uses:
+
+`secrets.CLONE_STATS_TOKEN || github.token`
+
+After the secret exists, re-run **Actions → Clone traffic report → Run workflow**.
+
+#### 3. Do not
+
+- Put the PAT in `.env`, `vite.config`, or any committed file.
+- Use **Variables** for the token unless your org treats them as non-secret (secrets are encrypted; use secrets).
+
+#### 4. Optional: run locally
+
+```bash
+export GH_TOKEN=ghp_....   # same PAT value, only on your machine
+export CLONE_STATS_REPO=poluru-labs/enterprise-react-free-ai-web-templates
+node scripts/collect-clone-stats.mjs
+```

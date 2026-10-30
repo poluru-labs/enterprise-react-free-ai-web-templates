@@ -59,8 +59,18 @@ async function ghGet(token, url) {
 
   if (!response.ok) {
     const body = await response.text();
+    let hint = '';
+    if (
+      response.status === 403 &&
+      body.includes('Resource not accessible by integration')
+    ) {
+      hint =
+        '\n\nThe default GITHUB_TOKEN cannot read clone traffic. Add a repository secret ' +
+        'CLONE_STATS_TOKEN (classic PAT with repo scope, or fine-grained with Metadata + Contents read) ' +
+        'at Settings → Secrets and variables → Actions.\n';
+    }
     throw new Error(
-      `GitHub API ${response.status} ${response.statusText} for ${url}\n${body}`,
+      `GitHub API ${response.status} ${response.statusText} for ${url}\n${body}${hint}`,
     );
   }
 
