@@ -1,0 +1,52 @@
+[
+  {
+    "id": "CIT-2201",
+    "name": "Smith et al. — climate models 2024",
+    "journal": "Nature Climate",
+    "doi": "10.1038/nclimate.2024.881",
+    "confidence": 92,
+    "status": "Verified",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "CIT-2198",
+    "name": "Poluru — citation graph methods",
+    "journal": "J. Research Ops",
+    "doi": "10.5555/jro.2026.12",
+    "confidence": 68,
+    "status": "Pending",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "CIT-2185",
+    "name": "Archive study on link rot",
+    "journal": "Digital Libraries",
+    "doi": "10.1000/rot.2019",
+    "confidence": 41,
+    "status": "Disputed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "CIT-2170",
+    "name": "Retired style guide reference",
+    "journal": "Internal memo",
+    "doi": "—",
+    "confidence": 100,
+    "status": "Retired",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "CIT-2162",
+    "name": "Open access policy brief",
+    "journal": "Policy Review",
+    "doi": "10.1234/policy.oa.44",
+    "confidence": 88,
+    "status": "Verified",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "PUB-501",
+    "name": "Elsevier",
+    "issn": "0140-6736",
+    "region": "EU",
+    "slaDays": 3,
+    "status": "Active",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "PUB-508",
+    "name": "Springer Nature",
+    "issn": "1476-4687",
+    "region": "Global",
+    "slaDays": 2,
+    "status": "Active",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "PUB-512",
+    "name": "Regional Press Co-op",
+    "issn": "—",
+    "region": "APAC",
+    "slaDays": 14,
+    "status": "On hold",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "PUB-520",
+    "name": "Legacy Society Prints",
+    "issn": "0012-3456",
+    "region": "NA",
+    "slaDays": 7,
+    "status": "Deprecated",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SRC-301",
+    "name": "crossref.org lookup",
+    "type": "API",
+    "checks": 1240,
+    "uptime": 99,
+    "status": "Live",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "SRC-298",
+    "name": "Publisher PDF mirror",
+    "type": "HTTP",
+    "checks": 890,
+    "uptime": 72,
+    "status": "Redirect",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "SRC-290",
+    "name": "Legacy thesis repository",
+    "type": "HTTP",
+    "checks": 210,
+    "uptime": 0,
+    "status": "404",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "SRC-285",
+    "name": "Wayback snapshot",
+    "type": "Archive",
+    "checks": 560,
+    "uptime": 95,
+    "status": "Archived",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]

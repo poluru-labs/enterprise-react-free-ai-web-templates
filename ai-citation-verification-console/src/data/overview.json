@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Open queue", "value": "47", "hint": "Active batches", "trend": "up", "trendValue": "+6" },
+    { "label": "Verified today", "value": "312", "hint": "Bibliography", "trend": "up", "trendValue": "+18%" },
+    { "label": "Broken links", "value": "9", "hint": "Source crawl", "trend": "down", "trendValue": "-2" },
+    { "label": "Publishers synced", "value": "128", "hint": "Metadata", "trend": "neutral", "trendValue": "0" }
+  ],
+  "newFeatures": [
+    { "title": "DOI resolver", "body": "Batch validate new imports.", "href": "/cite/citations" },
+    { "title": "Source crawl", "body": "Re-check redirect chains.", "href": "/cite/sources" },
+    { "title": "Queue triage", "body": "Assign Priya Poluru by journal.", "href": "/cite/queue" }
+  ],
+  "enhancements": [
+    { "title": "Publisher roster", "body": "Update ISSN contacts.", "href": "/cite/publishers" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/cite/overview" },
+    { "title": "Export policy", "body": "Quiet hours for Nina Poluru.", "href": "/cite/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Research ops lead" },
+    { "name": "Maya Poluru", "role": "Publisher sync" },
+    { "name": "Priya Poluru", "role": "Verification analyst" },
+    { "name": "Jonah Poluru", "role": "Queue desk" }
+  ],
+  "activity": [
+    {
+      "title": "Queue cleared",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Jonah Poluru closed batch Q-884 for Nature portfolio."
+    },
+    {
+      "title": "DOI mismatch",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru flagged CIT-2201 against Crossref."
+    },
+    {
+      "title": "Publisher sync",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Maya Poluru refreshed Elsevier metadata."
+    }
+  ],
+  "byTrack": [
+    { "label": "Journals", "share": 38 },
+    { "label": "Conference", "share": 26 },
+    { "label": "Books", "share": 20 },
+    { "label": "Grey lit", "share": 16 }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Q-884",
+    "name": "Batch Nature Climate imports",
+    "journal": "Nature Climate",
+    "items": 48,
+    "dueInDays": 2,
+    "status": "In review",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "Q-879",
+    "name": "Thesis bibliography cleanup",
+    "journal": "Campus archive",
+    "items": 12,
+    "dueInDays": 5,
+    "status": "Open",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "Q-870",
+    "name": "Crossref mismatch audit",
+    "journal": "Mixed",
+    "items": 6,
+    "dueInDays": 1,
+    "status": "Escalated",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "Q-865",
+    "name": "Springer link re-check",
+    "journal": "Springer",
+    "items": 30,
+    "dueInDays": 0,
+    "status": "Cleared",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]
