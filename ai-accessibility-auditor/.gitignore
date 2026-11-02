@@ -31,3 +31,7 @@ pnpm-debug.log*
 
 # Coverage
 coverage/
+
+
+.DS_Store
+AGENTS.md
