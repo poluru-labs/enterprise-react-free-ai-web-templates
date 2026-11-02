@@ -1,0 +1,32 @@
+[
+  {
+    "id": "TKT-501",
+    "name": "Cannot access module 3",
+    "learner": "Marcus Poluru",
+    "priority": "High",
+    "dueInDays": 1,
+    "status": "In progress",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "TKT-508",
+    "name": "Reset progress request",
+    "learner": "Ravi Poluru",
+    "priority": "Medium",
+    "dueInDays": 2,
+    "status": "Open",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "TKT-490",
+    "name": "Certificate download",
+    "learner": "Elena Poluru",
+    "priority": "Low",
+    "dueInDays": 0,
+    "status": "Resolved",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  }
+]

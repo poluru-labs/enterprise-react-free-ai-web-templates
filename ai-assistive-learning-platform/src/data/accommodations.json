@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ACC-2201",
+    "title": "Extended time on quizzes",
+    "learner": "Ravi Poluru",
+    "type": "Timing",
+    "status": "Approved",
+    "due": "2026-10-24",
+    "owner": "Priya Poluru",
+    "note": "Priya Poluru approved through term end."
+  },
+  {
+    "id": "ACC-2194",
+    "title": "Captioned video modules",
+    "learner": "Anika Poluru",
+    "type": "Media",
+    "status": "Pending",
+    "due": "2026-10-25",
+    "owner": "Priya Poluru",
+    "note": "Kavya Poluru reviewing module captions."
+  },
+  {
+    "id": "ACC-2188",
+    "title": "Large print worksheets",
+    "learner": "Elena Poluru",
+    "type": "Format",
+    "status": "Approved",
+    "due": "2026-10-26",
+    "owner": "Maya Poluru",
+    "note": "Maya Poluru ships PDFs each Monday."
+  }
+]

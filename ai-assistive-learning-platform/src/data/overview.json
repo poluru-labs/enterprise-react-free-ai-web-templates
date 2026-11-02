@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Active learners", "value": "842", "hint": "This term", "trend": "up", "trendValue": "+24" },
+    { "label": "Avg completion", "value": "76%", "hint": "All modules", "trend": "up", "trendValue": "+3%" },
+    { "label": "Open accommodations", "value": "19", "hint": "Pending review", "trend": "down", "trendValue": "-2" },
+    { "label": "Support tickets", "value": "11", "hint": "Open desk", "trend": "down", "trendValue": "-4" }
+  ],
+  "newFeatures": [
+    { "title": "Progress bands", "body": "See at-risk learners early.", "href": "/learn/learners" },
+    { "title": "Module map", "body": "Completion by pathway.", "href": "/learn/modules" },
+    { "title": "Accommodation log", "body": "Track Priya Poluru approvals.", "href": "/learn/accommodations" }
+  ],
+  "enhancements": [
+    { "title": "Support routing", "body": "Assign Jonah Poluru by campus.", "href": "/learn/support" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/learn/overview" },
+    { "title": "Quiet hours", "body": "Pause alerts for Nina Poluru.", "href": "/learn/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Program lead" },
+    { "name": "Maya Poluru", "role": "Learner success" },
+    { "name": "Priya Poluru", "role": "Accommodations" },
+    { "name": "Jonah Poluru", "role": "Support desk" }
+  ],
+  "activity": [
+    {
+      "title": "Module 4 published",
+      "timestamp": "2026-10-23T16:00:00.000Z",
+      "description": "Kavya Poluru released reading comprehension path."
+    },
+    {
+      "title": "Accommodation approved",
+      "timestamp": "2026-10-22T11:00:00.000Z",
+      "description": "Priya Poluru signed extended time for cohort B."
+    },
+    {
+      "title": "Ticket resolved",
+      "timestamp": "2026-10-21T09:30:00.000Z",
+      "description": "Jonah Poluru closed login issue for Marcus Poluru."
+    }
+  ],
+  "byTrack": [
+    { "label": "Literacy", "share": 34 },
+    { "label": "STEM", "share": 28 },
+    { "label": "Life skills", "share": 22 },
+    { "label": "Work prep", "share": 16 }
+  ]
+}

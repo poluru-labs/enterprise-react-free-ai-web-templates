@@ -1,0 +1,32 @@
+[
+  {
+    "id": "MOD-301",
+    "name": "Reading foundations",
+    "track": "Literacy",
+    "lessons": 12,
+    "completion": 78,
+    "status": "Published",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "MOD-298",
+    "name": "Intro algebra",
+    "track": "STEM",
+    "lessons": 10,
+    "completion": 62,
+    "status": "Published",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "MOD-295",
+    "name": "Daily living skills",
+    "track": "Life skills",
+    "lessons": 8,
+    "completion": 0,
+    "status": "Draft",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-24T08:00:00.000Z"
+  }
+]
