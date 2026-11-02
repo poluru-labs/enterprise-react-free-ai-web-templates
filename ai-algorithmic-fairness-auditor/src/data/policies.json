@@ -1,0 +1,42 @@
+[
+  {
+    "id": "POL-2201",
+    "title": "Minimum parity floor",
+    "scope": "All production models",
+    "threshold": "0.88",
+    "status": "Enforced",
+    "due": "2026-10-24",
+    "owner": "Jonah Poluru",
+    "note": "Jonah Poluru enforces with Rahul Poluru on exceptions."
+  },
+  {
+    "id": "POL-2194",
+    "title": "Hiring rank review",
+    "scope": "Hiring rank v2",
+    "threshold": "0.90",
+    "status": "Enforced",
+    "due": "2026-10-25",
+    "owner": "Jonah Poluru",
+    "note": "Priya Poluru owns quarterly cohort proof."
+  },
+  {
+    "id": "POL-2188",
+    "title": "Pricing uplift hold",
+    "scope": "Pricing uplift",
+    "threshold": "0.85",
+    "status": "Exception",
+    "due": "2026-10-26",
+    "owner": "Jonah Poluru",
+    "note": "Temporary exception until Maya Poluru ships reweight."
+  },
+  {
+    "id": "POL-2175",
+    "title": "Documentation standard",
+    "scope": "Program-wide",
+    "threshold": "—",
+    "status": "Draft",
+    "due": "2026-11-01",
+    "owner": "Nina Poluru",
+    "note": "Nina Poluru drafting evidence checklist."
+  }
+]

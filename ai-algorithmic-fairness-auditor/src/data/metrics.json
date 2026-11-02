@@ -1,0 +1,52 @@
+[
+  {
+    "id": "MET-401",
+    "name": "Demographic parity",
+    "model": "Lending score v3",
+    "value": 0.91,
+    "floor": 0.88,
+    "status": "Pass",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T17:00:00.000Z"
+  },
+  {
+    "id": "MET-408",
+    "name": "Equal opportunity",
+    "model": "Hiring rank v2",
+    "value": 0.86,
+    "floor": 0.90,
+    "status": "Watch",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T16:20:00.000Z"
+  },
+  {
+    "id": "MET-412",
+    "name": "Calibration by group",
+    "model": "Pricing uplift",
+    "value": 0.78,
+    "floor": 0.85,
+    "status": "Fail",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "MET-415",
+    "name": "Disparate impact ratio",
+    "model": "Support triage",
+    "value": 0.93,
+    "floor": 0.88,
+    "status": "Pass",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T11:00:00.000Z"
+  },
+  {
+    "id": "MET-390",
+    "name": "Predictive parity",
+    "model": "Lending score v3",
+    "value": 0.89,
+    "floor": 0.88,
+    "status": "Pass",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-21T09:30:00.000Z"
+  }
+]

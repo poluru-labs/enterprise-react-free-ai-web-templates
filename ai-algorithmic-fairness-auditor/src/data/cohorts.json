@@ -1,0 +1,42 @@
+[
+  {
+    "id": "COH-101",
+    "name": "Region B applicants",
+    "model": "Lending score v3",
+    "size": 12400,
+    "disparity": 0.84,
+    "status": "Review",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T18:00:00.000Z"
+  },
+  {
+    "id": "COH-108",
+    "name": "Experienced hires",
+    "model": "Hiring rank v2",
+    "size": 3200,
+    "disparity": 0.92,
+    "status": "Active",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T17:30:00.000Z"
+  },
+  {
+    "id": "COH-112",
+    "name": "Promo pricing tier",
+    "model": "Pricing uplift",
+    "size": 8900,
+    "disparity": 0.76,
+    "status": "Hold",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "COH-115",
+    "name": "Support queue A",
+    "model": "Support triage",
+    "size": 5600,
+    "disparity": 0.88,
+    "status": "Active",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  }
+]

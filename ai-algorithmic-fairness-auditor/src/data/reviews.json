@@ -1,0 +1,42 @@
+[
+  {
+    "id": "REV-501",
+    "name": "Lending Q4 certification",
+    "model": "Lending score v3",
+    "parity": 0.91,
+    "dueInDays": 2,
+    "status": "In progress",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "REV-508",
+    "name": "Hiring disparity follow-up",
+    "model": "Hiring rank v2",
+    "parity": 0.86,
+    "dueInDays": 5,
+    "status": "Open",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "REV-512",
+    "name": "Pricing uplift escalation",
+    "model": "Pricing uplift",
+    "parity": 0.78,
+    "dueInDays": 1,
+    "status": "Escalated",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T14:30:00.000Z"
+  },
+  {
+    "id": "REV-490",
+    "name": "Support triage annual",
+    "model": "Support triage",
+    "parity": 0.93,
+    "dueInDays": 0,
+    "status": "Approved",
+    "owner": "Rahul Poluru",
+    "updated": "2026-10-20T10:00:00.000Z"
+  }
+]

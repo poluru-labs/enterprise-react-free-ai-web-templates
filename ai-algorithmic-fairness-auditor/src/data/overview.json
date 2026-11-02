@@ -1,0 +1,95 @@
+{
+  "kpis": [
+    {
+      "label": "Models in review",
+      "value": "6",
+      "hint": "Active programs",
+      "trend": "flat",
+      "trendValue": "Steady"
+    },
+    {
+      "label": "Disparity index",
+      "value": "0.82",
+      "hint": "Target ≥ 0.90",
+      "trend": "up",
+      "trendValue": "+0.04"
+    },
+    {
+      "label": "Open remediations",
+      "value": "14",
+      "hint": "Workflow queue",
+      "trend": "down",
+      "trendValue": "-3"
+    },
+    {
+      "label": "Policy exceptions",
+      "value": "2",
+      "hint": "Needs sign-off",
+      "trend": "down",
+      "trendValue": "-1"
+    }
+  ],
+  "newFeatures": [
+    {
+      "title": "Cohort compare",
+      "body": "Side-by-side outcome bands for protected groups.",
+      "href": "/fairness/cohorts"
+    },
+    {
+      "title": "Threshold alerts",
+      "body": "Notify Rahul Poluru when disparity slips.",
+      "href": "/fairness/metrics"
+    },
+    {
+      "title": "Policy pack export",
+      "body": "Bundle checks for Jonah Poluru.",
+      "href": "/fairness/policies"
+    }
+  ],
+  "enhancements": [
+    {
+      "title": "Review routing",
+      "body": "Assign Priya Poluru by model family.",
+      "href": "/fairness/reviews"
+    },
+    {
+      "title": "Metric trends",
+      "body": "Rolling four-week disparity chart.",
+      "href": "/fairness/overview"
+    },
+    {
+      "title": "Exception log",
+      "body": "Track Nina Poluru approvals.",
+      "href": "/fairness/settings"
+    }
+  ],
+  "team": [
+    { "name": "Rahul Poluru", "role": "Program lead" },
+    { "name": "Priya Poluru", "role": "Cohort analysis" },
+    { "name": "Jonah Poluru", "role": "Policy desk" },
+    { "name": "Maya Poluru", "role": "Remediation" }
+  ],
+  "activity": [
+    {
+      "title": "Lending model recertified",
+      "timestamp": "2026-10-23T15:00:00.000Z",
+      "description": "Rahul Poluru closed disparity gap on age cohort."
+    },
+    {
+      "title": "Policy threshold updated",
+      "timestamp": "2026-10-22T10:30:00.000Z",
+      "description": "Jonah Poluru raised minimum parity to 0.90."
+    },
+    {
+      "title": "Remediation merged",
+      "timestamp": "2026-10-21T09:00:00.000Z",
+      "description": "Maya Poluru reweighted training slice for region B."
+    }
+  ],
+  "bySegment": [
+    { "label": "Lending", "share": 38 },
+    { "label": "Hiring", "share": 28 },
+    { "label": "Pricing", "share": 22 },
+    { "label": "Support routing", "share": 12 }
+  ]
+}
