@@ -1,33 +1,22 @@
-# Enterprise React starter
+# Accessibility Auditor (AuditDesk)
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+WCAG conformance tracking, page scans, contrast issues, and remediation queues — light theme **`#C70039`**, Roboto and Lato, powered by `@poluru-labs/enterprise-design-system-react`.
 
 ## Run
-
-Requires Node.js 20+.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
+http://127.0.0.1:5207 → `/audit/overview`
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Create a production build |
-| `npm run preview` | Preview the production build |
+## Routes
 
-## Structure
+- `/audit/overview` — Compliance snapshot and activity
+- `/audit/audits` — Scan runs and profiles
+- `/audit/findings` — Severity queue and filters
+- `/audit/reports` — VPAT and exports
+- `/audit/settings` — Profiles and alert floors
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
-
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+Footer: [Subrahmanyam Poluru](https://polurus.com) · [@poluru-labs/enterprise-design-system-react](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react)
