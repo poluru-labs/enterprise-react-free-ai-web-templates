@@ -1,0 +1,46 @@
+[
+  {
+    "id": "CUS-884",
+    "name": "Training slice v12 handoff",
+    "fromZone": "Curated lake",
+    "toZone": "Model vault",
+    "items": 1,
+    "dueInDays": 1,
+    "status": "In transit",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "CUS-879",
+    "name": "Partner feed intake",
+    "fromZone": "SFTP edge",
+    "toZone": "Raw landing",
+    "items": 3,
+    "dueInDays": 2,
+    "status": "Open",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "CUS-870",
+    "name": "Quarantine release review",
+    "fromZone": "Quarantine",
+    "toZone": "Curated lake",
+    "items": 1,
+    "dueInDays": 0,
+    "status": "Disputed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "CUS-865",
+    "name": "Archive seal — 2024 baseline",
+    "fromZone": "Curated lake",
+    "toZone": "Cold archive",
+    "items": 1,
+    "dueInDays": 0,
+    "status": "Sealed",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

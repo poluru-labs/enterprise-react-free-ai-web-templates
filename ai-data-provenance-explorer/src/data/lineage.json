@@ -1,0 +1,46 @@
+[
+  {
+    "id": "LN-301",
+    "name": "events_oct → features_daily",
+    "upstream": "DS-2201",
+    "downstream": "DS-2240",
+    "depth": 2,
+    "coverage": 98,
+    "status": "Linked",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "LN-298",
+    "name": "catalog_staging → prod_catalog",
+    "upstream": "DS-2198",
+    "downstream": "DS-2190",
+    "depth": 1,
+    "coverage": 76,
+    "status": "Partial",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "LN-290",
+    "name": "legacy_export → unknown",
+    "upstream": "DS-2185",
+    "downstream": "—",
+    "depth": 0,
+    "coverage": 0,
+    "status": "Broken",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "LN-285",
+    "name": "baseline → published_reports",
+    "upstream": "DS-2170",
+    "downstream": "DS-2100",
+    "depth": 3,
+    "coverage": 100,
+    "status": "Linked",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]

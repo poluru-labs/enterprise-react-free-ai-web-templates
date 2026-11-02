@@ -1,0 +1,52 @@
+[
+  {
+    "id": "DS-2201",
+    "name": "Customer events — October slice",
+    "version": "v12.3",
+    "hash": "sha256:9f2a…c01",
+    "rows": 8420000,
+    "status": "Current",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "DS-2198",
+    "name": "Product catalog staging",
+    "version": "v3.0-rc1",
+    "hash": "sha256:1ab4…88e",
+    "rows": 124000,
+    "status": "Staged",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "DS-2185",
+    "name": "Legacy export bundle",
+    "version": "v1.9",
+    "hash": "sha256:dead…beef",
+    "rows": 45000,
+    "status": "Quarantined",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "DS-2170",
+    "name": "2024 baseline archive",
+    "version": "v2024.4",
+    "hash": "sha256:aa11…ff00",
+    "rows": 2100000,
+    "status": "Archived",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "DS-2162",
+    "name": "Partner feed — APAC",
+    "version": "v7.2",
+    "hash": "sha256:44bc…901",
+    "rows": 980000,
+    "status": "Current",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

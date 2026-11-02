@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Active datasets", "value": "186", "hint": "Registered", "trend": "up", "trendValue": "+12" },
+    { "label": "Lineage links", "value": "1.2k", "hint": "Verified edges", "trend": "up", "trendValue": "+84" },
+    { "label": "Open custody", "value": "14", "hint": "In flight", "trend": "down", "trendValue": "-3" },
+    { "label": "Audit entries", "value": "9.4k", "hint": "This quarter", "trend": "up", "trendValue": "+210" }
+  ],
+  "newFeatures": [
+    { "title": "Version diff", "body": "Compare dataset snapshots.", "href": "/prov/datasets" },
+    { "title": "Lineage export", "body": "Table view for auditors.", "href": "/prov/lineage" },
+    { "title": "Custody board", "body": "Track Priya Poluru handoffs.", "href": "/prov/custody" }
+  ],
+  "enhancements": [
+    { "title": "Audit search", "body": "Filter by actor and hash.", "href": "/prov/audit" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/prov/overview" },
+    { "title": "Retention policy", "body": "Quiet hours for Nina Poluru.", "href": "/prov/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Data governance lead" },
+    { "name": "Maya Poluru", "role": "Lineage curator" },
+    { "name": "Priya Poluru", "role": "Custody desk" },
+    { "name": "Jonah Poluru", "role": "Audit reviewer" }
+  ],
+  "activity": [
+    {
+      "title": "Custody sealed",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Jonah Poluru closed handoff CUS-884 for training slice v12."
+    },
+    {
+      "title": "Lineage gap",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru flagged missing upstream for DS-2201."
+    },
+    {
+      "title": "Audit batch",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Maya Poluru appended 120 immutable log entries."
+    }
+  ],
+  "byTrack": [
+    { "label": "Raw ingest", "share": 32 },
+    { "label": "Curated", "share": 28 },
+    { "label": "Derived", "share": 24 },
+    { "label": "Published", "share": 16 }
+  ]
+}

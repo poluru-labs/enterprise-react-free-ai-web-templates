@@ -1,0 +1,42 @@
+[
+  {
+    "id": "AUD-501",
+    "name": "Hash attestation logged",
+    "actor": "Maya Poluru",
+    "resource": "DS-2201",
+    "severity": "Info",
+    "recordedAt": "2026-10-23T18:10:00.000Z",
+    "status": "Recorded",
+    "owner": "Jonah Poluru"
+  },
+  {
+    "id": "AUD-508",
+    "name": "Custody override attempt",
+    "actor": "Ravi Poluru",
+    "resource": "CUS-870",
+    "severity": "High",
+    "recordedAt": "2026-10-23T16:00:00.000Z",
+    "status": "Escalated",
+    "owner": "Leela Poluru"
+  },
+  {
+    "id": "AUD-512",
+    "name": "Lineage edge added",
+    "actor": "Priya Poluru",
+    "resource": "LN-301",
+    "severity": "Medium",
+    "recordedAt": "2026-10-22T09:00:00.000Z",
+    "status": "Recorded",
+    "owner": "Maya Poluru"
+  },
+  {
+    "id": "AUD-520",
+    "name": "PII field redaction",
+    "actor": "Nina Poluru",
+    "resource": "DS-2185",
+    "severity": "High",
+    "recordedAt": "2026-10-20T14:00:00.000Z",
+    "status": "Redacted",
+    "owner": "Jonah Poluru"
+  }
+]
