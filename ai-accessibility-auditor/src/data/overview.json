@@ -1,0 +1,95 @@
+{
+  "kpis": [
+    {
+      "label": "Open findings",
+      "value": "47",
+      "hint": "All severities",
+      "trend": "down",
+      "trendValue": "-6"
+    },
+    {
+      "label": "Pages scanned",
+      "value": "312",
+      "hint": "Last 30 days",
+      "trend": "up",
+      "trendValue": "+18"
+    },
+    {
+      "label": "Compliance score",
+      "value": "86%",
+      "hint": "WCAG 2.2 AA",
+      "trend": "up",
+      "trendValue": "+3%"
+    },
+    {
+      "label": "Contrast failures",
+      "value": "12",
+      "hint": "Needs design review",
+      "trend": "down",
+      "trendValue": "-2"
+    }
+  ],
+  "activity": [
+    {
+      "title": "Checkout scan completed",
+      "timestamp": "2026-10-23T16:00:00.000Z",
+      "description": "Maya Poluru closed 4 contrast issues on /checkout."
+    },
+    {
+      "title": "Marketing pages rescanned",
+      "timestamp": "2026-10-22T11:30:00.000Z",
+      "description": "Priya Poluru scheduled weekly crawl for /promo/*."
+    },
+    {
+      "title": "Remediation merged",
+      "timestamp": "2026-10-21T09:15:00.000Z",
+      "description": "Jonah Poluru fixed focus order on account settings."
+    }
+  ],
+  "newFeatures": [
+    {
+      "title": "Contrast sweep",
+      "body": "Batch check text/background pairs on marketing pages.",
+      "href": "/audit/findings"
+    },
+    {
+      "title": "Focus order map",
+      "body": "Visualize tab stops on checkout flows.",
+      "href": "/audit/audits"
+    },
+    {
+      "title": "VPAT draft",
+      "body": "Export WCAG evidence for Nina Poluru.",
+      "href": "/audit/reports"
+    }
+  ],
+  "enhancements": [
+    {
+      "title": "Severity filters",
+      "body": "Segmented control on the findings desk.",
+      "href": "/audit/findings"
+    },
+    {
+      "title": "Owner routing",
+      "body": "Assign Maya Poluru to storefront pages.",
+      "href": "/audit/settings"
+    },
+    {
+      "title": "Scan schedules",
+      "body": "Priya Poluru runs weekly crawls.",
+      "href": "/audit/audits"
+    }
+  ],
+  "team": [
+    { "name": "Nina Poluru", "role": "Conformance lead" },
+    { "name": "Maya Poluru", "role": "Storefront fixes" },
+    { "name": "Priya Poluru", "role": "Scan schedules" },
+    { "name": "Jonah Poluru", "role": "VPAT archive" }
+  ],
+  "bySeverity": [
+    { "label": "Critical", "share": 8 },
+    { "label": "Serious", "share": 22 },
+    { "label": "Moderate", "share": 38 },
+    { "label": "Minor", "share": 32 }
+  ]
+}

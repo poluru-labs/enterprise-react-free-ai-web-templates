@@ -1,0 +1,47 @@
+[
+  {
+    "id": "FND-1024",
+    "rule": "1.4.3 Contrast (Minimum)",
+    "page": "/checkout/payment",
+    "severity": "Serious",
+    "status": "Open",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:20:00.000Z"
+  },
+  {
+    "id": "FND-1020",
+    "rule": "2.4.7 Focus Visible",
+    "page": "/account/settings",
+    "severity": "Moderate",
+    "status": "In progress",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T17:10:00.000Z"
+  },
+  {
+    "id": "FND-1015",
+    "rule": "1.1.1 Non-text Content",
+    "page": "/catalog/item/8842",
+    "severity": "Critical",
+    "status": "Open",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "FND-1008",
+    "rule": "4.1.2 Name, Role, Value",
+    "page": "/support/chat",
+    "severity": "Serious",
+    "status": "Fixed",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T14:30:00.000Z"
+  },
+  {
+    "id": "FND-1001",
+    "rule": "2.5.3 Label in Name",
+    "page": "/signup",
+    "severity": "Minor",
+    "status": "Deferred",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]
