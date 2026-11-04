@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SUITE-501",
+    "name": "STABLE-3",
+    "workloads": 12,
+    "schedule": "Nightly",
+    "slaMin": 60,
+    "status": "Active",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "SUITE-508",
+    "name": "THR-MAX",
+    "workloads": 6,
+    "schedule": "On demand",
+    "slaMin": 30,
+    "status": "Active",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "SUITE-512",
+    "name": "COLD-1",
+    "workloads": 4,
+    "schedule": "Weekly",
+    "slaMin": 20,
+    "status": "Paused",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "SUITE-520",
+    "name": "LEGACY-09",
+    "workloads": 8,
+    "schedule": "Retired",
+    "slaMin": 45,
+    "status": "Deprecated",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "H-12",
+    "name": "rack-12-a100x4",
+    "profile": "GPU-A100-80G",
+    "vcpus": 96,
+    "utilization": 72,
+    "status": "Online",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "H-08",
+    "name": "rack-08-l40x2",
+    "profile": "GPU-L40",
+    "vcpus": 64,
+    "utilization": 88,
+    "status": "Online",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "H-03",
+    "name": "rack-03-cpu-baseline",
+    "profile": "CPU-EPYC",
+    "vcpus": 128,
+    "utilization": 0,
+    "status": "Maintenance",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "H-15",
+    "name": "rack-15-h100x8",
+    "profile": "GPU-H100",
+    "vcpus": 112,
+    "utilization": 15,
+    "status": "Provisioning",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

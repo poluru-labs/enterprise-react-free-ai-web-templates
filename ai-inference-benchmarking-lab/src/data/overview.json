@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Runs this week", "value": "184", "hint": "All suites", "trend": "up", "trendValue": "+22" },
+    { "label": "Median latency", "value": "12.4 ms", "hint": "p50", "trend": "down", "trendValue": "-0.8 ms" },
+    { "label": "Peak throughput", "value": "8.2k rps", "hint": "Best host", "trend": "up", "trendValue": "+6%" },
+    { "label": "Hosts online", "value": "14", "hint": "Lab floor", "trend": "neutral", "trendValue": "0" }
+  ],
+  "newFeatures": [
+    { "title": "Run compare", "body": "Diff two job ids side by side.", "href": "/bench/runs" },
+    { "title": "Latency bands", "body": "p50 / p99 by suite.", "href": "/bench/metrics" },
+    { "title": "Profile catalog", "body": "GPU tiers Priya Poluru maintains.", "href": "/bench/hardware" }
+  ],
+  "enhancements": [
+    { "title": "Suite scheduler", "body": "Nightly regression pack.", "href": "/bench/suites" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/bench/overview" },
+    { "title": "Alert thresholds", "body": "Quiet hours for Nina Poluru.", "href": "/bench/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Lab lead" },
+    { "name": "Maya Poluru", "role": "Hardware ops" },
+    { "name": "Priya Poluru", "role": "Suite owner" },
+    { "name": "Jonah Poluru", "role": "Run desk" }
+  ],
+  "activity": [
+    {
+      "title": "Run completed",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Jonah Poluru closed RUN-884 on host H-12 at 8.1k rps."
+    },
+    {
+      "title": "Regression flagged",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru saw p99 latency +18% on suite STABLE-3."
+    },
+    {
+      "title": "Host provisioned",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Maya Poluru brought H-15 online with profile GPU-A100."
+    }
+  ],
+  "byTrack": [
+    { "label": "Latency suites", "share": 38 },
+    { "label": "Throughput suites", "share": 32 },
+    { "label": "Cold-start", "share": 18 },
+    { "label": "Soak tests", "share": 12 }
+  ]
+}

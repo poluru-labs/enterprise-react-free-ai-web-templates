@@ -1,0 +1,52 @@
+[
+  {
+    "id": "RUN-2201",
+    "name": "STABLE-3 nightly",
+    "suite": "STABLE-3",
+    "host": "H-12",
+    "durationMin": 42,
+    "status": "Complete",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "RUN-2198",
+    "name": "THR-MAX smoke",
+    "suite": "THR-MAX",
+    "host": "H-08",
+    "durationMin": 18,
+    "status": "Running",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "RUN-2185",
+    "name": "COLD-1 retry",
+    "suite": "COLD-1",
+    "host": "H-03",
+    "durationMin": 6,
+    "status": "Failed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "RUN-2170",
+    "name": "SOAK-24 queued",
+    "suite": "SOAK-24",
+    "host": "H-15",
+    "durationMin": 0,
+    "status": "Queued",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "RUN-2162",
+    "name": "LAT-BASELINE A",
+    "suite": "LAT-BASE",
+    "host": "H-12",
+    "durationMin": 25,
+    "status": "Complete",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

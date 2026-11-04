@@ -1,0 +1,46 @@
+[
+  {
+    "id": "MET-301",
+    "name": "STABLE-3 · p99 latency",
+    "suite": "STABLE-3",
+    "latencyMs": 24.2,
+    "throughputRps": 6200,
+    "deltaPct": -3,
+    "status": "Healthy",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "MET-298",
+    "name": "THR-MAX · peak rps",
+    "suite": "THR-MAX",
+    "latencyMs": 18.1,
+    "throughputRps": 8200,
+    "deltaPct": 6,
+    "status": "Healthy",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "MET-290",
+    "name": "COLD-1 · first token",
+    "suite": "COLD-1",
+    "latencyMs": 410,
+    "throughputRps": 120,
+    "deltaPct": 18,
+    "status": "Regressed",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "MET-285",
+    "name": "LAT-BASE · p50",
+    "suite": "LAT-BASE",
+    "latencyMs": 12.4,
+    "throughputRps": 5400,
+    "deltaPct": 0,
+    "status": "Baseline",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]
