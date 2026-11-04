@@ -1,0 +1,42 @@
+[
+  {
+    "id": "AN-301",
+    "name": "amount_usd null spike",
+    "table": "orders_fact",
+    "count": 1240,
+    "severity": "High",
+    "status": "Investigating",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "AN-298",
+    "name": "duplicate customer_id",
+    "table": "customer_dim",
+    "count": 89,
+    "severity": "Medium",
+    "status": "New",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "AN-290",
+    "name": "timestamp in future",
+    "table": "legacy_events",
+    "count": 412,
+    "severity": "Critical",
+    "status": "New",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "AN-285",
+    "name": "region code drift",
+    "table": "partner_feed",
+    "count": 12,
+    "severity": "Low",
+    "status": "Resolved",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]

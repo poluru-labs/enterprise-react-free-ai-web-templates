@@ -1,0 +1,42 @@
+[
+  {
+    "id": "REL-501",
+    "name": "October mart refresh",
+    "dataset": "orders_fact v3.2",
+    "score": 92,
+    "blockers": 0,
+    "status": "Ready",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "REL-508",
+    "name": "Customer dim patch",
+    "dataset": "customer_dim v1.8",
+    "score": 78,
+    "blockers": 2,
+    "status": "At risk",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "REL-512",
+    "name": "Legacy sunset cut",
+    "dataset": "legacy_events v0.9",
+    "score": 41,
+    "blockers": 5,
+    "status": "Blocked",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "REL-520",
+    "name": "Partner feed GA",
+    "dataset": "partner_feed v2.1",
+    "score": 100,
+    "blockers": 0,
+    "status": "Shipped",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]

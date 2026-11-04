@@ -1,0 +1,42 @@
+[
+  {
+    "id": "RL-884",
+    "name": "Primary key uniqueness",
+    "scope": "orders_fact",
+    "threshold": "100%",
+    "dueInDays": 0,
+    "status": "Active",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "RL-879",
+    "name": "Email format regex",
+    "scope": "customer_dim",
+    "threshold": "99%",
+    "dueInDays": 3,
+    "status": "Active",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "RL-870",
+    "name": "Row count floor",
+    "scope": "legacy_events",
+    "threshold": "1M rows",
+    "dueInDays": 1,
+    "status": "Draft",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "RL-865",
+    "name": "PII column mask",
+    "scope": "partner_feed",
+    "threshold": "strict",
+    "dueInDays": 0,
+    "status": "Blocked",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

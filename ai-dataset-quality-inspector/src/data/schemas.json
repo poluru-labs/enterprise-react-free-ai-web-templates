@@ -1,0 +1,52 @@
+[
+  {
+    "id": "SCH-2201",
+    "name": "orders_fact",
+    "version": "v3.2",
+    "columns": 42,
+    "passRate": 96,
+    "status": "Passing",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "SCH-2198",
+    "name": "customer_dim",
+    "version": "v1.8",
+    "columns": 28,
+    "passRate": 88,
+    "status": "Warning",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "SCH-2185",
+    "name": "legacy_events",
+    "version": "v0.9",
+    "columns": 15,
+    "passRate": 62,
+    "status": "Failing",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "SCH-2170",
+    "name": "archive_snapshot",
+    "version": "frozen",
+    "columns": 20,
+    "passRate": 100,
+    "status": "Skipped",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "SCH-2162",
+    "name": "partner_feed",
+    "version": "v2.1",
+    "columns": 34,
+    "passRate": 91,
+    "status": "Passing",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

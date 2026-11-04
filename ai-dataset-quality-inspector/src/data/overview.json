@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Schema pass rate", "value": "94%", "hint": "Last run", "trend": "up", "trendValue": "+2%" },
+    { "label": "Open anomalies", "value": "38", "hint": "Across tables", "trend": "down", "trendValue": "-11" },
+    { "label": "Active rules", "value": "156", "hint": "Catalog", "trend": "up", "trendValue": "+4" },
+    { "label": "Release score", "value": "87", "hint": "Avg readiness", "trend": "up", "trendValue": "+5" }
+  ],
+  "newFeatures": [
+    { "title": "Schema diff", "body": "Compare column contracts.", "href": "/qual/schemas" },
+    { "title": "Anomaly heatmap", "body": "Table view by severity.", "href": "/qual/anomalies" },
+    { "title": "Rule simulator", "body": "Test Priya Poluru thresholds.", "href": "/qual/rules" }
+  ],
+  "enhancements": [
+    { "title": "Release gate", "body": "Readiness checklist.", "href": "/qual/releases" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/qual/overview" },
+    { "title": "Alert policy", "body": "Quiet hours for Nina Poluru.", "href": "/qual/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Quality lead" },
+    { "name": "Maya Poluru", "role": "Schema owner" },
+    { "name": "Priya Poluru", "role": "Rule curator" },
+    { "name": "Jonah Poluru", "role": "Release desk" }
+  ],
+  "activity": [
+    {
+      "title": "Release approved",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Jonah Poluru signed REL-884 at score 92."
+    },
+    {
+      "title": "Schema drift",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru flagged nullable mismatch on orders_v3."
+    },
+    {
+      "title": "Anomaly cleared",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Maya Poluru resolved spike on amount_usd."
+    }
+  ],
+  "byTrack": [
+    { "label": "Core facts", "share": 36 },
+    { "label": "Dimensions", "share": 28 },
+    { "label": "Staging", "share": 22 },
+    { "label": "Exports", "share": 14 }
+  ]
+}
