@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ISS-2201",
+    "name": "Regression in theme tokens",
+    "repo": "enterprise-design-system-react",
+    "labels": "bug,P1",
+    "comments": 12,
+    "status": "In progress",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "ISS-2198",
+    "name": "Docs: migration guide gap",
+    "repo": "enterprise-design-system-react",
+    "labels": "docs",
+    "comments": 4,
+    "status": "Open",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "ISS-2185",
+    "name": "CI flake on Windows",
+    "repo": "poluru-cli",
+    "labels": "ci,blocked",
+    "comments": 28,
+    "status": "Blocked",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "ISS-2170",
+    "name": "Typo in README badge",
+    "repo": "example-dashboard",
+    "labels": "good first issue",
+    "comments": 1,
+    "status": "Closed",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "ISS-2162",
+    "name": "Feature: dark token export",
+    "repo": "enterprise-design-system-react",
+    "labels": "enhancement",
+    "comments": 7,
+    "status": "Open",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

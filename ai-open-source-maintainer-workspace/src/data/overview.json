@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Open issues", "value": "142", "hint": "All repos", "trend": "down", "trendValue": "-18" },
+    { "label": "Releases (30d)", "value": "9", "hint": "Published", "trend": "up", "trendValue": "+2" },
+    { "label": "Active contributors", "value": "86", "hint": "This quarter", "trend": "up", "trendValue": "+11" },
+    { "label": "Packages healthy", "value": "94%", "hint": "Health score", "trend": "up", "trendValue": "+1%" }
+  ],
+  "newFeatures": [
+    { "title": "Issue inbox", "body": "Filter by label and repo.", "href": "/maint/issues" },
+    { "title": "Release calendar", "body": "Draft and scheduled tags.", "href": "/maint/releases" },
+    { "title": "Contributor map", "body": "Priya Poluru review queue.", "href": "/maint/contributors" }
+  ],
+  "enhancements": [
+    { "title": "Package advisories", "body": "CVE and deprecation flags.", "href": "/maint/packages" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/maint/overview" },
+    { "title": "Triage policy", "body": "SLAs for Nina Poluru.", "href": "/maint/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Maintainer lead" },
+    { "name": "Maya Poluru", "role": "Release manager" },
+    { "name": "Priya Poluru", "role": "Community triage" },
+    { "name": "Jonah Poluru", "role": "Package health" }
+  ],
+  "activity": [
+    {
+      "title": "Release published",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Maya Poluru shipped @poluru/widget v2.4.0."
+    },
+    {
+      "title": "Issue escalated",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru flagged ISS-2201 as blocked on upstream."
+    },
+    {
+      "title": "New contributor",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Ravi Poluru merged first PR from Nina Poluru."
+    }
+  ],
+  "byTrack": [
+    { "label": "Core libs", "share": 40 },
+    { "label": "CLI tools", "share": 28 },
+    { "label": "Docs sites", "share": 18 },
+    { "label": "Examples", "share": 14 }
+  ]
+}

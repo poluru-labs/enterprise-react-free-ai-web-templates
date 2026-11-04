@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CON-12",
+    "name": "Nina Poluru",
+    "repos": 3,
+    "prsMerged": 14,
+    "lastActiveDays": 1,
+    "status": "Active",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "CON-08",
+    "name": "Ravi Poluru",
+    "repos": 5,
+    "prsMerged": 42,
+    "lastActiveDays": 2,
+    "status": "Active",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "CON-03",
+    "name": "Kavya Poluru",
+    "repos": 1,
+    "prsMerged": 2,
+    "lastActiveDays": 45,
+    "status": "Inactive",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "CON-15",
+    "name": "Jonah Poluru",
+    "repos": 2,
+    "prsMerged": 0,
+    "lastActiveDays": 0,
+    "status": "New",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

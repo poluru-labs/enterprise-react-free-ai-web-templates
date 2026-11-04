@@ -1,0 +1,42 @@
+[
+  {
+    "id": "PKG-501",
+    "name": "@poluru-labs/enterprise-design-system-react",
+    "version": "2.4.0",
+    "weeklyDl": 84200,
+    "score": 98,
+    "status": "Healthy",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "PKG-508",
+    "name": "@poluru/cli",
+    "version": "1.8.1",
+    "weeklyDl": 12400,
+    "score": 91,
+    "status": "Advisory",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "PKG-512",
+    "name": "example-dashboard-starter",
+    "version": "0.8.4",
+    "weeklyDl": 890,
+    "score": 72,
+    "status": "Deprecated",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "PKG-520",
+    "name": "@poluru/legacy-icons",
+    "version": "0.3.0",
+    "weeklyDl": 120,
+    "score": 41,
+    "status": "Critical",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]
