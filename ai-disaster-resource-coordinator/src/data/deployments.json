@@ -1,0 +1,46 @@
+[
+  {
+    "id": "DEP-884",
+    "name": "Coastal Zone B — water run",
+    "origin": "WH-3 Central",
+    "destination": "Site B-12",
+    "units": 120,
+    "etaHours": 6,
+    "status": "En route",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "DEP-879",
+    "name": "Ridge med resupply",
+    "origin": "WH-1 North",
+    "destination": "Clinic R-4",
+    "units": 40,
+    "etaHours": 14,
+    "status": "Staged",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "DEP-870",
+    "name": "Generator convoy",
+    "origin": "WH-2 East",
+    "destination": "Grid hub E-2",
+    "units": 8,
+    "etaHours": 24,
+    "status": "Delayed",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "DEP-865",
+    "name": "Shelter kit drop",
+    "origin": "WH-4 Staging",
+    "destination": "Camp Delta",
+    "units": 50,
+    "etaHours": 0,
+    "status": "Delivered",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

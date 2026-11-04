@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Units available", "value": "12.4k", "hint": "All warehouses", "trend": "down", "trendValue": "-8%" },
+    { "label": "Active deployments", "value": "23", "hint": "In field", "trend": "up", "trendValue": "+5" },
+    { "label": "Open requests", "value": "67", "hint": "Sites waiting", "trend": "up", "trendValue": "+12" },
+    { "label": "Regions on watch", "value": "4", "hint": "Elevated", "trend": "neutral", "trendValue": "0" }
+  ],
+  "newFeatures": [
+    { "title": "Stock map", "body": "Warehouse levels by SKU.", "href": "/relief/inventory" },
+    { "title": "Convoy tracker", "body": "Deployment ETAs.", "href": "/relief/deployments" },
+    { "title": "Request triage", "body": "Priya Poluru priority queue.", "href": "/relief/requests" }
+  ],
+  "enhancements": [
+    { "title": "Regional board", "body": "Status by county.", "href": "/relief/regions" },
+    { "title": "Sitrep digest", "body": "Email Leela Poluru hourly.", "href": "/relief/overview" },
+    { "title": "Alert policy", "body": "Escalation for Nina Poluru.", "href": "/relief/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Operations lead" },
+    { "name": "Maya Poluru", "role": "Inventory control" },
+    { "name": "Priya Poluru", "role": "Request desk" },
+    { "name": "Jonah Poluru", "role": "Deployment chief" }
+  ],
+  "activity": [
+    {
+      "title": "Convoy delivered",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Jonah Poluru closed DEP-884 to Coastal Zone B."
+    },
+    {
+      "title": "Critical stock",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru flagged water pallets below floor at WH-3."
+    },
+    {
+      "title": "Region upgraded",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Maya Poluru moved Ridge County to Severe."
+    }
+  ],
+  "byTrack": [
+    { "label": "Water & hygiene", "share": 32 },
+    { "label": "Medical", "share": 26 },
+    { "label": "Shelter", "share": 24 },
+    { "label": "Power & comms", "share": 18 }
+  ]
+}

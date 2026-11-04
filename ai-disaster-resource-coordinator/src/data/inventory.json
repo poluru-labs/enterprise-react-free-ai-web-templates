@@ -1,0 +1,52 @@
+[
+  {
+    "id": "INV-2201",
+    "name": "Water pallets (500L)",
+    "warehouse": "WH-3 Central",
+    "sku": "WTR-500",
+    "onHand": 840,
+    "status": "Low",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "INV-2198",
+    "name": "Medical kits — trauma",
+    "warehouse": "WH-1 North",
+    "sku": "MED-TRM",
+    "onHand": 420,
+    "status": "Available",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "INV-2185",
+    "name": "Generators 5kW",
+    "warehouse": "WH-2 East",
+    "sku": "PWR-G5K",
+    "onHand": 12,
+    "status": "Critical",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "INV-2170",
+    "name": "Tent modules (family)",
+    "warehouse": "WH-4 Staging",
+    "sku": "SHL-TFM",
+    "onHand": 200,
+    "status": "Reserved",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "INV-2162",
+    "name": "Satellite phones",
+    "warehouse": "WH-1 North",
+    "sku": "COM-SAT",
+    "onHand": 95,
+    "status": "Available",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]
