@@ -1,33 +1,23 @@
-# Enterprise React starter
+# Dataset Quality Inspector (QualDesk)
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+Schema checks, anomaly counts, validation rules, and release readiness scores — light theme **`#640D5F`**, Roboto and Lato, powered by `@poluru-labs/enterprise-design-system-react`.
 
 ## Run
-
-Requires Node.js 20+.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
+http://127.0.0.1:5212 → `/qual/overview`
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Create a production build |
-| `npm run preview` | Preview the production build |
+## Routes
 
-## Structure
+- `/qual/overview` — Quality snapshot and activity
+- `/qual/schemas` — Schema checks and pass rates
+- `/qual/anomalies` — Row-level issues
+- `/qual/rules` — Validation catalog
+- `/qual/releases` — Readiness scores
+- `/qual/settings` — Floors and notifications
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
-
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+Footer: [Subrahmanyam Poluru](https://polurus.com) · [@poluru-labs/enterprise-design-system-react](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react)

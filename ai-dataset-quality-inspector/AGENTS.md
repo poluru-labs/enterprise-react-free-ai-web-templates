@@ -1,6 +1,6 @@
 # ai-dataset-quality-inspector — dashboard agent
 
-Implement the dashboard **only inside** `ds-react/ai-dataset-quality-inspector/`. Shared design rules live in [`../AGENTS.md`](../AGENTS.md); follow both documents.
+Implement the dashboard **only inside** `ai-dataset-quality-inspector/`. Shared design rules live in [`../AGENTS.md`](../AGENTS.md); follow both documents.
 
 ## App identity
 
@@ -30,19 +30,19 @@ Meet the parent checklist: **≥12 distinct** `@poluru-labs/enterprise-design-sy
 
 ## Git commits (required — minimum 3)
 
-When you implement or refresh this dashboard, end with **at least three separate commits**. Stage paths under `ds-react/ai-dataset-quality-inspector/` only; never commit `node_modules/`.
+When you implement or refresh this dashboard, end with **at least three separate commits**. Stage paths under `ai-dataset-quality-inspector/` only; never commit `node_modules/`.
 
 | Commit | Scope | Example message |
 |--------|--------|-----------------|
-| 1 | `index.html` fonts/meta, brand CSS tokens, providers, shell layout (`SideNav`, `Toolbar`) | `feat(ds-react/dataset-quality-inspector): add dashboard shell and purple light theme` |
-| 2 | Domain sections, mock data, design-system components | `feat(ds-react/dataset-quality-inspector): add dataset quality inspector overview and data views` |
-| 3 | Footer credits, polish, `npm run build` fixes | `chore(ds-react/dataset-quality-inspector): add footer credits and confirm production build` |
+| 1 | `index.html` fonts/meta, brand CSS tokens, providers, shell layout (`SideNav`, `Toolbar`) | `feat(dataset-quality-inspector): add dashboard shell and purple light theme` |
+| 2 | Domain sections, mock data, design-system components | `feat(dataset-quality-inspector): add dataset quality inspector overview and data views` |
+| 3 | Footer credits, polish, `npm run build` fixes | `chore(dataset-quality-inspector): add footer credits and confirm production build` |
 
 You may split into more than three commits if clearer; do **not** finish with fewer than three. Use imperative conventional commit subjects.
 
 ## Verification
 
-From `ds-react/ai-dataset-quality-inspector/`:
+From `ai-dataset-quality-inspector/`:
 
 ```bash
 npm install
