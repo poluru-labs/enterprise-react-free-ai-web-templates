@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Runs this week", "value": "42", "hint": "All labs", "trend": "up", "trendValue": "+6" },
+    { "label": "Repro verified", "value": "78%", "hint": "Gold studies", "trend": "up", "trendValue": "+4%" },
+    { "label": "Pinned environments", "value": "16", "hint": "Active pins", "trend": "up", "trendValue": "+2" },
+    { "label": "Artifact drift", "value": "3", "hint": "Needs seal", "trend": "down", "trendValue": "-1" }
+  ],
+  "newFeatures": [
+    { "title": "Run compare", "body": "Diff checkpoints side by side.", "href": "/repro/runs" },
+    { "title": "Pin wizard", "body": "Lock conda and CUDA stacks.", "href": "/repro/environments" },
+    { "title": "Repro inbox", "body": "Priya Poluru verification queue.", "href": "/repro/reproductions" }
+  ],
+  "enhancements": [
+    { "title": "Artifact vault", "body": "Sealed model bundles.", "href": "/repro/artifacts" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/repro/overview" },
+    { "title": "Retention policy", "body": "Quiet hours for Nina Poluru.", "href": "/repro/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Repro program lead" },
+    { "name": "Maya Poluru", "role": "Environment steward" },
+    { "name": "Priya Poluru", "role": "Verification desk" },
+    { "name": "Jonah Poluru", "role": "Run analytics" }
+  ],
+  "activity": [
+    {
+      "title": "Repro verified",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Priya Poluru closed REP-884 for vision baseline v2."
+    },
+    {
+      "title": "Environment pinned",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Maya Poluru locked ENV-301 for CUDA 12.2 stack."
+    },
+    {
+      "title": "Run failed",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Ravi Poluru flagged RUN-2185 seed mismatch on tabular study."
+    }
+  ],
+  "byTrack": [
+    { "label": "Vision", "share": 34 },
+    { "label": "Tabular", "share": 28 },
+    { "label": "NLP", "share": 22 },
+    { "label": "Simulation", "share": 16 }
+  ]
+}

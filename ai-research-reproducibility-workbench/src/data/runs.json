@@ -1,0 +1,52 @@
+[
+  {
+    "id": "RUN-2201",
+    "name": "Vision baseline v2",
+    "study": "Vision",
+    "durationMin": 240,
+    "checkpoints": 12,
+    "status": "Succeeded",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "RUN-2198",
+    "name": "Tabular ablation sweep",
+    "study": "Tabular",
+    "durationMin": 95,
+    "checkpoints": 6,
+    "status": "Running",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "RUN-2185",
+    "name": "NLP tokenizer study",
+    "study": "NLP",
+    "durationMin": 0,
+    "checkpoints": 0,
+    "status": "Failed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "RUN-2170",
+    "name": "Simulation Monte Carlo",
+    "study": "Simulation",
+    "durationMin": 0,
+    "checkpoints": 0,
+    "status": "Queued",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "RUN-2162",
+    "name": "Vision distillation",
+    "study": "Vision",
+    "durationMin": 180,
+    "checkpoints": 8,
+    "status": "Succeeded",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

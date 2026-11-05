@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ART-501",
+    "name": "baseline-v2-weights",
+    "format": "Safetensors",
+    "sizeGb": 4.2,
+    "hashOk": true,
+    "status": "Sealed",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "ART-508",
+    "name": "tabular-metrics.csv",
+    "format": "CSV",
+    "sizeGb": 0.01,
+    "hashOk": false,
+    "status": "Drift",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "ART-512",
+    "name": "nlp-vocab.bin",
+    "format": "Binary",
+    "sizeGb": 0,
+    "hashOk": false,
+    "status": "Missing",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "ART-520",
+    "name": "sim-config.yaml",
+    "format": "YAML",
+    "sizeGb": 0.001,
+    "hashOk": true,
+    "status": "Draft",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]

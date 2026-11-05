@@ -1,0 +1,42 @@
+[
+  {
+    "id": "REP-884",
+    "name": "Replicate vision baseline v2",
+    "reviewer": "Priya Poluru",
+    "runId": "RUN-2201",
+    "deltaPct": 0.2,
+    "status": "Verified",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "REP-879",
+    "name": "Tabular ablation parity",
+    "reviewer": "Ravi Poluru",
+    "runId": "RUN-2198",
+    "deltaPct": 4.1,
+    "status": "InProgress",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "REP-870",
+    "name": "NLP tokenizer checksum",
+    "reviewer": "Maya Poluru",
+    "runId": "RUN-2185",
+    "deltaPct": 0,
+    "status": "Blocked",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "REP-865",
+    "name": "Simulation seed audit",
+    "reviewer": "Nina Poluru",
+    "runId": "RUN-2170",
+    "deltaPct": 0,
+    "status": "Pending",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

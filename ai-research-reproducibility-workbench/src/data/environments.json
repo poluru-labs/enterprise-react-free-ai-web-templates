@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ENV-301",
+    "name": "cuda-12.2-pytorch-2.2",
+    "stack": "GPU lab A",
+    "packages": 142,
+    "pinAgeDays": 12,
+    "status": "Pinned",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "ENV-298",
+    "name": "cpu-sklearn-1.4",
+    "stack": "Tabular cluster",
+    "packages": 88,
+    "pinAgeDays": 45,
+    "status": "Drift",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "ENV-290",
+    "name": "legacy-tf-2.11",
+    "stack": "Archive",
+    "packages": 0,
+    "pinAgeDays": 400,
+    "status": "Deprecated",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  },
+  {
+    "id": "ENV-285",
+    "name": "jax-0.4-cuda",
+    "stack": "Pilot node",
+    "packages": 76,
+    "pinAgeDays": 3,
+    "status": "Candidate",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:00:00.000Z"
+  }
+]
