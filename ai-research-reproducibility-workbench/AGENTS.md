@@ -1,6 +1,6 @@
 # ai-research-reproducibility-workbench — dashboard agent
 
-Implement the dashboard **only inside** `ds-react/ai-research-reproducibility-workbench/`. Shared design rules live in [`../AGENTS.md`](../AGENTS.md); follow both documents.
+Implement the dashboard **only inside** `ai-research-reproducibility-workbench/`. Shared design rules live in [`../AGENTS.md`](../AGENTS.md) when present; follow both documents.
 
 ## App identity
 
@@ -30,19 +30,19 @@ Meet the parent checklist: **≥12 distinct** `@poluru-labs/enterprise-design-sy
 
 ## Git commits (required — minimum 3)
 
-When you implement or refresh this dashboard, end with **at least three separate commits**. Stage paths under `ds-react/ai-research-reproducibility-workbench/` only; never commit `node_modules/`.
+When you implement or refresh this dashboard, end with **at least three separate commits**. Stage paths under `ai-research-reproducibility-workbench/` only; never commit `node_modules/`.
 
 | Commit | Scope | Example message |
 |--------|--------|-----------------|
-| 1 | `index.html` fonts/meta, brand CSS tokens, providers, shell layout (`SideNav`, `Toolbar`) | `feat(ds-react/research-reproducibility-workbench): add dashboard shell and purple light theme` |
-| 2 | Domain sections, mock data, design-system components | `feat(ds-react/research-reproducibility-workbench): add research reproducibility workbench overview and data views` |
-| 3 | Footer credits, polish, `npm run build` fixes | `chore(ds-react/research-reproducibility-workbench): add footer credits and confirm production build` |
+| 1 | `index.html` fonts/meta, brand CSS tokens, providers, shell layout (`SideNav`, `Toolbar`) | `feat(research-reproducibility-workbench): add dashboard shell and purple light theme` |
+| 2 | Domain sections, mock data, design-system components | `feat(research-reproducibility-workbench): add reproducibility workbench overview and data views` |
+| 3 | Footer credits, polish, `npm run build` fixes | `chore(research-reproducibility-workbench): add footer credits and confirm production build` |
 
 You may split into more than three commits if clearer; do **not** finish with fewer than three. Use imperative conventional commit subjects.
 
 ## Verification
 
-From `ds-react/ai-research-reproducibility-workbench/`:
+From `ai-research-reproducibility-workbench/`:
 
 ```bash
 npm install
