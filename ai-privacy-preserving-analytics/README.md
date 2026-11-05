@@ -1,33 +1,23 @@
-# Enterprise React starter
+# Privacy-Preserving Analytics (PrivDesk)
 
-Minimal Vite + React starter using `@poluru-labs/enterprise-design-system-react`. The app includes the design-system theme and toast providers, a starter view, and no application routes or demo data.
+Aggregated metrics, consent scopes, access logs, and report exports — light theme **`#fab95b`**, Roboto and Lato, powered by `@poluru-labs/enterprise-design-system-react`.
 
 ## Run
-
-Requires Node.js 20+.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Default dev server: http://127.0.0.1:5189
-Preview server: http://127.0.0.1:4189
+http://127.0.0.1:5216 → `/priv/overview`
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Create a production build |
-| `npm run preview` | Preview the production build |
+## Routes
 
-## Structure
+- `/priv/overview` — Program snapshot and activity
+- `/priv/metrics` — K-anonymized KPI catalog
+- `/priv/consent` — Purposes and regions
+- `/priv/access` — Access audit log
+- `/priv/exports` — Signed report bundles
+- `/priv/settings` — Thresholds and notifications
 
-```text
-src/
-  App.jsx       Starter application surface
-  App.css       Starter styles
-  main.jsx      React entry point and global styles
-  test/setup.js Test environment setup
-```
-
-Replace the starter view in `src/App.jsx` with your application UI. Add routes, components, data, and tests as the project grows.
+Footer: [Subrahmanyam Poluru](https://polurus.com) · [@poluru-labs/enterprise-design-system-react](https://www.npmjs.com/package/@poluru-labs/enterprise-design-system-react)
