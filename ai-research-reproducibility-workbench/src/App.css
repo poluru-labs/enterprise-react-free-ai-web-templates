@@ -1,0 +1,53 @@
+:root {
+  font-family: var(--eds-font-sans, system-ui, sans-serif);
+  color: #172033;
+  background: #f6f8fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f6f8fb;
+}
+
+.starter-app {
+  box-sizing: border-box;
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.starter-eyebrow {
+  margin: 0 0 0.75rem;
+  color: #526176;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.starter-app h1 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.starter-copy {
+  max-width: 28rem;
+  margin: 1.25rem 0 0;
+  color: #526176;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
