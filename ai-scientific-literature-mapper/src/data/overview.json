@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Papers mapped", "value": "18.2k", "hint": "Corpus", "trend": "up", "trendValue": "+420" },
+    { "label": "Active clusters", "value": "64", "hint": "Topics", "trend": "up", "trendValue": "+3" },
+    { "label": "Citation links", "value": "41k", "hint": "Verified", "trend": "up", "trendValue": "+1.2k" },
+    { "label": "Open curation", "value": "19", "hint": "Tasks", "trend": "down", "trendValue": "-4" }
+  ],
+  "newFeatures": [
+    { "title": "Corpus explorer", "body": "Filter by venue and year.", "href": "/lit/corpus" },
+    { "title": "Cluster diff", "body": "Compare topic drift.", "href": "/lit/clusters" },
+    { "title": "Curation inbox", "body": "Priya Poluru task queue.", "href": "/lit/curation" }
+  ],
+  "enhancements": [
+    { "title": "Citation graph", "body": "Broken link report.", "href": "/lit/citations" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/lit/overview" },
+    { "title": "Import policy", "body": "Quiet hours for Nina Poluru.", "href": "/lit/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Library program lead" },
+    { "name": "Maya Poluru", "role": "Corpus steward" },
+    { "name": "Priya Poluru", "role": "Curation desk" },
+    { "name": "Jonah Poluru", "role": "Citation analytics" }
+  ],
+  "activity": [
+    {
+      "title": "Cluster updated",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Maya Poluru merged CLU-884 into climate modeling topics."
+    },
+    {
+      "title": "Citation verified",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Jonah Poluru linked CIT-301 between two survey papers."
+    },
+    {
+      "title": "Curation assigned",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Ravi Poluru queued CUR-2185 for metadata cleanup."
+    }
+  ],
+  "byTrack": [
+    { "label": "Life sciences", "share": 32 },
+    { "label": "Physical sciences", "share": 28 },
+    { "label": "Engineering", "share": 24 },
+    { "label": "Social sciences", "share": 16 }
+  ]
+}

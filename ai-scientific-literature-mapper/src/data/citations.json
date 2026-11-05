@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CIT-501",
+    "name": "Smith 2024 → Jones 2022",
+    "fromPaper": "PAP-2201",
+    "toPaper": "PAP-2162",
+    "strength": 0.92,
+    "status": "Verified",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "CIT-508",
+    "name": "Preprint → Journal version",
+    "fromPaper": "PAP-2185",
+    "toPaper": "PAP-2198",
+    "strength": 0.55,
+    "status": "Proposed",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "CIT-512",
+    "name": "Broken DOI redirect",
+    "fromPaper": "PAP-2170",
+    "toPaper": "—",
+    "strength": 0,
+    "status": "Broken",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "CIT-520",
+    "name": "Duplicate claim link",
+    "fromPaper": "PAP-2198",
+    "toPaper": "PAP-2201",
+    "strength": 0.41,
+    "status": "Disputed",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]

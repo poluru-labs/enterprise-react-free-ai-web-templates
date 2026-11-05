@@ -1,0 +1,52 @@
+[
+  {
+    "id": "PAP-2201",
+    "name": "Bayesian methods in ecology",
+    "venue": "Journal of Ecology",
+    "year": 2024,
+    "mappedPct": 100,
+    "status": "Mapped",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "PAP-2198",
+    "name": "Graph neural nets for materials",
+    "venue": "Nature Materials",
+    "year": 2025,
+    "mappedPct": 85,
+    "status": "Review",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "PAP-2185",
+    "name": "Open survey on reproducibility",
+    "venue": "Preprint server",
+    "year": 2023,
+    "mappedPct": 0,
+    "status": "Unlinked",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "PAP-2170",
+    "name": "Policy brief: carbon pricing",
+    "venue": "Working paper",
+    "year": 2026,
+    "mappedPct": 40,
+    "status": "Draft",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "PAP-2162",
+    "name": "Cryo-EM pipeline benchmarks",
+    "venue": "Structure",
+    "year": 2024,
+    "mappedPct": 100,
+    "status": "Mapped",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

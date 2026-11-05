@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CUR-884",
+    "name": "Normalize author names — PAP-2198",
+    "assignee": "Priya Poluru",
+    "paperId": "PAP-2198",
+    "priority": "High",
+    "status": "Open",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "CUR-879",
+    "name": "Merge duplicate cluster labels",
+    "assignee": "Ravi Poluru",
+    "paperId": "CLU-298",
+    "priority": "Medium",
+    "status": "Assigned",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "CUR-870",
+    "name": "Verify citation strength",
+    "assignee": "Maya Poluru",
+    "paperId": "CIT-508",
+    "priority": "Low",
+    "status": "Done",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "CUR-865",
+    "name": "Resolve broken DOI",
+    "assignee": "Nina Poluru",
+    "paperId": "CIT-512",
+    "priority": "High",
+    "status": "Blocked",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

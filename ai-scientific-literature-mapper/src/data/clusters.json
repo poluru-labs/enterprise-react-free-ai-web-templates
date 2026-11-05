@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CLU-301",
+    "name": "Climate modeling",
+    "papers": 842,
+    "cohesion": 0.88,
+    "driftPct": 2,
+    "status": "Stable",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "CLU-298",
+    "name": "Protein folding",
+    "papers": 1204,
+    "cohesion": 0.79,
+    "driftPct": 8,
+    "status": "Shifting",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "CLU-290",
+    "name": "Urban mobility",
+    "papers": 156,
+    "cohesion": 0.91,
+    "driftPct": 0,
+    "status": "New",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "CLU-285",
+    "name": "Legacy NLP surveys",
+    "papers": 0,
+    "cohesion": 0,
+    "driftPct": 0,
+    "status": "Archived",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]
