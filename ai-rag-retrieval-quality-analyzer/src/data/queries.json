@@ -1,0 +1,52 @@
+[
+  {
+    "id": "QRY-2201",
+    "name": "Refund policy lookup",
+    "collection": "Support KB",
+    "latencyMs": 420,
+    "hits": 5,
+    "status": "Healthy",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "QRY-2198",
+    "name": "API rate limits",
+    "collection": "Product docs",
+    "latencyMs": 890,
+    "hits": 8,
+    "status": "Degraded",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "QRY-2185",
+    "name": "SOC2 control mapping",
+    "collection": "Policy library",
+    "latencyMs": 0,
+    "hits": 0,
+    "status": "Failed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "QRY-2170",
+    "name": "v2 migration checklist",
+    "collection": "Release notes",
+    "latencyMs": 310,
+    "hits": 3,
+    "status": "Sampling",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "QRY-2162",
+    "name": "Billing proration examples",
+    "collection": "Support KB",
+    "latencyMs": 510,
+    "hits": 6,
+    "status": "Healthy",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]

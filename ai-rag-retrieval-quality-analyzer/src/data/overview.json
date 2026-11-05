@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Mean precision@5", "value": "0.82", "hint": "Rolling 7d", "trend": "up", "trendValue": "+0.03" },
+    { "label": "Recall@10", "value": "0.71", "hint": "Gold set", "trend": "down", "trendValue": "-0.02" },
+    { "label": "Corpus coverage", "value": "94%", "hint": "Sources indexed", "trend": "up", "trendValue": "+1%" },
+    { "label": "Open reviews", "value": "12", "hint": "Spot checks", "trend": "down", "trendValue": "-3" }
+  ],
+  "newFeatures": [
+    { "title": "Query explorer", "body": "Filter sessions by latency band.", "href": "/rq/queries" },
+    { "title": "KPI drill-down", "body": "Compare cohorts week over week.", "href": "/rq/kpis" },
+    { "title": "Review inbox", "body": "Priya Poluru assignment queue.", "href": "/rq/reviews" }
+  ],
+  "enhancements": [
+    { "title": "Corpus gaps", "body": "Stale source report.", "href": "/rq/corpus" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/rq/overview" },
+    { "title": "Sampling policy", "body": "Quiet hours for Nina Poluru.", "href": "/rq/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Quality program lead" },
+    { "name": "Maya Poluru", "role": "Corpus steward" },
+    { "name": "Priya Poluru", "role": "Review desk" },
+    { "name": "Jonah Poluru", "role": "Query analytics" }
+  ],
+  "activity": [
+    {
+      "title": "Review approved",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Priya Poluru closed REV-884 for support docs slice."
+    },
+    {
+      "title": "Corpus refreshed",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Maya Poluru re-indexed product handbook v3."
+    },
+    {
+      "title": "KPI alert",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Ravi Poluru flagged recall drop on billing FAQ."
+    }
+  ],
+  "byTrack": [
+    { "label": "Product docs", "share": 38 },
+    { "label": "Support KB", "share": 30 },
+    { "label": "Policy library", "share": 20 },
+    { "label": "Release notes", "share": 12 }
+  ]
+}

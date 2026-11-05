@@ -1,0 +1,42 @@
+[
+  {
+    "id": "REV-884",
+    "name": "Spot check: refund policy hits",
+    "reviewer": "Priya Poluru",
+    "queryId": "QRY-2201",
+    "verdict": "pending",
+    "status": "Open",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "REV-879",
+    "name": "False negative: API limits",
+    "reviewer": "Ravi Poluru",
+    "queryId": "QRY-2198",
+    "verdict": "reject",
+    "status": "Rejected",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "REV-870",
+    "name": "Gold set: billing FAQ",
+    "reviewer": "Maya Poluru",
+    "queryId": "QRY-2162",
+    "verdict": "approve",
+    "status": "Approved",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "REV-865",
+    "name": "Escalation: SOC2 mapping",
+    "reviewer": "Nina Poluru",
+    "queryId": "QRY-2185",
+    "verdict": "escalate",
+    "status": "Escalated",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

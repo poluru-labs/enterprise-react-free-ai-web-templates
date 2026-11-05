@@ -1,0 +1,42 @@
+[
+  {
+    "id": "KPI-301",
+    "name": "Precision@5 — Support",
+    "cohort": "Support KB",
+    "value": 0.84,
+    "target": 0.8,
+    "status": "OnTarget",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "KPI-298",
+    "name": "Recall@10 — Product",
+    "cohort": "Product docs",
+    "value": 0.68,
+    "target": 0.75,
+    "status": "Below",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "KPI-290",
+    "name": "MRR@3 — Policy",
+    "cohort": "Policy library",
+    "value": 0.72,
+    "target": 0.7,
+    "status": "Watch",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "KPI-285",
+    "name": "NDCG@5 — Release",
+    "cohort": "Release notes",
+    "value": 0.0,
+    "target": 0.65,
+    "status": "Draft",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]

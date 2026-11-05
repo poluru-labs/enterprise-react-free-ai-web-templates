@@ -1,0 +1,42 @@
+[
+  {
+    "id": "COR-501",
+    "name": "Product handbook",
+    "format": "Markdown",
+    "chunks": 12400,
+    "coveragePct": 98,
+    "status": "Indexed",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "COR-508",
+    "name": "Support macros",
+    "format": "HTML",
+    "chunks": 3200,
+    "coveragePct": 91,
+    "status": "Stale",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T16:00:00.000Z"
+  },
+  {
+    "id": "COR-512",
+    "name": "Legal addendum 2024",
+    "format": "PDF",
+    "chunks": 0,
+    "coveragePct": 0,
+    "status": "Gap",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-22T09:00:00.000Z"
+  },
+  {
+    "id": "COR-520",
+    "name": "Release archive",
+    "format": "Mixed",
+    "chunks": 880,
+    "coveragePct": 100,
+    "status": "Queued",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-20T14:00:00.000Z"
+  }
+]
