@@ -72,7 +72,7 @@ export function TopNavbar() {
             onClick={() => setMobileOpen(true)}
           />
           <Link to={`${BASE_PATH}/overview`} className="repro-wordmark">
-            <span className="repro-mark">P</span>
+            <span className="repro-mark">R</span>
             <span>
               <strong>{APP_NAME}</strong>
               <em>{APP_TAGLINE}</em>
