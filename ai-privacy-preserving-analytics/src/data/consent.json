@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CON-301",
+    "name": "Product analytics — EU",
+    "purpose": "Usage measurement",
+    "region": "EU",
+    "subjects": 840000,
+    "status": "Active",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "CON-298",
+    "name": "Marketing measurement — NA",
+    "purpose": "Campaign reach",
+    "region": "NA",
+    "subjects": 420000,
+    "status": "Expiring",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:00:00.000Z"
+  },
+  {
+    "id": "CON-290",
+    "name": "Research panel — APAC",
+    "purpose": "Opt-in studies",
+    "region": "APAC",
+    "subjects": 12000,
+    "status": "Pending",
+    "owner": "Ravi Poluru",
+    "updated": "2026-10-22T16:00:00.000Z"
+  },
+  {
+    "id": "CON-285",
+    "name": "Legacy tracker — global",
+    "purpose": "Deprecated",
+    "region": "Global",
+    "subjects": 0,
+    "status": "Revoked",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-21T10:00:00.000Z"
+  }
+]

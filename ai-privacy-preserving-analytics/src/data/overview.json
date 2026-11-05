@@ -1,0 +1,47 @@
+{
+  "kpis": [
+    { "label": "Active consent scopes", "value": "28", "hint": "Regions", "trend": "up", "trendValue": "+2" },
+    { "label": "Queries (24h)", "value": "4.1k", "hint": "Aggregated only", "trend": "down", "trendValue": "-6%" },
+    { "label": "Access denials", "value": "17", "hint": "Policy blocks", "trend": "down", "trendValue": "-4" },
+    { "label": "Exports ready", "value": "6", "hint": "This week", "trend": "up", "trendValue": "+1" }
+  ],
+  "newFeatures": [
+    { "title": "Aggregate catalog", "body": "Browse k-threshold metrics.", "href": "/priv/metrics" },
+    { "title": "Consent map", "body": "Purpose by region.", "href": "/priv/consent" },
+    { "title": "Access search", "body": "Priya Poluru audit queue.", "href": "/priv/access" }
+  ],
+  "enhancements": [
+    { "title": "Export wizard", "body": "Redacted report bundles.", "href": "/priv/exports" },
+    { "title": "Weekly digest", "body": "Email Leela Poluru summaries.", "href": "/priv/overview" },
+    { "title": "Retention policy", "body": "Quiet hours for Nina Poluru.", "href": "/priv/settings" }
+  ],
+  "team": [
+    { "name": "Leela Poluru", "role": "Privacy program lead" },
+    { "name": "Maya Poluru", "role": "Metrics steward" },
+    { "name": "Priya Poluru", "role": "Access review" },
+    { "name": "Jonah Poluru", "role": "Export desk" }
+  ],
+  "activity": [
+    {
+      "title": "Export delivered",
+      "timestamp": "2026-10-23T18:40:00.000Z",
+      "description": "Jonah Poluru released Q3 aggregate report EXP-884."
+    },
+    {
+      "title": "Consent updated",
+      "timestamp": "2026-10-23T17:05:00.000Z",
+      "description": "Kavya Poluru renewed marketing scope for EU."
+    },
+    {
+      "title": "Access flagged",
+      "timestamp": "2026-10-23T15:20:00.000Z",
+      "description": "Ravi Poluru denied raw row export attempt."
+    }
+  ],
+  "byTrack": [
+    { "label": "Product usage", "share": 36 },
+    { "label": "Support", "share": 28 },
+    { "label": "Research", "share": 22 },
+    { "label": "Compliance", "share": 14 }
+  ]
+}

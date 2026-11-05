@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ACC-884",
+    "name": "Query: banded WAU trend",
+    "actor": "Maya Poluru",
+    "resource": "MET-2201",
+    "action": "read_aggregate",
+    "status": "Allowed",
+    "owner": "Priya Poluru",
+    "updated": "2026-10-23T18:10:00.000Z"
+  },
+  {
+    "id": "ACC-879",
+    "name": "Export: raw event slice",
+    "actor": "Ravi Poluru",
+    "resource": "events_raw",
+    "action": "export",
+    "status": "Denied",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T15:00:00.000Z"
+  },
+  {
+    "id": "ACC-870",
+    "name": "Dashboard: consent map",
+    "actor": "Jonah Poluru",
+    "resource": "CON-301",
+    "action": "read",
+    "status": "Audited",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-23T11:30:00.000Z"
+  },
+  {
+    "id": "ACC-865",
+    "name": "Repeated PII lookup",
+    "actor": "External analyst",
+    "resource": "user_dim",
+    "action": "query",
+    "status": "Flagged",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-22T17:00:00.000Z"
+  }
+]

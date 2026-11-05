@@ -1,0 +1,52 @@
+[
+  {
+    "id": "MET-2201",
+    "name": "Weekly active users (banded)",
+    "cohort": "Product",
+    "kThreshold": 50,
+    "lastValue": "12.4k",
+    "status": "Published",
+    "owner": "Maya Poluru",
+    "updated": "2026-10-23T14:00:00.000Z"
+  },
+  {
+    "id": "MET-2198",
+    "name": "Support ticket volume",
+    "cohort": "Support",
+    "kThreshold": 25,
+    "lastValue": "842",
+    "status": "Review",
+    "owner": "Leela Poluru",
+    "updated": "2026-10-23T12:30:00.000Z"
+  },
+  {
+    "id": "MET-2185",
+    "name": "Feature adoption rate",
+    "cohort": "Product",
+    "kThreshold": 100,
+    "lastValue": "—",
+    "status": "Suppressed",
+    "owner": "Kavya Poluru",
+    "updated": "2026-10-22T09:15:00.000Z"
+  },
+  {
+    "id": "MET-2170",
+    "name": "Compliance attestations",
+    "cohort": "Compliance",
+    "kThreshold": 10,
+    "lastValue": "96%",
+    "status": "Published",
+    "owner": "Nina Poluru",
+    "updated": "2026-10-20T11:00:00.000Z"
+  },
+  {
+    "id": "MET-2162",
+    "name": "Research opt-in rate",
+    "cohort": "Research",
+    "kThreshold": 30,
+    "lastValue": "18%",
+    "status": "Draft",
+    "owner": "Jonah Poluru",
+    "updated": "2026-10-23T08:45:00.000Z"
+  }
+]
