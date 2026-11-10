@@ -1,23 +1,23 @@
 import { useNavigate } from 'react-router'
-import { env, ROUTES } from '@/core'
+import { ROUTES } from '@/core'
 import { Button } from '@/shared'
 import styles from './DashboardPage.module.scss'
 
 const METRICS = [
   {
-    label: 'Active agents',
-    value: '12',
-    hint: '3 awaiting review',
+    label: 'Published articles',
+    value: '842',
+    hint: '18 scheduled',
   },
   {
-    label: 'Conversations today',
-    value: '248',
-    hint: '+18% vs yesterday',
+    label: 'Open maintenance',
+    value: '24',
+    hint: '6 high priority',
   },
   {
-    label: 'Avg. latency',
-    value: '1.2s',
-    hint: 'p95 across models',
+    label: 'Deflection rate',
+    value: '71%',
+    hint: '+3% vs last month',
   },
 ] as const
 
@@ -27,20 +27,16 @@ export function DashboardPage() {
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{env.appName}</p>
-        <h1 className={styles.title}>Enterprise AI workspace</h1>
+        <p className={styles.eyebrow}>Knowledge Base</p>
+        <h1 className={styles.title}>KbDesk workspace</h1>
         <p className={styles.subtitle}>
-          Production-ready React starter for conversational AI, agents, and
-          governed model workflows. Extend the feature modules and wire your
-          gateway.
+          Publish articles, tune categories, clear maintenance, and author with
+          playbooks. Program lead Leela Poluru.
         </p>
         <div className={styles.actions}>
-          <Button onClick={() => navigate(ROUTES.chat)}>Open chat</Button>
-          <Button
-            variant="secondary"
-            onClick={() => navigate(ROUTES.agents)}
-          >
-            Browse agents
+          <Button onClick={() => navigate(ROUTES.articles)}>Browse articles</Button>
+          <Button variant="secondary" onClick={() => navigate(ROUTES.maintenance)}>
+            Maintenance queue
           </Button>
         </div>
       </section>

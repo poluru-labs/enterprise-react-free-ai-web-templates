@@ -25,10 +25,10 @@ export function AgentsPage() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Agents</h1>
+        <h1 className={styles.title}>Playbooks</h1>
         <p className={styles.subtitle}>
-          Catalog of reusable AI agents. Replace the mock data with your agent
-          registry API.
+          Authoring workflows for articles, FAQs, and localization. Connect your
+          registry when ready.
         </p>
       </header>
 
