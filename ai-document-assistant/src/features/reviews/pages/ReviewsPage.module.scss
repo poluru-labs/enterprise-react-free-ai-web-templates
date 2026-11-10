@@ -1,0 +1,91 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: $color-text-muted;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+}
+
+.filter,
+.filterActive {
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid $color-border;
+  background: $color-surface;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filterActive {
+  border-color: $color-primary;
+  background: $color-primary-soft;
+  color: $color-primary;
+}
+
+.list {
+  display: grid;
+  gap: $space-3;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-4;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background: $color-surface;
+
+  @include respond-up($bp-md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.itemId {
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: $color-text-muted;
+}
+
+.itemTitle {
+  margin: 0.25rem 0 0;
+  font-weight: 600;
+}
+
+.itemMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  font-size: 0.875rem;
+  color: $color-text-muted;
+
+  span[data-priority='High'] {
+    color: $color-danger;
+    font-weight: 600;
+  }
+}
