@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: $font-sans;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $color-text;
+  background:
+    radial-gradient(circle at top left, rgb(15 110 86 / 8%), transparent 40%),
+    linear-gradient(180deg, #f8fafb 0%, $color-bg 45%, #eef2f5 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+code,
+pre,
+kbd {
+  font-family: $font-mono;
+}
+
+:focus-visible {
+  @include focus-ring;
+}
