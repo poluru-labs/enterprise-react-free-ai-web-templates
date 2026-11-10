@@ -1,0 +1,52 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: $color-text-muted;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background: $color-surface;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: $space-3 $space-4;
+    text-align: left;
+    border-bottom: 1px solid $color-border;
+  }
+
+  th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $color-text-muted;
+    background: $color-surface-muted;
+  }
+}
+
+.mono {
+  display: block;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: $color-text-muted;
+}
