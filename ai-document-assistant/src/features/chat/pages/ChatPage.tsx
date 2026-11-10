@@ -10,10 +10,10 @@ export function ChatPage() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Chat</h1>
+        <h1 className={styles.title}>Document assistant</h1>
         <p className={styles.subtitle}>
-          Model: {env.aiDefaultModel} · Streaming{' '}
-          {env.aiStreamingEnabled ? 'enabled' : 'disabled'}
+          Ask about library docs and templates. Model {env.aiDefaultModel} ·{' '}
+          {env.aiStreamingEnabled ? 'streaming on' : 'streaming off'}
         </p>
       </header>
 

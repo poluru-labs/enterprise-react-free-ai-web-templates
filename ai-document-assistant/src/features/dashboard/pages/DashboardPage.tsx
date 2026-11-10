@@ -1,23 +1,23 @@
 import { useNavigate } from 'react-router'
-import { env, ROUTES } from '@/core'
+import { ROUTES } from '@/core'
 import { Button } from '@/shared'
 import styles from './DashboardPage.module.scss'
 
 const METRICS = [
   {
-    label: 'Active agents',
-    value: '12',
-    hint: '3 awaiting review',
+    label: 'Documents in library',
+    value: '1,248',
+    hint: '42 added this week',
   },
   {
-    label: 'Conversations today',
-    value: '248',
-    hint: '+18% vs yesterday',
+    label: 'Open reviews',
+    value: '19',
+    hint: '5 high priority',
   },
   {
-    label: 'Avg. latency',
-    value: '1.2s',
-    hint: 'p95 across models',
+    label: 'Template uses',
+    value: '568',
+    hint: 'Release notes lead',
   },
 ] as const
 
@@ -27,20 +27,16 @@ export function DashboardPage() {
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{env.appName}</p>
-        <h1 className={styles.title}>Enterprise AI workspace</h1>
+        <p className={styles.eyebrow}>Document Assistant</p>
+        <h1 className={styles.title}>DocDesk workspace</h1>
         <p className={styles.subtitle}>
-          Production-ready React starter for conversational AI, agents, and
-          governed model workflows. Extend the feature modules and wire your
-          gateway.
+          Map your document library, reuse templates, clear review queues, and
+          draft with playbooks. Desk run by Leela Poluru.
         </p>
         <div className={styles.actions}>
-          <Button onClick={() => navigate(ROUTES.chat)}>Open chat</Button>
-          <Button
-            variant="secondary"
-            onClick={() => navigate(ROUTES.agents)}
-          >
-            Browse agents
+          <Button onClick={() => navigate(ROUTES.documents)}>Open library</Button>
+          <Button variant="secondary" onClick={() => navigate(ROUTES.reviews)}>
+            Review queue
           </Button>
         </div>
       </section>
