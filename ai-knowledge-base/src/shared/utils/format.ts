@@ -1,3 +1,11 @@
+export function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString(undefined, {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  })
+}
+
 export function formatRelativeTime(iso: string): string {
   const deltaMs = Date.now() - new Date(iso).getTime()
   const minutes = Math.round(deltaMs / 60_000)
