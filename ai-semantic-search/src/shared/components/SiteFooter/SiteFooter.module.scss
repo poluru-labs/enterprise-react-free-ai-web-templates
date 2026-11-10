@@ -1,0 +1,18 @@
+.footer {
+  margin-top: auto;
+  padding: $space-6 $space-5 $space-4;
+  border-top: 1px solid $color-border;
+  background: $color-surface-muted;
+  font-size: 0.8125rem;
+  color: $color-text-muted;
+
+  a {
+    color: $color-primary;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,24 +1,12 @@
 import { useNavigate } from 'react-router'
-import { env, ROUTES } from '@/core'
+import { ROUTES } from '@/core'
 import { Button } from '@/shared'
 import styles from './DashboardPage.module.scss'
 
 const METRICS = [
-  {
-    label: 'Active agents',
-    value: '12',
-    hint: '3 awaiting review',
-  },
-  {
-    label: 'Conversations today',
-    value: '248',
-    hint: '+18% vs yesterday',
-  },
-  {
-    label: 'Avg. latency',
-    value: '1.2s',
-    hint: 'p95 across models',
-  },
+  { label: 'Queries (24h)', value: '18.4k', hint: 'p95 210 ms' },
+  { label: 'Open evaluations', value: '31', hint: '9 high priority' },
+  { label: 'Mean nDCG', value: '0.79', hint: '+0.02 vs last week' },
 ] as const
 
 export function DashboardPage() {
@@ -27,24 +15,19 @@ export function DashboardPage() {
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{env.appName}</p>
-        <h1 className={styles.title}>Enterprise AI workspace</h1>
+        <p className={styles.eyebrow}>Semantic Search</p>
+        <h1 className={styles.title}>SearchDesk workspace</h1>
         <p className={styles.subtitle}>
-          Production-ready React starter for conversational AI, agents, and
-          governed model workflows. Extend the feature modules and wire your
-          gateway.
+          Monitor queries, index health, ranking experiments, and human evals.
+          Program lead Leela Poluru.
         </p>
         <div className={styles.actions}>
-          <Button onClick={() => navigate(ROUTES.chat)}>Open chat</Button>
-          <Button
-            variant="secondary"
-            onClick={() => navigate(ROUTES.agents)}
-          >
-            Browse agents
+          <Button onClick={() => navigate(ROUTES.queries)}>Open query log</Button>
+          <Button variant="secondary" onClick={() => navigate(ROUTES.evaluations)}>
+            Evaluations
           </Button>
         </div>
       </section>
-
       <section className={styles.grid} aria-label="Key metrics">
         {METRICS.map((metric) => (
           <article key={metric.label} className={styles.metric}>
