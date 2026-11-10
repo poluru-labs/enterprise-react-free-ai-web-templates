@@ -1,7 +1,11 @@
 // Design tokens — enterprise AI shell
 
-$font-sans: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+$font-sans: 'Roboto', 'Lato', 'Segoe UI', sans-serif;
 $font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+$color-brand: #005a9c;
+$color-brand-deep: #004880;
+$color-brand-soft: #e6f0f8;
 
 $color-bg: #f4f6f8;
 $color-surface: #ffffff;
@@ -9,9 +13,9 @@ $color-surface-muted: #eef1f4;
 $color-border: #d5d9e0;
 $color-text: #1a2332;
 $color-text-muted: #5b677a;
-$color-primary: #0f6e56;
-$color-primary-hover: #0c5a46;
-$color-primary-soft: #e6f4ef;
+$color-primary: $color-brand;
+$color-primary-hover: $color-brand-deep;
+$color-primary-soft: $color-brand-soft;
 $color-accent: #c45c26;
 $color-danger: #b42318;
 $color-warning: #b54708;
