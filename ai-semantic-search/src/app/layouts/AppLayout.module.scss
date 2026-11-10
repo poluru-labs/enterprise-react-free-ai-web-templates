@@ -1,0 +1,141 @@
+.shell {
+  display: grid;
+  min-height: 100vh;
+
+  @include respond-up($bp-lg) {
+    grid-template-columns: $sidebar-width minmax(0, 1fr);
+  }
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  gap: $space-8;
+  padding: $space-6 $space-5;
+  background: rgb(26 35 50 / 94%);
+  color: #f5f7fa;
+  border-right: 1px solid rgb(255 255 255 / 8%);
+
+  @include respond-up($bp-lg) {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+}
+
+.brand {
+  display: grid;
+  gap: $space-1;
+}
+
+.brandMark {
+  font-size: 1.125rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.brandTag {
+  color: rgb(245 247 250 / 65%);
+  font-size: 0.8125rem;
+}
+
+.nav {
+  display: grid;
+  gap: $space-1;
+}
+
+.link {
+  display: grid;
+  gap: 0.15rem;
+  padding: $space-3;
+  border-radius: $radius-sm;
+  color: rgb(245 247 250 / 78%);
+  transition: background-color 140ms ease, color 140ms ease;
+
+  &:hover {
+    background: rgb(255 255 255 / 6%);
+    color: #fff;
+  }
+}
+
+.active {
+  background: rgb(15 110 86 / 28%);
+  color: #fff;
+}
+
+.linkLabel {
+  font-weight: 600;
+}
+
+.linkDesc {
+  font-size: 0.75rem;
+  color: rgb(245 247 250 / 55%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: $z-header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+  min-height: $header-height;
+  padding: $space-3 $space-5;
+  background: rgb(255 255 255 / 86%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $color-border;
+}
+
+.mobileNav {
+  display: flex;
+  gap: $space-2;
+  overflow-x: auto;
+
+  @include respond-up($bp-lg) {
+    display: none;
+  }
+}
+
+.mobileLink {
+  white-space: nowrap;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid $color-border;
+  background: $color-surface;
+  color: $color-text-muted;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.mobileActive {
+  border-color: $color-primary;
+  background: $color-primary-soft;
+  color: $color-primary;
+}
+
+.envPill {
+  margin-left: auto;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: $color-surface-muted;
+  color: $color-text-muted;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.content {
+  padding: $space-6 $space-5 $space-10;
+
+  @include respond-up($bp-lg) {
+    padding: $space-8 $space-8 $space-12;
+  }
+}
