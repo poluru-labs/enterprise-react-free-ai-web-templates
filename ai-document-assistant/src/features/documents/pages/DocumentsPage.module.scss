@@ -1,0 +1,112 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: $color-text-muted;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+}
+
+.search,
+.select {
+  min-height: 2.5rem;
+  padding: 0 $space-3;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: $color-surface;
+  font: inherit;
+}
+
+.search {
+  flex: 1;
+  min-width: 12rem;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background: $color-surface;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+
+  th,
+  td {
+    padding: $space-3 $space-4;
+    text-align: left;
+    border-bottom: 1px solid $color-border;
+  }
+
+  th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $color-text-muted;
+    background: $color-surface-muted;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.mono {
+  display: block;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: $color-text-muted;
+}
+
+.docTitle {
+  display: block;
+  margin-top: 0.15rem;
+}
+
+.status_Published,
+.status_Approved {
+  color: $color-success;
+  font-weight: 600;
+}
+
+.status_Draft,
+.status_Default {
+  color: $color-text-muted;
+  font-weight: 600;
+}
+
+.status_Inreview {
+  color: $color-warning;
+  font-weight: 600;
+}
+
+.status_Archived {
+  color: $color-text-muted;
+  font-weight: 600;
+}
+
+.empty {
+  padding: $space-6;
+  text-align: center;
+  color: $color-text-muted;
+}
