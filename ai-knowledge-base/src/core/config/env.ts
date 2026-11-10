@@ -16,7 +16,7 @@ const asNumber = (value: string | undefined, fallback: number): number => {
  * Keep secrets on the server — only public client config belongs here.
  */
 export const env = {
-  appName: import.meta.env.VITE_APP_NAME ?? 'Enterprise AI',
+  appName: import.meta.env.VITE_APP_NAME ?? 'KbDesk',
   appEnv: import.meta.env.VITE_APP_ENV ?? 'development',
   apiBaseUrl: import.meta.env.VITE_API_BASE_URL ?? '/api/v1',
   apiTimeoutMs: asNumber(import.meta.env.VITE_API_TIMEOUT_MS, 30_000),
