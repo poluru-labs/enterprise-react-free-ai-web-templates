@@ -1,0 +1,103 @@
+.wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  background: var(--surface);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.row td {
+  padding: 0 $space-2;
+  white-space: pre;
+  color: var(--text);
+}
+
+.num {
+  width: 1%;
+  min-width: 2.5rem;
+  text-align: right;
+  color: var(--text-muted) !important;
+  user-select: none;
+  border-right: 1px solid var(--border);
+}
+
+.marker {
+  width: 1%;
+  color: var(--text-muted) !important;
+  user-select: none;
+}
+
+.code {
+  width: 100%;
+}
+
+.add {
+  background: rgb(6 118 71 / 10%);
+
+  .marker {
+    color: $color-success !important;
+  }
+}
+
+.remove {
+  background: rgb(180 35 24 / 9%);
+
+  .marker {
+    color: $color-danger !important;
+  }
+}
+
+:global([data-theme='dark']) {
+  .add {
+    background: rgb(71 205 137 / 12%);
+  }
+
+  .remove {
+    background: rgb(249 112 102 / 12%);
+  }
+}
+
+.lineButton {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    color: var(--brand-text);
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.selected {
+  box-shadow: inset 3px 0 0 var(--brand-text);
+}
+
+.afterRow td {
+  padding: $space-2 $space-3 $space-3 5.5rem;
+  background: var(--surface-muted);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
