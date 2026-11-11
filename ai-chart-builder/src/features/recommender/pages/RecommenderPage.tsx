@@ -22,7 +22,7 @@ const KIND_LABEL: Record<ChartKind, string> = {
   donut: 'Donut chart',
 }
 
-const PREVIEW_COLORS = ['#29527A', '#E07A2E', '#3A9E8F', '#B04A7A', '#7A8A99']
+const PREVIEW_COLORS = ['#29527A', '#C8590F', '#4A9FD0', '#B8890B', '#8E8E8E']
 
 export function RecommenderPage() {
   const [profile, setProfile] = useState<DataProfile>({
