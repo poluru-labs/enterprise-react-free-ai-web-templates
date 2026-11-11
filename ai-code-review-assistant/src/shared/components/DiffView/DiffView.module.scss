@@ -16,6 +16,7 @@
 .row td {
   padding: 0 $space-2;
   white-space: pre;
+  vertical-align: top;
   color: var(--text);
 }
 
@@ -34,8 +35,10 @@
   user-select: none;
 }
 
-.code {
+.row .code {
   width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .add {
@@ -87,7 +90,12 @@
 }
 
 .afterRow td {
-  padding: $space-2 $space-3 $space-3 5.5rem;
+  padding: $space-2 $space-3 $space-3;
+
+  @include respond-up($bp-md) {
+    padding-left: 5.5rem;
+  }
+
   background: var(--surface-muted);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);

@@ -60,6 +60,21 @@
   border-top-color: var(--brand-text);
 }
 
+:global([data-theme='dark']) {
+  .critical,
+  .high {
+    border-top-color: #f97066;
+  }
+
+  .medium {
+    border-top-color: #fdb022;
+  }
+
+  .blockingRow td:first-child {
+    box-shadow: inset 3px 0 0 #f97066;
+  }
+}
+
 .chipCount {
   font-size: 1.5rem;
   font-weight: 650;
