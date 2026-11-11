@@ -1,0 +1,172 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 46rem;
+  color: var(--text-muted);
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: $space-3;
+}
+
+.chip {
+  @include card-surface;
+  display: grid;
+  gap: 2px;
+  padding: $space-3 $space-4;
+  border-top: 3px solid var(--border);
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.chipOn {
+  opacity: 1;
+}
+
+.critical,
+.high {
+  border-top-color: $color-danger;
+}
+
+.medium {
+  border-top-color: $color-warning;
+}
+
+.low {
+  border-top-color: var(--brand-text);
+}
+
+.chipCount {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.chipLabel {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  text-transform: capitalize;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+}
+
+.blocking {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  color: var(--text);
+  font-size: 0.875rem;
+
+  input {
+    accent-color: var(--brand-text);
+  }
+}
+
+.tableWrap {
+  @include card-surface;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+
+  th,
+  td {
+    padding: $space-3 $space-4;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: middle;
+    color: var(--text);
+  }
+
+  th {
+    background: var(--surface-muted);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+}
+
+.blockingRow td:first-child {
+  box-shadow: inset 3px 0 0 $color-danger;
+}
+
+.findingTitle {
+  display: block;
+  font-weight: 600;
+}
+
+.category {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.mono {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--text-muted) !important;
+  white-space: nowrap;
+}
+
+.select {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.8125rem;
+  text-transform: capitalize;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}

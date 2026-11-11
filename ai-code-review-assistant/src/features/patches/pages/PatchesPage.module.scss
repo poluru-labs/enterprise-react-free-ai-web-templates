@@ -1,0 +1,97 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: $space-4;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 42rem;
+  color: var(--text-muted);
+}
+
+.bundle {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+}
+
+.bundleText {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-5;
+  min-width: 0;
+}
+
+.dismissed {
+  opacity: 0.55;
+}
+
+.cardHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $space-3;
+}
+
+.cardTitle {
+  display: grid;
+  gap: 2px;
+}
+
+.name {
+  font-size: 1.0625rem;
+  color: var(--text);
+}
+
+.file {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  align-items: flex-start;
+}
+
+.rationale {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+}
