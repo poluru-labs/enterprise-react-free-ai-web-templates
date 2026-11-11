@@ -1,0 +1,218 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.eyebrow {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  color: var(--brand-text);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 48rem;
+  color: var(--text-muted);
+}
+
+.layout {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-lg) {
+    grid-template-columns: 16rem minmax(0, 1fr);
+  }
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+  align-self: start;
+}
+
+.file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-2 $space-3;
+  border: 1px solid transparent;
+  border-radius: $radius-sm;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-muted);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.fileActive {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: inset 3px 0 0 var(--brand-text);
+}
+
+.filePath {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  word-break: break-all;
+}
+
+.fileCount {
+  min-width: 1.4rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--brand);
+  color: var(--brand-on);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.diff {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-4;
+  min-width: 0;
+}
+
+.diffHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.stat {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+}
+
+.plus {
+  color: $color-success;
+
+  :global([data-theme='dark']) & {
+    color: #47cd89;
+  }
+}
+
+.minus {
+  color: $color-danger;
+
+  :global([data-theme='dark']) & {
+    color: #f97066;
+  }
+}
+
+.thread {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  font-family: $font-sans;
+  white-space: normal;
+}
+
+.comment {
+  padding: $space-3;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  background: var(--surface);
+}
+
+.resolved {
+  opacity: 0.55;
+}
+
+.commentHead {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  margin-bottom: $space-1;
+}
+
+.author {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--text);
+}
+
+.resolve {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: var(--brand-text);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.body {
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.composer {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.textarea,
+.select {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.composerActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $space-2;
+
+  .select {
+    margin-right: auto;
+  }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

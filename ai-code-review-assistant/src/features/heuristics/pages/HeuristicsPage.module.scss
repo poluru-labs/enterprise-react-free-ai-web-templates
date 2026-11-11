@@ -1,0 +1,224 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.layout {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+  }
+}
+
+.editor,
+.rules {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-5;
+  align-self: start;
+  min-width: 0;
+}
+
+.editorHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panelTitle {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: 1.0625rem;
+  color: var(--text);
+}
+
+.count {
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.code {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  overflow: hidden;
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.gutter {
+  margin: 0;
+  padding: $space-2 $space-2;
+  list-style: none;
+  background: var(--surface-muted);
+  color: var(--text-muted);
+  text-align: right;
+  user-select: none;
+  min-width: 2.75rem;
+
+  li {
+    padding-right: $space-1;
+  }
+}
+
+.flagged {
+  color: $color-danger;
+  font-weight: 700;
+  box-shadow: inset -3px 0 0 $color-danger;
+
+  :global([data-theme='dark']) & {
+    color: #f97066;
+    box-shadow: inset -3px 0 0 #f97066;
+  }
+}
+
+.textarea {
+  flex: 1;
+  border: 0;
+  padding: $space-2 $space-3;
+  resize: vertical;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  line-height: inherit;
+  white-space: pre;
+  overflow-x: auto;
+
+  &:focus-visible {
+    outline: 2px solid var(--brand-text);
+    outline-offset: -2px;
+  }
+}
+
+.findings,
+.ruleList {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.finding {
+  display: grid;
+  gap: $space-1;
+  padding: $space-3;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+}
+
+.findingHead {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+}
+
+.findingName {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.line {
+  margin-left: auto;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.excerpt {
+  display: block;
+  padding: $space-1 $space-2;
+  border-radius: $radius-sm;
+  background: var(--surface-muted);
+  color: var(--text);
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.message {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.rule {
+  display: grid;
+  gap: $space-1;
+  padding-bottom: $space-2;
+  border-bottom: 1px solid var(--border);
+}
+
+.ruleOff {
+  opacity: 0.5;
+}
+
+.ruleLabel {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  cursor: pointer;
+
+  input {
+    accent-color: var(--brand-text);
+  }
+}
+
+.ruleName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ruleMeta {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  padding-left: 1.4rem;
+}
+
+.category {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.hits {
+  margin-left: auto;
+  color: var(--brand-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
