@@ -1,0 +1,239 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.tabActive {
+  border-color: var(--brand-text);
+  box-shadow: inset 0 -2px 0 var(--brand-text);
+}
+
+.tabSwatches {
+  display: inline-flex;
+
+  span {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+
+    & + span {
+      margin-left: -0.2rem;
+    }
+  }
+}
+
+.panel {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+  padding: $space-5;
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: $space-3;
+}
+
+.panelTitle {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+.panelText {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.panelActions {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+}
+
+.lockups {
+  display: grid;
+  gap: $space-3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include respond-up($bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.lockup {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  overflow: hidden;
+}
+
+.lockupArt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  min-height: 6.5rem;
+  padding: $space-4;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid;
+  border-radius: $radius-sm;
+  font-weight: 700;
+}
+
+.wordmark {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.lockupMeta {
+  display: grid;
+  gap: $space-1;
+  padding: $space-3;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8125rem;
+}
+
+.hex {
+  font-family: $font-mono;
+  color: var(--text-muted);
+}
+
+.lockupRatio {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-variant-numeric: tabular-nums;
+}
+
+.matrixWrap {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  overflow-x: auto;
+}
+
+.matrixTitle {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.matrix {
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  min-width: 100%;
+
+  th,
+  td {
+    padding: $space-2 $space-3;
+    border: 1px solid var(--border);
+    text-align: left;
+    white-space: nowrap;
+    color: var(--text);
+  }
+
+  thead th {
+    background: var(--surface-muted);
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.chip {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: $space-2;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  vertical-align: -1px;
+}
+
+.level {
+  margin-left: $space-2;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.fail {
+  background: rgb(180 35 24 / 8%);
+
+  .level {
+    color: $color-danger;
+
+    :global([data-theme='dark']) & {
+      color: #f97066;
+    }
+  }
+}
+
+.na {
+  color: var(--text-muted) !important;
+  text-align: center !important;
+}

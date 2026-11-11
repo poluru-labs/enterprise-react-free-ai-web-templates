@@ -1,0 +1,176 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.summary {
+  display: grid;
+  gap: $space-4;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @include respond-up($bp-lg) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.summaryCard {
+  @include card-surface;
+  display: grid;
+  gap: $space-1;
+  padding: $space-4 $space-5;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+  border-left: 4px solid var(--brand-text);
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.fail {
+  border-left-color: $color-danger;
+}
+
+.warn {
+  border-left-color: $color-warning;
+}
+
+.pass {
+  border-left-color: $color-success;
+}
+
+.summaryActive {
+  background: var(--surface-muted);
+}
+
+.summaryLabel {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-3;
+}
+
+.filterLabel {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.select {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.count {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  @include card-surface;
+  display: grid;
+  gap: $space-2;
+  padding: $space-4 $space-5;
+  border-left: 4px solid var(--border);
+}
+
+.failItem {
+  border-left-color: $color-danger;
+}
+
+.warnItem {
+  border-left-color: $color-warning;
+}
+
+.passItem {
+  border-left-color: $color-success;
+}
+
+.itemHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $space-3;
+}
+
+.asset {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.channel {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.rule {
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.itemActions {
+  display: flex;
+  gap: $space-2;
+  align-items: flex-start;
+}
+
+.detail {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.itemFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
