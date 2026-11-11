@@ -1,0 +1,213 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.attributes {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.attribute {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-5;
+  border-top: 3px solid var(--brand-text);
+}
+
+.trait {
+  font-size: 1.0625rem;
+  color: var(--text);
+}
+
+.pairs {
+  display: grid;
+  gap: $space-1;
+  margin: 0;
+  font-size: 0.875rem;
+
+  dt {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  dd {
+    margin: 0 0 $space-2;
+    color: var(--text);
+  }
+}
+
+.example {
+  margin-top: auto;
+  padding: $space-3;
+  border-radius: $radius-sm;
+  background: var(--surface-muted);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.split {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.panel {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-5;
+  align-self: start;
+}
+
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+}
+
+.panelTitle {
+  font-size: 1.0625rem;
+  color: var(--text);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+
+  th,
+  td {
+    padding: $space-3 $space-2;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text);
+  }
+
+  th {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+}
+
+.channel {
+  display: block;
+  font-weight: 600;
+}
+
+.guidance {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.dots {
+  display: inline-flex;
+  gap: 3px;
+  padding-top: 0.3rem;
+}
+
+.dot,
+.dotOn {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.dotOn {
+  background: var(--brand-text);
+}
+
+.label {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.textarea {
+  width: 100%;
+  resize: vertical;
+  padding: $space-3;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9375rem;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.issues {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.issue {
+  display: grid;
+  gap: 2px;
+  padding: $space-2 $space-3;
+  border-left: 3px solid $color-warning;
+  border-radius: $radius-sm;
+  background: var(--surface-muted);
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.reason {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.clean {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}

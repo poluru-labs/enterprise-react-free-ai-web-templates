@@ -1,0 +1,172 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: $space-4;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 40rem;
+  color: var(--text-muted);
+}
+
+.segments {
+  display: inline-flex;
+  padding: 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  background: var(--surface);
+}
+
+.segment {
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 0.35rem 0.85rem;
+  border-radius: $radius-sm;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.segmentActive {
+  background: var(--brand);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-5;
+}
+
+.rejected {
+  opacity: 0.6;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+}
+
+.name {
+  font-size: 1.375rem;
+  letter-spacing: -0.01em;
+  color: var(--brand-text);
+}
+
+.rationale {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.scores {
+  display: grid;
+  gap: $space-2;
+  margin: 0;
+  font-size: 0.8125rem;
+
+  dt {
+    color: var(--text-muted);
+  }
+
+  dd {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    margin: 0;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.bar {
+  flex: 1;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  overflow: hidden;
+
+  span {
+    display: block;
+    height: 100%;
+    background: var(--brand-text);
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-2;
+}
+
+.territory {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+  margin-top: auto;
+  padding-top: $space-3;
+  border-top: 1px solid var(--border);
+}
+
+.score {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+
+  strong {
+    color: var(--text);
+    font-size: 1.125rem;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: $space-2;
+}
+
+.by {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
