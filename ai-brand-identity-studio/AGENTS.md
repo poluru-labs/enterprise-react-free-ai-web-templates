@@ -13,10 +13,17 @@ Guidance for coding agents and contributors working on this template.
 
 ## Core features
 
-- Voice guidelines
-- Naming explorations
-- Palette lockups
-- Compliance checks
+- Voice guidelines — `features/voice`, route `/voice` (traits, tone by channel, live vocabulary check)
+- Naming explorations — `features/naming`, route `/naming` (scored candidates, shortlist/reject)
+- Palette lockups — `features/palettes`, route `/palettes` (wordmark previews, WCAG contrast matrix)
+- Compliance checks — `features/compliance`, route `/compliance` (logo, color, voice, legal rules per asset)
+
+Brand domain types live in `core/types/brand.ts`; mock data sits in each feature's `data/` folder. Contrast math is in `shared/utils/color.ts`, and status pills use the shared `StatusBadge`.
+
+## Theme tokens
+
+- `--brand` stays `#00105B` in both themes for fills (buttons, active segments, swatches).
+- Use `--brand-text` for brand-colored text, borders, and bars. It is `#00105B` in light mode and a light navy tint in dark mode, because the master navy is unreadable on dark surfaces.
 
 ## Template capabilities
 
