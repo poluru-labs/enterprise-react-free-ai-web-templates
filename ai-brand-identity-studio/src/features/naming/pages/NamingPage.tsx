@@ -121,7 +121,7 @@ export function NamingPage() {
                     {`${candidate.trademarkRisk} TM risk`}
                   </StatusBadge>
                   <StatusBadge tone={candidate.domainAvailable ? 'success' : 'neutral'}>
-                    {candidate.domainAvailable ? '.com available' : '.com taken'}
+                    {candidate.domainAvailable ? 'domain available' : 'domain taken'}
                   </StatusBadge>
                   <span className={styles.territory}>{candidate.territory}</span>
                 </div>

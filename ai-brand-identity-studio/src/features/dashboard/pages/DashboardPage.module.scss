@@ -71,3 +71,45 @@
   color: var(--text-muted);
   font-size: 0.8125rem;
 }
+
+.features {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.feature {
+  @include card-surface;
+  display: grid;
+  gap: $space-2;
+  padding: $space-5;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 160ms ease;
+
+  &:hover {
+    border-color: var(--brand-text);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.featureTitle {
+  font-weight: 600;
+  color: var(--brand-text);
+}
+
+.featureText {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
