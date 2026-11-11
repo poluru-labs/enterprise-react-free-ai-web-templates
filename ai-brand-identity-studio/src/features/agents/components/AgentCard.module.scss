@@ -9,7 +9,7 @@
     transform 160ms ease;
 
   &:hover {
-    border-color: rgb(15 110 86 / 35%);
+    border-color: var(--brand-text);
     box-shadow: $shadow-md;
     transform: translateY(-1px);
   }

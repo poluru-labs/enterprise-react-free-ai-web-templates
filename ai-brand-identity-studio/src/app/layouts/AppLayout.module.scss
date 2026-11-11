@@ -62,7 +62,8 @@
 }
 
 .active {
-  background: color-mix(in srgb, var(--brand) 28%, transparent);
+  background: rgb(142 156 240 / 16%);
+  box-shadow: inset 3px 0 0 var(--brand-tint);
   color: var(--sidebar-text);
 }
 
@@ -119,9 +120,9 @@
 }
 
 .mobileActive {
-  border-color: var(--brand);
+  border-color: var(--brand-text);
   background: var(--brand-soft);
-  color: var(--brand);
+  color: var(--brand-text);
 }
 
 .actions {

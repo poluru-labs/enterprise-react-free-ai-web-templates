@@ -12,6 +12,14 @@ export function formatRelativeTime(iso: string): string {
   return `${days}d ago`
 }
 
+export function formatDate(iso: string): string {
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  }).format(new Date(iso))
+}
+
 export function truncate(value: string, max = 96): string {
   if (value.length <= max) return value
   return `${value.slice(0, max - 1)}…`
