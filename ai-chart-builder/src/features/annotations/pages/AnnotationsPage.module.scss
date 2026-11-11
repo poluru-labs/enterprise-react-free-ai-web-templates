@@ -1,0 +1,206 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.layout {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: minmax(0, 1fr) 21rem;
+  }
+}
+
+.figure {
+  @include card-surface;
+  margin: 0;
+  padding: $space-5;
+  align-self: start;
+}
+
+.caption {
+  margin-bottom: $space-3;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.tick {
+  fill: var(--text-muted);
+  font-size: 11px;
+}
+
+.target {
+  stroke: var(--text-muted);
+  stroke-width: 1.25;
+  stroke-dasharray: 5 4;
+}
+
+.targetLabel {
+  fill: var(--text-muted);
+  font-size: 11px;
+}
+
+.line {
+  fill: none;
+  stroke: var(--brand-text);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.marker {
+  fill: var(--surface);
+  stroke: var(--brand-text);
+  stroke-width: 2.5;
+}
+
+.leader {
+  stroke: var(--text-muted);
+  stroke-width: 1;
+}
+
+.callout {
+  fill: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 4px;
+}
+
+.panel {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-5;
+  align-self: start;
+}
+
+.panelTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.0625rem;
+  color: var(--text);
+}
+
+.count {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.warning {
+  padding: $space-2 $space-3;
+  border-left: 3px solid $color-warning;
+  border-radius: $radius-sm;
+  background: var(--surface-muted);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  gap: $space-2;
+  padding-bottom: $space-3;
+  border-bottom: 1px solid var(--border);
+}
+
+.itemHead {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  cursor: pointer;
+
+  input {
+    accent-color: var(--brand);
+  }
+}
+
+.point {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.remove {
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.text,
+.select {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.add {
+  display: flex;
+  gap: $space-2;
+
+  .select {
+    flex: 1;
+  }
+}
