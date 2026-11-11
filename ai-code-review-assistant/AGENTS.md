@@ -13,10 +13,20 @@ Guidance for coding agents and contributors working on this template.
 
 ## Core features
 
-- Diff-aware commentary
-- Security and smell heuristics
-- Suggested patches
-- Severity triage
+- Diff-aware commentary — `features/diffs`, route `/diffs` (line-anchored threads with severity, resolve/reopen, and a per-line composer)
+- Security and smell heuristics — `features/heuristics`, route `/heuristics` (toggleable regex rules in `lib/rules.ts`; critical and high hits block merge)
+- Suggested patches — `features/patches`, route `/patches` (before/after diffs, accept/dismiss/undo, copy as unified diff)
+- Severity triage — `features/triage`, route `/triage` (severity filter chips, status per finding, blocked-PR summary)
+
+Review domain types live in `core/types/review.ts`. Shared pieces: `DiffView` (line diff table with clickable new-line numbers and inline rows), `SeverityBadge`, `StatusBadge`, and `diffLines` / `toUnifiedPatch` / `severityRank` in `shared/utils/diff.ts`.
+
+Heuristics are a fast pre-filter, not a replacement for model review: keep rules line-based, add a sample hit to `SAMPLE_SOURCE` for each new rule, and never put a real-looking provider key in sample code.
+
+## Theme tokens
+
+- `--brand` stays `#DC95FF` in both themes for fills (primary buttons, user chat bubbles, comment counts).
+- Lilac is too light for text on white (2.15:1). Use `--brand-text` for brand-colored text, focus rings, lines, and borders: `#7E22B0` in light mode, `#DC95FF` in dark mode.
+- Text placed on a `--brand` fill uses `--brand-on` (`#2A0D3A`), never white.
 
 ## Template capabilities
 
