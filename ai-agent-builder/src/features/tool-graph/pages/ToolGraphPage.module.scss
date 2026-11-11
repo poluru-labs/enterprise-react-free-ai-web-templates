@@ -1,0 +1,172 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: $space-4;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  color: var(--text-muted);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-xl) {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+  }
+}
+
+.canvas {
+  @include card-surface;
+  overflow-x: auto;
+  padding: $space-2;
+  background: var(--surface-muted);
+}
+
+.svg {
+  display: block;
+  min-width: 100%;
+}
+
+.edge {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 2;
+  transition: stroke 160ms ease;
+}
+
+.edgeActive {
+  stroke: var(--brand);
+}
+
+.arrowHead {
+  fill: var(--text-muted);
+}
+
+.edgeLabel {
+  fill: var(--text-muted);
+  font-size: 11px;
+  font-family: $font-mono;
+}
+
+.node {
+  cursor: pointer;
+  outline: none;
+
+  &:focus-visible .nodeBox {
+    stroke: var(--brand);
+    stroke-width: 3;
+  }
+}
+
+.nodeBox {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 1.5;
+  transition: stroke 160ms ease;
+}
+
+.nodeStripe {
+  fill: var(--text-muted);
+}
+
+.nodeSelected .nodeBox {
+  stroke: var(--brand);
+  stroke-width: 2.5;
+}
+
+.prompt .nodeStripe {
+  fill: var(--brand);
+}
+
+.tool .nodeStripe {
+  fill: $color-success;
+}
+
+.guard .nodeStripe {
+  fill: $color-warning;
+}
+
+.nodeLabel {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nodeMeta {
+  fill: var(--text-muted);
+  font-size: 11px;
+}
+
+.panel {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  padding: $space-5;
+  align-self: start;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+}
+
+.panelTitle {
+  font-size: 1.0625rem;
+  color: var(--text);
+}
+
+.panelText {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: $space-2 $space-4;
+  margin: 0;
+  font-size: 0.875rem;
+
+  dt {
+    color: var(--text-muted);
+  }
+
+  dd {
+    margin: 0;
+    color: var(--text);
+  }
+}
+
+.panelFoot {
+  border-top: 1px solid var(--border);
+  padding-top: $space-3;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}

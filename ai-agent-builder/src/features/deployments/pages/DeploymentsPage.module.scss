@@ -1,0 +1,113 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.current {
+  @include card-surface;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: $space-3;
+  padding: $space-5;
+  border-left: 4px solid var(--brand);
+}
+
+.currentLabel {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.currentVersion {
+  font-family: $font-mono;
+  font-size: 1.5rem;
+  font-weight: 650;
+  color: var(--brand);
+
+  :global([data-theme='dark']) & {
+    color: var(--brand-hover);
+  }
+}
+
+.currentMeta {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry {
+  @include card-surface;
+  display: grid;
+  gap: $space-2;
+  padding: $space-4 $space-5;
+}
+
+.entryHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-3;
+}
+
+.entryTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-2;
+}
+
+.version {
+  font-family: $font-mono;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.env {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  text-transform: capitalize;
+}
+
+.entryActions {
+  display: flex;
+  gap: $space-2;
+}
+
+.summary {
+  color: var(--text);
+  font-size: 0.9375rem;
+}
+
+.meta {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}

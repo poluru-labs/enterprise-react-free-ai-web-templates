@@ -1,0 +1,187 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.subtitle {
+  max-width: 44rem;
+  color: var(--text-muted);
+}
+
+.summary {
+  display: grid;
+  gap: $space-4;
+
+  @include respond-up($bp-md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.summaryCard {
+  @include card-surface;
+  padding: $space-4 $space-5;
+}
+
+.summaryLabel {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: 650;
+  color: var(--text);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $space-3;
+}
+
+.segments {
+  display: inline-flex;
+  padding: 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  background: var(--surface);
+}
+
+.segment {
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 0.35rem 0.85rem;
+  border-radius: $radius-sm;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.segmentActive {
+  background: var(--brand);
+  color: #fff;
+}
+
+.search {
+  min-width: 16rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.tableWrap {
+  @include card-surface;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+
+  th,
+  td {
+    padding: $space-3 $space-4;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--surface-muted);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+}
+
+.disabled td {
+  opacity: 0.55;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.muted {
+  color: var(--text-muted) !important;
+}
+
+.code {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  background: var(--surface-muted);
+  border-radius: $radius-sm;
+  padding: 0.1rem 0.4rem;
+}
+
+.switch {
+  position: relative;
+  width: 2.25rem;
+  height: 1.25rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--border);
+  cursor: pointer;
+  transition: background 160ms ease;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.switchOn {
+  background: var(--brand);
+}
+
+.switchThumb {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 160ms ease;
+
+  .switchOn & {
+    transform: translateX(1rem);
+  }
+}
